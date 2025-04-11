@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0 !important;
+}
+
+.theme-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 30px;
+    line-height: 1;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+.theme-btn__yellow {
+    background-color: #D7FF00;
+    border: 1px solid #D7FF00;
+    color: #191919;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+.fw-medium {
+    font-weight: 600;
+}
+
+
+.main-navbar {
+    position: absolute !important;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.main-navbar .navbar-brand {
+    max-width: 140px;
+}
+
+.main-navbar .navbar-brand img {
+    width: 100%;
+}
+
+.main-navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+.main-banner {
+    background-image: url(assets/images/main-banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 60px;
+}
+
+.main-banner__content h1 {
+    font-size: 60px;
+}
+
+.main-banner__content p {
+    font-size: 16px;
+}
+
+.main-banner__content-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.main-banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
