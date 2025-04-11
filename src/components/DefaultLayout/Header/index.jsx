@@ -1,9 +1,18 @@
 import React from "react";
-import { Container, Navbar, Nav, Button } from "react-bootstrap";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Container, Navbar, Nav } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.png";
-import { RiUserLine } from "react-icons/ri";
+
+const navLinks = [
+  { label: "HOME", path: "/" },
+  { label: "ABOUT", path: "/about" },
+  { label: "SERVICES", path: "/services" },
+  { label: "PRICING", path: "/pricing" },
+  { label: "PORTFOLIO", path: "/portfolio" },
+  { label: "BLOGS", path: "/blogs" },
+  { label: "CONTACT US", path: "/contact" },
+];
 
 const Header = () => {
   const location = useLocation();
@@ -18,55 +27,18 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbar-nav" />
 
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="mx-auto">
-            {/* <Nav.Link as={Link} to="/about-my-virtual-PI">
-              About My Virtual PI
-            </Nav.Link>
-            <Nav.Link as={Link} to="/pricing">
-              Pricing
-            </Nav.Link>
-            <Nav.Link as={Link} to="/is-my-virtual-pi-legit">
-              Is My Virtual PI Legit?
-            </Nav.Link>
-            <Nav.Link as={Link} to="/reviews">
-              Reviews
-            </Nav.Link> */}
-            <Nav.Link
-              as={Link}
-              to="/about-my-virtual-PI"
-              className={currentPath === "/about-my-virtual-PI" ? "active" : ""}
-            >
-              About My Virtual PI
-            </Nav.Link>
 
-            <Nav.Link
-              as={Link}
-              to="/pricing"
-              className={currentPath === "/pricing" ? "active" : ""}
-            >
-              Pricing
-            </Nav.Link>
-
-            <Nav.Link
-              as={Link}
-              to="/is-my-virtual-pi-legit"
-              className={
-                currentPath === "/is-my-virtual-pi-legit" ? "active" : ""
-              }
-            >
-              Is My Virtual PI Legit?
-            </Nav.Link>
-
-            <Nav.Link
-              as={Link}
-              to="/reviews"
-              className={currentPath === "/reviews" ? "active" : ""}
-            >
-              Reviews
-            </Nav.Link>
+          <Nav className="ms-auto">
+            {navLinks.map((link, index) => (
+              <Nav.Link as={Link} to={link.path} key={index}>
+                {link.label}
+              </Nav.Link>
+            ))}
           </Nav>
 
-          <Link to={"/login"} className="theme-btn theme-btn__yellow"> Get In Touch
+          <Link to={"/login"} className="theme-btn theme-btn__yellow">
+            {" "}
+            Get In Touch
           </Link>
         </Navbar.Collapse>
       </Container>
