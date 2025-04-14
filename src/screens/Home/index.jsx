@@ -20,14 +20,89 @@ import portfolioimg4 from "../../assets/images/portfolio-img-4.png";
 import portfolioimg5 from "../../assets/images/portfolio-img-5.png";
 import portfolioimg6 from "../../assets/images/portfolio-img-6.png";
 
-import quoteicon from "../../assets/images/quote-icon.png";
+import gfxglobalimg1 from "../../assets/images/gfx-global-img1.png";
+import gfxglobalimg2 from "../../assets/images/gfx-global-img2.png";
+
 import testimonialimg from "../../assets/images/testimonial-img.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import Accordion from "react-bootstrap/Accordion";
+
+import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
+import { blogsData } from "../../data";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
   { title: "Web Development", img: gfxwedev },
   { title: "Video Animation", img: gfcvideoanimation },
   { title: "Content Writing", img: gfxcontentwriting },
+];
+
+const testimonials = [
+  {
+    description:
+      "Introducing our team of talented and skilled professionals who are ready to increase your productivity and bring your business to the new level of efficiency and sustainability.",
+    userImg: testimonialimg,
+    username: "Amy Walker",
+    userCity: "New York City, NY",
+  },
+  {
+    description:
+      "Introducing our team of talented and skilled professionals who are ready to increase your productivity and bring your business to the new level of efficiency and sustainability.",
+    userImg: testimonialimg,
+    username: "Amy Walker",
+    userCity: "New York City, NY",
+  },
+  {
+    description:
+      "Introducing our team of talented and skilled professionals who are ready to increase your productivity and bring your business to the new level of efficiency and sustainability.",
+    userImg: testimonialimg,
+    username: "Amy Walker",
+    userCity: "New York City, NY",
+  },
+];
+
+const faqsData = [
+  {
+    id: 1,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 2,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 3,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 4,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 5,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 6,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
 ];
 
 const Home = () => {
@@ -245,33 +320,190 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="col-lg-12">
+              <div className="swiper-container">
+                <Swiper
+                  modules={[Pagination]}
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  loop={true}
+                  speed={1000}
+                  breakpoints={{
+                    768: { slidesPerView: 2 },
+                  }}
+                  pagination={{ clickable: true }}
+                >
+                  {testimonials.map((testimonial, index) => (
+                    <SwiperSlide key={index}>
+                      <TestimonialCard
+                        description={testimonial.description}
+                        userImg={testimonial.userImg}
+                        username={testimonial.username}
+                        userCity={testimonial.userCity}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="gfx-global-sec">
+        <div className="container">
+          <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="home-testimonial-card">
-                <img
-                  src={quoteicon}
-                  className="testimonial-quote__img"
-                  alt="Quote Image"
-                />
-                <p className="testimonial-quote__text">
-                  Introducing our team of talented and skilled professionals who
-                  are ready to increase your productivity and bring your
-                  business to the new level of efficiency and sustainability.
+              <div className="gfx-global__content">
+                <p className="sec-head-tag label-yellow-bg">
+                  GRAPHIC DESIGN AGENCY <br /> WITH GLOBAL ACHIEVEMENTS
                 </p>
-                <div className="testimonial-user__details">
-                  <div className="testimonial-user__img">
+                <h2>
+                  Our quality digital branding services speak for our success.
+                </h2>
+                <p>
+                  The reason for our success lies beneath the satisfaction of
+                  our happy clients across the globe. Our graphic design studio
+                  is rated highly by the masses all over the world, perfectly
+                  speaking for the superlative dominance we’ve achieved in the
+                  designing industry.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="gfx-global__img">
+                <img
+                  src={gfxglobalimg1}
+                  className="gfx-global__img-1 img-fluid"
+                  alt="graphic design agency"
+                />
+                <img
+                  src={gfxglobalimg2}
+                  className="gfx-global__img-2 img-fluid"
+                  alt="graphic design agency"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="faqs-sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-12">
+              <div className="sec-head">
+                <p className="sec-head-tag">FREQUENTLY ASKED QUESTIONS</p>
+                <h2>How We Turn Imagination Into Reality</h2>
+                <p>
+                  Common queries you want us to answer about our custom graphic
+                  design and other branding services.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="faqs-items">
+                <Accordion defaultActiveKey="0">
+                  {faqsData.map((item, index) => (
+                    <Accordion.Item eventKey={index.toString()} key={index}>
+                      <Accordion.Header>{item.titla}</Accordion.Header>
+                      <Accordion.Body>{item.description}</Accordion.Body>
+                    </Accordion.Item>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="faqs-form">
+                <div className="faqs-form-head">
+                  <h4>Want to Know More?</h4>
+                  <p>Send Us Your Queries Below</p>
+                </div>
+                <form action="#">
+                  <div className="faqs-form-items">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Name"
+                    />
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your Email"
+                    />
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your phone number"
+                    />
+                    <select class="form-select form-control">
+                      <option selected>Select Services</option>
+                      <option value="1">Web Development</option>
+                      <option value="2">Graphic Designing</option>
+                      <option value="3">Digital Marketing</option>
+                    </select>
+                    <textarea
+                      class="form-control"
+                      placeholder="Discuss your project"
+                      rows={3}
+                      style={{ resize: "none" }}
+                    ></textarea>
+                    <div className="faqs-form-btn__div">
+                      <div className="faqs-form-btn__div-content">
+                        <p>Interested? Call Us Now</p>
+                        <a href="tel:+ 123 456 7890">+ 123 456 7890</a>
+                      </div>
+                      <button
+                        type="submit"
+                        className="theme-btn theme-btn__yellow"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blog-sec">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="sec-head">
+                <p className="sec-head-tag label-yellow-bg">ADDITIONAL RESOURCES</p>
+                <h2>Our Recent Blogs Covering Latest Industry News</h2>
+                <p>
+                  Stay informed about all the latest happenings in the digital
+                  world, including the latest news about graphic designing, logo
+                  designing and more.
+                </p>
+              </div>
+            </div>
+            {blogsData.map((item, index) => (
+              <div className="col-lg-4">
+                <div className="blog-card">
+                  <div className="blog-card__image">
                     <img
-                      src={testimonialimg}
+                      src={item.img}
                       className="img-fluid"
-                      alt="Testimonial User"
+                      alt="Blog Image"
                     />
                   </div>
-                  <div className="testimonial-user__content">
-                    <h4>Amy Walker</h4>
-                    <p>New York City, NY</p>
+                  <div className="blog-card__content">
+                    <div className="blog-card__content-meta">
+                      <h4>By: {item.meta.author}</h4>
+                      <p>{item.meta.date}</p>
+                    </div>
+                    <p className="blog-card__content-title">
+                      {item.title}
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
