@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../screens/Home";
 import About from "../screens/About";
+import Pricing from "../screens/Pricing";
+import ContactUs from "../screens/ContactUs";
 
 // Import your components/pages
 
@@ -12,6 +14,8 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </Router>
   );

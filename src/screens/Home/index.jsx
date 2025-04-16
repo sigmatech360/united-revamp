@@ -473,7 +473,9 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="sec-head">
-                <p className="sec-head-tag label-yellow-bg">ADDITIONAL RESOURCES</p>
+                <p className="sec-head-tag label-yellow-bg">
+                  ADDITIONAL RESOURCES
+                </p>
                 <h2>Our Recent Blogs Covering Latest Industry News</h2>
                 <p>
                   Stay informed about all the latest happenings in the digital
@@ -497,9 +499,7 @@ const Home = () => {
                       <h4>By: {item.meta.author}</h4>
                       <p>{item.meta.date}</p>
                     </div>
-                    <p className="blog-card__content-title">
-                      {item.title}
-                    </p>
+                    <p className="blog-card__content-title">{item.title}</p>
                   </div>
                 </div>
               </div>

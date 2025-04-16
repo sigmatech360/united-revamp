@@ -7,11 +7,11 @@ import logo from "../../../assets/images/logo.png";
 const navLinks = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", path: "/about" },
-  { label: "SERVICES", path: "/services" },
+  { label: "SERVICES", path: "" },
   { label: "PRICING", path: "/pricing" },
-  { label: "PORTFOLIO", path: "/portfolio" },
-  { label: "BLOGS", path: "/blogs" },
-  { label: "CONTACT US", path: "/contact" },
+  { label: "PORTFOLIO", path: "" },
+  { label: "BLOGS", path: "" },
+  { label: "CONTACT US", path: "" },
 ];
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
             ))}
           </Nav>
 
-          <Link to={"/login"} className="theme-btn theme-btn__yellow">
+          <Link to={""} className="theme-btn theme-btn__yellow">
             {" "}
             Get In Touch
           </Link>

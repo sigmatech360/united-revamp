@@ -3,7 +3,7 @@ import React from "react";
 const InnerBanner = (props) => {
   return (
     <section
-      className="inner-banner"
+      className={`inner-banner ${props.className}`}
       style={{ backgroundImage: `url(${props.bgImage})` }}
     >
       <div className="container">
