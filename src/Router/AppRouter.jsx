@@ -4,6 +4,8 @@ import Home from "../screens/Home";
 import About from "../screens/About";
 import Pricing from "../screens/Pricing";
 import ContactUs from "../screens/ContactUs";
+import Portfolio from "../screens/Portfolio";
+import Blogs from "../screens/Blogs";
 
 // Import your components/pages
 
@@ -15,6 +17,8 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </Router>

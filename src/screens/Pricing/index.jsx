@@ -13,7 +13,8 @@ const Pricing = () => {
       <DefaultLayout>
         <InnerBanner
           bgImage={aboutbannerbg}
-          title="Work With A Leading Full-Service Design Agency"
+          title="Unlock Your Brand's Potential With Custom Design Packages"
+          description="Experience tailored graphic design solutions that elevate your brand, with custom packages and transparent pricing from Logo Poppin."
         />
         <section className="pricing-sec">
           <div className="container">

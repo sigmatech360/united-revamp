@@ -595,7 +595,7 @@ p {
   background-position: center;
 }
 .inner-banner-content h1 {
-  font-size: 55px;
+  font-size: 54px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -951,6 +951,217 @@ p {
   padding: 12px 16px;
   color: #191919;
   border-radius: 30px;
+}
+.contact-form .form-control:hover,
+.contact-form .form-control:focus {
+  box-shadow: unset;
+  outline: unset;
+  border-color: #707070;
+}
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 70px 25px 50px;
+  border-radius: 16px;
+}
+
+.contact-form-information {
+  height: 100%;
+  background-color: #191919;
+  color: #fff;
+  padding: 25px 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactForm-icons-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contactForm-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contactForm-icons-text .contactForm-icon {
+  width: 40px;
+}
+.contactForm-icons-text .contactForm-icon img {
+  width: 100%;
+}
+.contactForm-icons-textContent {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.contact-form-information h3 {
+  font-size: 30px;
+  color: #d7ff00;
+  font-weight: 600;
+}
+.contact-form-information p {
+  font-size: 16px;
+}
+
+.portfolio-content-sec {
+  margin: 60px 0;
+}
+.portfolio-content-title h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px !important;
+}
+.portfolio-content-title p {
+  font-size: 16px;
+}
+
+.portfolio-content-title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portfolio-content-image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 10px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.portfolio-content-image img {
+  width: 340px;
+  object-fit: contain;
+  object-position: center;
+  height: 290px;
+}
+
+.portfolio-content-row {
+  border-bottom: 1px solid #707070;
+  padding: 50px 0 30px;
+}
+.portfolio-content-row:first-child {
+  padding-top: 0;
+}
+.portfolio-content-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.portfolio-content-sec .sec-head {
+  text-align: center;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.portfolio-content-sec .sec-head h2 {
+  font-size: 42px;
+}
+
+.portfolio-content-sec .sec-head p {
+  max-width: 619px;
+  margin: 0 auto;
+}
+
+/* Portfolio */
+
+.services-box-content {
+  color: #fff;
+  padding: 10px;
+}
+.services-box-content img {
+  width: 200px;
+}
+.services-box-1 .services-box-content,
+.services-box-3 .services-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.services-box-1 {
+  background-color: #333333;
+}
+.services-box-3 {
+  background-color: #50b294;
+  color: #fff;
+}
+.services-box-2 .services-box-content,
+.services-box-4 .services-box-content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.services-box-content-2-1 {
+  background-color: #0c389f;
+}
+
+.services-box-content-2-2 {
+  background-color: #799f0c;
+}
+
+.services-box-content-4-1 {
+  background-color: #0c389f;
+}
+
+.services-box-content-4-2 {
+  background-color: #9f160c;
+}
+
+.services-box-2,
+.services-box-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.services-box-1,
+.services-box-2,
+.services-box-3,
+.services-box-4 {
+  height: 100%;
+}
+
+.services-boxes {
+  display: flex;
+}
+
+.search-blogs-box {
+  background-color: #191919;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.search-blogs-box .form-control {
+  background-color: #242424;
+  color: #fff;
+  border: 0;
+  padding: 17px 0px 17px 25px;
+}
+.search-blogs-box .form-control::placeholder {
+  color: #fff;
+}
+.search-blogs-box .form-control:focus {
+  box-shadow: unset;
+  border: 0;
+}
+
+.search-blogs-box .theme-btn__yellow {
+  padding: 0 30px;
+}
+
+.search-blogs-box .input-group {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.search-blogs-box .form-label {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
 }
 /* Inner Pages Css */
 

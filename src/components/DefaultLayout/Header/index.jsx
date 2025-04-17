@@ -9,9 +9,9 @@ const navLinks = [
   { label: "ABOUT", path: "/about" },
   { label: "SERVICES", path: "" },
   { label: "PRICING", path: "/pricing" },
-  { label: "PORTFOLIO", path: "" },
-  { label: "BLOGS", path: "" },
-  { label: "CONTACT US", path: "" },
+  { label: "PORTFOLIO", path: "/portfolio" },
+  { label: "BLOGS", path: "/blogs" },
+  { label: "CONTACT US", path: "/contact-us" },
 ];
 
 const Header = () => {

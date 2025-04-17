@@ -3,6 +3,9 @@ import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
 import contactusbannerbg from "../../assets/images/contactus-banner-bg.png";
+import phoneicon from "../../assets/images/phone-icon.png";
+import emailicon from "../../assets/images/email-icon.png";
+import addressicon from "../../assets/images/address-icon.png";
 
 const ContactUs = () => {
   return (
@@ -72,7 +75,7 @@ const ContactUs = () => {
                       placeholder="Budget in USD"
                     />
                   </div>
-                  <div className="col-md-12 mb-3">
+                  <div className="col-md-12 mb-5">
                     <textarea
                       class="form-control"
                       placeholder="Talk about your project"
@@ -91,10 +94,54 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6"></div>
+            <div className="col-lg-6">
+              <div className="contact-form-information">
+                <h3>Contact Information</h3>
+                <p>
+                  2114 N, Flamingo Road, <br /> Pembroke Pines, FL, 33028
+                </p>
+                <div className="contactForm-details">
+                  <div className="contactForm-icons-text">
+                    <div className="contactForm-icon">
+                      <img src={phoneicon} alt="" />
+                    </div>
+                    <a
+                      href="tel:(619) 326-6066"
+                      className="contactForm-icons-textContent"
+                    >
+                      (619) 326-6066
+                    </a>
+                  </div>
+                  <div className="contactForm-icons-text">
+                    <div className="contactForm-icon">
+                      <img src={emailicon} alt="" />
+                    </div>
+                    <a
+                      href="mailto:support@unitedwebdevelopers.com"
+                      className="contactForm-icons-textContent"
+                    >
+                      support@unitedwebdevelopers.com
+                    </a>
+                  </div>
+                  <div className="contactForm-icons-text">
+                    <div className="contactForm-icon">
+                      <img src={addressicon} alt="" />
+                    </div>
+                    <p className="contactForm-icons-textContent">
+                      2114 N, Flamingo Road, Pembroke Pines, FL, 33028
+                    </p>
+                  </div>
+                </div>
+
+                <hr />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+
+      
     </DefaultLayout>
   );
 };
