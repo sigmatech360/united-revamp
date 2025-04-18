@@ -2,6 +2,34 @@ import blogimg1 from "./assets/images/blog-img-1.png";
 import blogimg2 from "./assets/images/blog-img-2.png";
 import blogimg3 from "./assets/images/blog-img-3.png";
 
+import brandingimg1 from "./assets/images/branding-img-1.png";
+import brandingimg2 from "./assets/images/branding-img-2.png";
+import brandingimg3 from "./assets/images/branding-img-3.png";
+
+import webdesignimg1 from "./assets/images/web-design-img-1.png";
+import webdesignimg2 from "./assets/images/web-design-img-2.png";
+import webdesignimg3 from "./assets/images/web-design-img-3.png";
+
+import bookcoverimg1 from "./assets/images/book-cover-img-1.png";
+import bookcoverimg2 from "./assets/images/book-cover-img-2.png";
+import bookcoverimg3 from "./assets/images/book-cover-img-3.png";
+
+import packagingdesignimg1 from "./assets/images/packaging-design-img-1.png";
+import packagingdesignimg2 from "./assets/images/packaging-design-img-2.png";
+import packagingdesignimg3 from "./assets/images/packaging-design-img-3.png";
+
+import smimg1 from "./assets/images/sm-img-1.png";
+import smimg2 from "./assets/images/sm-img-2.png";
+import smimg3 from "./assets/images/sm-img-3.png";
+
+import graphicdesignimg1 from "./assets/images/graphic-design-img-1.png";
+import graphicdesignimg2 from "./assets/images/graphic-design-img-2.png";
+import graphicdesignimg3 from "./assets/images/graphic-design-img-3.png";
+
+import videoanimationimg1 from "./assets/images/video-animation-img-1.png";
+import videoanimationimg2 from "./assets/images/video-animation-img-2.png";
+import videoanimationimg3 from "./assets/images/video-animation-img-3.png";
+
 import boxheadicon from "./assets/images/box-head-icon.png";
 
 import achievementimg1 from "./assets/images/achievement-img1.png";
@@ -389,3 +417,215 @@ export const portfolioData = [
     ],
   },
 ];
+
+
+export const blogCategoriesData = [
+  {
+    category: "Logo Design",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: blogimg1,
+        category: "Logo Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: blogimg2,
+        category: "Logo Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: blogimg3,
+        category: "Logo Design"
+      },
+    ]
+  },
+  {
+    category: "Branding",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: brandingimg1,
+        category: "Branding"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: brandingimg2,
+        category: "Branding"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: brandingimg3,
+        category: "Branding"
+      },
+    ]
+  },
+  {
+    category: "Web Design",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: webdesignimg1,
+        category: "Web Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: webdesignimg2,
+        category: "Web Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: webdesignimg3,
+        category: "Web Design"
+      },
+    ]
+  },
+  {
+    category: "Book Cover",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: bookcoverimg1,
+        category: "Book Cover"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: bookcoverimg2,
+        category: "Book Cover"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: bookcoverimg3,
+        category: "Book Cover"
+      },
+    ]
+  },
+  {
+    category: "Packaging Design",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: packagingdesignimg1,
+        category: "Packaging Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: packagingdesignimg2,
+        category: "Packaging Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: packagingdesignimg3,
+        category: "Packaging Design"
+      },
+    ]
+  },
+  {
+    category: "Social Media",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: smimg1,
+        category: "Social Media"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: smimg2,
+        category: "Social Media"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: smimg3,
+        category: "Social Media"
+      },
+    ]
+  },
+  {
+    category: "Graphic Design",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: graphicdesignimg1,
+        category: "Graphic Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: graphicdesignimg2,
+        category: "Graphic Design"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: graphicdesignimg3,
+        category: "Graphic Design"
+      },
+    ]
+  },
+  {
+    category: "Video Animation",
+    blogs: [
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: videoanimationimg1,
+        category: "Video Animation"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: videoanimationimg2,
+        category: "Video Animation"
+      },
+      {
+        title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
+        description: "Lorem Ipsum doller",
+        date: "March 18, 2025",
+        image: videoanimationimg3,
+        category: "Video Animation"
+      },
+    ]
+  },
+]

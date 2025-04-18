@@ -8,7 +8,7 @@ const MainBanner = () => {
     <section className='main-banner'>
       <div className="container">
         <div className="row justify-content-center">
-            <div className="col-lg-7">
+            <div className="col-xxl-7 col-xl-8 col-lg-9">
                 <div className="main-banner__content">
                     <h1>Graphic Design Agency For Modern Brands!</h1>
                     <p>We are a new age graphic design agency that help brands to look creative & bold using our cutting-edge design & branding services.</p>

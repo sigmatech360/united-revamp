@@ -6,6 +6,8 @@ import Pricing from "../screens/Pricing";
 import ContactUs from "../screens/ContactUs";
 import Portfolio from "../screens/Portfolio";
 import Blogs from "../screens/Blogs";
+import PrivacyPolicy from "../screens/PrivacyPolicy";
+import TermsAndConditions from "../screens/TermsAndConditions";
 
 // Import your components/pages
 
@@ -20,6 +22,8 @@ const AppRouter = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </Router>
   );

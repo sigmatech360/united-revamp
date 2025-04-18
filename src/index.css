@@ -172,6 +172,7 @@ p {
 }
 .graphic-design-agency .sec-head h2 {
   font-size: 50px;
+  line-height: 1.2;
   margin-bottom: 12px !important;
 }
 .graphic-design-agency .sec-head p {
@@ -1129,6 +1130,10 @@ p {
   display: flex;
 }
 
+.search-blogs {
+  margin-top: -70px;
+}
+
 .search-blogs-box {
   background-color: #191919;
   padding: 30px 30px;
@@ -1137,7 +1142,7 @@ p {
 }
 
 .search-blogs-box .form-control {
-  background-color: #242424;
+  background-color: transparent;
   color: #fff;
   border: 0;
   padding: 17px 0px 17px 25px;
@@ -1148,21 +1153,178 @@ p {
 .search-blogs-box .form-control:focus {
   box-shadow: unset;
   border: 0;
+  background-color: transparent;
+  color: #fff;
 }
 
 .search-blogs-box .theme-btn__yellow {
-  padding: 0 30px;
+  padding: 0 40px;
+  border-radius: 30px !important;
 }
-
 .search-blogs-box .input-group {
   overflow: hidden;
   border-radius: 30px;
+  background-color: #242424;
 }
 
 .search-blogs-box .form-label {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
 }
+
+.blog-categories__card {
+  background-color: #191919;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.blog-categories__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-categories__card .blog-categories__card-head img {
+  transition: transform 0.4s ease;
+}
+
+.blog-categories__card:hover .blog-categories__card-head img {
+  transform: scale(1.05);
+}
+
+.blog-categories__card-body,
+.blog-categories__card-footer {
+  padding: 16px;
+}
+
+.blog-categories__card-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-top: 1px solid #fff;
+  font-size: 16px;
+}
+
+.blog-categories__card-body-category {
+  color: #d7ff00;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 10px !important;
+  font-weight: 400;
+}
+
+.blog-categories__card-body-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog-categories__card-footer svg {
+  color: #d7ff00;
+}
+
+.blog-categories__card-head {
+  overflow: hidden;
+}
+
+.blog-categories__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.blog-categories__head h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.blog-categories-row {
+  margin-top: 40px !important;
+  margin-bottom: 40px;
+}
+
+.single-blog__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.single-blog__card-img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.single-blog__card-img img {
+  width: 100%;
+}
+.single-blog__card-body {
+  padding: 16px;
+}
+
+.single-blog__card-body-category {
+  background-color: #d7ff00;
+  color: #191919;
+  width: max-content;
+  white-space: nowrap;
+  padding: 3px 20px;
+  border-radius: 30px;
+  margin: 0 0 0 auto;
+}
+
+.single-blog__card-footer-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.single-blog__card-body-title {
+  font-size: 31px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 16px 0 20px !important;
+}
+
+.single-blog__card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.single-blog-sec {
+  margin: 60px 0;
+}
+
+/* Terms And Condition */
+.privacy-policy-sec {
+  margin: 60px 0;
+}
+
+.privacy-policy-content {
+  margin-bottom: 30px;
+}
+.privacy-policy-content h2 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #191919;
+  margin-bottom: 10px !important;
+}
+
+.privacy-policy-content p a {
+  color: #031243;
+  text-decoration: none;
+  font-size: 18px;
+}
+.privacy-policy-content p{
+  margin-bottom: 12px !important;
+}
+
+
+.privacy-policy-content ul li,
+.privacy-policy-content p {
+  color: #191919;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* Terms And Condition */
 /* Inner Pages Css */
 
 /* Main Footer */
@@ -1257,4 +1419,120 @@ p {
   line-height: 1.2;
   margin-bottom: 40px !important;
   text-transform: capitalize;
+}
+
+/* Media quries */
+
+@media (max-width: 1399px) {
+  .our-work-process__container {
+    background-position: 45% 44%;
+    background-size: 82%;
+  }
+}
+@media (max-width: 1199px) {
+  .our-work-process__item h1 {
+    font-size: 79px;
+  }
+  .our-work-process__container {
+    background-position: 47% 43%;
+    background-size: 83%;
+  }
+  .our-work-process__item {
+    gap: 5px;
+  }
+
+  .graphic-design-agency .sec-head h2 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 991px) {
+  .our-work-process__item h1 {
+    font-size: 63px;
+  }
+  .our-work-process__container {
+    background-position: 46% 41%;
+    background-size: 83%;
+  }
+  .our-work-process .sec-head h2 {
+    font-size: 39px;
+  }
+  .graphic-design-agency .sec-head p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .main-banner {
+    padding: 130px 0 60px;
+  }
+  .main-banner__content h1 {
+    font-size: 44px;
+  }
+  .main-banner__content p {
+    font-size: 15px;
+  }
+  .main-banner__content {
+    gap: 9px;
+  }
+  .our-work-process__container {
+    background-position: 45% 37%;
+    background-size: 82%;
+  }
+  .our-work-process__item h1 {
+    font-size: 49px;
+  }
+  .our-work-process {
+    padding: 100px 0 40px;
+  }
+
+  .graphic-design-agency .sec-head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .graphic-design-agency .sec-head .sec-head-tag {
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 575px) {
+  .main-banner__content h1 {
+    font-size: 37px;
+  }
+  .main-banner__content p {
+    font-size: 16px;
+  }
+  .our-work-process__container {
+    background: unset;
+  }
+}
+@media (max-width: 480px) {
+  .bottom-ad img {
+    width: 100%;
+    height: auto;
+  }
+  .our-work-process .sec-head p {
+    font-size: 15px;
+  }
+  .our-work-process-last-p {
+    max-width: unset;
+    font-size: 14px;
+  }
+
+  .our-work-process__item h1 {
+    font-size: 30px;
+  }
+  .our-work-process__item p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 430px) {
+  .our-work-process .sec-head h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 400px) {
+  .our-work-process .sec-head h2 {
+    font-size: 30px;
+  }
 }
