@@ -34,6 +34,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
 import { blogsData } from "../../data";
+import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -259,7 +260,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="our-work-process">
+      {/* <section className="our-work-process">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -304,7 +305,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <OurWorkProcessSec />
 
       <section className="home-testimonial-sec">
         <div className="container">

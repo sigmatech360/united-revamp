@@ -8,6 +8,7 @@ import Portfolio from "../screens/Portfolio";
 import Blogs from "../screens/Blogs";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
 import TermsAndConditions from "../screens/TermsAndConditions";
+import Services from "../screens/Services";
 
 // Import your components/pages
 
@@ -18,6 +19,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blogs" element={<Blogs />} />

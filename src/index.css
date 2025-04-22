@@ -1313,10 +1313,9 @@ p {
   text-decoration: none;
   font-size: 18px;
 }
-.privacy-policy-content p{
+.privacy-policy-content p {
   margin-bottom: 12px !important;
 }
-
 
 .privacy-policy-content ul li,
 .privacy-policy-content p {
@@ -1325,6 +1324,280 @@ p {
   font-size: 16px;
 }
 /* Terms And Condition */
+
+/* Services page Css Start */
+.services-banner-sec {
+  padding: 170px 0 60px;
+  background-size: cover;
+  background-position: center;
+}
+.services-banner__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.services-banner__content .main-banner__content-btns {
+  justify-content: start;
+}
+.services-banner__content h1 {
+  font-size: 50px;
+}
+.main-banner__content-imgs {
+  max-width: 450px;
+}
+.services-banner__content p {
+  font-size: 16px;
+}
+
+.services-about__sec {
+  margin: 60px 0;
+}
+
+.services-about__content h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.services-about__content p {
+  font-size: 16px;
+}
+
+.services-about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.web-design__company {
+  background-image: url(assets/images/footer-bg-img.png);
+  background-size: cover;
+  background-position: top center;
+  padding: 120px 0 60px;
+}
+
+.web-design__company .sec-head {
+  text-align: center;
+  color: #fff;
+  max-width: 850px;
+  margin: 0 auto 40px;
+}
+
+.web-design__company .sec-head h2 {
+  font-size: 50px;
+  margin-bottom: 10px !important;
+}
+
+.web-design__company .sec-head .sec-head-tag {
+  margin: 0 auto 10px !important;
+}
+
+.web-design__p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.powerfull-tool__sec {
+  margin: 60px 0;
+}
+
+.powerfull-tool__sec .sec-head {
+  margin-bottom: 40px;
+}
+
+.powerfull-tool__sec .sec-head h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 8px !important;
+}
+
+.powerfull-tool__sec .sec-head p {
+  font-size: 16px;
+}
+
+.powerfull-tool__contant-icon {
+  max-width: 100px;
+}
+
+.powerfull-tool__contant-icon img {
+  width: 100%;
+}
+
+.powerfull-tool__contant h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.powerfull-tool__contant p {
+  font-size: 16px;
+}
+
+.powerfull-tool__contant-btnText {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.powerfull-tool__contant-btnText p {
+  max-width: 310px;
+  line-height: 1.2;
+}
+
+.powerfull-tool__contant {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.powerfull-tool__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.powerfull-tool__box {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 16px;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.powerfull-tool__box p {
+  font-size: 16px;
+  max-width: 151px;
+  min-height: 42px;
+  line-height: 1.3;
+}
+
+.powerfull-tool__box h1 {
+  font-size: 76px;
+  font-weight: 700;
+}
+
+.adobe-photoshop__sec {
+  padding: 120px 0 60px;
+  background-image: url(assets/images/adobe-photo-sec-bg.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.adobe-photoshop__sec .sec-head {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.adobe-photoshop__sec .sec-head h2 {
+  font-size: 50px;
+}
+
+.adobe-photoshop__sec .sec-head p {
+  font-size: 16px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.adobe-photoshop__sec {
+  padding: 120px 0 60px;
+}
+.adobe-photoshop__sec .sec-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.adobe-photoshop__sec .sec-head h2 {
+  font-size: 50px;
+}
+.adobe-photoshop__sec .sec-head p {
+  font-size: 16px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.adobe-photoshop__content-title h3 {
+  color: #d7ff00;
+  font-size: 40px;
+}
+.adobe-photoshop__content-title p {
+  color: #fff;
+  margin-top: 14px;
+}
+
+.our-work-process__bgWhite {
+  background-image: unset;
+  padding: 60px 0;
+}
+.our-work-process__bgWhite .sec-head-tag {
+  background-color: #d7ff00;
+  color: #191919;
+}
+.our-work-process__bgWhite .sec-head,
+.our-work-process__bgWhite .our-work-process__item h1,
+.our-work-process__bgWhite .our-work-process__item p,
+.our-work-process__bgWhite .our-work-process-last-p {
+  color: #000;
+}
+
+.one-stop-web {
+  padding: 150px 0 60px;
+  background-image: url(assets/images/one-stop-website-bg.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.one-stop-web__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.one-stop-web__box {
+  background-color: #fff;
+  padding: 36px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+}
+
+.one-stop-web__leftContent .sec-head {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.one-stop-web__box-icon {
+  width: 50px;
+}
+
+.one-stop-web__box-icon img {
+  width: 100%;
+}
+
+.one-stop-web__box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.one-stop-web__box p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.one-stop-web__leftContent .sec-head h2 {
+  font-size: 50px;
+  margin-bottom: 16px !important;
+  line-height: 1.2;
+}
+
+.one-stop-web__leftContent .sec-head p {
+  font-size: 16px;
+}
+/* Services page Css End */
+
 /* Inner Pages Css */
 
 /* Main Footer */

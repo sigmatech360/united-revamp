@@ -76,6 +76,20 @@ import websitedesignimg2 from "./assets/images/portfolio/website-design-img-2.pn
 import websitedesignimg3 from "./assets/images/portfolio/website-design-img-3.png";
 import websitedesignimg4 from "./assets/images/portfolio/website-design-img-4.png";
 
+import adobephotoshopcardbg from "./assets/images/portfolio/adobe-photoshop-card-bg.png";
+import adobephotoshopimg3 from "./assets/images/portfolio/adobe-photoshop-img-3.png";
+
+import designlayouticon from "./assets/images/design-layout-icon.png";
+import mulltiplecmsicon from "./assets/images/mulltiple-cms-icon.png";
+import numofpagesicon from "./assets/images/num-of-pages-icon.png";
+import multiiterationicon from "./assets/images/multi-iteration-icon.png";
+import seofriendlyicon from "./assets/images/seo-friendly-icon.png";
+
+import webdesignsupportimg1 from "./assets/images/web-design-support-img1.png";
+import webdesignsupportimg2 from "./assets/images/web-design-support-img2.png";
+import webdesignsupportimg3 from "./assets/images/web-design-support-img3.png";
+import webdesignsupportimg4 from "./assets/images/web-design-support-img4.png";
+
 export const blogsData = [
   {
     id: 1,
@@ -418,7 +432,6 @@ export const portfolioData = [
   },
 ];
 
-
 export const blogCategoriesData = [
   {
     category: "Logo Design",
@@ -428,23 +441,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: blogimg1,
-        category: "Logo Design"
+        category: "Logo Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: blogimg2,
-        category: "Logo Design"
+        category: "Logo Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: blogimg3,
-        category: "Logo Design"
+        category: "Logo Design",
       },
-    ]
+    ],
   },
   {
     category: "Branding",
@@ -454,23 +467,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: brandingimg1,
-        category: "Branding"
+        category: "Branding",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: brandingimg2,
-        category: "Branding"
+        category: "Branding",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: brandingimg3,
-        category: "Branding"
+        category: "Branding",
       },
-    ]
+    ],
   },
   {
     category: "Web Design",
@@ -480,23 +493,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: webdesignimg1,
-        category: "Web Design"
+        category: "Web Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: webdesignimg2,
-        category: "Web Design"
+        category: "Web Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: webdesignimg3,
-        category: "Web Design"
+        category: "Web Design",
       },
-    ]
+    ],
   },
   {
     category: "Book Cover",
@@ -506,23 +519,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: bookcoverimg1,
-        category: "Book Cover"
+        category: "Book Cover",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: bookcoverimg2,
-        category: "Book Cover"
+        category: "Book Cover",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: bookcoverimg3,
-        category: "Book Cover"
+        category: "Book Cover",
       },
-    ]
+    ],
   },
   {
     category: "Packaging Design",
@@ -532,23 +545,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: packagingdesignimg1,
-        category: "Packaging Design"
+        category: "Packaging Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: packagingdesignimg2,
-        category: "Packaging Design"
+        category: "Packaging Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: packagingdesignimg3,
-        category: "Packaging Design"
+        category: "Packaging Design",
       },
-    ]
+    ],
   },
   {
     category: "Social Media",
@@ -558,23 +571,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: smimg1,
-        category: "Social Media"
+        category: "Social Media",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: smimg2,
-        category: "Social Media"
+        category: "Social Media",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: smimg3,
-        category: "Social Media"
+        category: "Social Media",
       },
-    ]
+    ],
   },
   {
     category: "Graphic Design",
@@ -584,23 +597,23 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: graphicdesignimg1,
-        category: "Graphic Design"
+        category: "Graphic Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: graphicdesignimg2,
-        category: "Graphic Design"
+        category: "Graphic Design",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: graphicdesignimg3,
-        category: "Graphic Design"
+        category: "Graphic Design",
       },
-    ]
+    ],
   },
   {
     category: "Video Animation",
@@ -610,22 +623,117 @@ export const blogCategoriesData = [
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: videoanimationimg1,
-        category: "Video Animation"
+        category: "Video Animation",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: videoanimationimg2,
-        category: "Video Animation"
+        category: "Video Animation",
       },
       {
         title: "Hawkeye Logo: Marvel’s Most Iconic Archery Insignia",
         description: "Lorem Ipsum doller",
         date: "March 18, 2025",
         image: videoanimationimg3,
-        category: "Video Animation"
+        category: "Video Animation",
       },
-    ]
+    ],
+  },
+];
+
+export const adobePhotoshopSecData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: adobephotoshopimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg1,
+  },
+];
+
+export const oneStopWebBoxesData = [
+  {
+    id: 1,
+    icon: designlayouticon,
+    title: "Design Layout",
+    description:
+      "Our experts are well versed, in working with different types of design layouts, giving you the best front-end solution.",
+  },
+  {
+    id: 2,
+    icon: mulltiplecmsicon,
+    title: "Multiple CMS Platform",
+    description:
+      "Whether it’s WordPress or Shopify, we help you to create impactful websites on multiple CMS platforms.",
+  },
+  {
+    id: 3,
+    icon: numofpagesicon,
+    title: "Number of Pages",
+    description:
+      "It doesn’t matter how many pages your website requires, our web design agency has got the adequate expertise to handle a full-scale website with ease.",
+  },
+  {
+    id: 4,
+    icon: multiiterationicon,
+    title: "Multiple Iterations",
+    description:
+      "With multiple iterations , and revisions of the websites, we ensure optimum project quality for our valued customers.",
+  },
+  {
+    id: 5,
+    icon: seofriendlyicon,
+    title: "SEO Friendly Website",
+    description:
+      "Need to get ranked on Google? No worries, because we create smart website designs as per the guidelines of SEO.",
+  },
+  {
+    id: 6,
+    icon: multiiterationicon,
+    title: "Website Maintenance",
+    description:
+      "Being a customer-centric web design company, we offer everlasting support to our clients by taking care of all the website maintenance issues.",
+  },
+];
+
+export const webDesignSupportData = [
+  {
+    id: 1,
+    image: webdesignsupportimg1,
+    title: "360 Web Design Package",
+    shortDescription: "With a complete package of full-scale website design services, we give your online identity a strong edge in the market."
+  },
+  {
+    id: 2,
+    image: webdesignsupportimg2,
+    title: "Fully Responsive",
+    shortDescription: "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms."
+  },
+  {
+    id: 3,
+    image: webdesignsupportimg3,
+    title: "Custom Code Design",
+    shortDescription: "With a complete package of full-scale website design services, we give your online identity a strong edge in the market."
+  },
+  {
+    id: 4,
+    image: webdesignsupportimg4,
+    title: "Dedicated Project Support",
+    shortDescription: "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements."
   },
 ]
