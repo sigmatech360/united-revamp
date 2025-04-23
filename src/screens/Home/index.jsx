@@ -30,11 +30,11 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import Accordion from "react-bootstrap/Accordion";
-
 import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
 import { blogsData } from "../../data";
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
+import FAQSection from "../../components/FAQSection";
+import BlogsSec from "../../components/BlogsSec";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -67,45 +67,6 @@ const testimonials = [
   },
 ];
 
-const faqsData = [
-  {
-    id: 1,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    id: 2,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    id: 3,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    id: 4,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    id: 5,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-  {
-    id: 6,
-    titla: "Lorem Ipsum is simply dummy text of the printing?",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  },
-];
-
 const Home = () => {
   return (
     <DefaultLayout>
@@ -114,7 +75,7 @@ const Home = () => {
       <section className="home-about-sec">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="home-about-img">
                 <img
                   src={homeAboutImg}
@@ -176,7 +137,7 @@ const Home = () => {
             <div className="col-md-12">
               <div className="row">
                 {gfxServices.map((service, index) => (
-                  <div className="col-lg-3 mb-5" key={index}>
+                  <div className="col-lg-3 col-md-6 mb-lg-5 mb-4" key={index}>
                     <div className="gfx-card">
                       <div className="gfx-card__content">
                         <img src={service.img} alt={service.title} />
@@ -259,53 +220,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="our-work-process">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <p className="sec-head-tag">OUR WORK PROCESS</p>
-                <h2>How We Turn Imagination Into Reality</h2>
-                <p>
-                  Here’s how we produce perfection in graphics design so that
-                  your brand can take maximum advantage of increasing customer
-                  engagement.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="our-work-process__container">
-                <div className="our-work-process__item">
-                  <h1>01</h1>
-                  <p>Brief</p>
-                </div>
-                <div className="our-work-process__item">
-                  <h1>02</h1>
-                  <p>Ideation</p>
-                </div>
-                <div className="our-work-process__item">
-                  <h1>03</h1>
-                  <p>Sketch</p>
-                </div>
-                <div className="our-work-process__item">
-                  <h1>04</h1>
-                  <p>Execution</p>
-                </div>
-                <div className="our-work-process__item">
-                  <h1>05</h1>
-                  <p>Deliver</p>
-                </div>
-              </div>
-              <p className="our-work-process-last-p">
-                Taking the brainstorming session to the next stage, our
-                designers come up with various designing sketches converting
-                thoughts into real images.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <OurWorkProcessSec />
 
@@ -391,125 +305,14 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="faqs-sec">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <p className="sec-head-tag">FREQUENTLY ASKED QUESTIONS</p>
-                <h2>How We Turn Imagination Into Reality</h2>
-                <p>
-                  Common queries you want us to answer about our custom graphic
-                  design and other branding services.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="faqs-items">
-                <Accordion defaultActiveKey="0">
-                  {faqsData.map((item, index) => (
-                    <Accordion.Item eventKey={index.toString()} key={index}>
-                      <Accordion.Header>{item.titla}</Accordion.Header>
-                      <Accordion.Body>{item.description}</Accordion.Body>
-                    </Accordion.Item>
-                  ))}
-                </Accordion>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="faqs-form">
-                <div className="faqs-form-head">
-                  <h4>Want to Know More?</h4>
-                  <p>Send Us Your Queries Below</p>
-                </div>
-                <form action="#">
-                  <div className="faqs-form-items">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                    />
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your Email"
-                    />
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your phone number"
-                    />
-                    <select class="form-select form-control">
-                      <option selected>Select Services</option>
-                      <option value="1">Web Development</option>
-                      <option value="2">Graphic Designing</option>
-                      <option value="3">Digital Marketing</option>
-                    </select>
-                    <textarea
-                      class="form-control"
-                      placeholder="Discuss your project"
-                      rows={3}
-                      style={{ resize: "none" }}
-                    ></textarea>
-                    <div className="faqs-form-btn__div">
-                      <div className="faqs-form-btn__div-content">
-                        <p>Interested? Call Us Now</p>
-                        <a href="tel:+ 123 456 7890">+ 123 456 7890</a>
-                      </div>
-                      <button
-                        type="submit"
-                        className="theme-btn theme-btn__yellow"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQSection
+        secHeadrag="FREQUENTLY ASKED QUESTIONS"
+        title="How We Turn Imagination Into Reality"
+        description="Common queries you want us to answer about our custom graphic
+                design and other branding services."
+      />
 
-      <section className="blog-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <p className="sec-head-tag label-yellow-bg">
-                  ADDITIONAL RESOURCES
-                </p>
-                <h2>Our Recent Blogs Covering Latest Industry News</h2>
-                <p>
-                  Stay informed about all the latest happenings in the digital
-                  world, including the latest news about graphic designing, logo
-                  designing and more.
-                </p>
-              </div>
-            </div>
-            {blogsData.map((item, index) => (
-              <div className="col-lg-4">
-                <div className="blog-card">
-                  <div className="blog-card__image">
-                    <img
-                      src={item.img}
-                      className="img-fluid"
-                      alt="Blog Image"
-                    />
-                  </div>
-                  <div className="blog-card__content">
-                    <div className="blog-card__content-meta">
-                      <h4>By: {item.meta.author}</h4>
-                      <p>{item.meta.date}</p>
-                    </div>
-                    <p className="blog-card__content-title">{item.title}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BlogsSec />
     </DefaultLayout>
   );
 };

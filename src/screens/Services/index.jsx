@@ -29,9 +29,14 @@ const gfxServices = [
 import {
   adobePhotoshopSecData,
   oneStopWebBoxesData,
+  webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
+import ClientTestimonialSec from "../../components/ClientTestimonialSec";
+import FAQSection from "../../components/FAQSection";
+import BlogsSec from "../../components/BlogsSec";
 
 const Services = () => {
   return (
@@ -283,7 +288,7 @@ const Services = () => {
             <div className="col-md-6">
               <div className="one-stop-web__boxes">
                 {oneStopWebBoxesData.map((item, index) => (
-                  <div className="one-stop-web__box">
+                  <div className="one-stop-web__box" key={index}>
                     <div className="one-stop-web__box-icon">
                       <img src={item.icon} alt={item.title} />
                     </div>
@@ -315,7 +320,11 @@ const Services = () => {
               <div className="col-md-3" key={index}>
                 <div className="web-designing__support-box">
                   <div className="web-designing__support-box-img">
-                    <img src={item.image} className="img-fluid" alt={item.title} />
+                    <img
+                      src={item.image}
+                      className="img-fluid"
+                      alt={item.title}
+                    />
                   </div>
                   <div className="web-designing__support-box-content">
                     <h4>{item.title}</h4>
@@ -327,6 +336,53 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      <ClientTestimonialSec className="bgDark" />
+
+      <FAQSection
+        className="bgLight"
+        // secHeadrag=""
+        title="Frequently Asked Questions"
+        description="Common queries you want us to answer about our web design services.  "
+      />
+
+      <section className="web-design__guidelines">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="sec-head">
+                <p className="sec-head-tag">WEBSITE DESIGN GUIDELINES</p>
+                <h2>Our Recipe for Creating Impactful Website Designs</h2>
+                <p>
+                  We take pride in serving our customers with top-of-the-line
+                  web designs. Here’s how we do it with perfection in our
+                  projects.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-12">
+              <div className="webDesignGuidelinesDataRow">
+                <div className="row">
+                  {webDesignGuidelinesData.map((item, index) => (
+                    <div className="col-lg-4 mb-4" key={index}>
+                      <div className="web-design__guidelines-box">
+                        <div className="web-design__guidelines-box-icon">
+                          <img src={item.icon} alt={item.name} />
+                        </div>
+                        <h4>{item.name}</h4>
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <BlogsSec />
     </DefaultLayout>
   );
 };

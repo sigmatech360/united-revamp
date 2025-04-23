@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
           <div className="col-md-12">
             <div className="row">
-              <div className="col-lg-5">
+              <div className="col-xl-5 col-lg-4 mb-lg-0 mb-5">
                 <div className="main-footer__logo-content">
                   <div className="main-footer__logo">
                     <img src={logo} alt="United Revamp Developers" />
@@ -72,7 +72,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2">
+              <div className="col-lg-2 col-md-4 mb-md-0 mb-4">
                 <h2 className="main-footer__links-title">Company</h2>
                 <div className="main-footer__links">
                   {companyLinks.map((link, index) => (
@@ -86,8 +86,7 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-
-              <div className="col-lg-2">
+              <div className="col-lg-2 col-md-4 mb-md-0 mb-4">
                 <h2 className="main-footer__links-title">Services</h2>
                 <div className="main-footer__links">
                   {servicesLinks.map((link, index) => (
@@ -101,7 +100,7 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-xl-3 col-lg-4 col-md-4">
                 <h2 className="main-footer__links-title">Contact Us</h2>
                 <div className="main-footer__links">
                   <a href="tel:(619) 326-6066" className="main-footer-link">

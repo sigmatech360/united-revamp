@@ -90,6 +90,52 @@ import webdesignsupportimg2 from "./assets/images/web-design-support-img2.png";
 import webdesignsupportimg3 from "./assets/images/web-design-support-img3.png";
 import webdesignsupportimg4 from "./assets/images/web-design-support-img4.png";
 
+import webDesignGuideIcon1 from "./assets/images/web-design-guide-i1.png";
+import webDesignGuideIcon2 from "./assets/images/web-design-guide-i2.png";
+import webDesignGuideIcon3 from "./assets/images/web-design-guide-i3.png";
+import webDesignGuideIcon4 from "./assets/images/web-design-guide-i4.png";
+import webDesignGuideIcon5 from "./assets/images/web-design-guide-i5.png";
+import webDesignGuideIcon6 from "./assets/images/web-design-guide-i6.png";
+
+export const faqsData = [
+  {
+    id: 1,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 2,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 3,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 4,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 5,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    id: 6,
+    titla: "Lorem Ipsum is simply dummy text of the printing?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+];
+
 export const blogsData = [
   {
     id: 1,
@@ -716,24 +762,73 @@ export const webDesignSupportData = [
     id: 1,
     image: webdesignsupportimg1,
     title: "360 Web Design Package",
-    shortDescription: "With a complete package of full-scale website design services, we give your online identity a strong edge in the market."
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
   },
   {
     id: 2,
     image: webdesignsupportimg2,
     title: "Fully Responsive",
-    shortDescription: "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms."
+    shortDescription:
+      "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms.",
   },
   {
     id: 3,
     image: webdesignsupportimg3,
     title: "Custom Code Design",
-    shortDescription: "With a complete package of full-scale website design services, we give your online identity a strong edge in the market."
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
   },
   {
     id: 4,
     image: webdesignsupportimg4,
     title: "Dedicated Project Support",
-    shortDescription: "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements."
+    shortDescription:
+      "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
   },
-]
+];
+
+export const webDesignGuidelinesData = [
+  {
+    id: 1,
+    icon: webDesignGuideIcon1,
+    name: "Clean Design",
+    description:
+      "We believe in creating websites with simplicity. Whether it’s a one-page website or an ecommerce store, clean web design has always remained our preference to ensure top-notch website.",
+  },
+  {
+    id: 2,
+    icon: webDesignGuideIcon2,
+    name: "Catchy Buttons",
+    description:
+      "To attract maximum eyeballs, our web designs utilize catchy buttons made with unique layouts. It perfectly makes our CTAs look creative, allowing them to get more prominence on the page.",
+  },
+  {
+    id: 3,
+    icon: webDesignGuideIcon3,
+    name: "Optimized Images",
+    description:
+      "In order to make websites load faster, our web designers make sure to use optimized images. This allows our website designs to look clean and load quickly on the browsers.",
+  },
+  {
+    id: 4,
+    icon: webDesignGuideIcon4,
+    name: "Sticky Menu",
+    description:
+      "We implement sticky menus on the top of our web pages. It makes surfing over the website super easy, allowing everyone to navigate between pages swiftly.",
+  },
+  {
+    id: 5,
+    icon: webDesignGuideIcon5,
+    name: "Responsive Layout",
+    description:
+      "Using a responsive layout, we ensure to make our websites accessible on all platforms. Whether it's a smartphone or a laptop, our advanced responsive designs fit perfect for everyone.",
+  },
+  {
+    id: 6,
+    icon: webDesignGuideIcon6,
+    name: "Appealing Color Tone",
+    description:
+      "We know how to make website presentations impactful, especially by using creative color tone. That is where we beat out the competition in the market, making our web designs highly creative.",
+  },
+];
