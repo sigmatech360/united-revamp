@@ -46,8 +46,8 @@ const Services = () => {
         style={{ backgroundImage: `url(${aboutbannerbg})` }}
       >
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-7">
+          <div className="row align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-7">
               <div className="services-banner__content">
                 <h1>Website Design Services That Drives Brand Innovation</h1>
                 <p>
@@ -71,7 +71,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5">
+            <div className="col-lg-5">
               <div className="services-banner__img">
                 <img
                   src={servicesbannerimg}
@@ -140,7 +140,7 @@ const Services = () => {
             </div>
 
             {gfxServices.map((service, index) => (
-              <div className="col-lg-3 mb-5" key={index}>
+              <div className="col-lg-3 col-md-6 mb-5" key={index}>
                 <div className="gfx-card">
                   <div className="gfx-card__content">
                     <img src={service.img} alt={service.title} />
@@ -188,7 +188,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="powerfull-tool__contant">
                 <div className="powerfull-tool__contant-icon">
                   <img src={photoshopicon} alt="Photoshop Icon" />
@@ -237,7 +237,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-lg-4 col-md-6">
               <div className="adobe-photoshop__content-title">
                 <h3>Adobe Photoshop</h3>
                 <p>
@@ -248,7 +248,7 @@ const Services = () => {
             </div>
 
             {adobePhotoshopSecData.map((item, index) => (
-              <div className="col-md-4 mb-4" key={index}>
+              <div className="col-lg-4 col-md-6 mb-4" key={index}>
                 <div
                   className="portfolio-content-image"
                   style={{ backgroundImage: `url(${item.cardBG})` }}
@@ -266,7 +266,7 @@ const Services = () => {
       <section className="one-stop-web">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="one-stop-web__leftContent">
                 <div className="sec-head">
                   <h2>Your One-Stop Website Design Agency</h2>
@@ -285,7 +285,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="one-stop-web__boxes">
                 {oneStopWebBoxesData.map((item, index) => (
                   <div className="one-stop-web__box" key={index}>
@@ -317,7 +317,7 @@ const Services = () => {
             </div>
 
             {webDesignSupportData.map((item, index) => (
-              <div className="col-md-3" key={index}>
+              <div className="col-lg-3 col-md-6 mb-lg-0 mb-4" key={index}>
                 <div className="web-designing__support-box">
                   <div className="web-designing__support-box-img">
                     <img
@@ -365,7 +365,7 @@ const Services = () => {
               <div className="webDesignGuidelinesDataRow">
                 <div className="row">
                   {webDesignGuidelinesData.map((item, index) => (
-                    <div className="col-lg-4 mb-4" key={index}>
+                    <div className="col-lg-4 col-md-6 mb-4" key={index}>
                       <div className="web-design__guidelines-box">
                         <div className="web-design__guidelines-box-icon">
                           <img src={item.icon} alt={item.name} />

@@ -29,38 +29,38 @@ const ContactUs = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-lg-0 mb-md-5 mb-4">
               <div className="contact-form">
                 <div className="row">
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="First name"
                     />
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Last name"
                     />
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Enter email"
                     />
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Phone number"
                     />
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <select class="form-select form-control">
                       <option selected>Select Services</option>
                       <option value="1">Web Development</option>
@@ -68,7 +68,7 @@ const ContactUs = () => {
                       <option value="3">Digital Marketing</option>
                     </select>
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       className="form-control"

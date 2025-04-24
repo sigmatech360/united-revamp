@@ -8,7 +8,7 @@ const InnerBanner = (props) => {
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-xl-8 col-lg-9">
             <div className="inner-banner-content">
               <h1>{props.title}</h1>
               {props.description && <p>{props.description}</p>}

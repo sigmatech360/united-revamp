@@ -122,14 +122,14 @@ const Portfolio = () => {
 
           {portfolioData.map((item, index) => (
             <div className="row portfolio-content-row" key={index}>
-              <div className="col-md-4">
+              <div className="col-lg-4 col-md-6 mb-md-0 mb-4">
                 <div className="portfolio-content-title">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
               </div>
               {item.images.map((image, imageIndex) => (
-                <div className="col-md-4 mb-4" key={imageIndex}>
+                <div className="col-lg-4 col-md-6 mb-4" key={imageIndex}>
                   <div
                     className="portfolio-content-image"
                     style={{ backgroundImage: `url(${image.cardBG})` }}

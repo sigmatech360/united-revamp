@@ -13,7 +13,7 @@ const ClientTestimonialSec = (props) => {
     <section className={`client-testimonial client-testimonial__${props.className}`}>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="sec-head">
               <p className="sec-head-tag label-yellow-bg">
                 CLIENT TESTIMONIALS

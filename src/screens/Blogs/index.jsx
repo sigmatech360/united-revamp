@@ -94,7 +94,7 @@ const Blogs = () => {
                 </div>
               </div>
               {item.blogs.map((blogItem, blogIndex) => (
-                <div className="col-lg-4">
+                <div className="col-md-4 mb-md-0 mb-4" key={blogIndex}>
                   <BlogCategoriesCard
                     image={blogItem.image}
                     category={blogItem.category}

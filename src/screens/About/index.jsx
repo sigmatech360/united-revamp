@@ -29,7 +29,7 @@ const About = () => {
 
       <section className="about-sec">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center flex-lg-row flex-column-reverse">
             <div className="col-lg-6">
               <div className="about-sec__content">
                 <h2>About Our Company</h2>
@@ -52,7 +52,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mbl-lg-0 mb-4">
               <div className="about-sec__img">
                 <img src={aboutimg1} className="img-fluid" alt="About Us" />
               </div>
@@ -63,7 +63,7 @@ const About = () => {
 
       <section className="different-industries-client">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-md-12">
               <div className="sec-head">
                 <h2>Clients Across Different Industries</h2>
@@ -75,7 +75,7 @@ const About = () => {
               </div>
             </div>
             {clientIndustries.map((item, index) => (
-              <div className="col-lg-3 mb-4" key={index}>
+              <div className="col-xl-3 col-lg-4 col-md-6 mb-4" key={index}>
                 <div className="industries-client__content">
                   <div className="industries-client__content__head">
                     <div className="industries-client__content__img">

@@ -10,8 +10,7 @@ import PrivacyPolicy from "../screens/PrivacyPolicy";
 import TermsAndConditions from "../screens/TermsAndConditions";
 import Services from "../screens/Services";
 
-// Import your components/pages
-
+// Import your components/pages 
 
 const AppRouter = () => {
   return (

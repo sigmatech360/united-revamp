@@ -8,12 +8,12 @@ import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 
 const companyLinks = [
-  { name: "Home", path: "" },
-  { name: "About Us", path: "" },
-  { name: "Blog", path: "" },
-  { name: "Contact Us", path: "" },
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Blog", path: "/blogs" },
+  { name: "Contact Us", path: "/contact-us" },
   { name: "Resources", path: "" },
-  { name: "Services", path: "" },
+  { name: "Services", path: "/services" },
   { name: "Testimonials", path: "" },
   { name: "Business Tools", path: "" },
 ];
@@ -123,9 +123,9 @@ const Footer = () => {
             <div className="footer-copyright">
               <p>&copy; 2025 Your Company Name</p>
               <div className="footer-copyright_links">
-                <Link to={""}>Contact</Link>
-                <Link to={""}>Term of Use</Link>
-                <Link to={""}>Privacy</Link>
+                <Link to={"/contact-us"}>Contact</Link>
+                <Link to={"/terms-and-conditions"}>Term of Use</Link>
+                <Link to={"/privacy-policy"}>Privacy</Link>
                 <Link to={""}>Disclaimer</Link>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.png";
 
@@ -9,14 +9,12 @@ const navLinks = [
   { label: "ABOUT", path: "/about" },
   { label: "SERVICES", path: "/services" },
   { label: "PRICING", path: "/pricing" },
-  { label: "PORTFOLIO", path: "" },
+  { label: "PORTFOLIO", path: "/portfolio" },
   { label: "BLOGS", path: "/blogs" },
   { label: "CONTACT US", path: "/contact-us" },
 ];
 
 const Header = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
   return (
     <Navbar expand="lg" className="main-navbar" variant="dark">
       <Container>
@@ -36,7 +34,7 @@ const Header = () => {
             ))}
           </Nav>
 
-          <Link to={""} className="theme-btn theme-btn__yellow">
+          <Link to={""} className="theme-btn theme-btn__yellow header-getTouch__btn">
             {" "}
             Get In Touch
           </Link>

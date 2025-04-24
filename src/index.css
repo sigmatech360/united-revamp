@@ -115,6 +115,10 @@ p {
   width: 70%;
 }
 
+.header-getTouch__btn {
+  margin-left: 30px;
+}
+
 .main-banner {
   background-image: url(assets/images/main-banner-bg.png);
   background-size: cover;
@@ -653,6 +657,7 @@ p {
   font-size: 54px;
   font-weight: 400;
   line-height: 1.2;
+  margin-bottom: 10px !important  ;
 }
 
 .about-sec {
@@ -1106,6 +1111,7 @@ p {
   padding: 60px 10px;
   max-width: 360px;
   margin: 0 auto;
+  text-align: center;
 }
 .portfolio-content-image img {
   width: 340px;
@@ -1134,6 +1140,8 @@ p {
 
 .portfolio-content-sec .sec-head h2 {
   font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px !important;
 }
 
 .portfolio-content-sec .sec-head p {
@@ -1381,6 +1389,9 @@ p {
   color: #191919;
   margin-bottom: 10px !important;
 }
+.privacy-policy-content h3 {
+  margin-bottom: 10px !important;
+}
 
 .privacy-policy-content p a {
   color: #031243;
@@ -1389,6 +1400,12 @@ p {
 }
 .privacy-policy-content p {
   margin-bottom: 12px !important;
+}
+.privacy-policy-content ul {
+  padding-left: 20px;
+}
+.privacy-policy-content ul li::marker {
+  color: #d7ff00;
 }
 
 .privacy-policy-content ul li,
@@ -1642,12 +1659,16 @@ p {
   margin-bottom: 50px;
 }
 
-.one-stop-web__box-icon {
+/* .one-stop-web__box-icon {
   width: 50px;
-}
+} */
 
 .one-stop-web__box-icon img {
-  width: 100%;
+  /* width: 100%; */
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .one-stop-web__box h4 {
@@ -1696,6 +1717,7 @@ p {
   overflow: hidden;
   transition: all 0.25s linear;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px;
+  height: 100%;
 }
 
 .web-designing__support-box:hover {
@@ -1914,6 +1936,9 @@ p {
 /* Media quries */
 
 @media (max-width: 1399px) {
+  .blog-categories__card-footer {
+    font-size: 14px;
+  }
   .our-work-process__container {
     background-position: 45% 44%;
     background-size: 82%;
@@ -1924,6 +1949,28 @@ p {
   .gfx-global__content h2 {
     font-size: 52px;
   }
+  .industries-client__content p {
+    font-size: 14px;
+  }
+  .industries-client__content__head h3 {
+    font-size: 24px;
+  }
+
+  .services-banner__content h1 {
+    font-size: 40px;
+  }
+  .services-about__content h2 {
+    font-size: 40px;
+  }
+  .services-about__content p {
+    font-size: 15px;
+  }
+  .one-stop-web__leftContent .sec-head h2 {
+    font-size: 40px;
+  }
+  .one-stop-web__box p {
+    font-size: 15px;
+  }
 }
 @media (max-width: 1280px) {
   .main-footer {
@@ -1931,6 +1978,17 @@ p {
   }
 }
 @media (max-width: 1199px) {
+  .single-blog__card-body-title {
+    font-size: 25px;
+    margin: 12px 0 12px !important;
+  }
+  .single-blog__card-footer {
+    gap: 15px;
+  }
+  .blog-categories__card-body-title {
+    font-size: 15px;
+    line-height: 1.3;
+  }
   .our-work-process__item h1 {
     font-size: 79px;
   }
@@ -1985,8 +2043,128 @@ p {
     font-size: 15px !important;
     padding: 16px 5px !important;
   }
+  .about-sec__content h2 {
+    font-size: 45px;
+  }
+  .proudly-endorsed__images img {
+    max-width: 200px;
+  }
+
+  .client-testimonial .sec-head h2 {
+    font-size: 38px;
+  }
+  .about-sec__content p {
+    font-size: 14px;
+  }
+  .different-industries-client .sec-head h2 {
+    font-size: 45px;
+    margin-bottom: 10px !important;
+  }
+
+  .services-about__content h2 {
+    font-size: 33px;
+  }
+  .services-about__content p {
+    font-size: 14px;
+  }
+  .portfolio-content-image img {
+    width: 270px;
+    height: 270px;
+  }
+  .one-stop-web__box {
+    padding: 16px 16px;
+  }
+  .one-stop-web__box p {
+    font-size: 14px;
+  }
+  .one-stop-web__box h4 {
+    font-size: 17px;
+  }
+  .web-designing__support .sec-head h2 {
+    font-size: 40px;
+    margin-bottom: 10px !important;
+  }
+  .web-design__guidelines .sec-head h2 {
+    font-size: 40px;
+  }
+  .web-design__guidelines-box p {
+    font-size: 14px;
+  }
+  .web-design__guidelines-box h4 {
+    font-size: 24px;
+  }
+  .portfolio-content-image {
+    padding: 40px 10px;
+  }
+
+  .web-designing__support-box-content {
+    padding: 16px 10px;
+  }
+  .web-designing__support-box-content h4 {
+    font-size: 16px;
+  }
+  .web-designing__support-box-content p {
+    font-size: 14px;
+  }
+  .portfolio-content-title h3 {
+    font-size: 31px;
+    margin-bottom: 10px !important;
+  }
+  .portfolio-content-title p {
+    font-size: 15px;
+  }
 }
 @media (max-width: 991px) {
+  .web-design__guidelines-box{
+    border: 0;
+  }
+  .one-stop-web__leftContent .sec-head {
+    text-align: center;
+  }
+
+  .one-stop-web__img {
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+  .web-design__p {
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  .main-navbar .navbar-collapse {
+    background: #191919;
+    padding: 16px 16px;
+  }
+  .header-getTouch__btn {
+    margin-left: 0;
+  }
+  .search-blogs-box .form-control {
+    padding: 10px 0px 10px 20px;
+  }
+  .search-blogs-box .theme-btn__yellow {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .blog-categories__card-body,
+  .blog-categories__card-footer {
+    padding: 12px;
+  }
+  .blog-categories__card-footer {
+    font-size: 13px;
+  }
+  .blog-categories__card-body-title {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .blog-categories__card-body-category {
+    font-size: 14px;
+  }
+  .blog-categories__head h3 {
+    font-size: 35px;
+  }
+
+  .single-blog__card {
+    grid-template-columns: 1fr;
+  }
   .our-work-process__item h1 {
     font-size: 63px;
   }
@@ -2034,8 +2212,85 @@ p {
   .footer-main__title {
     font-size: 27px;
   }
+  .gfx-last-content {
+    margin-bottom: 40px !important;
+    text-align: center;
+  }
+  .about-sec__content {
+    align-items: center;
+    text-align: center;
+  }
+  .different-industries-client .sec-head h2 {
+    font-size: 40px;
+  }
+
+  .proudly-endorsed-sec .sec-head h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .proudly-endorsed__images img {
+    max-width: 160px;
+  }
+  .our-achievement-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .client-testimonial .sec-head {
+    max-width: unset;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .client-testimonial .sec-head .sec-head-tag {
+    margin: 0 auto;
+  }
+
+  .services-banner__content {
+    align-items: center;
+    text-align: center;
+  }
+  .services-about__content {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .services-banner__img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .services-banner-sec {
+    padding: 130px 0 40px;
+  }
 }
 @media (max-width: 767px) {
+  .privacy-policy-sec {
+    margin: 40px 0;
+  }
+  .blog-categories-row {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+  }
+  .search-blogs-box {
+    padding: 20px 20px;
+  }
+  .search-blogs {
+    margin-top: 30px;
+  }
+  .single-blog-sec {
+    margin: 40px 0;
+  }
+  .blog-categories__card-body-title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .blog-categories__card-footer {
+    font-size: 14px;
+  }
+  .blog-categories__card-body-category {
+    font-size: 15px;
+  }
+  .pricing-sec {
+    padding: 40px 0;
+  }
   .main-banner {
     padding: 130px 0 60px;
   }
@@ -2097,8 +2352,103 @@ p {
   .gfx-global__content h2 {
     font-size: 35px;
   }
+  .gfx-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .home-about-sec {
+    margin: 40px 0;
+  }
+  .graphic-design-agency {
+    padding: 90px 0 40px;
+  }
+  .home-portfolio-sec {
+    margin: 40px 0;
+  }
+  .home-testimonial-sec {
+    margin: 40px 0;
+  }
+  .gfx-global-sec {
+    margin: 40px 0;
+  }
+  .faqs-sec {
+    padding: 90px 0 40px;
+  }
+  .blog-sec {
+    margin: 40px 0;
+  }
+  .proudly-endorsed__images {
+    display: grid;
+    gap: 35px;
+    justify-content: center;
+  }
+  .proudly-endorsed__images img {
+    max-width: 260px;
+  }
+  .inner-banner-content h1 {
+    font-size: 40px;
+  }
+  .inner-banner {
+    padding: 150px 0 80px;
+  }
+  .proudly-endorsed-sec .sec-head h2 {
+    font-size: 35px;
+  }
+
+  .our-achievements {
+    padding: 40px 0 40px;
+    background-color: #191919;
+  }
+  .about-sec {
+    margin: 40px 0;
+  }
+  .proudly-endorsed-sec {
+    margin: 40px 0;
+  }
+  .client-testimonial__container .swiper:after {
+    content: unset;
+  }
+
+  .portfolio-content-image img {
+    /* width: 340px;
+    height: 270px; */
+    width: 480px;
+    height: 400px;
+  }
+  .portfolio-content-image {
+    max-width: 100%;
+  }
+  .portfolio-content-title {
+    text-align: center;
+  }
+  .portfolio-content-row {
+    padding: 30px 0 30px;
+  }
+  .portfolio-content-sec .sec-head h2 {
+    font-size: 30px;
+  }
+  .pricing-tabs .nav-link {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .contactUS-sec {
+    margin: 40px 0;
+  }
+  .contact-form {
+    padding: 40px 25px 40px;
+  }
+  .contact-form-information {
+    gap: 16px;
+  }
+  .contactUS-sec .sec-head h2 {
+    font-size: 40px;
+    margin-bottom: 10px !important;
+  }
 }
 @media (max-width: 575px) {
+  .blog-categories__head h3 {
+    font-size: 30px;
+  }
   .main-banner__content h1 {
     font-size: 37px;
   }
@@ -2108,8 +2458,35 @@ p {
   .our-work-process__container {
     background: unset;
   }
+  .portfolio-content-image {
+    max-width: 360px;
+  }
+
+  .portfolio-content-image img {
+    width: 270px;
+    height: 270px;
+  }
 }
 @media (max-width: 480px) {
+  .privacy-policy-content ul li,
+  .privacy-policy-content p {
+    color: #191919;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .privacy-policy-content h2 {
+    font-size: 26px;
+  }
+  .blog-categories__head h3 {
+    font-size: 25px;
+  }
+  .pricing-tabs .nav-link {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .our-achievement-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .bottom-ad img {
     width: 100%;
     height: auto;
@@ -2128,14 +2505,101 @@ p {
   .our-work-process__item p {
     font-size: 12px;
   }
+  .blog-sec .sec-head h2 {
+    font-size: 29px;
+  }
+  .inner-banner-content h1 {
+    font-size: 31px;
+  }
+  .inner-banner {
+    padding: 140px 0 60px;
+  }
 }
 @media (max-width: 430px) {
+  .contactForm-icons-text .contactForm-icon {
+    width: 30px;
+  }
+  .contactForm-icons-text {
+    gap: 9px;
+  }
+  .contact-form-information p {
+    font-size: 12px;
+  }
+
+  .contact-form-information {
+    padding: 16px;
+  }
+  .contactForm-icons-textContent {
+    font-size: 14px;
+  }
+  .contact-form {
+    padding: 40px 16px 40px;
+  }
   .our-work-process .sec-head h2 {
+    font-size: 34px;
+  }
+
+  .home-about-sec .sec-head h2 {
+    font-size: 30px;
+  }
+  .home-about-sec .sec-head p {
+    font-size: 14px;
+  }
+  .graphic-design-agency .sec-head h2 {
+    font-size: 33px;
+  }
+  .home-portfolio-sec .sec-head h2 {
+    font-size: 33px;
+  }
+  .home-portfolio-sec .sec-head p {
+    font-size: 15px;
+  }
+  .home-testimonial-sec .sec-head h2 {
+    font-size: 30px;
+  }
+  .faqs-sec .sec-head h2 {
+    font-size: 29px;
+  }
+
+  .faqs-items .accordion-button {
+    padding: 10px 12px;
+  }
+
+  .faqs-items .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faqs-form {
+    padding: 30px 10px;
+  }
+  .faqs-form-head h4 {
+    font-size: 30px;
+  }
+  .about-sec__content h2 {
+    font-size: 34px;
+  }
+  .different-industries-client .sec-head h2 {
+    font-size: 35px;
+  }
+  .our-achievements .sec-head h2 {
+    font-size: 38px;
+    margin-bottom: 10px !important;
+  }
+  .client-testimonial .sec-head h2 {
     font-size: 34px;
   }
 }
 @media (max-width: 400px) {
   .our-work-process .sec-head h2 {
     font-size: 30px;
+  }
+  .gfx-global__content h2 {
+    font-size: 30px;
+  }
+  .blog-sec .sec-head h2 {
+    font-size: 26px;
+  }
+  .footer-main__title {
+    font-size: 25px;
   }
 }

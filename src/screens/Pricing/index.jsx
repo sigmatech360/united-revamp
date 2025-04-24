@@ -30,7 +30,7 @@ const Pricing = () => {
                   <Tab eventKey="logoDesign" title="Logo Design">
                     <div className="row">
                       {pricingPlans.map((plan, index) => (
-                        <div className="col-lg-3 col-md-6" key={index}>
+                        <div className="col-xl-3 col-md-6 mb-xl-0 mb-4" key={index}>
                           <div className="pricing-card">
                             <div className="pricing-card__header">
                               <h5 className="pricing-card__header-price">
