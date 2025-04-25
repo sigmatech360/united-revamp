@@ -25,86 +25,172 @@ const Portfolio = () => {
 
       <section className="services-sec">
         <div className="container-fluid">
-            {/* <div className="row">
-                <div className="col-lg-2">
-                <div className="services-box-1">
-                    <div className="services-box-content">
-                    <img src={servicebrandingdesign} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Branding Design</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
+          <div className="row">
+            <div className="col-xl-2 col-md-6 services-col-1  px-1">
+              <div className="services-box-1">
+                <div className="services-box-content">
+                  <img
+                    src={servicebrandingdesign}
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="services-box-content-text">
+                    <h4>Branding Design</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-md-6 services-col-2  px-1">
+              <div className="services-box-2">
+                <div className="services-box-content services-box-content-2-1">
+                  <img src={servicelogodesign} className="img-fluid" alt="" />
+                  <div className="services-box-content-text">
+                    <h4>Logo Design</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
-                <div className="col-lg-4">
-                <div className="services-box-2">
-                    <div className="services-box-content services-box-content-2-1">
-                    <img src={servicelogodesign} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Logo Design</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
-                    <div className="services-box-content services-box-content-2-2">
-                    <img src={serviceEbookcover} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Ebook Cover Design</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
+                <div className="services-box-content services-box-content-2-2">
+                  <img src={serviceEbookcover} className="img-fluid" alt="" />
+                  <div className="services-box-content-text">
+                    <h4>Ebook Cover Design</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div className="col-xl-2 col-md-6 services-col-3 px-1">
+              <div className="services-box-3">
+                <div className="services-box-content">
+                  <img
+                    src={servicewebsitedesign}
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="services-box-content-text">
+                    <h4>Website Design</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
-                <div className="col-lg-2">
-                <div className="services-box-3">
-                    <div className="services-box-content">
-                    <img src={servicewebsitedesign} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Website Design</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-md-6 services-col-4 px-1">
+              <div className="services-box-4">
+                <div className="services-box-content services-box-content-4-1">
+                  <img
+                    src={servicevideoanimation}
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="services-box-content-text">
+                    <h4>Video Animation</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
+                <div className="services-box-content services-box-content-4-2">
+                  <img
+                    src={servicewebdevelopment}
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="services-box-content-text">
+                    <h4>Web Development</h4>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </div>
-                <div className="col-lg-4">
-                <div className="services-box-4">
-                    <div className="services-box-content services-box-content-4-1">
-                    <img src={servicevideoanimation} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Video Animation</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
-                    <div className="services-box-content services-box-content-4-2">
-                    <img src={servicewebdevelopment} className="img-fluid" alt="" />
-                    <div className="services-box-content-text">
-                        <h4>Web Development</h4>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div> */}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      {/* <section className="services-sec">
+        <div className="services-box-1">
+          <div className="services-box-content">
+            <img src={servicebrandingdesign} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Branding Design</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="services-box-2">
+          <div className="services-box-content services-box-content-2-1">
+            <img src={servicelogodesign} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Logo Design</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div className="services-box-content services-box-content-2-2">
+            <img src={serviceEbookcover} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Ebook Cover Design</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="services-box-3">
+          <div className="services-box-content">
+            <img src={servicewebsitedesign} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Website Design</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="services-box-4">
+          <div className="services-box-content services-box-content-4-1">
+            <img src={servicevideoanimation} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Video Animation</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+          <div className="services-box-content services-box-content-4-2">
+            <img src={servicewebdevelopment} className="img-fluid" alt="" />
+            <div className="services-box-content-text">
+              <h4>Web Development</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>  
+      </section> */}
 
       <section className="portfolio-content-sec">
         <div className="container">

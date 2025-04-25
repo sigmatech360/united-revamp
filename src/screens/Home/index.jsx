@@ -140,7 +140,9 @@ const Home = () => {
                   <div className="col-lg-3 col-md-6 mb-lg-5 mb-4" key={index}>
                     <div className="gfx-card">
                       <div className="gfx-card__content">
-                        <img src={service.img} alt={service.title} />
+                        <div className="gfx-card__content-img">
+                          <img src={service.img} alt={service.title} />
+                        </div>
                       </div>
                       <p className="gfx-card__title">{service.title}</p>
                     </div>

@@ -317,7 +317,7 @@ const Services = () => {
             </div>
 
             {webDesignSupportData.map((item, index) => (
-              <div className="col-lg-3 col-md-6 mb-lg-0 mb-4" key={index}>
+              <div className="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-4" key={index}>
                 <div className="web-designing__support-box">
                   <div className="web-designing__support-box-img">
                     <img
