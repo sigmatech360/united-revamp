@@ -10,8 +10,6 @@ import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
 
-import gfxlastimg1 from "../../assets/images/gfx-last-img-1.png";
-import gfxlastimg2 from "../../assets/images/gfx-last-img-2.png";
 
 import portfolioimg1 from "../../assets/images/portfolio-img-1.png";
 import portfolioimg2 from "../../assets/images/portfolio-img-2.png";
@@ -35,6 +33,7 @@ import { blogsData } from "../../data";
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import FAQSection from "../../components/FAQSection";
 import BlogsSec from "../../components/BlogsSec";
+import GraphicDesignAgency from "../../components/GraphicDesignAgency";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -76,7 +75,11 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-lg-0 mb-4">
-              <div className="home-about-img">
+              <div
+                className="home-about-img"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
                 <img
                   src={homeAboutImg}
                   className="img-fluid"
@@ -87,8 +90,10 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="home-about-content">
                 <div className="sec-head">
-                  <h2>What Makes Us The Graphic Design Company for you?</h2>
-                  <p>
+                  <h2 data-aos="fade-left" data-aos-delay="100">
+                    What Makes Us The Graphic Design Company for you?
+                  </h2>
+                  <p data-aos="fade-left" data-aos-delay="300">
                     We are a new age graphic design company that helps to
                     elevate your brand through advanced designing innovation.
                     Our services are result-driven and based on the insights
@@ -100,7 +105,11 @@ const Home = () => {
                     give your business identity a strong visual edge in the
                     market.
                   </p>
-                  <div className="d-flex gap-2">
+                  <div
+                    className="d-flex gap-2"
+                    data-aos="fade-left"
+                    data-aos-delay="500"
+                  >
                     <Link className="theme-btn theme-btn__black">
                       Get Started
                     </Link>
@@ -115,71 +124,15 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="graphic-design-agency">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <div className="sec-head-content">
-                  <p className="sec-head-tag">GRAPHIC DESIGN AGENCY</p>
-                  <h2>Providing Advanced Digital Services</h2>
-                  <p>
-                    From logo designing to digital marketing, video animation to
-                    web designing & more, we are your one-stop solution to find
-                    all types of digital branding services.
-                  </p>
-                </div>
-                <Link to={""} className="theme-btn theme-btn__yellow">
-                  View All Services
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="row">
-                {gfxServices.map((service, index) => (
-                  <div className="col-lg-3 col-md-6 mb-lg-5 mb-4" key={index}>
-                    <div className="gfx-card">
-                      <div className="gfx-card__content">
-                        <div className="gfx-card__content-img">
-                          <img src={service.img} alt={service.title} />
-                        </div>
-                      </div>
-                      <p className="gfx-card__title">{service.title}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <p className="gfx-last-content">
-                We pride ourselves as the leading graphic design agency in the
-                US that works with a customer-centric approach. We are not among
-                those companies that offer logo designing by simply cutting
-                through the stock images. Our skilled pool of designers offers
-                best-in-class custom logo design services as per your given
-                requirements. This means that YOU are at the center of our
-                creativity while crafting impeccable brand logos. Working with
-                us, you are firmly assured to get the best logo design that
-                suits your brand identity, just as the way you want.
-              </p>
-            </div>
-            <div className="col-lg-6">
-              <div className="gfx-last-imgs">
-                <img
-                  src={gfxlastimg1}
-                  className="gfx-last-img-1"
-                  alt="graphic design agency"
-                />
-                <img
-                  src={gfxlastimg2}
-                  className="gfx-last-img-2"
-                  alt="graphic design agency"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GraphicDesignAgency
+        secTag="GRAPHIC DESIGN AGENCY"
+        secTitle="Providing Advanced Digital Services"
+        secHeadDescription="From logo designing to digital marketing, video animation to web designing & more, we are your one-stop solution to find all types of digital branding services."
+        viewAllServices
+        gfxServices={gfxServices}
+        gfxLastDescription="We pride ourselves as the leading graphic design agency in the US that works with a customer-centric approach. We are not among those companies that offer logo designing by simply cutting through the stock images. Our skilled pool of designers offers best-in-class custom logo design services as per your given requirements. This means that YOU are at the center of our creativity while crafting impeccable brand logos. Working with us, you are firmly assured to get the best logo design that suits your brand identity, just as the way you want."
+        gfxLastImgs
+      />
 
       <section className="home-portfolio-sec">
         <div className="container">
@@ -187,8 +140,10 @@ const Home = () => {
             <div className="col-md-12">
               <div className="sec-head">
                 <p className="sec-head-tag label-yellow-bg">PORTFOLIO</p>
-                <h2>Providing Advanced Digital Services</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-delay={100}>
+                  Providing Advanced Digital Services
+                </h2>
+                <p data-aos="fade-up" data-aos-delay={300}>
                   Take a look into our recent projects that speaks volume for
                   itself. We love to serve our customers with advanced designing
                   services meant to cover their all branding needs.
@@ -197,24 +152,48 @@ const Home = () => {
             </div>
             <div className="col-md-12">
               <div className="portfolio-imgs__container">
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-right"
+                  data-aos-delay={100}
+                >
                   <img src={portfolioimg1} alt="Portfolio Image 1" />
                 </div>
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-down"
+                  data-aos-delay={300}
+                >
                   <img src={portfolioimg2} alt="Portfolio Image 2" />
                 </div>
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-left"
+                  data-aos-delay={500}
+                >
                   <img src={portfolioimg3} alt="Portfolio Image 3" />
                 </div>
               </div>
               <div className="portfolio-imgs__container">
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-left"
+                  data-aos-delay={100}
+                >
                   <img src={portfolioimg4} alt="Portfolio Image 3" />
                 </div>
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-up"
+                  data-aos-delay={200}
+                >
                   <img src={portfolioimg5} alt="Portfolio Image 4" />
                 </div>
-                <div className="portfolio-img">
+                <div
+                  className="portfolio-img"
+                  data-aos="flip-left"
+                  data-aos-delay={500}
+                >
                   <img src={portfolioimg6} alt="Portfolio Image 5" />
                 </div>
               </div>
@@ -231,8 +210,10 @@ const Home = () => {
             <div className="col-md-12">
               <div className="sec-head">
                 <p className="sec-head-tag label-yellow-bg">SUCCESS STORIES</p>
-                <h2>Why Customers Love To Working With Us</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-delay={100}>
+                  Why Customers Love To Working With Us
+                </h2>
+                <p data-aos="fade-up" data-aos-delay={300}>
                   Introducing our team of talented and skilled professionals who
                   are ready to increase your productivity and bring your
                   business to the new level of efficiency and sustainability.
@@ -277,10 +258,10 @@ const Home = () => {
                 <p className="sec-head-tag label-yellow-bg">
                   GRAPHIC DESIGN AGENCY <br /> WITH GLOBAL ACHIEVEMENTS
                 </p>
-                <h2>
+                <h2 data-aos="fade-right" data-aos-delay={100}>
                   Our quality digital branding services speak for our success.
                 </h2>
-                <p>
+                <p data-aos="fade-right" data-aos-delay={300}>
                   The reason for our success lies beneath the satisfaction of
                   our happy clients across the globe. Our graphic design studio
                   is rated highly by the masses all over the world, perfectly
@@ -295,11 +276,15 @@ const Home = () => {
                   src={gfxglobalimg1}
                   className="gfx-global__img-1 img-fluid"
                   alt="graphic design agency"
+                  data-aos="fade-left"
+                  data-aos-delay={100}
                 />
                 <img
                   src={gfxglobalimg2}
                   className="gfx-global__img-2 img-fluid"
                   alt="graphic design agency"
+                  data-aos="fade-left"
+                  data-aos-delay={300}
                 />
               </div>
             </div>

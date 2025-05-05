@@ -10,7 +10,9 @@ import { clientTestimonialData } from "../../data";
 
 const ClientTestimonialSec = (props) => {
   return (
-    <section className={`client-testimonial client-testimonial__${props.className}`}>
+    <section
+      className={`client-testimonial client-testimonial__${props.className}`}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
@@ -18,8 +20,10 @@ const ClientTestimonialSec = (props) => {
               <p className="sec-head-tag label-yellow-bg">
                 CLIENT TESTIMONIALS
               </p>
-              <h2>Words Of Happiness From Our Valued Customers</h2>
-              <p>
+              <h2 data-aos="fade-right" data-aos-delay={100}>
+                Words Of Happiness From Our Valued Customers
+              </h2>
+              <p data-aos="fade-right" data-aos-delay={300}>
                 We value our customers as the core asset of our company. Here’s
                 what they have to say about the quality of our branding
                 services.

@@ -11,8 +11,10 @@ const BlogsSec = () => {
               <p className="sec-head-tag label-yellow-bg">
                 ADDITIONAL RESOURCES
               </p>
-              <h2>Our Recent Blogs Covering Latest Industry News</h2>
-              <p>
+              <h2 data-aos="fade-up" data-aos-delay={100}>
+                Our Recent Blogs Covering Latest Industry News
+              </h2>
+              <p data-aos="fade-up" data-aos-delay={300}>
                 Stay informed about all the latest happenings in the digital
                 world, including the latest news about graphic designing, logo
                 designing and more.
@@ -21,7 +23,11 @@ const BlogsSec = () => {
           </div>
           {blogsData.map((item, index) => (
             <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
-              <div className="blog-card">
+              <div
+                className="blog-card"
+                data-aos="fade-up"
+                data-aos-delay={index * 300}
+              >
                 <div className="blog-card__image">
                   <img src={item.img} className="img-fluid" alt="Blog Image" />
                 </div>

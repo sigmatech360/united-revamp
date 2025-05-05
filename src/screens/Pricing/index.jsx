@@ -30,8 +30,15 @@ const Pricing = () => {
                   <Tab eventKey="logoDesign" title="Logo Design">
                     <div className="row">
                       {pricingPlans.map((plan, index) => (
-                        <div className="col-xl-3 col-md-6 mb-xl-0 mb-4" key={index}>
-                          <div className="pricing-card">
+                        <div
+                          className="col-xl-3 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <div
+                            className="pricing-card"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 300}
+                          >
                             <div className="pricing-card__header">
                               <h5 className="pricing-card__header-price">
                                 {plan.price}

@@ -27,7 +27,11 @@ const Portfolio = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-2 col-md-6 services-col-1  px-1">
-              <div className="services-box-1">
+              <div
+                className="services-box-1"
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
                 <div className="services-box-content">
                   <img
                     src={servicebrandingdesign}
@@ -46,7 +50,11 @@ const Portfolio = () => {
             </div>
             <div className="col-xl-4 col-md-6 services-col-2  px-1">
               <div className="services-box-2">
-                <div className="services-box-content services-box-content-2-1">
+                <div
+                  className="services-box-content services-box-content-2-1"
+                  data-aos="fade-up"
+                  data-aos-delay={400}
+                >
                   <img src={servicelogodesign} className="img-fluid" alt="" />
                   <div className="services-box-content-text">
                     <h4>Logo Design</h4>
@@ -56,7 +64,11 @@ const Portfolio = () => {
                     </p>
                   </div>
                 </div>
-                <div className="services-box-content services-box-content-2-2">
+                <div
+                  className="services-box-content services-box-content-2-2"
+                  data-aos="fade-up"
+                  data-aos-delay={600}
+                >
                   <img src={serviceEbookcover} className="img-fluid" alt="" />
                   <div className="services-box-content-text">
                     <h4>Ebook Cover Design</h4>
@@ -69,7 +81,11 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="col-xl-2 col-md-6 services-col-3 px-1">
-              <div className="services-box-3">
+              <div
+                className="services-box-3"
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
                 <div className="services-box-content">
                   <img
                     src={servicewebsitedesign}
@@ -88,7 +104,11 @@ const Portfolio = () => {
             </div>
             <div className="col-xl-4 col-md-6 services-col-4 px-1">
               <div className="services-box-4">
-                <div className="services-box-content services-box-content-4-1">
+                <div
+                  className="services-box-content services-box-content-4-1"
+                  data-aos="fade-up"
+                  data-aos-delay={400}
+                >
                   <img
                     src={servicevideoanimation}
                     className="img-fluid"
@@ -102,7 +122,11 @@ const Portfolio = () => {
                     </p>
                   </div>
                 </div>
-                <div className="services-box-content services-box-content-4-2">
+                <div
+                  className="services-box-content services-box-content-4-2"
+                  data-aos="fade-up"
+                  data-aos-delay={600}
+                >
                   <img
                     src={servicewebdevelopment}
                     className="img-fluid"
@@ -121,84 +145,16 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      {/* <section className="services-sec">
-        <div className="services-box-1">
-          <div className="services-box-content">
-            <img src={servicebrandingdesign} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Branding Design</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="services-box-2">
-          <div className="services-box-content services-box-content-2-1">
-            <img src={servicelogodesign} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Logo Design</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-          <div className="services-box-content services-box-content-2-2">
-            <img src={serviceEbookcover} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Ebook Cover Design</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="services-box-3">
-          <div className="services-box-content">
-            <img src={servicewebsitedesign} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Website Design</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="services-box-4">
-          <div className="services-box-content services-box-content-4-1">
-            <img src={servicevideoanimation} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Video Animation</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-          <div className="services-box-content services-box-content-4-2">
-            <img src={servicewebdevelopment} className="img-fluid" alt="" />
-            <div className="services-box-content-text">
-              <h4>Web Development</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>  
-      </section> */}
 
       <section className="portfolio-content-sec">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="sec-head">
-                <h2>Recent Work For Diverse Brands Ready to Make their Mark</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-delay={200}>
+                  Recent Work For Diverse Brands Ready to Make their Mark
+                </h2>
+                <p data-aos="fade-up" data-aos-delay={400}>
                   Take a quick look how our creative design solutions are
                   helping clients to take a competitive edge in the market.
                 </p>
@@ -210,8 +166,12 @@ const Portfolio = () => {
             <div className="row portfolio-content-row" key={index}>
               <div className="col-lg-4 col-md-6 mb-md-0 mb-4">
                 <div className="portfolio-content-title">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+                  <h3 data-aos="fade-right" data-aos-delay={200}>
+                    {item.title}
+                  </h3>
+                  <p data-aos="fade-right" data-aos-delay={400}>
+                    {item.description}
+                  </p>
                 </div>
               </div>
               {item.images.map((image, imageIndex) => (
@@ -219,6 +179,8 @@ const Portfolio = () => {
                   <div
                     className="portfolio-content-image"
                     style={{ backgroundImage: `url(${image.cardBG})` }}
+                    data-aos="zoom-in"
+                    data-aos-delay={imageIndex * 300}
                   >
                     <img src={image.image} alt="" />
                   </div>

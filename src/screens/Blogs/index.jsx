@@ -23,7 +23,11 @@ const Blogs = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="search-blogs-box">
+              <div
+                className="search-blogs-box"
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
                 <label htmlFor="searchBlog" class="form-label">
                   Search Blogs
                 </label>

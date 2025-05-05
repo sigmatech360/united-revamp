@@ -1,0 +1,68 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const ServicePowerfullTool = (props) => {
+  return (
+    <section className="powerfull-tool__sec">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-12">
+            <div className="sec-head">
+              <h2 data-aos="fade-right" data-aos-delay={200}>
+                {props.secTitle}
+              </h2>
+              <p data-aos="fade-right" data-aos-delay={400}>
+                {props.secDescription}
+              </p>
+            </div>
+          </div>
+
+          <div className="col-lg-6 mb-lg-0 mb-4">
+            <div className="powerfull-tool__contant">
+              <div
+                className="powerfull-tool__contant-icon"
+                data-aos="fade-right"
+                data-aos-delay={200}
+              >
+                <img src={props.toolIcon} alt="Photoshop Icon" />
+              </div>
+              <h3 data-aos="fade-right" data-aos-delay={400}>
+                {props.toolName}
+              </h3>
+              <p data-aos="fade-right" data-aos-delay={600}>
+                {props.toolNameDesc}
+              </p>
+              <div className="powerfull-tool__contant-btnText">
+                <Link
+                  to={""}
+                  className="theme-btn theme-btn__black"
+                  data-aos="fade-right"
+                  data-aos-delay={800}
+                >
+                  Hire Designers
+                </Link>
+                <p data-aos="zoom-in" data-aos-delay={800}>
+                  {props.toolDesignerAvailable}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="powerfull-tool__boxes">
+              <div className="powerfull-tool__box" data-aos="flip-right" data-aos-delay={500}>
+                <h1>{props.usagePercent}</h1>
+                <p>{props.usage}</p>
+              </div>
+              <div className="powerfull-tool__box" data-aos="flip-left" data-aos-delay={500}>
+                <h1>{props.rank}</h1>
+                <p>{props.highlightText}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicePowerfullTool;

@@ -154,6 +154,7 @@ p {
 /* Home Page CSS Start */
 .home-about-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 .home-about-sec .sec-head h2 {
   color: #191919;
@@ -174,6 +175,7 @@ p {
   background-position: top center;
   background-repeat: no-repeat;
   padding: 120px 0 60px;
+  overflow: hidden;
 }
 .graphic-design-agency .sec-head {
   display: flex;
@@ -242,14 +244,14 @@ p {
 
 /* Hover effects */
 .gfx-card:hover .gfx-card__content-img {
-  background-color: #000; /* Black background */
-  border: 2px solid #d7ff00; /* Yellow border */
-  border-radius: 50%; /* Circle */
-  padding: 10px; /* Optional: to separate img from border */
+  background-color: #000; 
+  border: 2px solid #d7ff00; 
+  border-radius: 50%; 
+  padding: 10px;
 }
 
 .gfx-card:hover .gfx-card__content-img img {
-  transform: scale(0.7); /* Scale down */
+  transform: scale(0.7); 
 }
 
 .gfx-card__title {
@@ -278,6 +280,7 @@ p {
 
 .home-portfolio-sec {
   margin: 60px 0;
+  overflow: hidden  ;
 }
 
 .home-portfolio-sec .sec-head {
@@ -315,6 +318,7 @@ p {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .our-work-process .sec-head {
   text-align: center;
@@ -372,6 +376,7 @@ p {
 
 .home-testimonial-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .home-testimonial-sec .sec-head p {
@@ -465,6 +470,7 @@ p {
   background-position: top center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
+  overflow: hidden;
 }
 .faqs-sec .sec-head {
   text-align: center;
@@ -686,6 +692,7 @@ p {
 
 .about-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .about-sec__content {
@@ -788,6 +795,7 @@ p {
   background-position: top center;
   background-repeat: no-repeat;
   padding: 120px 0 60px;
+  overflow: hidden;
 }
 .our-achievements .sec-head {
   text-align: center;
@@ -812,6 +820,7 @@ p {
 
 .client-testimonial {
   padding: 60px 0;
+  overflow: hidden;
 }
 .client-testimonial__bgDark {
   background-image: url(assets/images/client-testimonial-bg.png);
@@ -819,6 +828,7 @@ p {
   background-position: top center;
   color: #fff;
   padding: 120px 0 60px;
+  overflow: hidden;
 }
 
 .client-testimonial .sec-head h2 {
@@ -1112,6 +1122,7 @@ p {
 
 .portfolio-content-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 .portfolio-content-title h3 {
   font-size: 40px;
@@ -1151,14 +1162,19 @@ p {
   max-width: 360px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 .portfolio-content-image img {
   width: 340px;
   object-fit: contain;
   object-position: center;
   height: 290px;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
-
+.portfolio-content-image:hover img {
+  transform: scale(1.3) rotate(1deg);
+  filter: brightness(1.1) contrast(1.05);
+}
 .portfolio-content-row {
   border-bottom: 1px solid #707070;
   padding: 50px 0 30px;
@@ -1324,6 +1340,9 @@ p {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
 }
+.blog-categories{
+  overflow: hidden;
+}
 
 .blog-categories__card {
   background-color: #191919;
@@ -1444,6 +1463,7 @@ p {
 
 .single-blog-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 /* Terms And Condition */
@@ -1492,6 +1512,7 @@ p {
   padding: 170px 0 60px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .services-banner__content {
   color: #fff;
@@ -1514,6 +1535,7 @@ p {
 
 .services-about__sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .services-about__content h2 {
@@ -1562,6 +1584,7 @@ p {
 
 .powerfull-tool__sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .powerfull-tool__sec .sec-head {
@@ -1647,6 +1670,7 @@ p {
   background-image: url(assets/images/adobe-photo-sec-bg.png);
   background-size: cover;
   background-position: top center;
+  overflow: hidden;
 }
 
 .adobe-photoshop__sec .sec-head {
@@ -1709,6 +1733,7 @@ p {
   background-image: url(assets/images/one-stop-website-bg.png);
   background-size: cover;
   background-position: top center;
+  overflow: hidden;
 }
 
 .one-stop-web__boxes {
@@ -1765,6 +1790,7 @@ p {
 
 .web-designing__support {
   margin: 60px 0;
+  overflow: hidden;
 }
 .web-designing__support .sec-head {
   text-align: center;
@@ -1832,6 +1858,7 @@ p {
   background-size: cover;
   background-position: top center;
   padding: 120px 0 60px;
+  overflow: hidden;
 }
 .web-design__guidelines .sec-head {
   text-align: center;
@@ -1883,6 +1910,15 @@ p {
 
 .web-design__guidelines-box p {
   font-size: 16px;
+}
+
+
+.servicesGDA .sec-head{
+  justify-content: center;
+  text-align: center;
+}
+.servicesGDA .sec-head .sec-head-tag{
+  margin: 0 auto;
 }
 /* Services page Css End */
 
@@ -2358,10 +2394,10 @@ p {
     text-align: center;
     margin-top: 20px;
   }
-  .services-banner__img {
+  /* .services-banner__img {
     margin: 0 auto;
     text-align: center;
-  }
+  } */
   .services-banner-sec {
     padding: 130px 0 40px;
   }
