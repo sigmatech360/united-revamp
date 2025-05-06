@@ -124,9 +124,9 @@ const Footer = () => {
               <p>&copy; 2025 Your Company Name</p>
               <div className="footer-copyright_links">
                 <Link to={"/contact-us"}>Contact</Link>
-                <Link to={"/terms-and-conditions"}>Term of Use</Link>
-                <Link to={"/privacy-policy"}>Privacy</Link>
-                <Link to={""}>Disclaimer</Link>
+                <Link to={"/terms-and-conditions"}>Terms & Conditions</Link>
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
+                {/* <Link to={""}>Disclaimer</Link> */}
               </div>
             </div>
           </div>

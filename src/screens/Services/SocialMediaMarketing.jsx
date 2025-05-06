@@ -43,7 +43,7 @@ import {
   webDesignSupportData,
 } from "../../data";
 
-const Services = () => {
+const SocialMediaMarketing = () => {
   return (
     <DefaultLayout>
       <ServicesBanner
@@ -99,7 +99,7 @@ const Services = () => {
         highlightText="Choice for Graphic Design"
       />
 
-      <AdobePhotoshopSec
+      {/* <AdobePhotoshopSec
         secTitle="Our Large Range Of Website Portfolio"
         secTitleDescription="We love to create websites that have got the power to engage
                   your clients. Here are some of our web designs that showcase
@@ -108,49 +108,51 @@ const Services = () => {
         secSubTitleDescription="Clients simply love our web designs, and some of these
                   exceptional design samples speak volume for our hard work."
         servicesData={adobePhotoshopSecData}
-      />
+      /> */}
 
       <OurWorkProcessSec
-        className="our-work-process__bgWhite"
+        // className="our-work-process__bgWhite"
         secTitle="Providing Advanced Digital Services"
         secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
         secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
-      <OneStopWebSec
+      {/* <OneStopWebSec
         secTitle="Your One-Stop Website Design Agency"
         secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
         image={oneStopWebImg}
         boxesData={oneStopWebBoxesData}
-      />
+      /> */}
 
-      <WebDesignSupportSec
+      {/* <WebDesignSupportSec
         secTitle="Your Partner To Find Complete Web Designing Support"
         secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
         webDesignSupport={webDesignSupportData}
+      /> */}
+
+      <ClientTestimonialSec
+      // className="bgDark"
       />
 
-      <ClientTestimonialSec className="bgDark" />
-
       <FAQSection
-        className="bgLight"
-        // secHeadrag=""
+        // className="bgLight"
+        secHeadrag="FREQUENTLY ASKED QUESTIONS"
         title="Frequently Asked Questions"
         description="Common queries you want us to answer about our web design services."
       />
 
-      <WebDesignGuidelines
+      {/* <WebDesignGuidelines
         secTag="WEBSITE DESIGN GUIDELINES"
         secTitle="Our Recipe for Creating Impactful Website Designs"
         secDescription="We take pride in serving our customers with top-of-the-line
                   web designs. Here’s how we do it with perfection in our
                   projects."
         stepData={webDesignGuidelinesData}
-      />
+      /> */}
 
       <BlogsSec />
     </DefaultLayout>
   );
 };
 
-export default Services;
+export default SocialMediaMarketing;

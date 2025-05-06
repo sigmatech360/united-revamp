@@ -57,14 +57,22 @@ const Blogs = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="single-blog__card">
-                <div className="single-blog__card-img">
+                <div
+                  className="single-blog__card-img"
+                  data-aos="flip-left"
+                  data-aos-delay={200}
+                >
                   <img
                     src={singlecategoriesblogimg}
                     className="img-fluid"
                     alt=""
                   />
                 </div>
-                <div className="single-blog__card-body">
+                <div
+                  className="single-blog__card-body"
+                  data-aos="zoom-in"
+                  data-aos-delay={200}
+                >
                   <p className="single-blog__card-body-category">Logo Design</p>
                   <p className="single-blog__card-body-title">
                     Hawkeye Logo: Marvel’s Most Iconic Archery Insignia
@@ -91,14 +99,21 @@ const Blogs = () => {
             <div className="row blog-categories-row" key={index}>
               <div className="col-md-12">
                 <div className="blog-categories__head">
-                  <h3>{item.category}</h3>
-                  <button className="theme-btn theme-btn__yellow">
+                  <h3 data-aos="fade-right" data-aos-delay={200}>
+                    {item.category}
+                  </h3>
+                  <button
+                    className="theme-btn theme-btn__yellow"
+                    data-aos="fade-left"
+                    data-aos-delay={200}
+                  >
                     Find More
                   </button>
                 </div>
               </div>
               {item.blogs.map((blogItem, blogIndex) => (
-                <div className="col-md-4 mb-md-0 mb-4" key={blogIndex}>
+                <div className="col-md-4 mb-md-0 mb-4" key={blogIndex} data-aos="fade-up"
+                data-aos-delay={blogIndex * 200}>
                   <BlogCategoriesCard
                     image={blogItem.image}
                     category={blogItem.category}

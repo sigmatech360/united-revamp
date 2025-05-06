@@ -22,15 +22,21 @@ const ContactUs = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="sec-head">
-                <h2>Contact With US</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-delay={200}>
+                  Contact With US
+                </h2>
+                <p data-aos="fade-up" data-aos-delay={400}>
                   Write us a few words about your project and we’ll prepare a
                   proposal for you within 24 hours.
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 mb-lg-0 mb-md-5 mb-4">
-              <div className="contact-form">
+            <div className="col-lg-6 mb-lg-2 mb-md-5 mb-4">
+              <div
+                className="contact-form"
+                data-aos="fade-right"
+                data-aos-delay={200}
+              >
                 <div className="row">
                   <div className="col-md-6 mb-3">
                     <input
@@ -94,8 +100,12 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="contact-form-information">
+            <div className="col-lg-6 mb-2">
+              <div
+                className="contact-form-information"
+                data-aos="fade-left"
+                data-aos-delay={200}
+              >
                 <h3>Contact Information</h3>
                 <p>
                   2114 N, Flamingo Road, <br /> Pembroke Pines, FL, 33028
@@ -139,9 +149,6 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-
-
-      
     </DefaultLayout>
   );
 };

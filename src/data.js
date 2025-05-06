@@ -76,6 +76,19 @@ import websitedesignimg2 from "./assets/images/portfolio/website-design-img-2.pn
 import websitedesignimg3 from "./assets/images/portfolio/website-design-img-3.png";
 import websitedesignimg4 from "./assets/images/portfolio/website-design-img-4.png";
 
+// Services Web Design Portfolio
+import servicewebDesignportfolioimg1 from "./assets/images/service-webDesign-portfolio-img1.png";
+import servicewebDesignportfolioimg2 from "./assets/images/service-webDesign-portfolio-img2.png";
+import servicewebDesignportfolioimg3 from "./assets/images/service-webDesign-portfolio-img3.png";
+import servicewebDesignportfolioimg4 from "./assets/images/service-webDesign-portfolio-img4.png";
+import servicewebDesignportfolioimg5 from "./assets/images/service-webDesign-portfolio-img5.png";
+// Services CMS Development Portfolio
+import serviceCMDDevportfolioimg1 from "./assets/images/service-cmsDev-portfolio-img1.png";
+import serviceCMDDevportfolioimg2 from "./assets/images/service-cmsDev-portfolio-img2.png";
+import serviceCMDDevportfolioimg3 from "./assets/images/service-cmsDev-portfolio-img3.png";
+import serviceCMDDevportfolioimg4 from "./assets/images/service-cmsDev-portfolio-img4.png";
+import serviceCMDDevportfolioimg5 from "./assets/images/service-cmsDev-portfolio-img5.png";
+
 import adobephotoshopcardbg from "./assets/images/portfolio/adobe-photoshop-card-bg.png";
 import adobephotoshopimg3 from "./assets/images/portfolio/adobe-photoshop-img-3.png";
 
@@ -89,6 +102,17 @@ import webdesignsupportimg1 from "./assets/images/web-design-support-img1.png";
 import webdesignsupportimg2 from "./assets/images/web-design-support-img2.png";
 import webdesignsupportimg3 from "./assets/images/web-design-support-img3.png";
 import webdesignsupportimg4 from "./assets/images/web-design-support-img4.png";
+
+// Services => Web Design
+import serviceswebdesignsupportimg1 from "./assets/images/services-web-design-support-img1.png";
+import serviceswebdesignsupportimg2 from "./assets/images/services-web-design-support-img2.png";
+import serviceswebdesignsupportimg3 from "./assets/images/services-web-design-support-img3.png";
+import serviceswebdesignsupportimg4 from "./assets/images/services-web-design-support-img4.png";
+// Services => CMS Development
+import servicescmsDevsupportimg1 from "./assets/images/services-cmsDev-support-img1.png";
+import servicescmsDevsupportimg2 from "./assets/images/services-cmsDev-support-img2.png";
+import servicescmsDevsupportimg3 from "./assets/images/services-cmsDev-support-img3.png";
+import servicescmsDevsupportimg4 from "./assets/images/services-cmsDev-support-img4.png";
 
 import webDesignGuideIcon1 from "./assets/images/web-design-guide-i1.png";
 import webDesignGuideIcon2 from "./assets/images/web-design-guide-i2.png";
@@ -712,6 +736,52 @@ export const adobePhotoshopSecData = [
   },
 ];
 
+// Services Portfolio Data
+export const servicesWebDesignPortfolioData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: servicewebDesignportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: servicewebDesignportfolioimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: servicewebDesignportfolioimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: servicewebDesignportfolioimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: servicewebDesignportfolioimg5,
+  },
+];
+export const servicesCMSDevPortfolioData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCMDDevportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCMDDevportfolioimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCMDDevportfolioimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCMDDevportfolioimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCMDDevportfolioimg5,
+  },
+];
+
 export const oneStopWebBoxesData = [
   {
     id: 1,
@@ -757,6 +827,8 @@ export const oneStopWebBoxesData = [
   },
 ];
 
+
+
 export const webDesignSupportData = [
   {
     id: 1,
@@ -782,6 +854,69 @@ export const webDesignSupportData = [
   {
     id: 4,
     image: webdesignsupportimg4,
+    title: "Dedicated Project Support",
+    shortDescription:
+      "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
+  },
+];
+
+
+// Services Guidlines
+export const servicesWebDesignSupportData = [
+  {
+    id: 1,
+    image: serviceswebdesignsupportimg1,
+    title: "360 Web Design Package",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 2,
+    image: serviceswebdesignsupportimg2,
+    title: "Fully Responsive",
+    shortDescription:
+      "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms.",
+  },
+  {
+    id: 3,
+    image: serviceswebdesignsupportimg3,
+    title: "Custom Code Design",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 4,
+    image: serviceswebdesignsupportimg4,
+    title: "Dedicated Project Support",
+    shortDescription:
+      "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
+  },
+];
+export const servicesCMSDevSupportData = [
+  {
+    id: 1,
+    image: servicescmsDevsupportimg1,
+    title: "360 Web Design Package",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 2,
+    image: servicescmsDevsupportimg2,
+    title: "Fully Responsive",
+    shortDescription:
+      "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms.",
+  },
+  {
+    id: 3,
+    image: servicescmsDevsupportimg3,
+    title: "Custom Code Design",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 4,
+    image: servicescmsDevsupportimg4,
     title: "Dedicated Project Support",
     shortDescription:
       "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",

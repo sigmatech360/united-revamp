@@ -94,7 +94,7 @@ p {
   transition: all 0.3s ease;
   width: fit-content;
 }
-.main-navbar .navbar-nav .nav-link::after {
+.main-navbar .navbar-nav .nav-link::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -111,8 +111,21 @@ p {
   font-weight: bold;
 }
 
-.main-navbar .navbar-nav .nav-link:hover::after {
+.main-navbar .navbar-nav .nav-link:hover::before {
   width: 70%;
+}
+.main-navbar .navbar-nav .dropdown-menu{
+  background-color: #000;
+}
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item{
+  color: #fff;
+  
+}
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item:active{
+  background-color: #d7ff00;
+  color: #191919;
 }
 
 .header-getTouch__btn {
@@ -1043,6 +1056,7 @@ p {
 
 .contactUS-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 .contactUS-sec .sec-head {
   text-align: center;

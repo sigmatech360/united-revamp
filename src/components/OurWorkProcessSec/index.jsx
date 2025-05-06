@@ -9,12 +9,10 @@ const OurWorkProcessSec = (props) => {
             <div className="sec-head">
               <p className="sec-head-tag">OUR WORK PROCESS</p>
               <h2 data-aos="fade-up" data-aos-delay={100}>
-                How We Turn Imagination Into Reality
+                {props.secTitle}
               </h2>
               <p data-aos="fade-up" data-aos-delay={300}>
-                Here’s how we produce perfection in graphics design so that your
-                brand can take maximum advantage of increasing customer
-                engagement.
+                {props.secDescription}
               </p>
             </div>
           </div>
@@ -66,9 +64,7 @@ const OurWorkProcessSec = (props) => {
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              Taking the brainstorming session to the next stage, our designers
-              come up with various designing sketches converting thoughts into
-              real images.
+              {props.secLastText}
             </p>
           </div>
         </div>

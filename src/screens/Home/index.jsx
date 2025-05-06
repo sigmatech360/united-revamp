@@ -10,7 +10,6 @@ import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
 
-
 import portfolioimg1 from "../../assets/images/portfolio-img-1.png";
 import portfolioimg2 from "../../assets/images/portfolio-img-2.png";
 import portfolioimg3 from "../../assets/images/portfolio-img-3.png";
@@ -202,8 +201,11 @@ const Home = () => {
         </div>
       </section>
 
-      <OurWorkProcessSec />
-
+      <OurWorkProcessSec
+        secTitle="How We Turn Imagination Into Reality"
+        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
+        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+      />
       <section className="home-testimonial-sec">
         <div className="container">
           <div className="row">

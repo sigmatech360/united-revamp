@@ -43,7 +43,7 @@ import {
   webDesignSupportData,
 } from "../../data";
 
-const Services = () => {
+const CustomDevelopment = () => {
   return (
     <DefaultLayout>
       <ServicesBanner
@@ -112,9 +112,9 @@ const Services = () => {
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle=""
+        secDescription=""
+        secLastText=""
       />
 
       <OneStopWebSec
@@ -153,4 +153,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default CustomDevelopment;

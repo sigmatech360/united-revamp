@@ -8,9 +8,19 @@ import Portfolio from "../screens/Portfolio";
 import Blogs from "../screens/Blogs";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
 import TermsAndConditions from "../screens/TermsAndConditions";
-import Services from "../screens/Services";
 
-// Import your components/pages 
+// Services Pages
+import Services from "../screens/Services";
+import WebDesign from "../screens/Services/WebDesign";
+import CMSDevelopment from "../screens/Services/CMSDevelopment";
+import DigitalMarketing from "../screens/Services/DigitalMarketing";
+import SocialMediaMarketing from "../screens/Services/SocialMediaMarketing";
+import SEO from "../screens/Services/SEO";
+import CustomDevelopment from "../screens/Services/CustomDevelopment";
+import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
+import LogoDesign from "../screens/Services/LogoDesign";
+
+// Import your components/pages
 
 const AppRouter = () => {
   return (
@@ -19,6 +29,30 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+
+        {/* Services Pages Start */}
+        <Route path="/services/web-design" element={<WebDesign />} />
+        <Route path="/services/cms-development" element={<CMSDevelopment />} />
+        <Route
+          path="/services/digital-marketing"
+          element={<DigitalMarketing />}
+        />
+        <Route
+          path="/services/social-media-marketing"
+          element={<SocialMediaMarketing />}
+        />
+        <Route path="/services/search-engine-optimization" element={<SEO />} />
+        <Route
+          path="/services/custom-development"
+          element={<CustomDevelopment />}
+        />
+        <Route
+          path="/services/mobile-app-development"
+          element={<MobileAppDevelopment />}
+        />
+        <Route path="/services/logo-design" element={<LogoDesign />} />
+        {/* Services Pages End */}
+
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blogs" element={<Blogs />} />
