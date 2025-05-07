@@ -88,6 +88,18 @@ import serviceCMDDevportfolioimg2 from "./assets/images/service-cmsDev-portfolio
 import serviceCMDDevportfolioimg3 from "./assets/images/service-cmsDev-portfolio-img3.png";
 import serviceCMDDevportfolioimg4 from "./assets/images/service-cmsDev-portfolio-img4.png";
 import serviceCMDDevportfolioimg5 from "./assets/images/service-cmsDev-portfolio-img5.png";
+// Services Custom Development Portfolio
+import serviceCustomDevportfolioimg1 from "./assets/images/service-customDev-portfolio-img1.png";
+import serviceCustomDevportfolioimg2 from "./assets/images/service-customDev-portfolio-img2.png";
+import serviceCustomDevportfolioimg3 from "./assets/images/service-customDev-portfolio-img3.png";
+import serviceCustomDevportfolioimg4 from "./assets/images/service-customDev-portfolio-img4.png";
+import serviceCustomDevportfolioimg5 from "./assets/images/service-customDev-portfolio-img5.png";
+// Services Logo Design Portfolio
+import serviceLogoDesignportfolioimg1 from "./assets/images/service-logoDesign-portfolio-img1.png";
+// import serviceLogoDesignportfolioimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
+import serviceLogoDesignportfolioimg3 from "./assets/images/service-logoDesign-portfolio-img3.png";
+import serviceLogoDesignportfolioimg4 from "./assets/images/service-logoDesign-portfolio-img4.png";
+import serviceLogoDesignportfolioimg5 from "./assets/images/service-logoDesign-portfolio-img5.png";
 
 import adobephotoshopcardbg from "./assets/images/portfolio/adobe-photoshop-card-bg.png";
 import adobephotoshopimg3 from "./assets/images/portfolio/adobe-photoshop-img-3.png";
@@ -113,6 +125,16 @@ import servicescmsDevsupportimg1 from "./assets/images/services-cmsDev-support-i
 import servicescmsDevsupportimg2 from "./assets/images/services-cmsDev-support-img2.png";
 import servicescmsDevsupportimg3 from "./assets/images/services-cmsDev-support-img3.png";
 import servicescmsDevsupportimg4 from "./assets/images/services-cmsDev-support-img4.png";
+// Services => Custom Development
+import servicesCustomDevsupportimg1 from "./assets/images/services-CustomDev-support-img1.png";
+import servicesCustomDevsupportimg2 from "./assets/images/services-CustomDev-support-img2.png";
+import servicesCustomDevsupportimg3 from "./assets/images/services-CustomDev-support-img3.png";
+import servicesCustomDevsupportimg4 from "./assets/images/services-CustomDev-support-img4.png";
+// Services => Mobile App Development
+import servicesMobileAppDevsupportimg1 from "./assets/images/services-mobileAppDev-support-img1.png";
+import servicesMobileAppDevsupportimg2 from "./assets/images/services-mobileAppDev-support-img2.png";
+import servicesMobileAppDevsupportimg3 from "./assets/images/services-mobileAppDev-support-img3.png";
+import servicesMobileAppDevsupportimg4 from "./assets/images/services-mobileAppDev-support-img4.png";
 
 import webDesignGuideIcon1 from "./assets/images/web-design-guide-i1.png";
 import webDesignGuideIcon2 from "./assets/images/web-design-guide-i2.png";
@@ -781,6 +803,54 @@ export const servicesCMSDevPortfolioData = [
     image: serviceCMDDevportfolioimg5,
   },
 ];
+export const servicesCustomDevPortfolioData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCustomDevportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCustomDevportfolioimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCustomDevportfolioimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCustomDevportfolioimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceCustomDevportfolioimg5,
+  },
+];
+
+
+export const servicesLogoDesignPortfolioData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceLogoDesignportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceLogoDesignportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceLogoDesignportfolioimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceLogoDesignportfolioimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceLogoDesignportfolioimg5,
+  },
+];
+
+
 
 export const oneStopWebBoxesData = [
   {
@@ -922,6 +992,68 @@ export const servicesCMSDevSupportData = [
       "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
   },
 ];
+export const servicesCustomDevSupportData = [
+  {
+    id: 1,
+    image: servicesCustomDevsupportimg1,
+    title: "360 Web Design Package",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 2,
+    image: servicesCustomDevsupportimg2,
+    title: "Fully Responsive",
+    shortDescription:
+      "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms.",
+  },
+  {
+    id: 3,
+    image: servicesCustomDevsupportimg3,
+    title: "Custom Code Design",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 4,
+    image: servicesCustomDevsupportimg4,
+    title: "Dedicated Project Support",
+    shortDescription:
+      "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
+  },
+];
+export const servicesMobileAppDevSupportData = [
+  {
+    id: 1,
+    image: servicesMobileAppDevsupportimg1,
+    title: "360 Web Design Package",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 2,
+    image: servicesMobileAppDevsupportimg2,
+    title: "Fully Responsive",
+    shortDescription:
+      "From smartphones to tablets, our website design agency helps you to build responsive websites for cross platforms.",
+  },
+  {
+    id: 3,
+    image: servicesMobileAppDevsupportimg3,
+    title: "Custom Code Design",
+    shortDescription:
+      "With a complete package of full-scale website design services, we give your online identity a strong edge in the market.",
+  },
+  {
+    id: 4,
+    image: servicesMobileAppDevsupportimg4,
+    title: "Dedicated Project Support",
+    shortDescription:
+      "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
+  },
+];
+
+
 
 export const webDesignGuidelinesData = [
   {
@@ -963,6 +1095,52 @@ export const webDesignGuidelinesData = [
     id: 6,
     icon: webDesignGuideIcon6,
     name: "Appealing Color Tone",
+    description:
+      "We know how to make website presentations impactful, especially by using creative color tone. That is where we beat out the competition in the market, making our web designs highly creative.",
+  },
+];
+
+// Services Guidlines
+export const logoDesignGuidelinesData = [
+  {
+    id: 1,
+    icon: webDesignGuideIcon1,
+    name: "Know Who’s It For",
+    description:
+      "We believe in creating websites with simplicity. Whether it’s a one-page website or an ecommerce store, clean web design has always remained our preference to ensure top-notch website.",
+  },
+  {
+    id: 2,
+    icon: webDesignGuideIcon2,
+    name: "Know Your Competitor",
+    description:
+      "To attract maximum eyeballs, our web designs utilize catchy buttons made with unique layouts. It perfectly makes our CTAs look creative, allowing them to get more prominence on the page.",
+  },
+  {
+    id: 3,
+    icon: webDesignGuideIcon3,
+    name: "Select The Right Fonts",
+    description:
+      "In order to make websites load faster, our web designers make sure to use optimized images. This allows our website designs to look clean and load quickly on the browsers.",
+  },
+  {
+    id: 4,
+    icon: webDesignGuideIcon4,
+    name: "Pick Suitable Colors",
+    description:
+      "We implement sticky menus on the top of our web pages. It makes surfing over the website super easy, allowing everyone to navigate between pages swiftly.",
+  },
+  {
+    id: 5,
+    icon: webDesignGuideIcon5,
+    name: "Simplicity Is Key",
+    description:
+      "Using a responsive layout, we ensure to make our websites accessible on all platforms. Whether it's a smartphone or a laptop, our advanced responsive designs fit perfect for everyone.",
+  },
+  {
+    id: 6,
+    icon: webDesignGuideIcon6,
+    name: "Feedback Is Vital",
     description:
       "We know how to make website presentations impactful, especially by using creative color tone. That is where we beat out the competition in the market, making our web designs highly creative.",
   },

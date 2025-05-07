@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-customDev-banner-bg.png";
 
 import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-about-img.png";
+import servicesaboutimg from "../../assets/images/services-customDev-about-img.png";
 
 import gfxlogo from "../../assets/images/gfx-logo.png";
 import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
 
-import webdesignimg from "../../assets/images/web-design-img.png";
-import photoshopicon from "../../assets/images/photoshop-icon.png";
+import webdesignimg from "../../assets/images/services-customDevPage-img.png";
+import photoshopicon from "../../assets/images/custom-dev-icon.png";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/services-customDev-oneStopImg.png";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -37,10 +37,11 @@ const gfxServices = [
 ];
 
 import {
-  adobePhotoshopSecData,
   oneStopWebBoxesData,
+  servicesCustomDevPortfolioData,
+  servicesCustomDevSupportData,
   webDesignGuidelinesData,
-  webDesignSupportData,
+  // webDesignSupportData,
 } from "../../data";
 
 const CustomDevelopment = () => {
@@ -48,11 +49,11 @@ const CustomDevelopment = () => {
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
-        leftColClass="col-lg-7"
-        rightColClass="col-lg-5"
-        title="Website Design Services That Drives Brand Innovation"
+        // leftColClass="col-lg-7"
+        // rightColClass="col-lg-5"
+        title="Custom Web Development"
         description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
-        servicesbannerimg={servicesbannerimg}
+        // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
@@ -71,9 +72,9 @@ const CustomDevelopment = () => {
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="GRAPHIC DESIGN AGENCY"
-        secTitle="Providing Advanced Digital Services"
-        secHeadDescription="From logo designing to digital marketing, video animation to web designing & more, we are your one-stop solution to findall types of digital branding services."
+        secTag="WEBSITE DESIGN COMPANY"
+        secTitle="That Offers Multiple Types Of Websites"
+        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
         // viewAllServices
         gfxServices={gfxServices}
         gfxLastDescription="Our team of talented web designers has got the required
@@ -90,7 +91,7 @@ const CustomDevelopment = () => {
         secTitle="Powerful Tools For Web Design Services"
         secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
         toolIcon={photoshopicon}
-        toolName="Adobe Photoshop"
+        toolName="Custom Web Development"
         toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="90%"
@@ -104,17 +105,16 @@ const CustomDevelopment = () => {
         secTitleDescription="We love to create websites that have got the power to engage
                   your clients. Here are some of our web designs that showcase
                   our proficiency in the field."
-        secSubTitle="Adobe Photoshop"
-        secSubTitleDescription="Clients simply love our web designs, and some of these
-                  exceptional design samples speak volume for our hard work."
-        servicesData={adobePhotoshopSecData}
+        secSubTitle="Custom Web Development"
+        secSubTitleDescription="Clients simply love our web designs, and some of these exceptional design samples speak volume for our hard work."
+        servicesData={servicesCustomDevPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle=""
-        secDescription=""
-        secLastText=""
+        secTitle="Providing Advanced Digital Services"
+        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
+        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
       <OneStopWebSec
@@ -127,7 +127,7 @@ const CustomDevelopment = () => {
       <WebDesignSupportSec
         secTitle="Your Partner To Find Complete Web Designing Support"
         secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
-        webDesignSupport={webDesignSupportData}
+        webDesignSupport={servicesCustomDevSupportData}
       />
 
       <ClientTestimonialSec className="bgDark" />
