@@ -13,20 +13,20 @@ const companyLinks = [
   { name: "Blog", path: "/blogs" },
   { name: "Contact Us", path: "/contact-us" },
   { name: "Resources", path: "" },
-  { name: "Services", path: "/services" },
+  // { name: "Services", path: "/services" },
   { name: "Testimonials", path: "" },
   { name: "Business Tools", path: "" },
 ];
 
 const servicesLinks = [
   { name: "Branding", path: "" },
-  { name: "Logo Design", path: "" },
+  { name: "Logo Design", path: "/services/logo-design" },
   { name: "Video Animation", path: "" },
-  { name: "Web Design", path: "" },
+  { name: "Web Design", path: "/services/web-design" },
   { name: "Ebook Design", path: "" },
   { name: "UI/UX Design", path: "" },
-  { name: "SEO", path: "/seo" },
-  { name: "Web Development", path: "" },
+  { name: "SEO", path: "/services/search-engine-optimization" },
+  { name: "Web Development", path: "/services/custom-development" },
 ];
 
 const Footer = () => {

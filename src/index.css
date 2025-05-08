@@ -70,6 +70,58 @@ p {
   font-weight: 600;
 }
 
+/* Page side buttons */
+.page-side-buttons {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  z-index: 999;
+}
+/* .page-side-buttons .theme-btn.theme-btn__yellow {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); 
+  padding: 20px 10px;
+  cursor: pointer;
+} */
+.page-side-buttons .theme-sideBtn {
+  background-color: #d7ff00;
+  border: 1px solid #d7ff00;
+  color: #191919;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border-radius: 30px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 20px 10px;
+  cursor: pointer;
+}
+.pageSide__iconBtn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border-radius: 50%;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #d7ff00;
+  border: 1px solid #d7ff00;
+  color: #191919;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
 .main-navbar {
   position: absolute !important;
   width: 100%;
@@ -114,16 +166,15 @@ p {
 .main-navbar .navbar-nav .nav-link:hover::before {
   width: 70%;
 }
-.main-navbar .navbar-nav .dropdown-menu{
+.main-navbar .navbar-nav .dropdown-menu {
   background-color: #000;
 }
-.main-navbar .navbar-nav .dropdown-menu .dropdown-item{
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item {
   color: #fff;
-  
 }
 .main-navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
 .main-navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
-.main-navbar .navbar-nav .dropdown-menu .dropdown-item:active{
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item:active {
   background-color: #d7ff00;
   color: #191919;
 }
@@ -257,14 +308,14 @@ p {
 
 /* Hover effects */
 .gfx-card:hover .gfx-card__content-img {
-  background-color: #000; 
-  border: 2px solid #d7ff00; 
-  border-radius: 50%; 
+  background-color: #000;
+  border: 2px solid #d7ff00;
+  border-radius: 50%;
   padding: 10px;
 }
 
 .gfx-card:hover .gfx-card__content-img img {
-  transform: scale(0.7); 
+  transform: scale(0.7);
 }
 
 .gfx-card__title {
@@ -293,7 +344,7 @@ p {
 
 .home-portfolio-sec {
   margin: 60px 0;
-  overflow: hidden  ;
+  overflow: hidden;
 }
 
 .home-portfolio-sec .sec-head {
@@ -1354,7 +1405,7 @@ p {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
 }
-.blog-categories{
+.blog-categories {
   overflow: hidden;
 }
 
@@ -1926,12 +1977,11 @@ p {
   font-size: 16px;
 }
 
-
-.servicesGDA .sec-head{
+.servicesGDA .sec-head {
   justify-content: center;
   text-align: center;
 }
-.servicesGDA .sec-head .sec-head-tag{
+.servicesGDA .sec-head .sec-head-tag {
   margin: 0 auto;
 }
 /* Services page Css End */

@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import AppRouter from "./Router/AppRouter";
+import { BsTelephone } from "react-icons/bs";
 
 function App() {
   useEffect(() => {
@@ -19,7 +20,16 @@ function App() {
 
   return (
     <>
-      <AppRouter />
+        <AppRouter />
+        <div className="page-side-buttons">
+          <button className="theme-sideBtn">
+            Get Free Consultancy
+          </button>
+          <button className="pageSide__iconBtn">
+            <BsTelephone />
+          </button>
+        </div>
+      
     </>
   );
 }

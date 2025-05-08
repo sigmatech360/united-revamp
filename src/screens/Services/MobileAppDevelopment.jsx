@@ -3,7 +3,7 @@ import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import aboutbannerbg from "../../assets/images/services-mobileAppDev-banner-bg.png";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
+import servicesbannerimg from "../../assets/images/services-mobileAppDev-banner-img.png";
 import servicesaboutimg from "../../assets/images/services-mobileAppDev-about-img.png";
 
 import gfxlogo from "../../assets/images/gfx-logo.png";
@@ -40,6 +40,7 @@ import {
   adobePhotoshopSecData,
   oneStopWebBoxesData,
   servicesMobileAppDevSupportData,
+  servicesMobileDevPortfolioData,
   webDesignGuidelinesData,
 } from "../../data";
 
@@ -52,7 +53,7 @@ const MobileDevelopment = () => {
         rightColClass="col-lg-7"
         title="Mobile App Development"
         description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
-        // servicesbannerimg={servicesbannerimg}
+        servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
@@ -107,7 +108,7 @@ const MobileDevelopment = () => {
         secSubTitle="Mobile App Development"
         secSubTitleDescription="Clients simply love our web designs, and some of these
                   exceptional design samples speak volume for our hard work."
-        servicesData={adobePhotoshopSecData}
+        servicesData={servicesMobileDevPortfolioData}
       />
 
       <OurWorkProcessSec

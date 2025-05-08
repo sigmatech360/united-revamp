@@ -94,9 +94,15 @@ import serviceCustomDevportfolioimg2 from "./assets/images/service-customDev-por
 import serviceCustomDevportfolioimg3 from "./assets/images/service-customDev-portfolio-img3.png";
 import serviceCustomDevportfolioimg4 from "./assets/images/service-customDev-portfolio-img4.png";
 import serviceCustomDevportfolioimg5 from "./assets/images/service-customDev-portfolio-img5.png";
+// Services Mobile Development Portfolio
+import serviceMobileDevgnportfolioimg1 from "./assets/images/service-mobileDev-portfolio-img1.png";
+import serviceMobileDevgnportfolioimg2 from "./assets/images/service-mobileDev-portfolio-img2.png";
+import serviceMobileDevgnportfolioimg3 from "./assets/images/service-mobileDev-portfolio-img3.png";
+import serviceMobileDevgnportfolioimg4 from "./assets/images/service-mobileDev-portfolio-img4.png";
+import serviceMobileDevgnportfolioimg5 from "./assets/images/service-mobileDev-portfolio-img5.png";
 // Services Logo Design Portfolio
 import serviceLogoDesignportfolioimg1 from "./assets/images/service-logoDesign-portfolio-img1.png";
-// import serviceLogoDesignportfolioimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
+import serviceLogoDesignportfolioimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
 import serviceLogoDesignportfolioimg3 from "./assets/images/service-logoDesign-portfolio-img3.png";
 import serviceLogoDesignportfolioimg4 from "./assets/images/service-logoDesign-portfolio-img4.png";
 import serviceLogoDesignportfolioimg5 from "./assets/images/service-logoDesign-portfolio-img5.png";
@@ -827,6 +833,28 @@ export const servicesCustomDevPortfolioData = [
 ];
 
 
+export const servicesMobileDevPortfolioData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceMobileDevgnportfolioimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceMobileDevgnportfolioimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceMobileDevgnportfolioimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceMobileDevgnportfolioimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: serviceMobileDevgnportfolioimg5,
+  },
+];
 export const servicesLogoDesignPortfolioData = [
   {
     cardBG: adobephotoshopcardbg,
@@ -834,7 +862,7 @@ export const servicesLogoDesignPortfolioData = [
   },
   {
     cardBG: adobephotoshopcardbg,
-    image: serviceLogoDesignportfolioimg1,
+    image: serviceLogoDesignportfolioimg2,
   },
   {
     cardBG: adobephotoshopcardbg,
