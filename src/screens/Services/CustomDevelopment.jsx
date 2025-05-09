@@ -30,19 +30,59 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Business Websites", img: gfxlogo },
+  { title: "Personal Websites", img: gfxwedev },
+  { title: "E-Commerce Websites", img: gfcvideoanimation },
+  { title: "Portfolios", img: gfxcontentwriting },
+  { title: "Blogs Website", img: gfxlogo },
+  { title: "Booking Websites", img: gfxwedev },
+  { title: "Informational Websites", img: gfcvideoanimation },
+  { title: "Magazines or News Websites", img: gfxcontentwriting },
 ];
 
 import {
+  blogsData,
+  customDevelopmentTestimoialData,
+  customWebFaqs,
   oneStopWebBoxesData,
   servicesCustomDevPortfolioData,
   servicesCustomDevSupportData,
   webDesignGuidelinesData,
   // webDesignSupportData,
 } from "../../data";
+
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Client Consultation",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "02",
+    stepName: "Planning",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "03",
+    stepName: "Designing",
+    stepDescription:
+      "From concept to code, our custom web development process is built to deliver consistent results for your business, backed by strategy, and executed with precision.",
+  },
+  {
+    stepNum: "04",
+    stepName: "Back-end Optimization",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "05",
+    stepName: "Launch & Optimization",
+    stepDescription:
+      "",
+  },
+]
 
 const CustomDevelopment = () => {
   return (
@@ -51,104 +91,100 @@ const CustomDevelopment = () => {
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Custom Web Development"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Custom Web Development Services USA"
+        description="In our custom web development services, there are no templates or shortcuts, only fresh ideas and personalization. From the front-end to the back-end, you get full control over your website and performance."
+        cta1="Build My Website"
+        cta2="Let’s Chat!"
         // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="Built From Scratch to Witness Organic Growth"
+        description="Why settle for a template used by hundreds of websites? With our custom web development services, you can build a unique identity and create a name for yourself! We ensure you’re getting a digital solution that’s built around you. With smooth and customized frontend and backend web development, we make sure your site works exactly how you want it to."
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTitle="Types Of Websites We Offer"
+        secHeadDescription="Got a unique niche? Doesn’t matter! We create various kinds of websites with intricate details that connect you with your audience at a glance!"
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required
-                expertise to develop custom websites on HTML. With years of
-                experience in the field, we know how to develop websites that
-                can represent your brand strongly. Get in touch with us today
-                and get your desired custom website developed on HTML/CSS at the
-                lowest market rates."
+        gfxLastDescription="You’ve got a vision to grow your business online, and we’ve got the perfect team to build it. As one of the leading custom web development companies in the USA, we don’t give you template-based websites. United Web developers shape your digital experience according to what fits your goals, users, and brand. It’s time you bring your dreams into reality, that carves a path of success for you! "
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Trusted By Businesses That Want Real Results"
+        secDescription="We’ve built everything from sleek landing pages to enterprise-level systems with perfection. Clients choose us not just for design, but for results that grow businesses and ensure success!"
         toolIcon={photoshopicon}
         toolName="Custom Web Development"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="Our team is obsessed with results! Our strategy is fully focused on results, performance, speed, and user experience. That’s how we consistently keep our satisfaction rate near perfect."
+        cta="Book A Consultation"
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="97%"
+        usage="Client Satisfaction"
+        rank="500+"
+        highlightText="Websites Made"
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Large Range Of Website Portfolio"
-        secTitleDescription="We love to create websites that have got the power to engage
-                  your clients. Here are some of our web designs that showcase
-                  our proficiency in the field."
+        secTitle="Get A Glimpse of Our Custom Websites"
+        secTitleDescription="Trust isn’t built with words only. Visit our portfolio and see how we have helped businesses get a unique brand presence with custom websites that are made to meet unique requirements."
         secSubTitle="Custom Web Development"
-        secSubTitleDescription="Clients simply love our web designs, and some of these exceptional design samples speak volume for our hard work."
+        secSubTitleDescription="This portfolio showcases the best of our <span class='colorYellow'>Custom Web Development</span> services and shows how we add different features and details for personalization."
         servicesData={servicesCustomDevPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="The Process Of Customization"
+        secDescription="To witness real results, we pour in real efforts. Learn how our experts strategize to create the perfect website customized to your unique needs:"
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secStepsData={stepsData}
       />
 
       <OneStopWebSec
-        secTitle="Your One-Stop Website Design Agency"
-        secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
+        secTitle="Be Imaginative, We’ll Be Creative. "
+        secDescription="Do you want your web design to be a full experience of new designs, custom animations, or transitions? We have you covered!"
         image={oneStopWebImg}
         boxesData={oneStopWebBoxesData}
       />
 
       <WebDesignSupportSec
-        secTitle="Your Partner To Find Complete Web Designing Support"
-        secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
+        secTitle="Why Clients Choose United Web Developers Every Time"
+        secTitleDescription="Our <span class='colorYellow'>Custom web design and development services</span> aren’t only about the building process; we stay with you for constant support and satisfaction."
         webDesignSupport={servicesCustomDevSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec className="bgDark"
+        title="Custom Web Development Keeps Our Clients Happy!"
+        description="Our valuable clients are our biggest assets. Take a look at how we served them with websites built from scratch to highlight their unique digital presence."
+        testimonialData={customDevelopmentTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
         title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        description="Got questions related to custom web development services? We are here to answer!"
+        faqsQA={customWebFaqs}
       />
 
       <WebDesignGuidelines
         secTag="WEBSITE DESIGN GUIDELINES"
-        secTitle="Our Recipe for Creating Impactful Website Designs"
-        secDescription="We take pride in serving our customers with top-of-the-line
-                  web designs. Here’s how we do it with perfection in our
-                  projects."
+        secTitle="What’s Included In Our <span class='colorYellow'>Custom Web Development Services</span>?"
+        secDescription="We build, improve, and maintain websites and web apps personalized for your business. Focused on speed, design, and long-term performance."
         stepData={webDesignGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec 
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

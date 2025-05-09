@@ -11,12 +11,10 @@ const MainBanner = () => {
           <div className="col-xxl-7 col-xl-8 col-lg-9">
             <div className="main-banner__content">
               <h1 data-aos="fade-up" data-aos-delay="100">
-                Graphic Design Agency For Modern Brands!
+              Empowering Growth With Custom Web Design & Development Solutions!
               </h1>
               <p data-aos="fade-up" data-aos-delay="300">
-                We are a new age graphic design agency that help brands to look
-                creative & bold using our cutting-edge design & branding
-                services.
+              We are a modern digital agency that blends creativity with code to build unforgettable brand experiences. Our digital solutions effortlessly convert casual visitors into loyal fans, driving tangible results.
               </p>
               <div
                 className="main-banner__content-btns"

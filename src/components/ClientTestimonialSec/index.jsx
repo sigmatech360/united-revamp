@@ -21,12 +21,10 @@ const ClientTestimonialSec = (props) => {
                 CLIENT TESTIMONIALS
               </p>
               <h2 data-aos="fade-right" data-aos-delay={100}>
-                Words Of Happiness From Our Valued Customers
+               {props.title}
               </h2>
               <p data-aos="fade-right" data-aos-delay={300}>
-                We value our customers as the core asset of our company. Here’s
-                what they have to say about the quality of our branding
-                services.
+              {props.description}
               </p>
             </div>
           </div>
@@ -46,7 +44,7 @@ const ClientTestimonialSec = (props) => {
                   768: { slidesPerView: 1.2 },
                 }}
               >
-                {clientTestimonialData.map((testimonial, index) => (
+                {props.testimonialData.map((testimonial, index) => (
                   <SwiperSlide key={index}>
                     <div className="client-testimonial__content">
                       <p className="client-testimonial__content-quote">
@@ -55,9 +53,9 @@ const ClientTestimonialSec = (props) => {
                       <div className="client-testimonial__content-footer">
                         <div className="client-testimonial__content-footer-meta">
                           <h3>{testimonial.name}</h3>
-                          <p className="client-testimonial__content-footer-meta-desc">
+                          {/* <p className="client-testimonial__content-footer-meta-desc">
                             {testimonial.designation}
-                          </p>
+                          </p> */}
                         </div>
                         <img src={ratingstartimg} alt="" />
                       </div>

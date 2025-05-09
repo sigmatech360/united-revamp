@@ -30,18 +30,58 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "SEO", img: gfxlogo },
+  { title: "Paid Ads", img: gfxwedev },
+  { title: "Campaign Management", img: gfcvideoanimation },
+  { title: "Content Management", img: gfxcontentwriting },
+  { title: "Ad Analytics & Reporting", img: gfxlogo },
+  { title: "Email Marketing", img: gfxwedev },
+  { title: "Social Media Advertising", img: gfcvideoanimation },
+  { title: "Keyword Optimization", img: gfxcontentwriting },
 ];
 
 import {
   adobePhotoshopSecData,
+  blogsData,
+  digitalMarketingFaqs,
+  digitalMarketingTestimoialData,
   oneStopWebBoxesData,
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Breaf",
+    stepDescription:
+      "We begin by understanding your business, goals, audience, and competitors to craft a data-backed digital marketing roadmap",
+  },
+  {
+    stepNum: "02",
+    stepName: "Ideation",
+    stepDescription:
+      "Our team brainstorms creative content ideas and campaign strategies that align with your brand and drive online engagement",
+  },
+  {
+    stepNum: "03",
+    stepName: "Sketch",
+    stepDescription:
+      "We turn ideas into structured campaign plans, mapping out platform-specific content, ad creatives, and KPIs",
+  },
+  {
+    stepNum: "04",
+    stepName: "Execution",
+    stepDescription:
+      "We implement your digital strategy using tools like Meta Business Suite and Google Ads",
+  },
+  {
+    stepNum: "05",
+    stepName: "Deliver",
+    stepDescription:
+      "You receive performance reports, analytics insights, and optimization recommendations to ensure ongoing growth and ROI.",
+  },
+];
 
 const DigitalMarketing = () => {
   return (
@@ -50,48 +90,43 @@ const DigitalMarketing = () => {
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Digital marketing"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Drive Results With Expert Digital Marketing Services"
+        description="Partner with the leading marketing agency that increases brand awareness, engagement, and conversions.
+"
         // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="Why Digital Marketing Matters More Than Ever"
+        description="Digital Marketing has become the foundation of brand success. With billions of people online, your business must be visible where it matters. As a trusted digital marketing company in the USA, we help you cut through the noise with powerful online marketing strategies tailored to your brand. We combine a variety of frameworks, including SEO, content, and paid ads, to create the best digital marketing strategy that will work for your business."
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="GRAPHIC DESIGN AGENCY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTag="We Help You Get Found, Seen, And Chosen"
+        secTitle="Professional Solutions That Drive Results"
+        secHeadDescription="
+We make social media work for you by offering solutions at every stage of your marketing funnel. Here’s what we bring to the table:
+"
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required expertise to develop custom websites on HTML. With years of experience in the field, we know how to develop websites that can represent your brand strongly. Get in touch with us today and get your desired custom website developed on HTML/CSS at the lowest market rates."
+        gfxLastDescription="Looking for serious growth to establish authority in your industry? Our team is here to help you hit your business goals with strategic, high-impact marketing campaigns. What makes us different? We dive deep into your business to understand what truly sets you apart, and then we build around that."
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Digital Marketing Powered By Robust Tools And Strategies"
+        secDescription="As a full-service digital marketing agency, we utilize real-time data and cutting-edge tools to create a strategy that can set your business apart in the highly competitive digital environment."
         toolIcon={photoshopicon}
         toolName="Digital marketing"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="For digital marketing services, Meta Business Suite and Google Ads are the most important tools to launch ads, track real-time data, and tweak ads for better performance."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="98%"
+        usage="Success Rate"
+        rank="500+"
+        highlightText="Projects Completed"
       />
 
       {/* <AdobePhotoshopSec
@@ -107,9 +142,10 @@ const DigitalMarketing = () => {
 
       <OurWorkProcessSec
         // className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="Professional Digital Marketing Strategies For Success"
+        secDescription="Results come from a process grounded in clarity and creativity. Our digital marketing workflow ensures every campaign is designed to meet business goals through structure, analysis, and innovation"
+        secStepsData={stepsData}
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
       {/* <OneStopWebSec
@@ -125,15 +161,19 @@ const DigitalMarketing = () => {
         webDesignSupport={webDesignSupportData}
       /> */}
 
-      <ClientTestimonialSec 
-        // className="bgDark" 
+      <ClientTestimonialSec
+        // className="bgDark"
+        title="What Our Client Says, Says It All"
+        description="Our clients are important to us. Their words reflect the trust, results, and satisfaction we deliver every day."
+        testimonialData={digitalMarketingTestimoialData}
       />
 
       <FAQSection
         // className="bgLight"
         secHeadrag="FREQUENTLY ASKED QUESTIONS"
         title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        description="How We Turn Imagination Into Reality"
+        faqsQA={digitalMarketingFaqs}
       />
 
       {/* <WebDesignGuidelines
@@ -145,7 +185,11 @@ const DigitalMarketing = () => {
         stepData={webDesignGuidelinesData}
       /> */}
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

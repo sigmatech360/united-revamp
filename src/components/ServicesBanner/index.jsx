@@ -13,23 +13,37 @@ const ServicesBanner = (props) => {
         <div className="row align-items-center flex-lg-row flex-column-reverse">
           <div className={props.leftColClass || `col-lg-6`}>
             <div className="services-banner__content">
-              <h1 data-aos="fade-right" data-aos-delay={100}>
-                {props.title}
+              <h1 data-aos="fade-right" data-aos-delay={100} dangerouslySetInnerHTML={{ __html: props.title }}>
+                
               </h1>
-              <p data-aos="fade-right" data-aos-delay={300}>
-                {props.description}
+              <p data-aos="fade-right" data-aos-delay={300} dangerouslySetInnerHTML={{ __html: props.description }}>
+                
               </p>
               <div
                 className="main-banner__content-btns"
                 data-aos="fade-right"
                 data-aos-delay={500}
               >
-                <Link to={""} className="theme-btn theme-btn__yellow">
-                  Let's Get Started
-                </Link>
-                <Link to={""} className="theme-btn">
-                  Discuss Your Project
-                </Link>
+                {props.cta1 && props.cta2 ? (
+
+                  <>
+                  <Link to={""} className="theme-btn theme-btn__yellow">
+                    {props.cta1}
+                  </Link>
+                  <Link to={""} className="theme-btn">
+                    {props.cta2}
+                  </Link>
+                  </>
+                ):(
+                  <>
+                  <Link to={""} className="theme-btn theme-btn__yellow">
+                    Let's Get Started
+                  </Link>
+                  <Link to={""} className="theme-btn">
+                    Discuss Your Project
+                  </Link>
+                  </>
+                )}
               </div>
               <div
                 className="main-banner__content-imgs"

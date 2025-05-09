@@ -30,126 +30,156 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Native Apps", img: gfxlogo },
+  { title: "Hybrid Apps", img: gfxwedev },
+  { title: "Web Apps", img: gfcvideoanimation },
+  { title: "Progressive Web Apps", img: gfxcontentwriting },
 ];
 
 import {
   adobePhotoshopSecData,
+  blogsData,
+  customDevelopmentTestimoialData,
+  customWebFaqs,
+  mobileAppFaqs,
+  mobileAppGuidelinesData,
+  mobileAppTestimoialData,
+  oneStopAppBoxesData,
   oneStopWebBoxesData,
   servicesMobileAppDevSupportData,
   servicesMobileDevPortfolioData,
   webDesignGuidelinesData,
 } from "../../data";
 
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Strategy",
+    stepDescription: "",
+  },
+  {
+    stepNum: "02",
+    stepName: "Designing & Developmen",
+    stepDescription: "",
+  },
+  {
+    stepNum: "03",
+    stepName: "App Testing",
+    stepDescription:
+      "We guide you through every development phase, ensuring clarity, collaboration, and confidence. So you're always in control and never left wondering what's next",
+  },
+  {
+    stepNum: "04",
+    stepName: "App Launch",
+    stepDescription: "",
+  },
+  {
+    stepNum: "05",
+    stepName: "Post-Launch Support",
+    stepDescription: "",
+  },
+];
+
 const MobileDevelopment = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout footerTitle="Let Your <span class='colorYellow'>Mobile Ap</span><br/> Speak For Your Brand’s Brilliance">
       <ServicesBanner
         bgImage={aboutbannerbg}
         leftColClass="col-lg-5"
         rightColClass="col-lg-7"
-        title="Mobile App Development"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Powerful <span class='colorYellow'>Mobile App Development</span> For Sustainable Growth"
+        description="Mobile applications that help your business grow fast, stay relevant, and reach users across all devices seamlessly."
         servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="Digital Growth Today Relies On Mobile Applications"
+        description="Your potential customers are most available on their mobile devices. Our Mobile App development company USA designs mobile apps that go beyond functionality; we make apps built for engagement, efficiency, and long-term business growth. Whether you need to connect with customers or enhance internal workflows, we create mobile solutions tailored to real-world impact and seamless user experiences."
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="From logo designing to digital marketing, video animation to web designing & more, we are your one-stop solution to findall types of digital branding services."
+        secTag="Mobile App Development Company"
+        secTitle="Our Mobile App Development Services Are A Package Of Success"
+        secHeadDescription="Our mobile app developers create different kinds of mobile apps with top-tier performance, enhanced functionality features, and long-term results. We create the following types of Mobile Apps for you:"
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required
-                expertise to develop custom websites on HTML. With years of
-                experience in the field, we know how to develop websites that
-                can represent your brand strongly. Get in touch with us today
-                and get your desired custom website developed on HTML/CSS at the
-                lowest market rates."
+        gfxLastTitle="Solutions For Every Business, Every Problem With Custom Mobile App Development."
+        gfxLastDescription="From custom internal tools to complex apps, our mobile app developers craft solutions that align perfectly with your brand’s vision, operational needs, and long-term business strategy. We work with startups, enterprises, and everything in between to develop mobile apps that truly make a difference. With United Web Developers, you get a team that listens, strategizes, and builds with long-term value in mind."
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Mobile Applications That Bring Scalable Results"
+        secDescription="Our team adds tracking tools and detailed analytics in our mobile app development services to monitor performance and user behavior from day one."
         toolIcon={photoshopicon}
         toolName="Mobile App Development"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="With over 500+ apps launched and a 97% satisfaction rating, we’re committed to development that brings results. Every app is optimized continuously to evolve with your users and business goals."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="97%"
+        usage="Client Satisfaction"
+        rank="500+"
+        highlightText="Successful Mobile Apps"
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Large Range Of Website Portfolio"
-        secTitleDescription="We love to create websites that have got the power to engage
-                  your clients. Here are some of our web designs that showcase
-                  our proficiency in the field."
+        secTitle="Check Out Our Portfolio Of Successful Mobile Applications"
+        secTitleDescription="From healthcare to e-commerce and service-based platforms, we’ve developed mobile apps that empower users and simplify operations. Each project tells a story of collaboration and transformation."
         secSubTitle="Mobile App Development"
-        secSubTitleDescription="Clients simply love our web designs, and some of these
-                  exceptional design samples speak volume for our hard work."
+        secSubTitleDescription="Our apps are designed with user experience as the top priority. Check out our portfolio for Mobile Applications, where each app showcases our diversity in development. "
         servicesData={servicesMobileDevPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="The Steps Our Mobile App Developers Follow"
+        secDescription="We make mobile app development smooth, strategic, and structured from start to finish."
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secStepsData={stepsData}
       />
 
       <OneStopWebSec
-        secTitle="Your One-Stop Website Design Agency"
-        secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
+        secTitle="Multiple Requirements, One-Stop. We’ll Do It All."
+        secDescription="Our mobile app development company in the USA is known to build features that enhance both the user experience and your operational effectiveness."
         image={oneStopWebImg}
-        boxesData={oneStopWebBoxesData}
+        boxesData={oneStopAppBoxesData}
       />
 
       <WebDesignSupportSec
-        secTitle="Your Partner To Find Complete Web Designing Support"
-        secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
+        secTitle="Custom Mobile App Development Like Never Before"
+        secTitleDescription="We focus on consistent communication, full transparency, and flexible solutions to meet your evolving business needs and ensure a stress-free mobile app development experience."
         webDesignSupport={servicesMobileAppDevSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec
+        className="bgDark"
+        title="Our Happy Clients Share A Word Of Support"
+        description="Mobile app development is a strategic process; we ensure that it’s done right. Here from the clients who are happily running Apps made by us! "
+        testimonialData={mobileAppTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
         title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        description="Here are some of the common questions we get asked about mobile app development services."
+        faqsQA={mobileAppFaqs}
       />
 
       <WebDesignGuidelines
         secTag="WEBSITE DESIGN GUIDELINES"
-        secTitle="Our Recipe for Creating Impactful Website Designs"
-        secDescription="We take pride in serving our customers with top-of-the-line
-                  web designs. Here’s how we do it with perfection in our
-                  projects."
-        stepData={webDesignGuidelinesData}
+        secTitle="How Our Mobile App Development Company USA Stands Out From The Rest"
+        secDescription="We blend creativity with technology to deliver mobile applications that are visually refined, fast, and built for real business impact."
+        stepData={mobileAppGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

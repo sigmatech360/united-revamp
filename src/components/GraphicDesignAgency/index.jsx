@@ -53,13 +53,32 @@ const GraphicDesignAgency = (props) => {
             </div>
           </div>
           <div className="col-lg-6">
-            <p
-              className="gfx-last-content"
-              data-aos="fade-right"
-              data-aos-delay={100}
-            >
-              {props.gfxLastDescription}
-            </p>
+            {props.gfxLastTitle && 
+            <h2 className="fw-bold text-light mb-3" data-aos="fade-right"
+            data-aos-delay={100}>
+              {props.gfxLastTitle}
+            </h2>
+            }
+            {Array.isArray(props.gfxLastDescription) ? (
+              props.gfxLastDescription.map((para, idx) => (
+                <p
+                  key={idx}
+                  className="gfx-last-content mb-2"
+                  data-aos="fade-right"
+                  data-aos-delay={100 * (idx + 1)}
+                >
+                  {para}
+                </p>
+              ))
+            ) : (
+              <p
+                className="gfx-last-content mb-2"
+                data-aos="fade-right"
+                data-aos-delay={100}
+              >
+                {props.gfxLastDescription}
+              </p>
+            )}
           </div>
           <div className="col-lg-6">
             {/* 2 Images */}
@@ -84,8 +103,11 @@ const GraphicDesignAgency = (props) => {
 
             {/* Single Image */}
             {props.gfxLastImage && (
-              <div className="web-design__img" data-aos="fade-left"
-              data-aos-delay={100}>
+              <div
+                className="web-design__img"
+                data-aos="fade-left"
+                data-aos-delay={100}
+              >
                 <img
                   src={props.gfxLastImage}
                   className="img-fluid"

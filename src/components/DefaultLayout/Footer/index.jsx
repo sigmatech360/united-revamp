@@ -29,17 +29,29 @@ const servicesLinks = [
   { name: "Web Development", path: "/services/custom-development" },
 ];
 
-const Footer = () => {
+const Footer = ({footerTitle}) => {
   return (
     <footer className="main-footer">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h2 className="footer-main__title text-center">
-              Being A <span className="colorYellow">Creative Agency</span>{" "}
-              <br /> We love to reinvent brands with our{" "}
-              <span className="colorYellow">design services</span>
-            </h2>
+            {footerTitle  ?
+            (
+
+              <h2 className="footer-main__title text-center" dangerouslySetInnerHTML={{ __html: footerTitle }}>
+              </h2>
+            )
+            :
+            (
+              <h2 className="footer-main__title text-center">
+            Providing <span className="colorYellow">Smart Digital</span>{" "}
+              <br /> Solutions Designed to Grow Your {" "}
+              <span className="colorYellow">Business Online</span>
+
+              </h2>
+
+            )
+            }
           </div>
           <div className="col-md-12">
             <div className="row">
@@ -49,9 +61,7 @@ const Footer = () => {
                     <img src={logo} alt="United Revamp Developers" />
                   </div>
                   <p>
-                    United Web Developers: Your go-to for professional digital
-                    solutions. Our expert team offers website development,
-                    software solutions, and more. Experience excellence today!
+                  Your trusted partner in digital transformation. We create custom <span className="colorYellow">Web Designs, Logo Design, SEO, Social Media Marketing, and Digital marketing</span> services, providing powerful brand growth. Contact us today to book a spot for free testing. 
                   </p>
                   <div className="footer-social__links">
                     <a href="javascript:;" className="">

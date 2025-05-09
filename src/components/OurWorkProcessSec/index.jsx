@@ -7,7 +7,9 @@ const OurWorkProcessSec = (props) => {
         <div className="row">
           <div className="col-md-12">
             <div className="sec-head">
-              <p className="sec-head-tag">OUR WORK PROCESS</p>
+              <p className="sec-head-tag">
+                {props.secTag || "OUR WORK PROCESS"}
+              </p>
               <h2 data-aos="fade-up" data-aos-delay={100}>
                 {props.secTitle}
               </h2>
@@ -18,13 +20,32 @@ const OurWorkProcessSec = (props) => {
           </div>
           <div className="col-md-12">
             <div className="our-work-process__container">
-              <div
+              {props.secStepsData.map((item, index) => (
+                <div
+                  className="our-work-process__item"
+                  data-aos="fade-left"
+                  data-aos-delay={100}
+                  key={index}
+                >
+                  <h1>{item.stepNum}</h1>
+                  <p>{item.stepName}</p>
+                  <p
+                    className="our-work-process-last-p"
+                    data-aos="fade-up"
+                    data-aos-delay={200}
+                  >
+                    {item.stepDescription}
+                  </p>
+                </div>
+              ))}
+
+              {/* <div
                 className="our-work-process__item"
                 data-aos="fade-left"
                 data-aos-delay={100}
               >
                 <h1>01</h1>
-                <p>Brief</p>
+                <p></p>
               </div>
               <div
                 className="our-work-process__item"
@@ -57,8 +78,9 @@ const OurWorkProcessSec = (props) => {
               >
                 <h1>05</h1>
                 <p>Deliver</p>
-              </div>
+              </div> */}
             </div>
+            {/* <div className="d-flex align-items">
             <p
               className="our-work-process-last-p"
               data-aos="fade-up"
@@ -66,6 +88,36 @@ const OurWorkProcessSec = (props) => {
             >
               {props.secLastText}
             </p>
+            <p
+              className="our-work-process-last-p"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              {props.secLastText}
+            </p>
+            <p
+              className="our-work-process-last-p"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              {props.secLastText}
+            </p>
+            <p
+              className="our-work-process-last-p"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              {props.secLastText}
+            </p>
+            <p
+              className="our-work-process-last-p"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              {props.secLastText}
+            </p>
+
+            </div> */}
           </div>
         </div>
       </div>

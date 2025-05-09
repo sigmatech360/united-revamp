@@ -1,7 +1,11 @@
 import React from "react";
 import { blogsData } from "../../data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
-const BlogsSec = () => {
+const BlogsSec = (props) => {
   return (
     <section className="blog-sec">
       <div className="container">
@@ -12,35 +16,61 @@ const BlogsSec = () => {
                 ADDITIONAL RESOURCES
               </p>
               <h2 data-aos="fade-up" data-aos-delay={100}>
-                Our Recent Blogs Covering Latest Industry News
+                {props.blogSecTitle}
               </h2>
               <p data-aos="fade-up" data-aos-delay={300}>
-                Stay informed about all the latest happenings in the digital
-                world, including the latest news about graphic designing, logo
-                designing and more.
+                {props.blogSubtext}
+                
               </p>
             </div>
           </div>
-          {blogsData.map((item, index) => (
-            <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
-              <div
-                className="blog-card"
-                data-aos="fade-up"
-                data-aos-delay={index * 300}
-              >
-                <div className="blog-card__image">
-                  <img src={item.img} className="img-fluid" alt="Blog Image" />
-                </div>
-                <div className="blog-card__content">
-                  <div className="blog-card__content-meta">
-                    <h4>By: {item.meta.author}</h4>
-                    <p>{item.meta.date}</p>
+          <div className="swiper-container">
+
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              loop={true}
+              speed={1000}
+              breakpoints={{
+                768: { slidesPerView: 3 },
+              }}
+              pagination={{ clickable: true }}
+            >
+              {props.blogsData.map((item, index)=> (
+                <SwiperSlide key={index}>
+                  {/* <TestimonialCard
+                          description={testimonial.description}
+                          userImg={testimonial.userImg}
+                          username={testimonial.username}
+                          userCity={testimonial.userCity}
+                        /> */}
+                  <div className=" mb-lg-0 mb-4" key={index}>
+                    <div
+                      className="blog-card"
+                      data-aos="fade-up"
+                      data-aos-delay={index * 300}
+                    >
+                      <div className="blog-card__image">
+                        <img
+                          src={item.img}
+                          className="img-fluid"
+                          alt="Blog Image"
+                        />
+                      </div>
+                      <div className="blog-card__content">
+                        <div className="blog-card__content-meta">
+                          <h4>By: {item.meta.author}</h4>
+                          <p>{item.meta.date}</p>
+                        </div>
+                        <p className="blog-card__content-title">{item.title}</p>
+                      </div>
+                    </div>
                   </div>
-                  <p className="blog-card__content-title">{item.title}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

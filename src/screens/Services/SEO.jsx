@@ -30,73 +30,100 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "On-Page SEO", img: gfxlogo },
+  { title: "Off-page SEO", img: gfxwedev },
+  { title: "Local SEO", img: gfcvideoanimation },
+  { title: "Strategy & Research", img: gfxcontentwriting },
 ];
 
 import {
   adobePhotoshopSecData,
+  blogsData,
+  customDevelopmentTestimoialData,
+  customWebFaqs,
   oneStopWebBoxesData,
+  seoFaqs,
+  seoServicesTestimoialData,
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
 
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Research & strategy",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "02",
+    stepName: "Content Creation",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "03",
+    stepName: "On-page optimization",
+    stepDescription:
+      "Search Engines won’t recognize you unless you put in real effort. Every part of our seo strategy is planned to increase visibility within your audience.",
+  },
+  {
+    stepNum: "04",
+    stepName: "Off-page optimization",
+    stepDescription:
+      "",
+  },
+  {
+    stepNum: "05",
+    stepName: "Tracking",
+    stepDescription:
+      "",
+  },
+]
+
 const SEO = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout footerTitle="Higher Visibility, Higher Traffic, & Higher Rankings. </br>We Make It <span class='colorYellow'>Easy For You.</span>">
       <ServicesBanner
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Search Engine Optimization"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Search Engine Optimization That Ranks You High!"
+        description="Get ready for increased visibility and targeted traffic. Our SEO services guarantee better rankings on search engines and more exposure for your business."
         // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="For Visibility Across The Web & Traffic From Your Audience. "
+        description="Our Search Engine Optimization Agency focuses on understanding your audience’s behavior, preferences, and search intent. For each project, we conduct in-depth research and perform effective targeting, increasing your organic visibility and driving relevant traffic to your website, which ensures real engagement and long-term results. The seo services USA we provide include our strategists brainstorming what optimization techniques will work best for your niche. "
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTitle="Your Pages Optimized for Search Engine Perfection"
+        secHeadDescription="Every page of your website gets optimized for better ranking, visibility, and performance. From keywords to technical SEO, we ensure your site is search engine-ready. Here’s what we include in our SEO:"
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required
-                expertise to develop custom websites on HTML. With years of
-                experience in the field, we know how to develop websites that
-                can represent your brand strongly. Get in touch with us today
-                and get your desired custom website developed on HTML/CSS at the
-                lowest market rates."
+        gfxLastDescription="Every strategy we craft is more than just optimization. It reflects your brand’s goals, audience behavior, and digital presence. Our approach combines in-depth research with smart SEO techniques to boost your visibility where it matters most. We don’t just chase rankings; we target the right audience with content and structure that search engines trust. The result? Long-term, organic growth that brings qualified traffic and measurable success."
+        // types=
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="The Results Even Search Engines Can’t Deny!"
+        secDescription="Our SEO strategies produce measurable results. With higher rankings, organic traffic, and improved conversions, your site will show up in front of the right audience, driving growth for your business."
         toolIcon={photoshopicon}
         toolName="Search Engine Optimization"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="Our Search Engine Optimization Marketing isn't only a promise; we bring results that you can count on! Our clients experience increased visibility, better traffic, and ultimately a higher ROI. We work with you to boost your digital presence effectively"
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="95%%"
+        usage="Retention rate"
+        rank="200+"
+        highlightText="Successful SEO campaigns"
+        cta="Discuss Your Project"
       />
 
       {/* <AdobePhotoshopSec
@@ -112,9 +139,10 @@ const SEO = () => {
 
       <OurWorkProcessSec
         // className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
+        secTitle="Strategic SEO Services To Rank You High"
+        secDescription="We take a structured approach to SEO, ensuring that every step is aligned with your growth goals, improving your site’s search engine performance."
         secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secStepsData={stepsData}
       />
 
       {/* <OneStopWebSec
@@ -131,14 +159,18 @@ const SEO = () => {
       /> */}
 
       <ClientTestimonialSec 
+      title="Listen From The Clients Who Ranked With Us"
+              description="We help businesses like yours reach higher rankings and improve their online presence. Hear from our clients on how our SEO services made a difference."
+              testimonialData={seoServicesTestimoialData}
         // className="bgDark" 
       />
 
       <FAQSection
         // className="bgLight"
         secHeadrag="FREQUENTLY ASKED QUESTIONS"
-        title="How We Turn Imagination Into Reality"
-        description="Common queries you want us to answer about our web design services."
+        title="We Are Here To Answer Your Queries"
+        description="Following are some of the questions we often come across related to our seo services"
+        faqsQA={seoFaqs}
       />
 
       {/* <WebDesignGuidelines
@@ -150,7 +182,11 @@ const SEO = () => {
         stepData={webDesignGuidelinesData}
       /> */}
 
-      <BlogsSec />
+      <BlogsSec 
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+                blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+                blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

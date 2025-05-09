@@ -30,18 +30,54 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Campaign Management", img: gfxlogo },
+  { title: "Performance Analytics", img: gfxwedev },
+  { title: "Community Engagement", img: gfcvideoanimation },
+  { title: "Content Management", img: gfxcontentwriting },
 ];
 
 import {
   adobePhotoshopSecData,
+  blogsData,
   oneStopWebBoxesData,
+  socialMediaFaqs,
+  socialMediaTestimoialData,
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Breaf",
+    stepDescription:
+      "We start by understanding your business goals, target audience, and brand tone. This helps us shape a social media marketing strategy that’s specific to your business.",
+  },
+  {
+    stepNum: "02",
+    stepName: "Ideation",
+    stepDescription:
+      "Our team brainstorms creative campaign ideas, content themes, and messaging that resonates with your brand.",
+  },
+  {
+    stepNum: "03",
+    stepName: "Sketch",
+    stepDescription:
+      "We build a content calendar, design post templates, write copy, and outline ad funnels. Everything is prepped to keep your brand consistent and relevant.",
+  },
+  {
+    stepNum: "04",
+    stepName: "Execution",
+    stepDescription:
+      "We run your social media campaigns and monitor, backed by data and creativity.",
+  },
+  {
+    stepNum: "05",
+    stepName: "Optimization & Delivery",
+    stepDescription:
+      "We monitor performance, fine-tune campaigns, and send detailed reports so you always know what’s working and where to scale.",
+  },
+];
 
 const SocialMediaMarketing = () => {
   return (
@@ -50,48 +86,42 @@ const SocialMediaMarketing = () => {
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Social Media Marketing"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Turn Engagement Into Sales With <span class='colorYellow'>Social Media Marketing</span>"
+        description="Take a step beyond just posting. Our strategies are designed to create meaningful content that’s engaging enough to convert and bring revenue."
+        cta1="Talk To Us"
+        cta2="Show Us Your Project"
         // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="Your Next-Gen Social Media Marketing Agency"
+        description="Social Media Marketing is the modern driver of business growth. Through effective social media marketing, we assist companies of all sizes in creating vibrant online communities, boosting engagement, and producing tangible outcomes. We develop strategies that draw in, convert, and retain visitors on social media sites including Facebook, Instagram, LinkedIn, TikTok, and more. Connect with us and make your social media work for you."
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTitle="Personlized Social Media Marketing Solutions"
+        secHeadDescription="We help your brand move forward with a full spectrum of services that are designed to cover everything your brand needs to grow. With us, you’ve got your digital front covered."
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required expertise to develop custom websites on HTML. With years of experience in the field, we know how to develop websites that can represent your brand strongly. Get in touch with us today and get your desired custom website developed on HTML/CSS at the lowest market rates."
+        gfxLastDescription="Our team of skilled social media marketing experts knows exactly how to craft content, create conversations, and run campaigns that convert. With years of experience in managing brand presence across platforms like Instagram, Facebook, X, LinkedIn, TikTok, YouTube and more, we help you show up consistently, strategically, and successfully. Let us help you manage social media so that you can focus on your core business."
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Results That Speak for Themselves"
+        secDescription="As a trusted social media marketing agency in the USA, we've successfully delivered numerous projects across various industries, helping businesses grow their reach, boost engagement, and convert clicks into customers."
         toolIcon={photoshopicon}
         toolName="Social Media Marketing"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="Our tools? Strategy, creativity, and consistency. From content management to running high-converting social media advertising campaigns, our team combines expertise with real-time data to ensure every post, ad, and reply works in your favour."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="98%"
+        usage="Success Rate"
+        rank="500+"
+        highlightText="Projects Completed"
       />
 
       {/* <AdobePhotoshopSec
@@ -107,9 +137,10 @@ const SocialMediaMarketing = () => {
 
       <OurWorkProcessSec
         // className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="How We Deliver High-Converting Social Media Marketing Results"
+        secDescription="Our strategy is designed to maximize visibility, boost engagement, and drive growth. Here’s how  we do it:"
+        secStepsData={stepsData}
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
       {/* <OneStopWebSec
@@ -126,14 +157,18 @@ const SocialMediaMarketing = () => {
       /> */}
 
       <ClientTestimonialSec
-      // className="bgDark"
+        title="What Our Clients Say About Working With Us"
+        description=""
+        testimonialData={socialMediaTestimoialData}
+        // className="bgDark"
       />
 
       <FAQSection
         // className="bgLight"
-        secHeadrag="FREQUENTLY ASKED QUESTIONS"
-        title="How We Turn Imagination Into Reality"
-        description="Common queries you want us to answer about our web design services."
+        secHeadrag="Got Any Questions?"
+        title="Got Any Questions?"
+        description="We’ve Got All Your Answers"
+        faqsQA={socialMediaFaqs}
       />
 
       {/* <WebDesignGuidelines
@@ -145,7 +180,11 @@ const SocialMediaMarketing = () => {
         stepData={webDesignGuidelinesData}
       /> */}
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

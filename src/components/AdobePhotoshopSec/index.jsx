@@ -18,8 +18,16 @@ const AdobePhotoshopSec = (props) => {
 
           <div className="col-lg-4 col-md-6">
             <div className="adobe-photoshop__content-title">
-              <h3 data-aos="fade-right" data-aos-delay={500}>{props.secSubTitle}</h3>
-              <p data-aos="fade-right" data-aos-delay={700}>{props.secSubTitleDescription}</p>
+              <h3 data-aos="fade-right" data-aos-delay={500}>
+                {props.secSubTitle}
+              </h3>
+              <p
+                data-aos="fade-right"
+                data-aos-delay={700}
+                dangerouslySetInnerHTML={{
+                  __html: props.secSubTitleDescription,
+                }}
+              ></p>
             </div>
           </div>
 
@@ -28,7 +36,8 @@ const AdobePhotoshopSec = (props) => {
               <div
                 className="portfolio-content-image"
                 style={{ backgroundImage: `url(${item.cardBG})` }}
-                data-aos="zoom-in" data-aos-delay={index * 200}
+                data-aos="zoom-in"
+                data-aos-delay={index * 200}
               >
                 <img src={item.image} alt="" />
               </div>

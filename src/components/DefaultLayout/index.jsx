@@ -10,7 +10,7 @@ const DefaultLayout = (props) => {
           <div className="flex-grow-1">
               {props.children}
           </div>
-        <Footer />
+        <Footer footerTitle={props?.footerTitle} />
       </div>
     </>
   );

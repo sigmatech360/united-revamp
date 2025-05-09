@@ -39,7 +39,7 @@ const ServicePowerfullTool = (props) => {
                   data-aos="fade-right"
                   data-aos-delay={800}
                 >
-                  Hire Designers
+                  {props?.cta || 'Hire Designers'}
                 </Link>
                 <p data-aos="zoom-in" data-aos-delay={800}>
                   {props.toolDesignerAvailable}

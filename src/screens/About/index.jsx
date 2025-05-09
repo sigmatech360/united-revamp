@@ -20,10 +20,10 @@ import ClientTestimonialSec from "../../components/ClientTestimonialSec";
 
 const About = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout footerTitle='At <span class="colorYellow">United Web Developers</span>,</br> We Create A Digital Presence That Attract <br/> Leads, Clicks, And <span class="colorYellow">Cash.</span>'>
       <InnerBanner
         bgImage={aboutbannerbg}
-        title="Work With A Leading Full-Service Design Agency"
+        title={"USA’s Top <span class='colorYellow'>Website Design & Development</span> Company At Your Service."}
       />
 
       <section className="about-sec">
@@ -32,25 +32,13 @@ const About = () => {
             <div className="col-lg-6">
               <div className="about-sec__content">
                 <h2 data-aos="fade-right" data-aos-delay={100}>
-                  About Our Company
+                About United Web Developers
                 </h2>
-                <p data-aos="fade-right" data-aos-delay={300}>
-                  Logo Poppin is your one-stop destination to find digital
-                  innovation. We are a cutting-edge agency where you can get
-                  immaculate graphic designing services as per your custom
-                  demands. We love to transform ideas into great designs,
-                  helping people like you to represent their businesses using
-                  the best creatives. From logo design to digital marketing,
-                  branding to web development and more, we help you to take your
-                  business forward by offering exceptional digital services.
+                <p className="mb-2" data-aos="fade-right" data-aos-delay={300}>
+                United Web Developers was founded with one mission: to help all businesses achieve sustainable growth. We blend creative designs, development, and strategic marketing to make a brand presence that engages users and delivers measurable results digitally.
                 </p>
-                <p
-                  className="fw-medium"
-                  data-aos="fade-right"
-                  data-aos-delay={500}
-                >
-                  Want to innovate your brand with us? Let’s talk. Let’s work
-                  together!
+                <p data-aos="fade-right" data-aos-delay={300}>
+                Our team of designers, developers, and digital strategists work in sync to bring your vision to life. From the first sketch to the final line of code. No templates or shortcuts, we make personalized solutions that work perfectly for you!
                 </p>
                 <Link
                   to=""
@@ -58,7 +46,7 @@ const About = () => {
                   data-aos="fade-right"
                   data-aos-delay={500}
                 >
-                  Let's Work Together
+                  Let's Work Together!
                 </Link>
               </div>
             </div>
@@ -81,12 +69,10 @@ const About = () => {
             <div className="col-md-12">
               <div className="sec-head">
                 <h2 data-aos="fade-up" data-aos-delay={100}>
-                  Clients Across Different Industries
+                Our Diverse Clientele
                 </h2>
                 <p data-aos="fade-up" data-aos-delay={300}>
-                  We’ve always loved to serve clients as per their desired
-                  needs. Whether it’s creating engaging logos or interactive
-                  websites, we excel in all fields with breathtaking efficiency.
+                Our priority is client satisfaction at every step. Discover our diverse clientele and how we helped them grow their businesses with our digital expertise.
                 </p>
               </div>
             </div>
@@ -120,12 +106,10 @@ const About = () => {
             <div className="col-md-12">
               <div className="sec-head">
                 <h2 data-aos="fade-up" data-aos-delay={100}>
-                  Proudly Endorsed By The Best
+                Trusted By The Industry Rulers
                 </h2>
                 <p data-aos="fade-up" data-aos-delay={300}>
-                  Our creative digital services are cherished by hundreds of
-                  businesses, allowing us to get endorsed by the top industry
-                  names.
+                Don’t trust our words? Trust the beasts of digital media! United Web Developers is trusted by hundreds of businesses and the top industry names in the USA. 
                 </p>
               </div>
             </div>
@@ -164,9 +148,7 @@ const About = () => {
                   Our Achievements
                 </h2>
                 <p data-aos="fade-up" data-aos-delay={300}>
-                  With an array of happy clients all over the globe, we are
-                  rated as a full-scale digital agency by number of top
-                  platforms.
+                Our years of practice in the <span className="colorYellow">Web design and development</span> industry have not only given us success but also some awards and achievements to showcase our skills. 
                 </p>
               </div>
             </div>
@@ -188,7 +170,11 @@ const About = () => {
         </div>
       </section>
 
-      <ClientTestimonialSec />
+      <ClientTestimonialSec 
+        title="Words From Our Satisfied Clients"
+        description="Our team ensures that every prospect that comes across us either leaves with a sale or a booking call to get a quick consultation. Here’s what our clients say about us:"
+        testimonialData={clientTestimonialData}
+      />
     </DefaultLayout>
   );
 };

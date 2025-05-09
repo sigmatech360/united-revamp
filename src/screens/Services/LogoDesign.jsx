@@ -30,93 +30,114 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Abstract Logos", img: gfxlogo },
+  { title: "WordMark Logos", img: gfxwedev },
+  { title: "Pictorial Mark Logos", img: gfcvideoanimation },
+  { title: "Mascot Logoss", img: gfxcontentwriting },
+  { title: "Brand Mark Logo", img: gfxlogo },
+  { title: "Emblems", img: gfxwedev },
+  { title: "Monogram Logos", img: gfcvideoanimation },
+  { title: "3D Logos", img: gfxcontentwriting },
 ];
 
 import {
   adobePhotoshopSecData,
+  blogsData,
   logoDesignGuidelinesData,
+  logoFaqs,
+  logosTestimoialData,
   oneStopWebBoxesData,
   servicesLogoDesignPortfolioData,
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
 
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Brainstorming",
+    stepDescription: "",
+  },
+  {
+    stepNum: "02",
+    stepName: "Sketching",
+    stepDescription: "",
+  },
+  {
+    stepNum: "03",
+    stepName: "Digital Visualization",
+    stepDescription:
+      "A great logo design isn’t the one that looks pretty, it should be specific to your audience, it should speak your message, and compel to discover more. ",
+  },
+  {
+    stepNum: "04",
+    stepName: "Feedback",
+    stepDescription: "",
+  },
+  {
+    stepNum: "05",
+    stepName: "Finalization",
+    stepDescription: "",
+  },
+];
+
 const LogoDesign = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout footerTitle="Be Iconic. Start With a </br><span class='colorYellow'>Custom Logo Design</span> That Stands Out.">
       <ServicesBanner
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Logo Design"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Creative Logo Design For YOUR Business"
+        description="Make a bold first impression with our <span class='colorYellow'>Professional logo design</span> services. We ensure that your logo sparks interest, tells a story, and looks exceptional.  "
         servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating
-                  websites that speak perfectly for your brand. Our goal is to
-                  make sure that your businesses are getting the right online
-                  presence with engaging website designs, built exquisitely to
-                  rediscover your true potential in the internet marketplace.
-                  Keeping our customers at the center of everything, we always
-                  strive hard to produce masterful website designs, rightly by
-                  blending our expertise with the artistic values of new-age web
-                  technologies."
+        title="Our <span class='colorYellow'>Custom Logo Designs</span> Speak Volumes"
+        description="A great business logo design does more than look good; it communicates your brand’s story effectively to the viewers at a glance. At United Web Developers, we craft logos that are memorable, meaningful, and aligned with your brand voice. Our custom logo design process ensures every pixel reflects your identity."
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="From logo designing to digital marketing, video animation to web designing & more, we are your one-stop solution to findall types of digital branding services."
+        secTitle="Our Diversity in Logo Design Services"
+        secHeadDescription="We offer versatile logo design services that bring your brand vision to life with a story to tell."
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required
-                expertise to develop custom websites on HTML. With years of
-                experience in the field, we know how to develop websites that
-                can represent your brand strongly. Get in touch with us today
-                and get your desired custom website developed on HTML/CSS at the
-                lowest market rates."
+        gfxLastDescription="Every logo we create is more than just a graphic. it's a representation of your brand’s values, voice, and visual identity. Our approach combines creative thinking with strategic branding to craft logos that are not only eye-catching but also meaningful. We design symbols that are instantly recognizable and built to leave a lasting impression on your audience."
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="A Great Logo Design Creates A Legacy Of Results"
+        secDescription="Logos are the face of your business; if it's right, your brand stays unforgettable. Our professional logo design team understands the psychology behind design and branding."
         toolIcon={photoshopicon}
         toolName="Logo Design"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="Whether you need a fresh identity or a logo design for a website, our approach guarantees clarity, creativity, and commercial success with every design. The numbers speak for themselves. "
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="40%"
+        usage="increase in Visibility"
+        rank="500+"
+        highlightText="Creative Logo Designs"
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Large Range Of Website Portfolio"
-        secTitleDescription="We love to create websites that have got the power to engage
-                  your clients. Here are some of our web designs that showcase
-                  our proficiency in the field."
+        secTitle="View Our Best Logo Design Creations"
+        secTitleDescription="From startups to established brands, our logo design company has delivered thousands of successful logo projects."
         secSubTitle="Logo Design"
-        secSubTitleDescription="Clients simply love our web designs, and some of these
-                  exceptional design samples speak volume for our hard work."
+        secSubTitleDescription="Our designs aren’t just creative. We ensure they’re strategically made to match your business. Explore our portfolio to see how we’ve helped businesses stand out with custom business logo design solutions."
         servicesData={servicesLogoDesignPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="How Our Company Logo Design Services Work"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="A Glimpse Into Our Professional Logo Design Process"
+        secDescription="We follow a refined step-by-step process to ensure each logo is purposeful and polished, and matches your brand tone."
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secStepsData={stepsData}
       />
 
       {/* <OneStopWebSec
@@ -132,23 +153,33 @@ const LogoDesign = () => {
         webDesignSupport={webDesignSupportData}
       /> */}
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec
+        className="bgDark"
+        title="Reviews Of Our Custom & Business Logo Design Services"
+        description="Hear from clients who trusted us to create their brand identity."
+        testimonialData={logosTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
         title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        description="Got Questions? We are happy to answer!"
+        faqsQA={logoFaqs}
       />
 
       <WebDesignGuidelines
         secTag="LOGO DESIGN SERVICES GUIDELINES"
-        secTitle="Key Requirements For A Catchy Logo"
-        secDescription="We take pride in serving our customers with top-of-the-line web designs. Here’s how we do it with perfection in our projects."
+        secTitle="How We Make Our Logos Exceptional"
+        secDescription="We blend creativity, research, and feedback to craft exceptional logo design experiences that build iconic brand identities."
         stepData={logoDesignGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

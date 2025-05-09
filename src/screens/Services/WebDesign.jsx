@@ -30,10 +30,10 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Modern Layouts That Engage", img: gfxlogo },
+  { title: "Brand-Centric Color Palettes", img: gfxwedev },
+  { title: "Unique Typography ", img: gfcvideoanimation },
+  { title: "Responsiveness", img: gfxcontentwriting },
 ];
 
 import {
@@ -41,7 +41,44 @@ import {
   webDesignGuidelinesData,
   servicesWebDesignSupportData,
   servicesWebDesignPortfolioData,
+  oneStopWebDesignBoxesData,
+  webDesignTestimoialData,
+  webDesignFaqs,
+  blogsData,
 } from "../../data";
+
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Breaf",
+    stepDescription:
+      "We begin by understanding your business goals, audience, and vision to form the foundation of your custom website design.",
+  },
+  {
+    stepNum: "02",
+    stepName: "Ideation",
+    stepDescription:
+      "Our team brainstorms and conceptualizes modern layouts and features tailored to your brand identity and functionality needs.",
+  },
+  {
+    stepNum: "03",
+    stepName: "Sketch",
+    stepDescription:
+      "Wireframes and mockups are created to visualize the site structure, ensuring your site layout aligns with UX design and user flow.",
+  },
+  {
+    stepNum: "04",
+    stepName: "Execution",
+    stepDescription:
+      "We bring your vision to life using cutting-edge tools and responsive frameworks for optimized performance on all devices.",
+  },
+  {
+    stepNum: "05",
+    stepName: "Deliver",
+    stepDescription:
+      "After thorough testing and feedback, we launch your website, which is visually stunning, SEO friendly, and built to convert.",
+  },
+];
 
 const WebDesign = () => {
   return (
@@ -50,89 +87,100 @@ const WebDesign = () => {
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="Website Design"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="Web Designs That Are Engaging Enough To Convert"
+        description="Custom website designs that are aesthetic enough to make visitors scroll, turning clicks into customers"
+        cta1="Talk To Us"
+        cta2="Show Us Your Project"
         servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating websites that speak perfectly for your brand. Our goal is to make sure that your businesses are getting the right online presence with engaging website designs, built exquisitely to rediscover your true potential in the internet marketplace. Keeping our customers at the center of everything, we always strive hard to produce masterful website designs, rightly by blending our expertise with the artistic values of new-age web technologies."
+        title="Expert Web Design Services"
+        description="Your website design says a lot about your brand. At United Web Developers, a leading web design agency, we understand the importance of making a good impression on your visitors with a custom website design created by experts in SEO services, website development and graphic design. Whether you’re looking for an affordable solution or custom design, our team will create engaging website designs that look good and resonate with your brand"
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="WEBSITE DESIGN COMPANY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTitle="Website Design That Covers Every Creative Need"
+        secHeadDescription="We help businesses unlock their potential through website designs that reflect their brand message. We go beyond pre-built templates to deliver truly custom solutions built for performance and personality. Here’s what sets our designs apart:"
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required expertise to develop custom websites on HTML. With years of experience in the field, we know how to develop websites that can represent your brand strongly. Get in touch with us today and get your desired custom website developed on HTML/CSS at the lowest market rates."
+        gfxLastDescription="Your website is the digital face of your brand; it’s where first impressions are made and decisions begin. A thoughtfully designed website works hard behind the scenes to guide users, tell your story, and drive real business results. Through intuitive UI design and mobile responsiveness, every element should align with your goals and customer expectations"
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Powerful Tools for Successful Web Design Services"
+        secDescription="Our web designs are driven by trendy designs and technology that empowers creativity, ensuring functionality. Whether it’s a custom website design or a full-scale responsive web design, our toolkit allows us to build user-first experiences that look great and perform flawlessly across all platforms."
         toolIcon={photoshopicon}
         toolName="Website Design"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="From banner layouts and UI components to responsive website designs, our skilled team leverages Photoshop to meet complex website design needs with pixel-perfect accuracy."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="98%"
+        usage="Success Rate"
+        rank="500+"
+        highlightText="Projects Completed"
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Large Range Of Website Portfolio"
-        secTitleDescription="We love to create websites that have got the power to engage your clients. Here are some of our web designs that showcase our proficiency in the field."
-        secSubTitle="Website Design"
-        secSubTitleDescription="Clients simply love our web designs, and some of these exceptional design samples speak volume for our hard work."
+        secTitle="Our Large Portfolio Filled With Creativity"
+        secTitleDescription="We love to create website designs that are aesthetic enough to make your visitors click more and scroll away."
+        secSubTitle="Responsive Web Designs"
+        secSubTitleDescription="Visitors love responsive and clean web design. Our website design services optimize your website to function perfectly across all devices: mobile, tablet, and desktop."
         servicesData={servicesWebDesignPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="Web Design Workflow That Converts"
+        secDescription="We follow a proven five-step process that helps in creativity, strategy, and flawless execution."
+        secStepsData={stepsData}
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
       <OneStopWebSec
-        secTitle="Your One-Stop Website Design Agency"
-        secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
+        secTitle="Top-Notch Website Design Agency"
+        secDescription="Our website design services in the USA use the latest search engine optimization (SEO) and user experience (UX) best practices to create mockups and website layouts tailored to any business and industry. We are not just website designers; we are a full-service web design company dedicated to your success."
         image={oneStopWebImg}
-        boxesData={oneStopWebBoxesData}
+        boxesData={oneStopWebDesignBoxesData}
       />
 
       <WebDesignSupportSec
-        secTitle="Your Partner To Find Complete Web Designing Support"
+        secTitle="Your Full-Service Web Design Agency For Attractive Illustrations"
         secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
         webDesignSupport={servicesWebDesignSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec
+        className="bgDark"
+        title="Trusted By The Brands Who Expect The Best"
+        description="We consider our customers the cornerstone of our success. See why our clients consistently trust and recommend us for exceptional service."
+        testimonialData={webDesignTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
         title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        description="Common queries you want to know the answer to:"
+        faqsQA={webDesignFaqs}
       />
 
       <WebDesignGuidelines
-        secTag="WEBSITE DESIGN GUIDELINES"
-        secTitle="Our Recipe for Creating Impactful Website Designs"
-        secDescription="We take pride in serving our customers with top-of-the-line
-                  web designs. Here’s how we do it with perfection in our
-                  projects."
+        secTag="Web Design Essentials"
+        secTitle="End-To-End Website Design Services For All Needs"
+        secDescription="We design websites that don’t just look good, but are optimized for performance. Here’s how we combine creativity and strategy to create high-converting web experiences:"
         stepData={webDesignGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

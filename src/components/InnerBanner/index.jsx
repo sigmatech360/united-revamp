@@ -10,8 +10,7 @@ const InnerBanner = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-9">
             <div className="inner-banner-content">
-              <h1 data-aos="fade-up" data-aos-delay={100}>
-                {props.title}
+              <h1 data-aos="fade-up" data-aos-delay={100} dangerouslySetInnerHTML={{ __html: props.title }}>
               </h1>
               {props.description && (
                 <p data-aos="fade-up" data-aos-delay={300}>

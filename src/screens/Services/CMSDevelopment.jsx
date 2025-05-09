@@ -30,10 +30,10 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 const gfxServices = [
-  { title: "Logo Design", img: gfxlogo },
-  { title: "Web Development", img: gfxwedev },
-  { title: "Video Animation", img: gfcvideoanimation },
-  { title: "Content Writing", img: gfxcontentwriting },
+  { title: "Drag-and-Drop Edito", img: gfxlogo },
+  { title: "Responsive Templates", img: gfxwedev },
+  { title: "Built-in SEO Tools", img: gfcvideoanimation },
+  { title: "App & Plugin Integration", img: gfxcontentwriting },
 ];
 
 import {
@@ -41,7 +41,45 @@ import {
   servicesCMSDevPortfolioData,
   webDesignGuidelinesData,
   servicesCMSDevSupportData,
+  oneStopCMSBoxesData,
+  cmsTestimoialData,
+  cmsGuidelinesData,
+  cmsFaqs,
+  blogsData,
 } from "../../data";
+
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Breaf",
+    stepDescription:
+      "We gather your goals, website needs, and plugin integrations to define the right CMS development approach for your brand",
+  },
+  {
+    stepNum: "02",
+    stepName: "Ideation",
+    stepDescription:
+      "Our developers plan user journeys, define modules, and select the most effective CMS platform (e.g., WordPress, Shopify, Magento).",
+  },
+  {
+    stepNum: "03",
+    stepName: "Design & Structure",
+    stepDescription:
+      "We start by creating responsive layouts, wireframes, and CMS-specific content hierarchies for a smooth backend experience",
+  },
+  {
+    stepNum: "04",
+    stepName: "Execution",
+    stepDescription:
+      "Our developers build, customize, and integrate features, like payment gateways, using plugins.",
+  },
+  {
+    stepNum: "05",
+    stepName: "Launch & Handover",
+    stepDescription:
+      "We test, optimize, and deliver your website with full admin access, training (if needed), and ongoing support options.",
+  },
+];
 
 const CMSDevelopment = () => {
   return (
@@ -50,91 +88,102 @@ const CMSDevelopment = () => {
         bgImage={aboutbannerbg}
         // leftColClass="col-lg-7"
         // rightColClass="col-lg-5"
-        title="CMS Development"
-        description="We create immersive digital experiences for your brand perfectly by using our result-driven web design services."
+        title="The Best CMS Website Development Company"
+        description="Build intuitive websites that are fast, responsive, and optimized for higher ranking."
+        cta1="Talk To Us"
+        cta2="Show Us Your Project"
         // servicesbannerimg={servicesbannerimg}
       />
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="We Are A New Age Website Design Company"
-        description="Being a creative web design agency, we specialize in creating websites that speak perfectly for your brand. Our goal is to make sure that your businesses are getting the right online presence with engaging website designs, built exquisitely to rediscover your true potential in the internet marketplace. Keeping our customers at the center of everything, we always strive hard to produce masterful website designs, rightly by blending our expertise with the artistic values of new-age web technologies."
+        title="Custom Website Development For Growth And Performance"
+        description="A flexible and scalable website development service empowers businesses to manage digital content with efficiency, effectiveness, and speed. We develop and deploy full-cycle CMS website development services, including Shopify development, Magento Development, Wix Development, WooCommerce Development, Big Commerce Development, and WordPress Development."
+        cta1="Click to Know More"
+        cta2="Call Us Now"
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
         secTag="GRAPHIC DESIGN AGENCY"
-        secTitle="That Offers Multiple Types Of Websites"
-        secHeadDescription="At Logo Poppin, we help your brand to move forward with our various website design services. Ranging from HTML to CMS platforms, we can develop websites as per your defined needs."
+        secTitle="Key CMS Features We Deliver"
+        secHeadDescription="Our CMS website solutions are packed with powerful features delivering seamless management, performance, and compliance across every screen."
         // viewAllServices
         gfxServices={gfxServices}
-        gfxLastDescription="Our team of talented web designers has got the required expertise to develop custom websites on HTML. With years of experience in the field, we know how to develop websites that can represent your brand strongly. Get in touch with us today and get your desired custom website developed on HTML/CSS at the lowest market rates."
+        gfxLastDescription="We develop custom, high-performance websites, designed for simplicity, speed, and scalability. Our drag-and-drop web solutions empower users to build, manage, and update content easily. Optimized for SEO and cross-device functionality, these platforms ensure an effortless user experience across every digital touchpoint."
         // gfxLastImgs
         gfxLastImage={webdesignimg}
       />
 
       <ServicePowerfullTool
-        secTitle="Powerful Tools For Web Design Services"
-        secDescription="Being a creative website design company, we utilize cutting-edge frontend technologies to build advanced websites as per your custom specifications. Leveraging the latest design tools we create responsive web pages."
+        secTitle="Modern Tech For Powerful CMS "
+        secDescription="We employ modern technologies to build efficient websites that allow greater content control and improved digital strategy. Our websites are fast, easy to navigate, user-friendly, and, most importantly, mobile-optimized."
         toolIcon={photoshopicon}
         toolName="CMS Development"
-        toolNameDesc="Adobe Photoshop is a powerful tool to create pictures with exceptional designs. Our experts make sure to innovate your project designs using Photoshop, as per the custom demands."
+        toolNameDesc="We work with a wide range of CMS platforms, including WordPress, Wix, Shopify, Magento, WooCommerce, BigCommerce, and more, to deliver website development solutions that meet the diverse needs of every industry we serve."
         toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="90%"
-        usage="Worldwide Usage"
-        rank="#1"
-        highlightText="Choice for Graphic Design"
+        usagePercent="98%"
+        usage="Success rate"
+        rank="500+"
+        highlightText="Projects Completed"
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Large Range Of Website Portfolio"
-        secTitleDescription="We love to create websites that have got the power to engage
-                  your clients. Here are some of our web designs that showcase
-                  our proficiency in the field."
-        secSubTitle="CMS Development"
-        secSubTitleDescription="Clients simply love our web designs, and some of these exceptional design samples speak volume for our hard work."
+        secTitle="Our Experience In CMS Builders Is Unmatched"
+        secTitleDescription="We love to create websites that are optimized for today's digital world: Fast, Responsive, and Optimized"
+        secSubTitle="CMS Development At Its Finest"
+        secSubTitleDescription="Choose United Web Developers for website development that gives your business an edge over your competitors. Our experienced team delivers scalable, secure CMS websites that are optimized for performance."
         servicesData={servicesCMSDevPortfolioData}
       />
 
       <OurWorkProcessSec
         className="our-work-process__bgWhite"
-        secTitle="Providing Advanced Digital Services"
-        secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secTitle="Best CMS Development for Responsive Websites"
+        secDescription="Here’s how we bring powerful CMS websites to life, from pre-built templates to website development, we cater to all the needs of our clients."
+        secStepsData={stepsData}
+        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 
       <OneStopWebSec
-        secTitle="Your One-Stop Website Design Agency"
-        secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
+        secTitle="Your One-Stop CMS Development Agency"
+        secDescription="At United Web Developers, we specialize in building powerful, scalable websites using today’s leading CMS platforms. Our websites are built to perform and rank higher in search engines, providing your business with the best visibility in the results page."
         image={oneStopWebImg}
-        boxesData={oneStopWebBoxesData}
+        boxesData={oneStopCMSBoxesData}
       />
 
       <WebDesignSupportSec
-        secTitle="Your Partner To Find Complete Web Designing Support"
-        secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
+        secTitle="Your Partner for Complete Website Development Support"
+        secTitleDescription="United Web Developers has been a trusted partner for website development services in the USA, delivering websites that are:"
         webDesignSupport={servicesCMSDevSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec
+        className="bgDark"
+        title="Real Feedback, With Results"
+        description="Our clients’ satisfaction is the ultimate measure of success for us. We take immense pride in delivering exceptional website development services in multiple platforms. Here's what our valued customers have to say about working with one of the top-rated website development companies US"
+        testimonialData={cmsTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
-        title="Frequently Asked Questions"
-        description="Common queries you want us to answer about our web design services."
+        title="Got Any Questions?"
+        description="We’ve Got All Your Answers"
+        faqsQA={cmsFaqs}
       />
 
       <WebDesignGuidelines
-        secTag="WEBSITE DESIGN GUIDELINES"
-        secTitle="Our Recipe for Creating Impactful Website Designs"
-        secDescription="We take pride in serving our customers with top-of-the-line
-                  web designs. Here’s how we do it with perfection in our
-                  projects."
-        stepData={webDesignGuidelinesData}
+        secTag="Website Development Essentials"
+        secTitle="Our Formula for Building Scalable, High-Performing Websites"
+        secDescription="We follow a modern and results-driven approach to create websites that are as aesthetic as they are responsive. Here's how we make sure your digital presence is powerful, functional, and built for long-term success:"
+        stepData={cmsGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec
+        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        blogsData={blogsData}
+      />
     </DefaultLayout>
   );
 };

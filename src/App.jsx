@@ -23,7 +23,7 @@ function App() {
         <AppRouter />
         <div className="page-side-buttons">
           <button className="theme-sideBtn">
-            Get Free Consultancy
+          Get Free Consultations
           </button>
           <button className="pageSide__iconBtn">
             <BsTelephone />
