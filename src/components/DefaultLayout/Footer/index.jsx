@@ -29,29 +29,24 @@ const servicesLinks = [
   { name: "Web Development", path: "/services/custom-development" },
 ];
 
-const Footer = ({footerTitle}) => {
+const Footer = ({ footerTitle }) => {
   return (
     <footer className="main-footer">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            {footerTitle  ?
-            (
-
-              <h2 className="footer-main__title text-center" dangerouslySetInnerHTML={{ __html: footerTitle }}>
-              </h2>
-            )
-            :
-            (
+            {footerTitle ? (
+              <h2
+                className="footer-main__title text-center"
+                dangerouslySetInnerHTML={{ __html: footerTitle }}
+              ></h2>
+            ) : (
               <h2 className="footer-main__title text-center">
-            Providing <span className="colorYellow">Smart Digital</span>{" "}
-              <br /> Solutions Designed to Grow Your {" "}
-              <span className="colorYellow">Business Online</span>
-
+                Providing <span className="colorYellow">Smart Digital</span>{" "}
+                <br /> Solutions Designed to Grow Your{" "}
+                <span className="colorYellow">Business Online</span>
               </h2>
-
-            )
-            }
+            )}
           </div>
           <div className="col-md-12">
             <div className="row">
@@ -61,16 +56,32 @@ const Footer = ({footerTitle}) => {
                     <img src={logo} alt="United Revamp Developers" />
                   </div>
                   <p>
-                  Your trusted partner in digital transformation. We create custom <span className="colorYellow">Web Designs, Logo Design, SEO, Social Media Marketing, and Digital marketing</span> services, providing powerful brand growth. Contact us today to book a spot for free testing. 
+                    Your trusted partner in digital transformation. We create
+                    custom{" "}
+                    <span className="colorYellow">
+                      Web Designs, Logo Design, SEO, Social Media Marketing, and
+                      Digital marketing
+                    </span>{" "}
+                    services, providing powerful brand growth. Contact us today
+                    to book a spot for free testing.
                   </p>
                   <div className="footer-social__links">
-                    <a href="javascript:;" className="">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61561044334641"
+                      className=""
+                    >
                       <RiFacebookLine />
                     </a>
-                    <a href="javascript:;" className="">
+                    <a
+                      href="https://www.instagram.com/unit.edwebdevelopers/"
+                      className=""
+                    >
                       <FaInstagram />
                     </a>
-                    <a href="javascript:;" className="">
+                    <a
+                      href="https://www.linkedin.com/company/united-webdevelopers/"
+                      className=""
+                    >
                       <RiLinkedinLine />
                     </a>
                   </div>

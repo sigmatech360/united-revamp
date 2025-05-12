@@ -118,7 +118,7 @@ p {
   border-radius: 50%;
   line-height: 1;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   white-space: nowrap;
   background-color: #d7ff00;
   border: 1px solid #d7ff00;
@@ -126,6 +126,11 @@ p {
   width: 40px;
   height: 40px;
   font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .main-navbar {
@@ -200,6 +205,7 @@ p {
   color: #fff;
   text-align: center;
   padding: 160px 0 80px;
+  overflow: hidden;
 }
 
 .main-banner__content h1 {
@@ -464,7 +470,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  flex: 0 0 20%;
+  /* flex: 0 0 20%; */
 }
 
 .our-work-process-last-p {
@@ -572,6 +578,7 @@ p {
 
 .gfx-global-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .faqs-sec {
@@ -758,6 +765,7 @@ p {
 
 .blog-sec {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .blog-sec .sec-head {
@@ -1183,6 +1191,7 @@ p {
 
 .pricing-page .main-footer {
   position: relative;
+  overflow: hidden;
 }
 
 .pricing-page .main-footer:after {
@@ -2155,6 +2164,7 @@ p {
   padding: 120px 0 20px;
   background-size: 100%;
   background-position: top center;
+  overflow: hidden;
 }
 
 .main-footer__links-title {

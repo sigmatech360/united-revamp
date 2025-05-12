@@ -155,7 +155,7 @@ const termsAndCondition = [
     {
       title: "Communication Policy",
       paragraphs: [
-        "For effective communication, we urge you to exclusively use the following contact details: support@californiawebcoders.com and the official numbers provided on our website. We take no responsibility for any communication via other platforms or unauthorized contact details not provided. We highly recommend utilizing our official communication channels to ensure the accuracy and security of your interactions with us.",
+        "For effective communication, we urge you to exclusively use the following contact details: support@unitedwebdevelopers.com and the official numbers provided on our website. We take no responsibility for any communication via other platforms or unauthorized contact details not provided. We highly recommend utilizing our official communication channels to ensure the accuracy and security of your interactions with us.",
         "We value the trust you place in us and take full responsibility for all information provided through our official domains. Your privacy and data security are of utmost importance, and we maintain strict measures to safeguard the confidentiality of your information.",
       ],
     },
@@ -203,7 +203,7 @@ const termsAndCondition = [
       ],
       list: [
         "Chat – Engage in real-time conversation with our support team. ",
-        "support@californiawebcoders.com – Contact us via email for prompt assistance.",
+        "support@unitedwebdevelopers.com – Contact us via email for prompt assistance.",
         "(619) 326-6066 – Call our Toll-Free number to speak directly with our representatives.",
       ],
       paragraphsAfterList: [

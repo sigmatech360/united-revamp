@@ -108,8 +108,8 @@ const ContactUs = () => {
                 data-aos="fade-right"
                 data-aos-delay={200}
               >
-                  <form onSubmit={handleSubmit}>
-                <div className="row">
+                <form onSubmit={handleSubmit}>
+                  <div className="row">
                     <div className="col-md-6 mb-3">
                       <input
                         type="text"
@@ -192,8 +192,8 @@ const ContactUs = () => {
                         Contact Our Team
                       </button>
                     </div>
-                </div>
-                  </form>
+                  </div>
+                </form>
               </div>
             </div>
             <div className="col-lg-6 mb-2">

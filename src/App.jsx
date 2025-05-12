@@ -25,9 +25,9 @@ function App() {
           <button className="theme-sideBtn">
           Get Free Consultations
           </button>
-          <button className="pageSide__iconBtn">
+          <a href="tel:6193266066" className="pageSide__iconBtn">
             <BsTelephone />
-          </button>
+          </a>
         </div>
       
     </>
