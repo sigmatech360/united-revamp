@@ -95,7 +95,7 @@ const LogoDesign = () => {
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="Our <span class='colorYellow'>Custom Logo Designs</span> Speak Volumes"
+        title="Our Custom Logo Designs Speak Volumes"
         description="A great business logo design does more than look good; it communicates your brand’s story effectively to the viewers at a glance. At United Web Developers, we craft logos that are memorable, meaningful, and aligned with your brand voice. Our custom logo design process ensures every pixel reflects your identity."
       />
 

@@ -429,8 +429,10 @@ p {
 }
 
 .our-work-process__container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   color: #fff;
   text-align: center;
@@ -440,15 +442,15 @@ p {
   background-size: 84%; */
 }
 
-.our-work-process__item h1 {
+.our-work-process__item h2 {
   font-size: 100px;
   font-weight: 700;
   line-height: 1;
   position: relative;
 }
 
-/* .our-work-process__item h1::after { */
-.our-work-process__item:not(:last-child) h1::after {
+/* .our-work-process__item h2::after { */
+.our-work-process__item:not(:last-child) h2::after {
   content: "";
   display: inline-block;
   width: 69%;
@@ -513,6 +515,7 @@ p {
 
 .testimonial-quote__text {
   font-size: 16px;
+  min-height: 96px;
 }
 
 .testimonial-quote__img {
@@ -557,7 +560,7 @@ p {
   opacity: 1 !important;
 }
 
-.gfx-global__content h2 {
+.gfx-global__content h3 {
   font-size: 61px;
   font-weight: 600;
   line-height: 1.1;
@@ -601,7 +604,7 @@ p {
   margin: 0 auto 20px !important;
 }
 
-.faqs-sec .sec-head h2 {
+.faqs-sec .sec-head h3 {
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 15px !important;
@@ -620,7 +623,10 @@ p {
   box-shadow: unset;
 }
 
-.faqs-items .accordion-item:first-of-type>.accordion-header .accordion-button {
+.faqs-items
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
   border-radius: 12px;
 }
 
@@ -760,7 +766,8 @@ p {
 }
 
 .faqs-sec__bgLight .faqs-items .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) saturate(100%) invert(82%) sepia(84%) saturate(584%) hue-rotate(35deg) brightness(108%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(82%) sepia(84%) saturate(584%)
+    hue-rotate(35deg) brightness(108%) contrast(101%);
 }
 
 .blog-sec {
@@ -775,7 +782,7 @@ p {
   margin: 0 auto 40px;
 }
 
-.blog-sec .sec-head h2 {
+.blog-sec .sec-head h3 {
   font-size: 50px;
   line-height: 1.2;
   font-weight: 600;
@@ -808,7 +815,7 @@ p {
   font-size: 13px;
 }
 
-.blog-card__content-meta h4 {
+.blog-card__content-meta .h4 {
   font-size: 15px;
 }
 
@@ -892,6 +899,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
 }
 
 .industries-client__content__head {
@@ -901,9 +909,15 @@ p {
 }
 
 .industries-client__content__head h3 {
-  font-size: 29px;
+  font-size: 22px;
   line-height: 1;
   font-weight: 700;
+}
+.industries-client__content__img {
+  flex: 0 0 60px;
+}
+.industries-client__content__img img {
+  width: 100%;
 }
 
 .industries-client__content p {
@@ -959,7 +973,7 @@ p {
   color: #fff;
 }
 
-.our-achievements .sec-head h2 {
+.our-achievements .sec-head h3 {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 5px !important;
@@ -989,11 +1003,12 @@ p {
   overflow: hidden;
 }
 
-.client-testimonial .sec-head h2 {
+.client-testimonial .sec-head .para-title {
   font-size: 50px;
   font-weight: 600;
   line-height: 1.1;
   margin-bottom: 10px !important;
+  font-family: Raleway, sans-serif;
 }
 
 .client-testimonial .sec-head p {
@@ -1034,10 +1049,11 @@ p {
 .client-testimonial__content-quote {
   color: #191919;
   font-size: 16px;
-  display: -webkit-box;
+  min-height: 120px;
+  /* display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .client-testimonial__content-footer img {
@@ -1321,7 +1337,8 @@ p {
   transform: translateY(0) scale(1);
   width: 100px;
   height: 60px;
-  background: url(assets/images/portfolio-content-title-after.png) no-repeat center center;
+  background: url(assets/images/portfolio-content-title-after.png) no-repeat
+    center center;
   background-size: contain;
   transition: transform 0.4s ease;
   /* transition added */
@@ -1944,7 +1961,7 @@ p {
 }
 
 .our-work-process__bgWhite .sec-head,
-.our-work-process__bgWhite .our-work-process__item h1,
+.our-work-process__bgWhite .our-work-process__item h2,
 .our-work-process__bgWhite .our-work-process__item p,
 .our-work-process__bgWhite .our-work-process-last-p {
   color: #000;
@@ -2283,6 +2300,9 @@ p {
 /* Media quries */
 
 @media (max-width: 1399px) {
+  .client-testimonial__content-quote {
+    min-height: 168px;
+  }
   .blog-categories__card-footer {
     font-size: 14px;
   }
@@ -2296,7 +2316,7 @@ p {
     font-size: 41px;
   }
 
-  .gfx-global__content h2 {
+  .gfx-global__content h3 {
     font-size: 52px;
   }
 
@@ -2336,7 +2356,13 @@ p {
 }
 
 @media (max-width: 1199px) {
-
+  .client-testimonial__content-quote {
+    min-height: 180px;
+    font-size: 15px;
+  }
+  .testimonial-quote__text {
+    min-height: 120px;
+  }
   .services-box-1 .services-box-content img,
   .services-box-3 .services-box-content img {
     max-width: 160px;
@@ -2389,7 +2415,7 @@ p {
     line-height: 1.3;
   }
 
-  .our-work-process__item h1 {
+  .our-work-process__item h2 {
     font-size: 79px;
   }
 
@@ -2410,7 +2436,7 @@ p {
     font-size: 44px;
   }
 
-  .blog-sec .sec-head h2 {
+  .blog-sec .sec-head h3 {
     font-size: 45px;
   }
 
@@ -2430,7 +2456,7 @@ p {
     font-size: 15px;
   }
 
-  .gfx-global__content h2 {
+  .gfx-global__content h3 {
     font-size: 43px;
   }
 
@@ -2438,7 +2464,7 @@ p {
     padding: 16px 10px;
   }
 
-  .blog-card__content-meta h4 {
+  .blog-card__content-meta .h4 {
     font-size: 14px;
   }
 
@@ -2471,7 +2497,7 @@ p {
     max-width: 200px;
   }
 
-  .client-testimonial .sec-head h2 {
+  .client-testimonial .sec-head .para-title {
     font-size: 38px;
   }
 
@@ -2553,25 +2579,31 @@ p {
 }
 
 @media (max-width: 991px) {
-
+  .client-testimonial__content-quote {
+    min-height: 112px;
+  }
+  .testimonial-quote__text {
+    min-height: 168px;
+  }
   .our-work-process__item {
     flex: 0 0 48% !important;
   }
 
   .our-work-process__container {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .our-work-process__item:not(:last-child) h1::after {
+  .our-work-process__item:not(:last-child) h2::after {
     width: 100%;
     top: 47%;
     left: 73%;
   }
 
-  .our-work-process__item:nth-of-type(2) h1::after,
-  .our-work-process__item:nth-of-type(4) h1::after {
-    content: unset
+  .our-work-process__item:nth-of-type(2) h2::after,
+  .our-work-process__item:nth-of-type(4) h2::after {
+    content: unset;
   }
 
   .main-navbar .navbar-nav .nav-link {
@@ -2640,7 +2672,7 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .our-work-process__item h1 {
+  .our-work-process__item h2 {
     font-size: 63px;
   }
 
@@ -2682,7 +2714,7 @@ p {
     margin: 0 auto;
   }
 
-  .faqs-sec .sec-head h2 {
+  .faqs-sec .sec-head h3 {
     font-size: 39px;
   }
 
@@ -2754,11 +2786,17 @@ p {
 }
 
 @media (max-width: 767px) {
-  .our-work-process__item:not(:last-child) h1::after {
+  .client-testimonial__content-quote {
+    min-height: 135px;
+  }
+  .testimonial-quote__text {
+    min-height: 96px;
+  }
+  .our-work-process__item:not(:last-child) h2::after {
     width: 100%;
     top: 47%;
     left: 62%;
-}
+  }
   .services-sec {
     max-width: 480px;
     margin: 40px auto;
@@ -2827,7 +2865,7 @@ p {
     background-size: 82%;
   }
 
-  .our-work-process__item h1 {
+  .our-work-process__item h2 {
     font-size: 49px;
   }
 
@@ -2871,11 +2909,11 @@ p {
     background-color: #191919;
   }
 
-  .blog-sec .sec-head h2 {
+  .blog-sec .sec-head h3 {
     font-size: 40px;
   }
 
-  .gfx-global__content h2 {
+  .gfx-global__content h3 {
     font-size: 35px;
   }
 
@@ -3092,19 +3130,25 @@ p {
 }
 
 @media (max-width: 575px) {
-  .our-work-process__container{
+  .client-testimonial__content-quote {
+    min-height: 180px;
+  }
+  .testimonial-quote__text {
+    min-height: 120px;
+  }
+  .our-work-process__container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.our-work-process__item h1::after{
+  .our-work-process__item h2::after {
     content: unset !important;
-}
-.our-work-process__item{
+  }
+  .our-work-process__item {
     flex: unset !important;
     max-width: 300px;
-}
+  }
   .web-design__guidelines-box {
     max-width: 360px;
     margin: 0 auto;
@@ -3189,7 +3233,7 @@ p {
     font-size: 14px;
   }
 
-  .our-work-process__item h1 {
+  .our-work-process__item h2 {
     font-size: 30px;
   }
 
@@ -3197,7 +3241,7 @@ p {
     font-size: 12px;
   }
 
-  .blog-sec .sec-head h2 {
+  .blog-sec .sec-head h3 {
     font-size: 29px;
   }
 
@@ -3209,7 +3253,7 @@ p {
     padding: 140px 0 60px;
   }
 
-  .client-testimonial .sec-head h2 {
+  .client-testimonial .sec-head .para-title {
     font-size: 30px;
   }
 
@@ -3227,6 +3271,9 @@ p {
 }
 
 @media (max-width: 430px) {
+  .testimonial-quote__text {
+    min-height: 168px;
+  }
   .contactForm-icons-text .contactForm-icon {
     width: 30px;
   }
@@ -3279,7 +3326,7 @@ p {
     font-size: 30px;
   }
 
-  .faqs-sec .sec-head h2 {
+  .faqs-sec .sec-head h3 {
     font-size: 29px;
   }
 
@@ -3308,12 +3355,12 @@ p {
     font-size: 35px;
   }
 
-  .our-achievements .sec-head h2 {
+  .our-achievements .sec-head h3 {
     font-size: 38px;
     margin-bottom: 10px !important;
   }
 
-  .client-testimonial .sec-head h2 {
+  .client-testimonial .sec-head .para-title {
     font-size: 34px;
   }
 
@@ -3374,7 +3421,7 @@ p {
     font-size: 30px;
   }
 
-  .client-testimonial .sec-head h2 {
+  .client-testimonial .sec-head .para-title {
     font-size: 30px;
   }
 }
@@ -3384,15 +3431,19 @@ p {
     font-size: 30px;
   }
 
-  .gfx-global__content h2 {
+  .gfx-global__content h3 {
     font-size: 30px;
   }
 
-  .blog-sec .sec-head h2 {
+  .blog-sec .sec-head h3 {
     font-size: 26px;
   }
 
   .footer-main__title {
     font-size: 25px;
+  }
+  .client-testimonial__content-quote {
+    /* min-height: 180px; */
+    font-size: 14px;
   }
 }

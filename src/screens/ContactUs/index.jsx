@@ -203,9 +203,9 @@ const ContactUs = () => {
                 data-aos-delay={200}
               >
                 <h3>Contact Information</h3>
-                <p>
+                {/* <p>
                   2114 N, Flamingo Road, <br /> Pembroke Pines, FL, 33028
-                </p>
+                </p> */}
                 <div className="contactForm-details">
                   <div className="contactForm-icons-text">
                     <div className="contactForm-icon">

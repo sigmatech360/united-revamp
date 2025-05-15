@@ -15,9 +15,9 @@ const BlogsSec = (props) => {
               <p className="sec-head-tag label-yellow-bg">
                 ADDITIONAL RESOURCES
               </p>
-              <h2 data-aos="fade-up" data-aos-delay={100}>
+              <h3 data-aos="fade-up" data-aos-delay={100}>
                 {props.blogSecTitle}
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-delay={300}>
                 {props.blogSubtext}
                 
@@ -60,7 +60,7 @@ const BlogsSec = (props) => {
                       </div>
                       <div className="blog-card__content">
                         <div className="blog-card__content-meta">
-                          <h4>By: {item.meta.author}</h4>
+                          <p className="h4">By: {item.meta.author}</p>
                           <p>{item.meta.date}</p>
                         </div>
                         <p className="blog-card__content-title">{item.title}</p>

@@ -1,8 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
+import {
+  Accordion,
+  useAccordionButton,
+  AccordionContext,
+} from "react-bootstrap";
 import { faqsData } from "../../data";
 import toast from "react-hot-toast";
+
+function CustomToggle({ children, eventKey }) {
+  const { activeEventKey } = useContext(AccordionContext);
+  const isActive = activeEventKey === eventKey;
+  const toggleClick = useAccordionButton(eventKey);
+
+  return (
+    <div className="accordion-header">
+      <h4
+        className={`accordion-button ${!isActive ? "collapsed" : ""}`}
+        onClick={toggleClick}
+        style={{ cursor: "pointer" }}
+      >
+        {children}
+      </h4>
+    </div>
+  );
+}
 
 const FAQSection = (props) => {
   const [formData, setFormData] = useState({
@@ -22,11 +45,9 @@ const FAQSection = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
     const formDataMethod = new FormData();
 
     for (const key in formData) {
-    
       formDataMethod.append(key, formData[key]);
     }
 
@@ -53,7 +74,7 @@ const FAQSection = (props) => {
     } catch (error) {
       // console.log(Error submitting form:, error);
       // alert("Submission failed. Please try again.");
-      toast.error("Submission failed. Please try again.")
+      toast.error("Submission failed. Please try again.");
     }
   };
 
@@ -66,9 +87,9 @@ const FAQSection = (props) => {
               {props.secHeadrag && (
                 <p className="sec-head-tag">{props.secHeadrag}</p>
               )}
-              <h2 data-aos="fade-up" data-aos-delay={100}>
+              <h3 data-aos="fade-up" data-aos-delay={100}>
                 {props.title}
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-delay={300}>
                 {props.description}
               </p>
@@ -84,7 +105,11 @@ const FAQSection = (props) => {
                     data-aos="slide-right"
                     data-aos-delay={index * 200}
                   >
-                    <Accordion.Header>{item.titla}</Accordion.Header>
+                    {/* <Accordion.Header>{item.titla}</Accordion.Header> */}
+                    <CustomToggle eventKey={index.toString()}>
+                      {item.titla}
+                    </CustomToggle>
+
                     <Accordion.Body>{item.description}</Accordion.Body>
                   </Accordion.Item>
                 ))}

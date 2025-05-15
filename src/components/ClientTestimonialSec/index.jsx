@@ -20,9 +20,9 @@ const ClientTestimonialSec = (props) => {
               <p className="sec-head-tag label-yellow-bg">
                 CLIENT TESTIMONIALS
               </p>
-              <h2 data-aos="fade-right" data-aos-delay={100}>
+              <p className="para-title" data-aos="fade-right" data-aos-delay={100}>
                {props.title}
-              </h2>
+              </p>
               <p data-aos="fade-right" data-aos-delay={300}>
               {props.description}
               </p>
@@ -37,8 +37,8 @@ const ClientTestimonialSec = (props) => {
                 loop={true}
                 speed={1000} // smooth slide speed
                 autoplay={{
-                  delay: 3000, // slide every 3 seconds
-                  disableOnInteraction: false, // keep autoplaying
+                  delay: 3000, 
+                  disableOnInteraction: false, 
                 }}
                 breakpoints={{
                   768: { slidesPerView: 1.2 },

@@ -41,8 +41,7 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Branding Design</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Crafting strong brand visuals that tell your unique story.
                     </p>
                   </div>
                 </div>
@@ -59,8 +58,7 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Logo Design</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Creating memorable logos that define your brand identity.
                     </p>
                   </div>
                 </div>
@@ -73,8 +71,8 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Ebook Cover Design</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Designing compelling covers that attract and engage
+                      readers.
                     </p>
                   </div>
                 </div>
@@ -95,8 +93,8 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Website Design</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Building sleek, modern layouts for seamless user
+                      experience.
                     </p>
                   </div>
                 </div>
@@ -117,8 +115,7 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Video Animation</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Bringing ideas to life with engaging animated visuals.
                     </p>
                   </div>
                 </div>
@@ -135,8 +132,8 @@ const Portfolio = () => {
                   <div className="services-box-content-text">
                     <h4>Web Development</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Developing fast, responsive websites tailored to your
+                      needs.
                     </p>
                   </div>
                 </div>

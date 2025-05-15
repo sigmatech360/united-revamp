@@ -320,9 +320,9 @@ const Home = () => {
                 <p className="sec-head-tag label-yellow-bg">
                 Bespoke Solutions For You
                 </p>
-                <h2 data-aos="fade-right" data-aos-delay={100}>
+                <h3 data-aos="fade-right" data-aos-delay={100}>
                 A Digital Company To Take You Ahead
-                </h2>
+                </h3>
                 <p data-aos="fade-right" data-aos-delay={300}>
                 We grow when our clients grow. Our success is rooted in the real, measurable progress our customers achieve through the strategies we build together. At United Web Developers, we have one mission: To help our clients succeed in the best way possible. And we do that through attractive design, advanced development, and smart marketing strategies. Why we say people love working with us is because we genuinely care about their brand, their goals, and their growth rather than just monetary benefits.
                 </p>

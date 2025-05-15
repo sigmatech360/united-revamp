@@ -36,11 +36,47 @@ const gfxServices = [
   { title: "Content Writing", img: gfxcontentwriting },
 ];
 
+const stepsData = [
+  {
+    stepNum: "01",
+    stepName: "Breaf",
+    stepDescription:
+      "We begin by understanding your business goals, audience, and vision to form the foundation of your custom website design.",
+  },
+  {
+    stepNum: "02",
+    stepName: "Ideation",
+    stepDescription:
+      "Our team brainstorms and conceptualizes modern layouts and features tailored to your brand identity and functionality needs.",
+  },
+  {
+    stepNum: "03",
+    stepName: "Sketch",
+    stepDescription:
+      "Wireframes and mockups are created to visualize the site structure, ensuring your site layout aligns with UX design and user flow.",
+  },
+  {
+    stepNum: "04",
+    stepName: "Execution",
+    stepDescription:
+      "We bring your vision to life using cutting-edge tools and responsive frameworks for optimized performance on all devices.",
+  },
+  {
+    stepNum: "05",
+    stepName: "Deliver",
+    stepDescription:
+      "After thorough testing and feedback, we launch your website, which is visually stunning, SEO friendly, and built to convert.",
+  },
+];
+
 import {
   adobePhotoshopSecData,
+  blogsData,
   oneStopWebBoxesData,
+  webDesignFaqs,
   webDesignGuidelinesData,
   webDesignSupportData,
+  webDesignTestimoialData,
 } from "../../data";
 
 const Services = () => {
@@ -115,6 +151,7 @@ const Services = () => {
         secTitle="Providing Advanced Digital Services"
         secDescription="Here’s how we produce perfection in graphics design so that your brand can take maximum advantage of increasing customer engagement."
         secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secStepsData={stepsData}
       />
 
       <OneStopWebSec
@@ -130,13 +167,17 @@ const Services = () => {
         webDesignSupport={webDesignSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark" />
+      <ClientTestimonialSec
+        className="bgDark"
+        testimonialData={webDesignTestimoialData}
+      />
 
       <FAQSection
         className="bgLight"
         // secHeadrag=""
         title="Frequently Asked Questions"
         description="Common queries you want us to answer about our web design services."
+        faqsQA={webDesignFaqs}
       />
 
       <WebDesignGuidelines
@@ -148,7 +189,7 @@ const Services = () => {
         stepData={webDesignGuidelinesData}
       />
 
-      <BlogsSec />
+      <BlogsSec blogsData={blogsData} />
     </DefaultLayout>
   );
 };

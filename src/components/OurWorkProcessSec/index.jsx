@@ -17,7 +17,7 @@ const OurWorkProcessSec = (props) => {
                 {props.secDescription}
               </p>
             </div>
-          </div>
+          </div> 
           <div className="col-md-12">
             <div className="our-work-process__container">
               {props.secStepsData.map((item, index) => (
@@ -27,7 +27,7 @@ const OurWorkProcessSec = (props) => {
                   data-aos-delay={100}
                   key={index}
                 >
-                  <h1>{item.stepNum}</h1>
+                  <h2>{item.stepNum}</h2>
                   <p>{item.stepName}</p>
                   <p
                     className="our-work-process-last-p"

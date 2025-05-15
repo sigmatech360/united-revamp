@@ -15,7 +15,7 @@ const Blogs = () => {
     <DefaultLayout>
       <InnerBanner
         bgImage={aboutbannerbg}
-        title="GRAPHIC DESIGN BLOG"
+        title="BLOGS"
         description="We define your competition and target audience. Discover what is working in your online industry."
       />
 

@@ -36,16 +36,16 @@ const Footer = ({ footerTitle }) => {
         <div className="row">
           <div className="col-md-12">
             {footerTitle ? (
-              <h2
+              <h5
                 className="footer-main__title text-center"
                 dangerouslySetInnerHTML={{ __html: footerTitle }}
-              ></h2>
+              ></h5>
             ) : (
-              <h2 className="footer-main__title text-center">
+              <h5 className="footer-main__title text-center">
                 Providing <span className="colorYellow">Smart Digital</span>{" "}
                 <br /> Solutions Designed to Grow Your{" "}
                 <span className="colorYellow">Business Online</span>
-              </h2>
+              </h5>
             )}
           </div>
           <div className="col-md-12">
@@ -94,7 +94,7 @@ const Footer = ({ footerTitle }) => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-4 mb-md-0 mb-4">
-                <h2 className="main-footer__links-title">Company</h2>
+                <h6 className="main-footer__links-title">Company</h6>
                 <div className="main-footer__links">
                   {companyLinks.map((link, index) => (
                     <Link
@@ -108,7 +108,7 @@ const Footer = ({ footerTitle }) => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-4 mb-md-0 mb-4">
-                <h2 className="main-footer__links-title">Services</h2>
+                <h6 className="main-footer__links-title">Services</h6>
                 <div className="main-footer__links">
                   {servicesLinks.map((link, index) => (
                     <Link
@@ -122,7 +122,7 @@ const Footer = ({ footerTitle }) => {
                 </div>
               </div>
               <div className="col-xl-3 col-lg-4 col-md-4">
-                <h2 className="main-footer__links-title">Contact Us</h2>
+                <h6 className="main-footer__links-title">Contact Us</h6>
                 <div className="main-footer__links">
                   <a href="tel:(619) 326-6066" className="main-footer-link">
                     (619) 326-6066

@@ -23,7 +23,7 @@ const About = () => {
     <DefaultLayout footerTitle='At <span class="colorYellow">United Web Developers</span>,</br> We Create A Digital Presence That Attract <br/> Leads, Clicks, And <span class="colorYellow">Cash.</span>'>
       <InnerBanner
         bgImage={aboutbannerbg}
-        title={"USA’s Top <span class='colorYellow'>Website Design & Development</span> Company At Your Service."}
+        title={"USA Top <span class='colorYellow'>Website Design & Development</span> Company At Your Service."}
       />
 
       <section className="about-sec">
@@ -144,9 +144,9 @@ const About = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="sec-head">
-                <h2 data-aos="fade-up" data-aos-delay={100}>
+                <h3 data-aos="fade-up" data-aos-delay={100}>
                   Our Achievements
-                </h2>
+                </h3>
                 <p data-aos="fade-up" data-aos-delay={300}>
                 Our years of practice in the <span className="colorYellow">Web design and development</span> industry have not only given us success but also some awards and achievements to showcase our skills. 
                 </p>

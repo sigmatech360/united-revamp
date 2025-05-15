@@ -21,34 +21,40 @@ const ServicesAboutSec = (props) => {
           </div>
           <div className="col-lg-6">
             <div className="services-about__content">
-              <h2 data-aos="fade-left" data-aos-delay={200} dangerouslySetInnerHTML={{ __html: props.title }}>
-                
-              </h2>
-              <p data-aos="fade-left" data-aos-delay={400} dangerouslySetInnerHTML={{ __html: props.description }}>
-                
-              </p>
+              <h2
+                data-aos="fade-left"
+                data-aos-delay={200}
+                dangerouslySetInnerHTML={{ __html: props.title }}
+              ></h2>
+              <p
+                data-aos="fade-left"
+                data-aos-delay={400}
+                dangerouslySetInnerHTML={{ __html: props.description }}
+              ></p>
               <div
                 className="d-flex gap-2"
                 data-aos="fade-left"
                 data-aos-delay={600}
               >
                 {props.cta1 && props.cta2 ? (
-                
-                                  <>
-                                <Link className="theme-btn theme-btn__black">{props.cta1}</Link>
-                                <button className="theme-btn theme-btn__yellow">
-                                  {props.cta2}
-                                </button>
-                                  </>
-                                ):(
-                                  <>
-                                  
-                                <Link className="theme-btn theme-btn__black">Get Started</Link>
-                                <button className="theme-btn theme-btn__yellow">
-                                  Call Us Now
-                                </button>
-                                  </>
-                                )}
+                  <>
+                    <Link className="theme-btn theme-btn__black">
+                      {props.cta1}
+                    </Link>
+                    <button className="theme-btn theme-btn__yellow">
+                      {props.cta2}
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <Link className="theme-btn theme-btn__black">
+                      Get Started
+                    </Link>
+                    <button className="theme-btn theme-btn__yellow">
+                      Call Us Now
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>
