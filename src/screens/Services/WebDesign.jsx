@@ -1,7 +1,7 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/servicesWebDesign-banner-bg.png";
 
 import servicesbannerimg from "../../assets/images/services-webDesign-banner-img.png";
 import servicesaboutimg from "../../assets/images/services-webDesign-about-img.png";

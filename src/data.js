@@ -47,11 +47,11 @@ import logodesignbg3 from "./assets/images/portfolio/logo-design-bg-3.png";
 import logodesignbg4 from "./assets/images/portfolio/logo-design-bg-4.png";
 import logodesignbg5 from "./assets/images/portfolio/logo-design-bg-5.png";
 
-import logodesignimg1 from "./assets/images/portfolio/logo-design-img-1.png";
-import logodesignimg2 from "./assets/images/portfolio/logo-design-img-2.png";
-import logodesignimg3 from "./assets/images/portfolio/logo-design-img-3.png";
-import logodesignimg4 from "./assets/images/portfolio/logo-design-img-4.png";
-import logodesignimg5 from "./assets/images/portfolio/logo-design-img-5.png";
+import logodesignimg1 from "./assets/images/service-logoDesign-portfolio-img1.png";
+import logodesignimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
+import logodesignimg3 from "./assets/images/service-logoDesign-portfolio-img3.png";
+import logodesignimg4 from "./assets/images/service-logoDesign-portfolio-img4.png";
+import logodesignimg5 from "./assets/images/service-logoDesign-portfolio-img5.png";
 
 import brandingdesignbg1 from "./assets/images/portfolio/branding-design-bg-1.png";
 import brandingdesignbg2 from "./assets/images/portfolio/branding-design-bg-2.png";
@@ -75,6 +75,19 @@ import websitedesignimg1 from "./assets/images/portfolio/website-design-img-1.pn
 import websitedesignimg2 from "./assets/images/portfolio/website-design-img-2.png";
 import websitedesignimg3 from "./assets/images/portfolio/website-design-img-3.png";
 import websitedesignimg4 from "./assets/images/portfolio/website-design-img-4.png";
+import websitedesignimg5 from "./assets/images/portfolio/website-design-img-5.png";
+
+import eBookCoverDesignimg1 from "./assets/images/portfolio/eBookCoverDesign-img-1.png";
+import eBookCoverDesignimg2 from "./assets/images/portfolio/eBookCoverDesign-img-2.png";
+import eBookCoverDesignimg3 from "./assets/images/portfolio/eBookCoverDesign-img-3.png";
+import eBookCoverDesignimg4 from "./assets/images/portfolio/eBookCoverDesign-img-4.png";
+import eBookCoverDesignimg5 from "./assets/images/portfolio/eBookCoverDesign-img-5.png";
+
+import websitedevelopmentimg1 from "./assets/images/portfolio/website-development-img-1.png";
+import websitedevelopmentimg2 from "./assets/images/portfolio/website-development-img-2.png";
+import websitedevelopmentimg3 from "./assets/images/portfolio/website-development-img-3.png";
+import websitedevelopmentimg4 from "./assets/images/portfolio/website-development-img-4.png";
+import websitedevelopmentimg5 from "./assets/images/portfolio/website-development-img-5.png";
 
 // Services Web Design Portfolio
 import servicewebDesignportfolioimg1 from "./assets/images/service-webDesign-portfolio-img1.png";
@@ -174,19 +187,20 @@ export const faqsData = [
     description:
       "Yes, every site we build is fully mobile responsive and optimized, which means it’ll look and work perfectly on phones, tablets, and desktops. Mobile-first design is a must, and we’ve got it covered.",
   },
-  
 ];
 
 export const customWebFaqs = [
   {
     id: 1,
-    titla: "Q1: Will I get to speak directly with the developer working on my website?",
+    titla:
+      "Q1: Will I get to speak directly with the developer working on my website?",
     description:
       "Yes! You’ll have a dedicated project manager who will keep you informed and relay your feedback directly to the developers.",
   },
   {
     id: 2,
-    titla: "Q2: What if I don’t know anything about websites? Will you guide me?",
+    titla:
+      "Q2: What if I don’t know anything about websites? Will you guide me?",
     description:
       "Absolutely. We work with clients who are new to web development all the time. We'll walk you through each step, no tech talk needed.",
   },
@@ -204,7 +218,8 @@ export const customWebFaqs = [
   },
   {
     id: 5,
-    titla: "Q5: How custom is your custom web development? Do you use templates?",
+    titla:
+      "Q5: How custom is your custom web development? Do you use templates?",
     description:
       "At United Web Developers, templates are a no-go area. Every site we build is from scratch, tailored to your business goals, brand, and user experience needs.",
   },
@@ -214,7 +229,6 @@ export const customWebFaqs = [
     description:
       "We always design first. You'll get mockups to approve before any coding begins, so you know exactly what you're getting.",
   },
-  
 ];
 
 export const seoFaqs = [
@@ -254,7 +268,6 @@ export const seoFaqs = [
     description:
       "We use tools like Google Analytics, Google Search Console, and Ahrefs to track rankings, traffic, and conversions, ensuring ongoing improvement.",
   },
-  
 ];
 
 export const mobileAppFaqs = [
@@ -294,7 +307,6 @@ export const mobileAppFaqs = [
     description:
       "Absolutely! We manage the entire submission process for both the Apple App Store and Google Play.",
   },
-  
 ];
 
 export const socialMediaFaqs = [
@@ -334,7 +346,6 @@ export const socialMediaFaqs = [
     description:
       "We track engagement, reach, clicks, conversions, and other KPIs using platform analytics and reports to continuously refine your social media marketing strategy.",
   },
-  
 ];
 
 export const cmsFaqs = [
@@ -374,7 +385,6 @@ export const cmsFaqs = [
     description:
       "Yes, CMS platforms like WordPress and Shopify support strong SEO foundations with plugins, metadata control, and mobile responsiveness to boost your search visibility.",
   },
-  
 ];
 
 export const webDesignFaqs = [
@@ -414,7 +424,6 @@ export const webDesignFaqs = [
     description:
       "Costs vary based on complexity, features, and platform, but we offer competitive, scalable packages to fit different business sizes and budgets",
   },
-  
 ];
 
 export const digitalMarketingFaqs = [
@@ -454,7 +463,6 @@ export const digitalMarketingFaqs = [
     description:
       "We track KPIs like traffic, engagement, lead generation, conversions, and ROI using analytics tools to optimize performance continuously",
   },
-  
 ];
 
 export const logoFaqs = [
@@ -494,7 +502,6 @@ export const logoFaqs = [
     description:
       "You receive your logo in vector (AI, EPS), PNG, JPG, and PDF formats.",
   },
-  
 ];
 
 export const blogsData = [
@@ -852,8 +859,7 @@ export const logosTestimoialData = [
     id: 2,
     name: "Kim Wilson",
     designation: "Businessman",
-    quote:
-      "Quick, creative, and exactly what I needed for my business rebrand",
+    quote: "Quick, creative, and exactly what I needed for my business rebrand",
   },
   {
     id: 3,
@@ -893,9 +899,7 @@ export const socialMediaTestimoialData = [
     quote:
       "We saw a noticeable boost in engagement and leads within the first month. The content management and campaign management were both very precise. Highly Recommended!",
   },
-  
 ];
-
 
 export const pricingPlans = [
   {
@@ -959,23 +963,23 @@ export const portfolioData = [
       "logo design With a sound knowledge of design aesthetics, we have created different types of logos for numerous renowned brands.",
     images: [
       {
-        cardBG: logodesignbg1,
+        cardBG: adobephotoshopcardbg,
         image: logodesignimg1,
       },
       {
-        cardBG: logodesignbg2,
+        cardBG: adobephotoshopcardbg,
         image: logodesignimg2,
       },
       {
-        cardBG: logodesignbg3,
+        cardBG: adobephotoshopcardbg,
         image: logodesignimg3,
       },
       {
-        cardBG: logodesignbg4,
+        cardBG: adobephotoshopcardbg,
         image: logodesignimg4,
       },
       {
-        cardBG: logodesignbg5,
+        cardBG: adobephotoshopcardbg,
         image: logodesignimg5,
       },
     ],
@@ -986,23 +990,23 @@ export const portfolioData = [
       "From business cards to company brochures, our branding designs have always helped clients to showcase a distinctive professional look.",
     images: [
       {
-        cardBG: brandingdesignbg1,
+        cardBG: adobephotoshopcardbg,
         image: brandingdesignimg1,
       },
       {
-        cardBG: brandingdesignbg2,
+        cardBG: adobephotoshopcardbg,
         image: brandingdesignimg2,
       },
       {
-        cardBG: brandingdesignbg3,
+        cardBG: adobephotoshopcardbg,
         image: brandingdesignimg3,
       },
       {
-        cardBG: brandingdesignbg4,
+        cardBG: adobephotoshopcardbg,
         image: brandingdesignimg4,
       },
       {
-        cardBG: brandingdesignbg5,
+        cardBG: adobephotoshopcardbg,
         image: brandingdesignimg5,
       },
     ],
@@ -1013,24 +1017,24 @@ export const portfolioData = [
       "Clients simply love our web designs, and some of these exceptional design samples speak volume for our hard work.",
     images: [
       {
-        cardBG: websitedesignbg1,
+        cardBG: adobephotoshopcardbg,
         image: websitedesignimg1,
       },
       {
-        cardBG: websitedesignbg2,
+        cardBG: adobephotoshopcardbg,
         image: websitedesignimg2,
       },
       {
-        cardBG: websitedesignbg3,
+        cardBG: adobephotoshopcardbg,
         image: websitedesignimg3,
       },
       {
-        cardBG: websitedesignbg4,
+        cardBG: adobephotoshopcardbg,
         image: websitedesignimg4,
       },
       {
-        cardBG: websitedesignbg5,
-        image: websitedesignimg1,
+        cardBG: adobephotoshopcardbg,
+        image: websitedesignimg5,
       },
     ],
   },
@@ -1040,24 +1044,24 @@ export const portfolioData = [
       "We create Ebook cover designs as per the custom client requirements. Here are some of the examples that showcases our design excellence.",
     images: [
       {
-        cardBG: websitedesignbg1,
-        image: websitedesignimg1,
+        cardBG: adobephotoshopcardbg,
+        image: eBookCoverDesignimg1,
       },
       {
-        cardBG: websitedesignbg2,
-        image: websitedesignimg2,
+        cardBG: adobephotoshopcardbg,
+        image: eBookCoverDesignimg2,
       },
       {
-        cardBG: websitedesignbg3,
-        image: websitedesignimg3,
+        cardBG: adobephotoshopcardbg,
+        image: eBookCoverDesignimg3,
       },
       {
-        cardBG: websitedesignbg4,
-        image: websitedesignimg4,
+        cardBG: adobephotoshopcardbg,
+        image: eBookCoverDesignimg4,
       },
       {
-        cardBG: websitedesignbg5,
-        image: websitedesignimg1,
+        cardBG: adobephotoshopcardbg,
+        image: eBookCoverDesignimg5,
       },
     ],
   },
@@ -1067,24 +1071,24 @@ export const portfolioData = [
       "We have worked with clients connected to diverse industries, and our websites have always helped them to gain a competitive branding advantage in the market.",
     images: [
       {
-        cardBG: websitedesignbg1,
-        image: websitedesignimg1,
+        cardBG: adobephotoshopcardbg,
+        image: websitedevelopmentimg1,
       },
       {
-        cardBG: websitedesignbg2,
-        image: websitedesignimg2,
+        cardBG: adobephotoshopcardbg,
+        image: websitedevelopmentimg2,
       },
       {
-        cardBG: websitedesignbg3,
-        image: websitedesignimg3,
+        cardBG: adobephotoshopcardbg,
+        image: websitedevelopmentimg3,
       },
       {
-        cardBG: websitedesignbg4,
-        image: websitedesignimg4,
+        cardBG: adobephotoshopcardbg,
+        image: websitedevelopmentimg4,
       },
       {
-        cardBG: websitedesignbg5,
-        image: websitedesignimg1,
+        cardBG: adobephotoshopcardbg,
+        image: websitedevelopmentimg5,
       },
     ],
   },
@@ -1392,7 +1396,6 @@ export const servicesCustomDevPortfolioData = [
   },
 ];
 
-
 export const servicesMobileDevPortfolioData = [
   {
     cardBG: adobephotoshopcardbg,
@@ -1437,8 +1440,6 @@ export const servicesLogoDesignPortfolioData = [
     image: serviceLogoDesignportfolioimg5,
   },
 ];
-
-
 
 export const oneStopWebBoxesData = [
   {
@@ -1620,8 +1621,6 @@ export const oneStopCMSBoxesData = [
   },
 ];
 
-
-
 export const webDesignSupportData = [
   {
     id: 1,
@@ -1652,7 +1651,6 @@ export const webDesignSupportData = [
       "Our experienced web designers, take care of all your queries and offer dedicated project support as per your requirements.",
   },
 ];
-
 
 // Services Guidlines
 export const servicesWebDesignSupportData = [
@@ -1789,8 +1787,6 @@ export const servicesMobileAppDevSupportData = [
       "Get transparent weekly and monthly insights into development progress, performance metrics, and planned improvements.",
   },
 ];
-
-
 
 export const cmsGuidelinesData = [
   {

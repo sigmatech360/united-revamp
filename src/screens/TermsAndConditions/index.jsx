@@ -8,7 +8,7 @@ const termsAndCondition = [
     {
       // title: "Terms & Conditions",
       paragraphs: [
-        "Before placing an order, California Web Coders urge all visitors to carefully read and familiarize themselves with our website’s terms and conditions. You acknowledge your understanding and agreement with these terms by proceeding with our services. Your satisfaction and compliance are paramount to us.",
+        "Before placing an order, United Web Developers urge all visitors to carefully read and familiarize themselves with our website’s terms and conditions. You acknowledge your understanding and agreement with these terms by proceeding with our services. Your satisfaction and compliance are paramount to us.",
       ],
       list: [
         "Site Contents Usage",
@@ -36,15 +36,15 @@ const termsAndCondition = [
         "Your decision to visit our homepage is voluntary, and we respect your privacy. Any disputes concerning privacy will be governed by this Notice and our Conditions of Use, which include limitations on damages, dispute arbitration, and applicable state laws. Should you have any concerns regarding our Privacy Policy, please don’t hesitate to contact our customer services, which are dedicated to serving you with utmost satisfaction.",
         "Kindly be informed that our policies are subject to change at any time. Thus, we recommend you review our policy each time you visit our site for purchase.",
         "To improve our services and better understand our clients, we collect navigational information, such as the areas of our website most visited and technical efficiencies like connection and download times. This data enables us to enhance the quality of our site and address any areas that may need improvement.",
-        "Please be aware that all materials on this site, including images, illustrations, designs, icons, photographs, written content, and other materials (collectively referred to as 'Contents'), are copyrighted, trademarks, trade dress, or other intellectual property owned, controlled, or licensed by California Web Coders.",
+        "Please be aware that all materials on this site, including images, illustrations, designs, icons, photographs, written content, and other materials (collectively referred to as 'Contents'), are copyrighted, trademarks, trade dress, or other intellectual property owned, controlled, or licensed by United Web Developers.",
         "Our Site and its Contents are intended solely for personal and non-commercial use. You may download or copy the Contents and other downloadable materials displayed on the site for your personal use only. However, no right, title, or interest in any downloaded materials or software is transferred to you due to such downloading or copying. It is strictly prohibited to reproduce, publish, transmit, distribute, display, modify, create derivatives, sell, or participate in any sale or exploitation of the site, its content, or any related software, except as noted above.",
-        "We value your compliance with these terms as they help maintain the integrity of our content and ensure a positive experience for all visitors to California Web Coders. Our dedicated customer support team is always ready to assist you with any further queries or require assistance.",
+        "We value your compliance with these terms as they help maintain the integrity of our content and ensure a positive experience for all visitors to United Web Developers. Our dedicated customer support team is always ready to assist you with any further queries or require assistance.",
       ],
     },
     {
       title: "Testimonials",
       paragraphs: [
-        "Any comments, feedback, postcards, suggestions, ideas, and other submissions disclosed, submitted, or offered to California Web Coders on or in connection with your use of this site (collectively, the “Comments”) shall remain the Company’s exclusive property. The Company shall have unrestricted rights, titles, and interests in the Comments, and it is not obliged to:",
+        "Any comments, feedback, postcards, suggestions, ideas, and other submissions disclosed, submitted, or offered to United Web Developers on or in connection with your use of this site (collectively, the “Comments”) shall remain the Company’s exclusive property. The Company shall have unrestricted rights, titles, and interests in the Comments, and it is not obliged to:",
       ],
       list: [
         "Maintain any Comments in confidence.",
@@ -58,7 +58,7 @@ const termsAndCondition = [
     {
       title: "Electronic Communications",
       paragraphs: [
-        "Clients who visit our site or email our contacts consent to communicate with our Company electronically. The receipt of our communications electronically is involuntary. California Web Coders will communicate with the client via email or by posting notices on this site. Therefore, the client agrees that all agreements, notices, disclosures, and relevant communications satisfy all legal requirements and hold the same value as any written statement.",
+        "Clients who visit our site or email our contacts consent to communicate with our Company electronically. The receipt of our communications electronically is involuntary. United Web Developers will communicate with the client via email or by posting notices on this site. Therefore, the client agrees that all agreements, notices, disclosures, and relevant communications satisfy all legal requirements and hold the same value as any written statement.",
       ],
     },
     {
@@ -78,7 +78,7 @@ const termsAndCondition = [
     {
       title: "Refund Policy",
       paragraphs: [
-        "At California Web Coders, we value customer satisfaction and strive to provide the best design services. However, certain conditions apply to our refund policy to ensure fair and transparent dealings. Please read the following guidelines regarding refund eligibility:",
+        "At United Web Developers, we value customer satisfaction and strive to provide the best design services. However, certain conditions apply to our refund policy to ensure fair and transparent dealings. Please read the following guidelines regarding refund eligibility:",
       ],
       list: [
         "No Refund for Special Packages: Refunds are not applicable for special packages that are explicitly stated as non-refundable",
@@ -98,7 +98,7 @@ const termsAndCondition = [
         "Change of Mind: Refund is not applicable on the change of mind or any concern that is not related to work ethics.",
       ],
       paragraphsAfterList: [
-        "Please note that California Web Coders reserves the right to reject any project or cancel a contract if necessary. After a refund is processed, you are not permitted to use the designs for any purpose, as they will become the sole property of California Web Coders. The Company will retain full ownership rights to the designs.",
+        "Please note that United Web Developers reserves the right to reject any project or cancel a contract if necessary. After a refund is processed, you are not permitted to use the designs for any purpose, as they will become the sole property of United Web Developers. The Company will retain full ownership rights to the designs.",
         "Don’t hesitate to contact our customer support team for further clarification or to initiate a refund process. We value your understanding and cooperation in adhering to our refund policy.",
       ],
     },
@@ -115,7 +115,7 @@ const termsAndCondition = [
     {
       title: "Quality Assurance Policy",
       paragraphs: [
-        "At California Web Coders, we are dedicated to meeting your requirements and exceeding your expectations. Our designers take pride in crafting well-researched and finely crafted designs to ensure your satisfaction.",
+        "At United Web Developers, we are dedicated to meeting your requirements and exceeding your expectations. Our designers take pride in crafting well-researched and finely crafted designs to ensure your satisfaction.",
         "100% SATISFACTION GUARANTEE: Our commitment to your satisfaction is unwavering. With our unlimited revisions policy, we aim to ensure you are 100% satisfied with the final product.",
         "We strive to surpass your expectations and will only rest once you are completely content with your design. The number of revisions available will be according to your package selection.",
       ],
@@ -143,7 +143,7 @@ const termsAndCondition = [
     {
       title: "Record Maintenance",
       paragraphs: [
-        "At California Web Coders, we place great importance on record maintenance. We keep detailed records of all finalized designs to ensure that you will be promptly provided with the exact file you need in case of misplaced orders. Our commitment to maintaining accurate and organized records is part of our dedication to delivering a seamless and efficient experience to our valued clients.",
+        "At United Web Developers, we place great importance on record maintenance. We keep detailed records of all finalized designs to ensure that you will be promptly provided with the exact file you need in case of misplaced orders. Our commitment to maintaining accurate and organized records is part of our dedication to delivering a seamless and efficient experience to our valued clients.",
       ],
     },
     {
@@ -162,7 +162,7 @@ const termsAndCondition = [
     {
       title: "Notice and Procedure for Making Claims of Copyright Violation",
       paragraphs: [
-        "At California Web Coders, we respect the intellectual property rights of others. If you believe that your work has been copied in a way that constitutes a copyright violation, please follow the procedure outlined below:",
+        "At United Web Developers, we respect the intellectual property rights of others. If you believe that your work has been copied in a way that constitutes a copyright violation, please follow the procedure outlined below:",
       ],
       list: [
         "Provide an electronic or physical signature of the person authorized to act on behalf of the copyright owner.",
@@ -192,7 +192,7 @@ const termsAndCondition = [
     {
       title: "Site Policies, Modification & Severability",
       paragraphs: [
-        "We encourage all visitors to review our other policies, including our Pricing Policy, which governs your visit to our site. As part of our commitment to continual improvement, California Web Coders reserves the right to change the site, policies, and Conditions of Use at any time. Rest assured, we will communicate any significant changes or updates to our valued clients. ",
+        "We encourage all visitors to review our other policies, including our Pricing Policy, which governs your visit to our site. As part of our commitment to continual improvement, United Web Developers reserves the right to change the site, policies, and Conditions of Use at any time. Rest assured, we will communicate any significant changes or updates to our valued clients. ",
         "Suppose any of these conditions are deemed invalid, void, or unenforceable for any reason. In that case, such provision shall be considered severable and shall not impact the validity and enforceability of the remaining conditions.",
       ],
     },
@@ -207,7 +207,7 @@ const termsAndCondition = [
         "(619) 326-6066 – Call our Toll-Free number to speak directly with our representatives.",
       ],
       paragraphsAfterList: [
-        "Please note that any other means of communication outside these specified methods are not considered valid for contacting California Web Coders. We appreciate your cooperation and understanding in utilizing the designated channels for effective and secure communication.",
+        "Please note that any other means of communication outside these specified methods are not considered valid for contacting United Web Developers. We appreciate your cooperation and understanding in utilizing the designated channels for effective and secure communication.",
       ],
     },
     {

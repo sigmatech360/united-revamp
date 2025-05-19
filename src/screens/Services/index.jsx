@@ -1,17 +1,17 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/mainServices-banner-bg.png";
 
 import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-about-img.png";
+import servicesaboutimg from "../../assets/images/mainServices-about-img.png";
 
 import gfxlogo from "../../assets/images/gfx-logo.png";
 import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
 
-import webdesignimg from "../../assets/images/web-design-img.png";
+import webdesignimg from "../../assets/images/mainServicesweb-design-img.png";
 import photoshopicon from "../../assets/images/photoshop-icon.png";
 
 import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
@@ -28,6 +28,15 @@ import AdobePhotoshopSec from "../../components/AdobePhotoshopSec";
 import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
+
+
+import adobephotoshopcardbg from "../../assets/images/portfolio/adobe-photoshop-card-bg.png";
+
+import websitedesignimg1 from "../../assets/images/services-adobePhotosop-portflio-img-1.png";
+import websitedesignimg2 from "../../assets/images/services-adobePhotosop-portflio-img-2.png";
+import websitedesignimg3 from "../../assets/images/services-adobePhotosop-portflio-img-3.png";
+import websitedesignimg4 from "../../assets/images/services-adobePhotosop-portflio-img-4.png";
+import websitedesignimg5 from "../../assets/images/services-adobePhotosop-portflio-img-5.png";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -69,8 +78,32 @@ const stepsData = [
   },
 ];
 
+
+export const adobePhotoshopSecData = [
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg1,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg2,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg3,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg4,
+  },
+  {
+    cardBG: adobephotoshopcardbg,
+    image: websitedesignimg5,
+  },
+];
+
 import {
-  adobePhotoshopSecData,
+  // adobePhotoshopSecData,
   blogsData,
   oneStopWebBoxesData,
   webDesignFaqs,

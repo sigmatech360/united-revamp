@@ -2,7 +2,7 @@ import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/aboutPage-banner-bg.png";
 import aboutimg1 from "../../assets/images/about-img-1.png";
 
 import businessinsiderlogo from "../../assets/images/business-insider-logo.png";
