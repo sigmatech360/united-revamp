@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../screens/Home";
 import About from "../screens/About";
@@ -19,6 +18,8 @@ import SEO from "../screens/Services/SEO";
 import CustomDevelopment from "../screens/Services/CustomDevelopment";
 import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
 import LogoDesign from "../screens/Services/LogoDesign";
+import CategoryBlogs from "../screens/CategoryBlogs";
+import BlogDetail from "../screens/BlogDetail";
 
 // Import your components/pages
 
@@ -55,7 +56,16 @@ const AppRouter = () => {
 
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
+
+        {/* Blogs Start */}
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route
+          path="/blog/category/:categorySlug"
+          element={<CategoryBlogs />}
+        />
+        {/* Blogs Start */}
+
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

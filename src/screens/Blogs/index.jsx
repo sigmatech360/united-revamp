@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 
 import InnerBanner from "../../components/InnerBanner";
@@ -6,11 +6,14 @@ import aboutbannerbg from "../../assets/images/about-banner-bg.png";
 
 import singlecategoriesblogimg from "../../assets/images/single-categories-blog-img.png";
 
-import BlogCategoriesCard from "../../components/BlogCategoriesCard";
-import { blogCategoriesData } from "../../data";
+// import BlogCategoriesCard from "../../components/BlogCategoriesCard";
+// import { blogCategoriesData } from "../../data";
 import { MdDateRange } from "react-icons/md";
+import BlogCategoriesSec from "../../components/BlogCategoriesSec";
 
 const Blogs = () => {
+
+
   return (
     <DefaultLayout>
       <InnerBanner
@@ -28,18 +31,18 @@ const Blogs = () => {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                <label htmlFor="searchBlog" class="form-label">
+                <label htmlFor="searchBlog" className="form-label">
                   Search Blogs
                 </label>
-                <div class="input-group">
+                <div className="input-group">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Search..."
                     id="searchBlog"
                   />
                   <button
-                    class=" theme-btn__yellow"
+                    className=" theme-btn__yellow"
                     type="button"
                     id="button-addon2"
                   >
@@ -93,39 +96,8 @@ const Blogs = () => {
         </div>
       </section>
 
-      <section className="blog-categories">
-        <div className="container">
-          {blogCategoriesData.map((item, index) => (
-            <div className="row blog-categories-row" key={index}>
-              <div className="col-md-12">
-                <div className="blog-categories__head">
-                  <h3 data-aos="fade-right" data-aos-delay={200}>
-                    {item.category}
-                  </h3>
-                  <button
-                    className="theme-btn theme-btn__yellow"
-                    data-aos="fade-left"
-                    data-aos-delay={200}
-                  >
-                    Find More
-                  </button>
-                </div>
-              </div>
-              {item.blogs.map((blogItem, blogIndex) => (
-                <div className="col-md-4 mb-md-0 mb-4" key={blogIndex} data-aos="fade-up"
-                data-aos-delay={blogIndex * 200}>
-                  <BlogCategoriesCard
-                    image={blogItem.image}
-                    category={blogItem.category}
-                    title={blogItem.title}
-                    publishDate={blogItem.date}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </section>
+      <BlogCategoriesSec />
+
     </DefaultLayout>
   );
 };
