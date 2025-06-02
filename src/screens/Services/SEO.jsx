@@ -52,14 +52,12 @@ const stepsData = [
   {
     stepNum: "01",
     stepName: "Research & strategy",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "02",
     stepName: "Content Creation",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "03",
@@ -70,16 +68,14 @@ const stepsData = [
   {
     stepNum: "04",
     stepName: "Off-page optimization",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "05",
     stepName: "Tracking",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
-]
+];
 
 const SEO = () => {
   return (
@@ -158,11 +154,11 @@ const SEO = () => {
         webDesignSupport={webDesignSupportData}
       /> */}
 
-      <ClientTestimonialSec 
-      title="Listen From The Clients Who Ranked With Us"
-              description="We help businesses like yours reach higher rankings and improve their online presence. Hear from our clients on how our SEO services made a difference."
-              testimonialData={seoServicesTestimoialData}
-        // className="bgDark" 
+      <ClientTestimonialSec
+        title="Listen From The Clients Who Ranked With Us"
+        description="We help businesses like yours reach higher rankings and improve their online presence. Hear from our clients on how our SEO services made a difference."
+        testimonialData={seoServicesTestimoialData}
+        // className="bgDark"
       />
 
       <FAQSection
@@ -182,10 +178,11 @@ const SEO = () => {
         stepData={webDesignGuidelinesData}
       /> */}
 
-      <BlogsSec 
+      <BlogsSec
         blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
-                blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
-                blogsData={blogsData}
+        blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
+        // blogsData={blogsData}
+        categorySlug="search-engine-optimization"
       />
     </DefaultLayout>
   );

@@ -183,7 +183,8 @@ const SocialMediaMarketing = () => {
       <BlogsSec
         blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
         blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
-        blogsData={blogsData}
+        // blogsData={blogsData}
+        categorySlug="social-media-marketing"
       />
     </DefaultLayout>
   );

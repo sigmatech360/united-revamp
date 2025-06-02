@@ -33,6 +33,7 @@ import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import FAQSection from "../../components/FAQSection";
 import BlogsSec from "../../components/BlogsSec";
 import GraphicDesignAgency from "../../components/GraphicDesignAgency";
+import HomeBlogsSec from "../../components/HomeBlogsSec";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -357,10 +358,11 @@ const Home = () => {
         faqsQA={faqsData}
       />
 
-      <BlogsSec
+      <HomeBlogsSec
         blogSecTitle='Hot Takes, Fresh Trends, and Digital Know-How'
         blogSubtext="Stay ahead of the digital world with our latest blogs, packed with expert tips, top trends, development insights, and digital news that actually matter."
-        blogsData={blogsData}
+        // blogsData={blogsData}
+        // categorySlug="custom-website-development"
       />
     </DefaultLayout>
   );

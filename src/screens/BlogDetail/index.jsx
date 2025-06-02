@@ -14,6 +14,7 @@ const BlogDetail = () => {
   const { id, slug, categorySlug } = useParams();
   const [post, setPost] = useState(null);
   const [relatedPosts, setRelatedPosts] = useState([]);
+  const [relatedPostsLoading, setRelatedPostsLoading] = useState(false);
 
   console.log("relatedPosts", relatedPosts);
 
@@ -22,7 +23,6 @@ const BlogDetail = () => {
       const response = await axios.get(
         `${wpBaseUrl}/posts?slug=${slug}&_embed`
       );
-
       const postData = response.data[0];
       if (!postData) {
         console.log("Post not found");
@@ -31,25 +31,46 @@ const BlogDetail = () => {
 
       setPost(postData);
 
-      const categoryId = postData.categories?.[0];
-      if (categoryId) {
-        fetchRelatedPosts(categoryId, postData.id);
+      const categoryIds = postData.categories || [];
+      if (categoryIds.length > 0) {
+        fetchRelatedPosts(categoryIds, postData.id);
       }
     } catch (error) {
       console.error("Error fetching post:", error);
     }
   };
 
-  const fetchRelatedPosts = async (categoryId, currentId) => {
+  // const fetchRelatedPosts = async (categoryIds, currentId) => {
+  //   try {
+  //     // Join multiple category IDs with commas
+  //     const categoryParam = categoryIds.join(",");
+  //     const response = await axios.get(
+  //       `${wpBaseUrl}/posts?categories=${categoryParam}&_embed`
+  //     );
+
+  //     // Exclude the current post
+  //     const related = response.data.filter((post) => post.id !== currentId);
+
+  //     setRelatedPosts(related.slice(0, 10));
+  //   } catch (error) {
+  //     console.error("Error fetching related posts:", error);
+  //   }
+  // };
+
+  const fetchRelatedPosts = async (categoryIds, currentId) => {
     try {
+      setRelatedPostsLoading(true); // Start loader
+      const categoryParam = categoryIds.join(",");
       const response = await axios.get(
-        `${wpBaseUrl}/posts?categories=${categoryId}&_embed`
+        `${wpBaseUrl}/posts?categories=${categoryParam}&_embed`
       );
 
       const related = response.data.filter((post) => post.id !== currentId);
       setRelatedPosts(related.slice(0, 10));
     } catch (error) {
       console.error("Error fetching related posts:", error);
+    } finally {
+      setRelatedPostsLoading(false); // End loader
     }
   };
 
@@ -143,52 +164,55 @@ const BlogDetail = () => {
               </div>
               <div className="col-xl-3 col-lg-4">
                 <h4 className="mb-4">Related Posts</h4>
-                <div className="row">
-                  {relatedPosts.map((post, index) => {
-                    const image =
-                      post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-                      "https://via.placeholder.com";
-                    const title = post.title?.rendered || "Untitled";
-                    const excerpt = post.excerpt?.rendered || "";
-                    const rawDate = post.date;
+                {relatedPostsLoading ? (
+                  <div className="sideBar-loader">
+                    <Loader />{" "}
+                  </div>
+                ) : (
+                  <div className="row">
+                    {relatedPosts.length > 0 ? (
+                      relatedPosts.map((post, index) => {
+                        const image =
+                          post._embedded?.["wp:featuredmedia"]?.[0]
+                            ?.source_url || "https://via.placeholder.com";
+                        const title = post.title?.rendered || "Untitled";
+                        const rawDate = post.date;
+                        const formattedDate = new Date(
+                          rawDate
+                        ).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        });
 
-                    // ✅ Format the date (e.g., "June 1, 2024")
-                    const formattedDate = new Date(rawDate).toLocaleDateString(
-                      "en-US",
-                      {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      }
-                    );
-
-                    return (
-                      <div className="col-lg-12 col-md-6">
-                        <div className="sideBarBlogCard mb-4">
-                          <img
-                            src={image}
-                            className="card-img-top"
-                            alt="Blog Post"
-                          />
-                          <div className="sideBarBlogContent">
-                            <Link to={`/blog/${post.slug}`}>
-                              <h5
-                                className="card-title"
-                                dangerouslySetInnerHTML={{ __html: title }}
-                              ></h5>
-                            </Link>
-                            <p
-                              className="card-text mb-0"
-                              dangerouslySetInnerHTML={{
-                                __html: formattedDate,
-                              }}
-                            />
+                        return (
+                          <div className="col-lg-12 col-md-6" key={index}>
+                            <div className="sideBarBlogCard mb-4">
+                              <img
+                                src={image}
+                                className="card-img-top"
+                                alt="Blog Post"
+                              />
+                              <div className="sideBarBlogContent">
+                                <Link to={`/blog/${post.slug}`}>
+                                  <h5
+                                    className="card-title"
+                                    dangerouslySetInnerHTML={{ __html: title }}
+                                  ></h5>
+                                </Link>
+                                <p className="card-text mb-0">
+                                  {formattedDate}
+                                </p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                        );
+                      })
+                    ) : (
+                      <p>No related posts found.</p>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>
