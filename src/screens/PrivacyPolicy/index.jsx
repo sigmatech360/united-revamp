@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              {privacyPolicySections.map((section, index) => (
+              {/* {privacyPolicySections.map((section, index) => (
                 <div className="privacy-policy-content" key={index}>
                   {section.title && (
                     <h2
@@ -132,9 +132,134 @@ const PrivacyPolicy = () => {
                     </p>
                   ))}
                 </div>
-              ))}
+              ))} */}
+
+              <div className="privacy-policy-content">
+                <p>{`United Web Developers ("Company," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and disclose your information when you interact with our website and services. It also outlines your rights and choices under applicable United States privacy laws.`}</p>
+                <h2>Information We Collect</h2>
+                <p>We collect both personal and non-personal information:</p>
+
+                <h3>Personal Information</h3>
+                <ul>
+                  {[
+                    "Name",
+                    "Email address",
+                    "Phone number",
+                    "Company name",
+                    "Company name",
+                    "Project-related content you share with us",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+
+                <h3>Non-Personal Information</h3>
+                <ul>
+                  {[
+                    "IP address",
+                    "Browser type ",
+                    "Device type",
+                    "Referring URL",
+                    "Pages visited and time spent on our site",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+
+                <h3>Cookies and Tracking Technologies</h3>
+                <p>
+                  We use cookies, beacons, tags, and scripts to analyze trends,
+                  administer the website, track users’ movements around the
+                  site, and gather demographic information.
+                </p>
+
+                <h2>How We Use Your Information</h2>
+                <p>Your information may be used to:</p>
+                <ul>
+                  {[
+                    "Deliver and manage our web development services",
+                    "Process transactions and send billing notifications",
+                    "Respond to inquiries and provide customer support",
+                    "Customize your website experience",
+                    "Send service updates and promotional messages (you may opt out)",
+                    "Analyze website usage and enhance platform performance",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+
+                <h2>Sharing Your Information</h2>
+                <p>
+                  We do not sell your personal information. We may share it
+                  only:
+                </p>
+                <ul>
+                  {[
+                    "With third-party service providers who assist us in operations under confidentiality obligations",
+                    "To comply with applicable laws and legal processes",
+                    "To protect our rights, privacy, safety, or property",
+                    "In connection with a merger, sale, or asset transfer",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+
+                <h2>Data Security</h2>
+                <p>
+                  We employ industry-standard administrative, technical, and
+                  physical safeguards to protect your information. However, no
+                  method of transmission over the internet is entirely secure.
+                </p>
+
+                <h2>Your Choices and Rights</h2>
+                <p>Your Choices and Rights</p>
+                <ul>
+                  {[
+                    "Access and update your personal information",
+                    "Request deletion of your personal data (subject to legal obligations)",
+                    "Opt out of marketing emails at any time",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+
+                <h2>Opt out of marketing emails at any time</h2>
+                <p>
+                  Our services are not intended for children under the age of
+                  13, and we do not knowingly collect personal data from
+                  children.
+                </p>
+
+                <h2>Changes to This Privacy Policy</h2>
+                <p>
+                  We may revise this Privacy Policy periodically. The updated
+                  version will be posted on our website with a new effective
+                  date.
+                </p>
+
+                <div className="privacyPolicyLastDiv">
+                  <h2>Contact Us</h2>
+                  <p>United Web Developers</p>
+                  <p>
+                    <span className="fw-bold">Email:</span>{" "}
+                    <a href="malto:support@unitedwebdevelopers.com">
+                      support@unitedwebdevelopers.com
+                    </a>
+                  </p>
+                  <p>
+                    <span className="fw-bold">Phone:</span>{" "}
+                    <a href="tel:(619)3266066">(619) 326-6066</a>
+                  </p>
+                  <p>
+                    <span className="fw-bold">Website:</span>{" "}
+                    <a href="https://unitedwebdevelopers.com">
+                      https://unitedwebdevelopers.com
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="col-md-12">
+            {/* <div className="col-md-12">
               <div className="privacy-policy-content mb-0">
                 <h3
                   data-aos="fade-right"
@@ -156,7 +281,7 @@ const PrivacyPolicy = () => {
                   .
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

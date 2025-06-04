@@ -1743,11 +1743,15 @@ p {
 .privacy-policy-content p a {
   color: #031243;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .privacy-policy-content p {
   margin-bottom: 12px !important;
+}
+
+.privacyPolicyLastDiv p {
+  margin-bottom: 0 !important;
 }
 
 .privacy-policy-content ul {
