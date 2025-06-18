@@ -1,8 +1,10 @@
 import React from "react";
+import "./style.css"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.png";
+import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 
 // const navLinks = [
 //   { label: "HOME", path: "/" },
@@ -40,36 +42,108 @@ const Header = () => {
             </Nav.Link>
 
             <NavDropdown title="SERVICES" id="services-dropdown">
-              {/* <NavDropdown.Item as={Link} to="/services">
-                Services
-              </NavDropdown.Item> */}
-              <NavDropdown.Item as={Link} to="/services/web-design">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/logo-design"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
+                LogoDesign
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/services/web-design"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
                 Web Design
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/cms-development">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/cms-development"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
                 CMS Development
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/digital-marketing">
-                Digital Marketing
+
+
+
+
+
+
+
+
+
+               <div className="nav-subdropdown-wrapper">
+
+              <NavDropdown.Item
+                as={Link}
+                to="/services/digital-marketing"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
+                Digital Marketing{" "}
+                <span className="submenu-icon d-none d-lg-inline">
+                        <FaCaretRight />
+                      </span>
+                      <span className="submenu-icon d-inline d-lg-none">
+                        <FaCaretDown />
+                      </span>
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/social-media-marketing">
+              <div className="nav-subdropdown">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/social-media-marketing"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
                 Social Media Marketing
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/services/search-engine-optimization"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
               >
                 SEO
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/custom-development">
+              </div>
+
+
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <NavDropdown.Item
+                as={Link}
+                to="/services/custom-development"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
                 Custom Development
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/mobile-app-development">
+              <NavDropdown.Item
+                as={Link}
+                to="/services/mobile-app-development"
+                onClick={(e) => e.stopPropagation()}
+                target="_blank"
+              >
                 Mobile App Development
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/services/logo-design">
-                LogoDesign
-              </NavDropdown.Item>
+              
             </NavDropdown>
 
             <Nav.Link as={Link} to="/pricing">
@@ -78,16 +152,16 @@ const Header = () => {
             <Nav.Link as={Link} to="/portfolio">
               PORTFOLIO
             </Nav.Link>
-            <Nav.Link as={Link} to="/blogs">
+            <Nav.Link as={Link} to="/blog">
               BLOGS
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact-us">
+            {/* <Nav.Link as={Link} to="/contact-us">
               CONTACT US
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
 
           <Link
-            to={""}
+            to={"/contact-us"}
             className="theme-btn theme-btn__yellow header-getTouch__btn"
           >
             {" "}

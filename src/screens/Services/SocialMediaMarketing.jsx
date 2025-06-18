@@ -29,11 +29,16 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+import CampaignManagment_1 from "../../assets/images/icons/social-media-marketing/Campaign-Managment_1.png";
+import Performanceanalytics from "../../assets/images/icons/social-media-marketing/Performance-analytics.png";
+import CommunityEnagment from "../../assets/images/icons/social-media-marketing/Community-Enagment.png";
+import ContentMangment from "../../assets/images/icons/social-media-marketing/Content-Mangment.png";
+
 const gfxServices = [
-  { title: "Campaign Management", img: gfxlogo },
-  { title: "Performance Analytics", img: gfxwedev },
-  { title: "Community Engagement", img: gfcvideoanimation },
-  { title: "Content Management", img: gfxcontentwriting },
+  { title: "Campaign Management", img: CampaignManagment_1 },
+  { title: "Performance Analytics", img: Performanceanalytics },
+  { title: "Community Engagement", img: CommunityEnagment },
+  { title: "Content Management", img: ContentMangment },
 ];
 
 import {
@@ -101,7 +106,7 @@ const SocialMediaMarketing = () => {
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="WEBSITE DESIGN COMPANY"
+        secTag="PROMOTE YOUR BUSINESS"
         secTitle="Personlized Social Media Marketing Solutions"
         secHeadDescription="We help your brand move forward with a full spectrum of services that are designed to cover everything your brand needs to grow. With us, you’ve got your digital front covered."
         // viewAllServices
@@ -117,11 +122,12 @@ const SocialMediaMarketing = () => {
         toolIcon={photoshopicon}
         toolName="Social Media Marketing"
         toolNameDesc="Our tools? Strategy, creativity, and consistency. From content management to running high-converting social media advertising campaigns, our team combines expertise with real-time data to ensure every post, ad, and reply works in your favour."
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="98%"
         usage="Success Rate"
         rank="500+"
         highlightText="Projects Completed"
+        cta="Discuss Your Project"
       />
 
       {/* <AdobePhotoshopSec
@@ -140,7 +146,7 @@ const SocialMediaMarketing = () => {
         secTitle="How We Deliver High-Converting Social Media Marketing Results"
         secDescription="Our strategy is designed to maximize visibility, boost engagement, and drive growth. Here’s how  we do it:"
         secStepsData={stepsData}
-        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secLastText="From brief to breakthrough, we strategize, create, execute, and optimize social media campaigns tailored to grow your brand."
       />
 
       {/* <OneStopWebSec

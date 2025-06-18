@@ -9,6 +9,7 @@ import addressicon from "../../assets/images/address-icon.png";
 import toast from "react-hot-toast";
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false);
   // const [formData, setFormData] = useState({
   //   username: "",
   //   email: "",
@@ -34,6 +35,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const fullName = `${formData.firstName} ${formData.lastName}`;
 
@@ -61,21 +63,29 @@ const ContactUs = () => {
       const result = await response.json();
       console.log(result);
       // alert("Form Submitted Successfully");
-      toast.success("Form Submitted Successfully");
-
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        budget: "",
-        service_1: "",
-        data_message: "",
-      });
+      if (result.status) {
+        toast.success(result.message);
+        setFormData({
+          username: "",
+          email: "",
+          phone: "",
+          service_1: "",
+          data_message: "",
+        });
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
+          });
+        });
+      }
     } catch (error) {
       // console.log(Error submitting form:, error);
       // alert("Submission failed. Please try again.");
       toast.error("Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -157,10 +167,25 @@ const ContactUs = () => {
                         value={formData.service_1}
                         onChange={(e) => handleChange(e)}
                       >
-                        <option selected>Select Services</option>
-                        <option value="1">Web Development</option>
-                        <option value="2">Graphic Designing</option>
-                        <option value="3">Digital Marketing</option>
+                        <option value={""} disabled>
+                          Select Services
+                        </option>
+                        <option value="web-design">Web Design</option>
+                        <option value="cms-development">CMS Development</option>
+                        <option value="digital-marketing">
+                          Digital Marketing
+                        </option>
+                        <option value="social-media-marketing">
+                          Social Media Marketing
+                        </option>
+                        <option value="seo">SEO</option>
+                        <option value="custom-development">
+                          Custom Development
+                        </option>
+                        <option value="mobile-app-development">
+                          Mobile App Development
+                        </option>
+                        <option value="logo-design">Logo Design</option>
                       </select>
                     </div>
                     <div className="col-md-6 mb-3">
@@ -188,8 +213,13 @@ const ContactUs = () => {
                       <button
                         type="submit"
                         className="theme-btn theme-btn__yellow"
+                        disabled={loading}
+                        style={{
+                          opacity: loading ? 0.3 : 1,
+                        }}
                       >
-                        Contact Our Team
+                        {/* Contact Our Team */}
+                        {loading ? "Submitting..." : "Contact Our Team"}
                       </button>
                     </div>
                   </div>
@@ -212,7 +242,7 @@ const ContactUs = () => {
                       <img src={phoneicon} alt="" />
                     </div>
                     <a
-                      href="tel:(619) 326-6066"
+                      href="tel:(619)3266066"
                       className="contactForm-icons-textContent"
                     >
                       (619) 326-6066

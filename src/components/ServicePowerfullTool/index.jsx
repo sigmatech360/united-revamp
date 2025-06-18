@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
 
 const ServicePowerfullTool = (props) => {
+  const [showModal, setShowModal] = useState(false);
   return (
+
+    <>
+    
     <section className="powerfull-tool__sec">
       <div className="container">
         <div className="row align-items-center">
@@ -33,14 +38,15 @@ const ServicePowerfullTool = (props) => {
                 {props.toolNameDesc}
               </p>
               <div className="powerfull-tool__contant-btnText">
-                <Link
-                  to={""}
+                <button
+                  // to={""}
+                  onClick={() => setShowModal(true)}
                   className="theme-btn theme-btn__black"
                   data-aos="fade-right"
                   data-aos-delay={800}
                 >
                   {props?.cta || 'Hire Designers'}
-                </Link>
+                </button>
                 <p data-aos="zoom-in" data-aos-delay={800}>
                   {props.toolDesignerAvailable}
                 </p>
@@ -62,6 +68,8 @@ const ServicePowerfullTool = (props) => {
         </div>
       </div>
     </section>
+    <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+    </>
   );
 };
 

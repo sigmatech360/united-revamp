@@ -12,21 +12,23 @@ const companyLinks = [
   { name: "About Us", path: "/about" },
   { name: "Blog", path: "/blogs" },
   { name: "Contact Us", path: "/contact-us" },
-  { name: "Resources", path: "" },
-  // { name: "Services", path: "/services" },
-  { name: "Testimonials", path: "" },
-  { name: "Business Tools", path: "" },
+  { name: "Portfolio", path: "/portfolio" },
+  { name: "Pricing", path: "/pricing" },
+  // { name: "Resources", path: "" },
+  // // { name: "Services", path: "/services" },
+  // { name: "Testimonials", path: "" },
+  // { name: "Business Tools", path: "" },
 ];
 
 const servicesLinks = [
-  { name: "Branding", path: "" },
-  { name: "Logo Design", path: "/services/logo-design" },
-  { name: "Video Animation", path: "" },
   { name: "Web Design", path: "/services/web-design" },
-  { name: "Ebook Design", path: "" },
-  { name: "UI/UX Design", path: "" },
+  { name: "CMS Development", path: "/services/cms-development" },
+  { name: "Digital Marketing", path: "/services/digital-marketing" },
+  { name: "Social Media Marketing", path: "/services/social-media-marketing" },
   { name: "SEO", path: "/services/search-engine-optimization" },
-  { name: "Web Development", path: "/services/custom-development" },
+  { name: "Custom Development", path: "/services/custom-development" },
+  { name: "Mobile App Development", path: "/services/mobile-app-development" },
+  { name: "LogoDesign", path: "/services/logo-design" },
 ];
 
 const Footer = ({ footerTitle }) => {
@@ -124,7 +126,7 @@ const Footer = ({ footerTitle }) => {
               <div className="col-xl-3 col-lg-4 col-md-4">
                 <h6 className="main-footer__links-title">Contact Us</h6>
                 <div className="main-footer__links">
-                  <a href="tel:(619) 326-6066" className="main-footer-link">
+                  <a href="tel:6193266066" className="main-footer-link">
                     (619) 326-6066
                   </a>
                   <a
@@ -133,6 +135,7 @@ const Footer = ({ footerTitle }) => {
                   >
                     support@unitedwebdevelopers.com
                   </a>
+                  <p>2114 N, Flamingo Road, Pembroke Pines, FL, 33028</p>
                 </div>
               </div>
             </div>
@@ -142,7 +145,7 @@ const Footer = ({ footerTitle }) => {
           </div>
           <div className="col-md-12">
             <div className="footer-copyright">
-              <p>&copy; 2025 Your Company Name</p>
+              <p>&copy; {new Date().getFullYear()} United Web Developers</p>
               <div className="footer-copyright_links">
                 <Link to={"/contact-us"}>Contact</Link>
                 <Link to={"/terms-and-conditions"}>Terms & Conditions</Link>

@@ -28,6 +28,7 @@ function CustomToggle({ children, eventKey }) {
 }
 
 const FAQSection = (props) => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -44,6 +45,7 @@ const FAQSection = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const formDataMethod = new FormData();
 
@@ -63,18 +65,38 @@ const FAQSection = (props) => {
       const result = await response.json();
       console.log(result);
       // alert("Form Submitted Successfully");
-      toast.success("Form Submitted Successfully");
-      setFormData({
-        username: "",
-        email: "",
-        phone: "",
-        service_1: "",
-        data_message: "",
-      });
+      // toast.success("Form Submitted Successfully");
+      // setFormData({
+      //   username: "",
+      //   email: "",
+      //   phone: "",
+      //   service_1: "",
+      //   data_message: "",
+      // });
+
+      if (result.status) {
+        toast.success(result.message);
+        setFormData({
+          username: "",
+          email: "",
+          phone: "",
+          service_1: "",
+          data_message: "",
+        });
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
+          });
+        });
+      }
     } catch (error) {
       // console.log(Error submitting form:, error);
       // alert("Submission failed. Please try again.");
       toast.error("Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -159,10 +181,23 @@ const FAQSection = (props) => {
                     value={formData.service_1}
                     onChange={(e) => handleChange(e)}
                   >
-                    {/* <option selected></option> */}
-                    <option value="1">Web Development</option>
-                    <option value="2">Graphic Designing</option>
-                    <option value="3">Digital Marketing</option>
+                    <option value={""} disabled>
+                      Select Services
+                    </option>
+                    <option value="web-design">Web Design</option>
+                    <option value="cms-development">CMS Development</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="social-media-marketing">
+                      Social Media Marketing
+                    </option>
+                    <option value="seo">SEO</option>
+                    <option value="custom-development">
+                      Custom Development
+                    </option>
+                    <option value="mobile-app-development">
+                      Mobile App Development
+                    </option>
+                    <option value="logo-design">Logo Design</option>
                   </select>
                   <textarea
                     className="form-control"
@@ -176,13 +211,18 @@ const FAQSection = (props) => {
                   <div className="faqs-form-btn__div">
                     <div className="faqs-form-btn__div-content">
                       <p>Interested? Call Us Now</p>
-                      <a href="tel:+ 123 456 7890">+ 123 456 7890</a>
+                      <a href="tel:6193266066">(619) 326-6066</a>
                     </div>
                     <button
                       // onSubmit={(e)=>handleSubmit(e)}
                       className="theme-btn theme-btn__yellow"
+                      disabled={loading}
+                      style={{
+                        opacity: loading ? 0.3 : 1,
+                      }}
                     >
-                      Submit
+                      {/* Submit */}
+                      {loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </div>

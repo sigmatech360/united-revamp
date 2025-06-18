@@ -29,15 +29,24 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+import businesswebsite from "../../assets/images/icons/custom-development/business-website.png";
+import personalwebsite from "../../assets/images/icons/custom-development/personal-website.png";
+import ecommercewebsite from "../../assets/images/icons/custom-development/e-commerce-website.png";
+import portfolios from "../../assets/images/icons/custom-development/portfolios.png";
+import blogswebsite from "../../assets/images/icons/custom-development/blogs-website.png";
+import bookingwebsite from "../../assets/images/icons/custom-development/booking-website.png";
+import informationalwebsite from "../../assets/images/icons/custom-development/informational-website.png";
+import Magzineornewswebsite from "../../assets/images/icons/custom-development/Magzine-or-news-website.png";
+
 const gfxServices = [
-  { title: "Business Websites", img: gfxlogo },
-  { title: "Personal Websites", img: gfxwedev },
-  { title: "E-Commerce Websites", img: gfcvideoanimation },
-  { title: "Portfolios", img: gfxcontentwriting },
-  { title: "Blogs Website", img: gfxlogo },
-  { title: "Booking Websites", img: gfxwedev },
-  { title: "Informational Websites", img: gfcvideoanimation },
-  { title: "Magazines or News Websites", img: gfxcontentwriting },
+  { title: "Business Websites", img: businesswebsite },
+  { title: "Personal Websites", img: personalwebsite },
+  { title: "E-Commerce Websites", img: ecommercewebsite },
+  { title: "Portfolios", img: portfolios },
+  { title: "Blogs Website", img: blogswebsite },
+  { title: "Booking Websites", img: bookingwebsite },
+  { title: "Informational Websites", img: informationalwebsite },
+  { title: "Magazines or News Websites", img: Magzineornewswebsite },
 ];
 
 import {
@@ -55,14 +64,12 @@ const stepsData = [
   {
     stepNum: "01",
     stepName: "Client Consultation",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "02",
     stepName: "Planning",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "03",
@@ -73,16 +80,14 @@ const stepsData = [
   {
     stepNum: "04",
     stepName: "Back-end Optimization",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
   {
     stepNum: "05",
     stepName: "Launch & Optimization",
-    stepDescription:
-      "",
+    stepDescription: "",
   },
-]
+];
 
 const CustomDevelopment = () => {
   return (
@@ -94,7 +99,9 @@ const CustomDevelopment = () => {
         title="Custom Web Development Services USA"
         description="In our custom web development services, there are no templates or shortcuts, only fresh ideas and personalization. From the front-end to the back-end, you get full control over your website and performance."
         cta1="Build My Website"
+        cta1Link="/pricing"
         cta2="Let’s Chat!"
+        cta2Link="/contact-us"
         // servicesbannerimg={servicesbannerimg}
       />
 
@@ -106,7 +113,7 @@ const CustomDevelopment = () => {
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="WEBSITE DESIGN COMPANY"
+        secTag="WEB DEVELOPMENT COMPANY"
         secTitle="Types Of Websites We Offer"
         secHeadDescription="Got a unique niche? Doesn’t matter! We create various kinds of websites with intricate details that connect you with your audience at a glance!"
         // viewAllServices
@@ -123,7 +130,7 @@ const CustomDevelopment = () => {
         toolName="Custom Web Development"
         toolNameDesc="Our team is obsessed with results! Our strategy is fully focused on results, performance, speed, and user experience. That’s how we consistently keep our satisfaction rate near perfect."
         cta="Book A Consultation"
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="97%"
         usage="Client Satisfaction"
         rank="500+"
@@ -142,7 +149,7 @@ const CustomDevelopment = () => {
         className="our-work-process__bgWhite"
         secTitle="The Process Of Customization"
         secDescription="To witness real results, we pour in real efforts. Learn how our experts strategize to create the perfect website customized to your unique needs:"
-        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secLastText="From concept to code, our custom web development process is built to deliver consistent results for your business, backed by strategy, and executed with precision."
         secStepsData={stepsData}
       />
 
@@ -155,11 +162,12 @@ const CustomDevelopment = () => {
 
       <WebDesignSupportSec
         secTitle="Why Clients Choose United Web Developers Every Time"
-        secTitleDescription="Our <span class='colorYellow'>Custom web design and development services</span> aren’t only about the building process; we stay with you for constant support and satisfaction."
+        secTitleDescription="Our Custom web design and development services aren’t only about the building process; we stay with you for constant support and satisfaction."
         webDesignSupport={servicesCustomDevSupportData}
       />
 
-      <ClientTestimonialSec className="bgDark"
+      <ClientTestimonialSec
+        className="bgDark"
         title="Custom Web Development Keeps Our Clients Happy!"
         description="Our valuable clients are our biggest assets. Take a look at how we served them with websites built from scratch to highlight their unique digital presence."
         testimonialData={customDevelopmentTestimoialData}
@@ -180,7 +188,7 @@ const CustomDevelopment = () => {
         stepData={webDesignGuidelinesData}
       />
 
-      <BlogsSec 
+      <BlogsSec
         blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
         blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
         // blogsData={blogsData}

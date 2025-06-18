@@ -29,15 +29,25 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+// Services icons
+import SEO from "../../assets/images/icons/digital-marketing/SEO.png";
+import PaidAds from "../../assets/images/icons/digital-marketing/Paid-Ads.png";
+import CampaignManagment from "../../assets/images/icons/digital-marketing/Campaign-Managment.png";
+import ContentMangment_1 from "../../assets/images/icons/digital-marketing/Content-Mangment_1.png";
+import AdAnalyticReporting from "../../assets/images/icons/digital-marketing/Ad-Analytic-Reporting.png";
+import EmailMarketing from "../../assets/images/icons/digital-marketing/Email-Marketing.png";
+import SocialMediaAdvertisment from "../../assets/images/icons/digital-marketing/Social-Media-Advertisment.png";
+import keywordoptimization from "../../assets/images/icons/digital-marketing/keyword-optimization.png";
+
 const gfxServices = [
-  { title: "SEO", img: gfxlogo },
-  { title: "Paid Ads", img: gfxwedev },
-  { title: "Campaign Management", img: gfcvideoanimation },
-  { title: "Content Management", img: gfxcontentwriting },
-  { title: "Ad Analytics & Reporting", img: gfxlogo },
-  { title: "Email Marketing", img: gfxwedev },
-  { title: "Social Media Advertising", img: gfcvideoanimation },
-  { title: "Keyword Optimization", img: gfxcontentwriting },
+  { title: "SEO", img: SEO },
+  { title: "Paid Ads", img: PaidAds },
+  { title: "Campaign Management", img: CampaignManagment },
+  { title: "Content Management", img: ContentMangment_1 },
+  { title: "Ad Analytics & Reporting", img: AdAnalyticReporting },
+  { title: "Email Marketing", img: EmailMarketing },
+  { title: "Social Media Advertising", img: SocialMediaAdvertisment },
+  { title: "Keyword Optimization", img: keywordoptimization },
 ];
 
 import {
@@ -122,11 +132,12 @@ We make social media work for you by offering solutions at every stage of your m
         toolIcon={photoshopicon}
         toolName="Digital marketing"
         toolNameDesc="For digital marketing services, Meta Business Suite and Google Ads are the most important tools to launch ads, track real-time data, and tweak ads for better performance."
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="98%"
         usage="Success Rate"
         rank="500+"
         highlightText="Projects Completed"
+        cta="Discuss Your Project"
       />
 
       {/* <AdobePhotoshopSec
@@ -145,6 +156,7 @@ We make social media work for you by offering solutions at every stage of your m
         secTitle="Professional Digital Marketing Strategies For Success"
         secDescription="Results come from a process grounded in clarity and creativity. Our digital marketing workflow ensures every campaign is designed to meet business goals through structure, analysis, and innovation"
         secStepsData={stepsData}
+        secLastText="We turn ideas into structured campaign plans, mapping out platform-specific content, ad creatives, and KPIs"
         // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 

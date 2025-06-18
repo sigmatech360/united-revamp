@@ -55,7 +55,7 @@ const Blogs = () => {
         </div>
       </section>
 
-      <section className="single-blog-sec">
+      {/* <section className="single-blog-sec">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -94,7 +94,7 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <BlogCategoriesSec />
 

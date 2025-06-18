@@ -29,11 +29,17 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+
+import responsivenss from "../../assets/images/icons/search-engine-optimization/on-page-Seo.png";
+import offpageseo from "../../assets/images/icons/search-engine-optimization/off-page-seo.png";
+import localseo from "../../assets/images/icons/search-engine-optimization/local-seo.png";
+import StratgeyResearch from "../../assets/images/icons/search-engine-optimization/Stratgey-Research.png";
+
 const gfxServices = [
-  { title: "On-Page SEO", img: gfxlogo },
-  { title: "Off-page SEO", img: gfxwedev },
-  { title: "Local SEO", img: gfcvideoanimation },
-  { title: "Strategy & Research", img: gfxcontentwriting },
+  { title: "On-Page SEO", img: responsivenss },
+  { title: "Off-page SEO", img: offpageseo },
+  { title: "Local SEO", img: localseo },
+  { title: "Strategy & Research", img: StratgeyResearch },
 ];
 
 import {
@@ -97,7 +103,7 @@ const SEO = () => {
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="WEBSITE DESIGN COMPANY"
+        secTag="RANK YOUR WEBSITE"
         secTitle="Your Pages Optimized for Search Engine Perfection"
         secHeadDescription="Every page of your website gets optimized for better ranking, visibility, and performance. From keywords to technical SEO, we ensure your site is search engine-ready. Here’s what we include in our SEO:"
         // viewAllServices
@@ -114,7 +120,7 @@ const SEO = () => {
         toolIcon={photoshopicon}
         toolName="Search Engine Optimization"
         toolNameDesc="Our Search Engine Optimization Marketing isn't only a promise; we bring results that you can count on! Our clients experience increased visibility, better traffic, and ultimately a higher ROI. We work with you to boost your digital presence effectively"
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="95%%"
         usage="Retention rate"
         rank="200+"
@@ -137,7 +143,7 @@ const SEO = () => {
         // className="our-work-process__bgWhite"
         secTitle="Strategic SEO Services To Rank You High"
         secDescription="We take a structured approach to SEO, ensuring that every step is aligned with your growth goals, improving your site’s search engine performance."
-        secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secLastText="Search Engines won’t recognize you unless you put in real effort. Every part of our seo strategy is planned to increase visibility within your audience."
         secStepsData={stepsData}
       />
 

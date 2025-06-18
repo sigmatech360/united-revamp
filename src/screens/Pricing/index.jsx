@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 import aboutbannerbg from "../../assets/images/about-banner-bg.png";
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { pricingPlans } from "../../data";
+import {
+  eCommerceWebPricingPlans,
+  logoDesignPricingPlans,
+  seoPricingPlans,
+  smmPricingPlans,
+  webApplicationPricingPlans,
+  informativeWebsitesPricingPlans,
+  comboPricingPlans,
+  illustrationPricingPlans,
+} from "../../data";
+import PricingCard from "../../components/PricingCard";
+import FormModal from "../../components/FormModal";
 
 const Pricing = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="pricing-page">
       <DefaultLayout>
@@ -27,61 +39,165 @@ const Pricing = () => {
                   data-aos-duration="3000"
                   data-aos-offset="0"
                 >
-                  <Tab eventKey="logoDesign" title="Logo Design">
-                    <div className="row">
-                      {pricingPlans.map((plan, index) => (
+                  <Tab eventKey="logoDesign" title="LOGO DESIGN">
+                    <div className="row justify-content-center">
+                      {logoDesignPricingPlans.map((plan, index) => (
                         <div
-                          className="col-xl-3 col-md-6 mb-xl-0 mb-4"
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
                           key={index}
                         >
-                          <div
-                            className="pricing-card"
-                            data-aos="fade-up"
-                            data-aos-delay={index * 300}
-                          >
-                            <div className="pricing-card__header">
-                              <h5 className="pricing-card__header-price">
-                                {plan.price}
-                              </h5>
-                              <h4 className="pricing-card__header-head">
-                                {plan.title}
-                              </h4>
-                              <p className="pricing-card__header-per-project">
-                                Per Project
-                              </p>
-                            </div>
-                            <div className="pricing-card__body">
-                              <ul>
-                                {plan.features.map((feature, i) => (
-                                  <li key={i}>{feature}</li>
-                                ))}
-                              </ul>
-                            </div>
-                            <button className="pricing-card__footer">
-                              Choose Plan
-                            </button>
-                          </div>
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
                         </div>
                       ))}
                     </div>
                   </Tab>
-                  <Tab eventKey="branding" title="Branding">
-                    Branding
+                  <Tab eventKey="illustration" title="ILLUSTRATION">
+                    <div className="row justify-content-center">
+                      {illustrationPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xxl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </Tab>
-                  <Tab eventKey="videoAnimation" title="Video Animation">
-                    Video Animation
+                  <Tab eventKey="informative-websites" title="INFORMATIVE WEBSITES">
+                    <div className="row justify-content-center">
+                      {informativeWebsitesPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </Tab>
-                  <Tab eventKey="ebookDesign" title="Ebook Design">
-                    Ebook Design
+                  <Tab eventKey="eCommerceWeb" title="E-COMMERCE WEBSITE">
+                    <div className="row justify-content-center">
+                      {eCommerceWebPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </Tab>
-                  <Tab eventKey="uiUxDesign" title="Ui / Ux Design">
-                    Ui / Ux Design
+                  <Tab eventKey="webApplication" title="WEB APPLICATION">
+                    <div className="row justify-content-center">
+                      {webApplicationPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </Tab>
+                  <Tab eventKey="seoPlans" title="SEO">
+                    <div className="row justify-content-center">
+                      {seoPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </Tab>
+                  <Tab eventKey="smmPlans" title="SOCIAL MEDIA">
+                    <div className="row justify-content-center">
+                      {smmPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </Tab>
+                  <Tab eventKey="combo-packages" title="COMBO PACKAGES">
+                    <div className="row justify-content-center">
+                      {comboPricingPlans.map((plan, index) => (
+                        <div
+                          className="col-xxl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                          key={index}
+                        >
+                          <PricingCard
+                            price={plan.price}
+                            discountPrice={plan.discountPrice}
+                            title={plan.title}
+                            features={plan.features}
+                            index={index}
+                            onClick={() => setShowModal(true)}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </Tab>
                 </Tabs>
               </div>
             </div>
           </div>
         </section>
+
+        <FormModal show={showModal} handleClose={() => setShowModal(false)} />
       </DefaultLayout>
     </div>
   );

@@ -29,11 +29,16 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+import modernlayoutthatenage from "../../assets/images/icons/web-design/modern-layout-that-enage.png";
+import brandcentric from "../../assets/images/icons/web-design/brand-centric.png";
+import typography from "../../assets/images/icons/web-design/typography.png";
+import responsivenss from "../../assets/images/icons/web-design/responsivenss.png";
+
 const gfxServices = [
-  { title: "Modern Layouts That Engage", img: gfxlogo },
-  { title: "Brand-Centric Color Palettes", img: gfxwedev },
-  { title: "Unique Typography ", img: gfcvideoanimation },
-  { title: "Responsiveness", img: gfxcontentwriting },
+  { title: "Modern Layouts That Engage", img: modernlayoutthatenage },
+  { title: "Brand-Centric Color Palettes", img: brandcentric },
+  { title: "Unique Typography ", img: typography },
+  { title: "Responsiveness", img: responsivenss },
 ];
 
 import {
@@ -78,7 +83,7 @@ const stepsData = [
     stepDescription:
       "After thorough testing and feedback, we launch your website, which is visually stunning, SEO friendly, and built to convert.",
   },
-];
+]; 
 
 const WebDesign = () => {
   return (
@@ -138,7 +143,7 @@ const WebDesign = () => {
         secTitle="Web Design Workflow That Converts"
         secDescription="We follow a proven five-step process that helps in creativity, strategy, and flawless execution."
         secStepsData={stepsData}
-        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secLastText="Turning ideas into impact, we craft custom websites that look stunning, work seamlessly, and drive real results from day one."
       />
 
       <OneStopWebSec

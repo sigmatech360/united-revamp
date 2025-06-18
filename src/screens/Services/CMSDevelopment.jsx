@@ -6,10 +6,16 @@ import aboutbannerbg from "../../assets/images/services-cmsDev-banner-bg.png";
 import servicesbannerimg from "../../assets/images/services-banner-img.png";
 import servicesaboutimg from "../../assets/images/services-cmsDev-about-img.png";
 
+// Services Icons
 import gfxlogo from "../../assets/images/gfx-logo.png";
 import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+
+import Draganddropedito from "../../assets/images/icons/cms-development/Drag-and-drop-edito.png";
+import responsivetemplates from "../../assets/images/icons/cms-development/responsive-templates.png";
+import SeoTools from "../../assets/images/icons/cms-development/Seo-Tools.png";
+import AppAndPlugin from "../../assets/images/icons/cms-development/App-And-Plugin.png";
 
 import webdesignimg from "../../assets/images/services-cmsDevPage-img.png";
 import photoshopicon from "../../assets/images/cms-icon.png";
@@ -29,11 +35,17 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+// const gfxServices = [
+//   { title: "Drag-and-Drop Edito", img: gfxlogo },
+//   { title: "Responsive Templates", img: gfxwedev },
+//   { title: "Built-in SEO Tools", img: gfcvideoanimation },
+//   { title: "App & Plugin Integration", img: gfxcontentwriting },
+// ];
 const gfxServices = [
-  { title: "Drag-and-Drop Edito", img: gfxlogo },
-  { title: "Responsive Templates", img: gfxwedev },
-  { title: "Built-in SEO Tools", img: gfcvideoanimation },
-  { title: "App & Plugin Integration", img: gfxcontentwriting },
+  { title: "Drag-and-Drop Edito", img: Draganddropedito },
+  { title: "Responsive Templates", img: responsivetemplates },
+  { title: "Built-in SEO Tools", img: SeoTools },
+  { title: "App & Plugin Integration", img: AppAndPlugin },
 ];
 
 import {
@@ -100,12 +112,13 @@ const CMSDevelopment = () => {
         title="Custom Website Development For Growth And Performance"
         description="A flexible and scalable website development service empowers businesses to manage digital content with efficiency, effectiveness, and speed. We develop and deploy full-cycle CMS website development services, including Shopify development, Magento Development, Wix Development, WooCommerce Development, Big Commerce Development, and WordPress Development."
         cta1="Click to Know More"
+        cta1Link="/pricing"
         cta2="Call Us Now"
       />
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="GRAPHIC DESIGN AGENCY"
+        secTag="WEB DEVELOPMENT AGENCY"
         secTitle="Key CMS Features We Deliver"
         secHeadDescription="Our CMS website solutions are packed with powerful features delivering seamless management, performance, and compliance across every screen."
         // viewAllServices
@@ -121,11 +134,12 @@ const CMSDevelopment = () => {
         toolIcon={photoshopicon}
         toolName="CMS Development"
         toolNameDesc="We work with a wide range of CMS platforms, including WordPress, Wix, Shopify, Magento, WooCommerce, BigCommerce, and more, to deliver website development solutions that meet the diverse needs of every industry we serve."
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="98%"
         usage="Success rate"
         rank="500+"
         highlightText="Projects Completed"
+        cta="Discuss Your Project"
       />
 
       <AdobePhotoshopSec
@@ -141,6 +155,7 @@ const CMSDevelopment = () => {
         secTitle="Best CMS Development for Responsive Websites"
         secDescription="Here’s how we bring powerful CMS websites to life, from pre-built templates to website development, we cater to all the needs of our clients."
         secStepsData={stepsData}
+        secLastText="Smart strategy, seamless structure, and powerful plugins, our CMS development delivers websites that scale with your brand."
         // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
       />
 

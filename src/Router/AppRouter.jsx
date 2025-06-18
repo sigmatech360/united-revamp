@@ -25,7 +25,8 @@ import BlogDetail from "../screens/BlogDetail";
 
 const AppRouter = () => {
   return (
-    <Router basename="/united-revamp">
+    // <Router basename="/united-revamp">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -58,7 +59,7 @@ const AppRouter = () => {
         <Route path="/portfolio" element={<Portfolio />} />
 
         {/* Blogs Start */}
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog" element={<Blogs />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route
           path="/blog/category/:categorySlug"

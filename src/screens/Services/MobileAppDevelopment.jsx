@@ -29,11 +29,16 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+import NativeApp from "../../assets/images/icons/mobile-app-development/Native-App.png";
+import Hybridapp from "../../assets/images/icons/mobile-app-development/Hybrid-app.png";
+import WebApp from "../../assets/images/icons/mobile-app-development/Web-App.png";
+import ProgressiveWebApp from "../../assets/images/icons/mobile-app-development/Progressive-Web-App.png";
+
 const gfxServices = [
-  { title: "Native Apps", img: gfxlogo },
-  { title: "Hybrid Apps", img: gfxwedev },
-  { title: "Web Apps", img: gfcvideoanimation },
-  { title: "Progressive Web Apps", img: gfxcontentwriting },
+  { title: "Native Apps", img: NativeApp },
+  { title: "Hybrid Apps", img: Hybridapp },
+  { title: "Web Apps", img: WebApp },
+  { title: "Progressive Web Apps", img: ProgressiveWebApp },
 ];
 
 import {
@@ -117,11 +122,12 @@ const MobileDevelopment = () => {
         toolIcon={photoshopicon}
         toolName="Mobile App Development"
         toolNameDesc="With over 500+ apps launched and a 97% satisfaction rating, we’re committed to development that brings results. Every app is optimized continuously to evolve with your users and business goals."
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="97%"
         usage="Client Satisfaction"
         rank="500+"
         highlightText="Successful Mobile Apps"
+        cta="Discuss Your Project"
       />
 
       <AdobePhotoshopSec
@@ -136,7 +142,7 @@ const MobileDevelopment = () => {
         className="our-work-process__bgWhite"
         secTitle="The Steps Our Mobile App Developers Follow"
         secDescription="We make mobile app development smooth, strategic, and structured from start to finish."
-        // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
+        secLastText="We guide you through every development phase, ensuring clarity, collaboration, and confidence. So you're always in control and never left wondering what's next"
         secStepsData={stepsData}
       />
 

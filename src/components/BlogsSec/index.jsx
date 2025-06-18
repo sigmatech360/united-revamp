@@ -166,6 +166,9 @@ const BlogsSec = ({ blogSecTitle, blogSubtext, categorySlug }) => {
       fetchPostsByCategory();
     }
   }, [categorySlug]);
+  // if (blogs.length === 0) {
+  //   return;
+  // }
 
   return (
     <section className="blog-sec">

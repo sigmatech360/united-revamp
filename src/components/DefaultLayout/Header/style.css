@@ -1,0 +1,49 @@
+
+/* Sub Dropddown Start */
+.nav-subdropdown-wrapper {
+  position: relative;
+}
+
+.nav-subdropdown-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submenu-icon {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* Desktop hover submenu */
+@media (min-width: 992px) {
+  .nav-subdropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    background-color: #000;
+    /* border: 1px solid #eaeaea; */
+    z-index: 1000;
+  }
+
+  .nav-subdropdown-wrapper:hover .nav-subdropdown {
+    display: block;
+  }
+}
+
+/* Mobile - show submenu on click */
+@media (max-width: 991px) {
+  .nav-subdropdown {
+    display: block;
+    margin-left: 15px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+  }
+  /* .nav-subdropdown .dropdown-item {
+    padding-left: 0;
+  } */
+}
+
+/* Sub Dropddown end */

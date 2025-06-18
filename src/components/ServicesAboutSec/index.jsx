@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
 
 const ServicesAboutSec = (props) => {
+  const [showModal, setShowModal] = useState(false);
   return (
+    <>
     <section className="services-about__sec">
       <div className="container">
         <div className="row align-items-center">
@@ -38,21 +41,21 @@ const ServicesAboutSec = (props) => {
               >
                 {props.cta1 && props.cta2 ? (
                   <>
-                    <Link className="theme-btn theme-btn__black">
+                    <Link to={props.cta1Link || "/pricing"} className="theme-btn theme-btn__black">
                       {props.cta1}
                     </Link>
-                    <button className="theme-btn theme-btn__yellow">
+                    <a  href="tel:(619)3266066" className="theme-btn theme-btn__yellow">
                       {props.cta2}
-                    </button>
+                    </a>
                   </>
                 ) : (
                   <>
-                    <Link className="theme-btn theme-btn__black">
+                    <button onClick={() => setShowModal(true)} className="theme-btn theme-btn__black">
                       Get Started
-                    </Link>
-                    <button className="theme-btn theme-btn__yellow">
-                      Call Us Now
                     </button>
+                    <a href="tel:(619)3266066" className="theme-btn theme-btn__yellow">
+                      Call Us Now
+                    </a>
                   </>
                 )}
               </div>
@@ -61,6 +64,9 @@ const ServicesAboutSec = (props) => {
         </div>
       </div>
     </section>
+
+    <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+    </>
   );
 };
 

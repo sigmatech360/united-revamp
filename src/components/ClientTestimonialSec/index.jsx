@@ -6,8 +6,6 @@ import "swiper/css";
 
 import ratingstartimg from "../../assets/images/rating-start-img.png";
 
-import { clientTestimonialData } from "../../data";
-
 const ClientTestimonialSec = (props) => {
   return (
     <section
@@ -20,11 +18,15 @@ const ClientTestimonialSec = (props) => {
               <p className="sec-head-tag label-yellow-bg">
                 CLIENT TESTIMONIALS
               </p>
-              <p className="para-title" data-aos="fade-right" data-aos-delay={100}>
-               {props.title}
+              <p
+                className="para-title"
+                data-aos="fade-right"
+                data-aos-delay={100}
+              >
+                {props.title}
               </p>
               <p data-aos="fade-right" data-aos-delay={300}>
-              {props.description}
+                {props.description}
               </p>
             </div>
           </div>
@@ -35,13 +37,14 @@ const ClientTestimonialSec = (props) => {
                 spaceBetween={20}
                 slidesPerView={1}
                 loop={true}
+                centeredSlides={false}
                 speed={1000} // smooth slide speed
                 autoplay={{
-                  delay: 3000, 
-                  disableOnInteraction: false, 
+                  delay: 3000,
+                  disableOnInteraction: false,
                 }}
                 breakpoints={{
-                  768: { slidesPerView: 1.2 },
+                  768: { slidesPerView: 1.2, centeredSlides: false },
                 }}
               >
                 {props.testimonialData.map((testimonial, index) => (

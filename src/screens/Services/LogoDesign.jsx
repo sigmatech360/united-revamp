@@ -11,6 +11,8 @@ import gfxwedev from "../../assets/images/gfx-we-dev.png";
 import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
 import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
 
+
+
 import webdesignimg from "../../assets/images/services-logoDesignPage-img.png";
 import photoshopicon from "../../assets/images/logo-design-icon.png";
 
@@ -29,15 +31,25 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
+
+import AbstractLogo from "../../assets/images/icons/logo-design/Abstract-Logo.png";
+import WordmarkLogo from "../../assets/images/icons/logo-design/Wordmark-Logo.png";
+import PictorialLogo from "../../assets/images/icons/logo-design/Pictorial-Logo.png";
+import MascotLogo from "../../assets/images/icons/logo-design/Mascot-Logo.png";
+import BrandMarkLogo from "../../assets/images/icons/logo-design/Brand-Mark-Logo.png";
+import Emblems from "../../assets/images/icons/logo-design/Emblems.png";
+import monogramLogo from "../../assets/images/icons/logo-design/monogram-Logo.png";
+import Logo3d from "../../assets/images/icons/logo-design/3d-Logo.png";
+
 const gfxServices = [
-  { title: "Abstract Logos", img: gfxlogo },
-  { title: "WordMark Logos", img: gfxwedev },
-  { title: "Pictorial Mark Logos", img: gfcvideoanimation },
-  { title: "Mascot Logoss", img: gfxcontentwriting },
-  { title: "Brand Mark Logo", img: gfxlogo },
-  { title: "Emblems", img: gfxwedev },
-  { title: "Monogram Logos", img: gfcvideoanimation },
-  { title: "3D Logos", img: gfxcontentwriting },
+  { title: "Abstract Logos", img: AbstractLogo },
+  { title: "WordMark Logos", img: WordmarkLogo },
+  { title: "Pictorial Mark Logos", img: PictorialLogo },
+  { title: "Mascot Logoss", img: MascotLogo },
+  { title: "Brand Mark Logo", img: BrandMarkLogo },
+  { title: "Emblems", img: Emblems },
+  { title: "Monogram Logos", img: monogramLogo },
+  { title: "3D Logos", img: Logo3d },
 ];
 
 import {
@@ -101,7 +113,7 @@ const LogoDesign = () => {
 
       <GraphicDesignAgency
         className="servicesGDA"
-        secTag="WEBSITE DESIGN COMPANY"
+        secTag="LOGO DESIGN COMPANY"
         secTitle="Our Diversity in Logo Design Services"
         secHeadDescription="We offer versatile logo design services that bring your brand vision to life with a story to tell."
         // viewAllServices
@@ -136,6 +148,7 @@ const LogoDesign = () => {
         className="our-work-process__bgWhite"
         secTitle="A Glimpse Into Our Professional Logo Design Process"
         secDescription="We follow a refined step-by-step process to ensure each logo is purposeful and polished, and matches your brand tone."
+        secLastText="A great logo design isn’t the one that looks pretty, it should be specific to your audience, it should speak your message, and compel to discover more."
         // secLastText="Taking the brainstorming session to the next stage, our designers come up with various designing sketches converting thoughts into real images."
         secStepsData={stepsData}
       />

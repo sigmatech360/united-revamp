@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +50,7 @@ p {
   text-decoration: none;
   display: inline-block;
   white-space: nowrap;
+  transition: all 0.25s ease;
 }
 
 .theme-btn__yellow {
@@ -231,6 +235,11 @@ p {
   gap: 16px;
 }
 
+.theme-btn-hover:hover {
+  background-color: #d7ff00;
+  color: #191919;
+}
+
 /* Home Page CSS Start */
 .home-about-sec {
   margin: 60px 0;
@@ -328,11 +337,13 @@ p {
 }
 
 .gfx-card .gfx-card__content-img img {
-  transition: transform 0.4s ease;
+  /* transition: transform 0.4s ease; */
+  transition: all 0.4s ease;
 }
 
 /* Hover effects */
 .gfx-card:hover .gfx-card__content-img {
+  /* background-color: #686868; */
   background-color: #000;
   border: 2px solid #d7ff00;
   border-radius: 50%;
@@ -341,6 +352,7 @@ p {
 
 .gfx-card:hover .gfx-card__content-img img {
   transform: scale(0.7);
+  /* filter: brightness(100) invert(1); */
 }
 
 .gfx-card__title {
@@ -443,24 +455,29 @@ p {
 }
 
 .our-work-process__item h2 {
-  font-size: 100px;
+  /* font-size: 100px; */
+  font-size: 70px;
   font-weight: 700;
   line-height: 1;
   position: relative;
+}
+
+.our-work-process__item-name {
+  font-size: 20px !important;
 }
 
 /* .our-work-process__item h2::after { */
 .our-work-process__item:not(:last-child) h2::after {
   content: "";
   display: inline-block;
-  width: 69%;
+  width: 80%;
   height: 10px;
-  background-image: url(/united-revamp/src/assets/images/our-process-steps-after.png);
+  background-image: url(assets/images/our-process-steps-after.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 56%;
-  left: 66%;
+  left: 61%;
   z-index: -1;
 }
 
@@ -478,6 +495,8 @@ p {
 .our-work-process-last-p {
   color: #fff;
   text-align: center;
+  max-width: 768px;
+  margin: 20px auto 0;
 }
 
 .home-testimonial-sec .sec-head {
@@ -1147,6 +1166,7 @@ p {
 
 .pricing-card__header-price {
   background-color: #d7ff00;
+  text-decoration: line-through;
   color: #191919;
   width: max-content;
   line-height: 1;
@@ -1156,14 +1176,49 @@ p {
   font-weight: 600;
 }
 
+.pricing-card__header-priceDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .pricing-card__header-head {
   line-height: 1;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .pricing-card__header-per-project {
   font-size: 14px;
+}
+
+.pricing-card__body {
+  height: 218px;
+  overflow: auto;
+}
+
+/* Targeting the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* For vertical scrollbars */
+  height: 8px; /* For horizontal scrollbars */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #d7ff00;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d7ff00;
 }
 
 .pricing-card__header {
@@ -1767,6 +1822,7 @@ p {
   color: #191919;
   font-weight: 400;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Terms And Condition */
@@ -2354,6 +2410,7 @@ p {
   position: relative;
   transition: all 0.3s ease;
   width: fit-content;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-footer-link::after {
@@ -2450,6 +2507,10 @@ p {
 /* Media quries */
 
 @media (max-width: 1399px) {
+  .our-work-process__item:not(:last-child) h2::after {
+    width: 76%;
+    left: 64%;
+  }
   .blog-card__content-title {
     font-size: 15px;
     min-height: 39px;
@@ -2569,9 +2630,9 @@ p {
     line-height: 1.3;
   }
 
-  .our-work-process__item h2 {
+  /* .our-work-process__item h2 {
     font-size: 79px;
-  }
+  } */
 
   .our-work-process__container {
     background-position: 47% 43%;
@@ -2603,7 +2664,7 @@ p {
   }
 
   .main-footer-link {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .footer-copyright {
@@ -3023,7 +3084,7 @@ p {
   }
 
   .our-work-process__item h2 {
-    font-size: 49px;
+    font-size: 51px;
   }
 
   .our-work-process {
@@ -3390,9 +3451,9 @@ p {
     font-size: 14px;
   }
 
-  .our-work-process__item h2 {
+  /* .our-work-process__item h2 {
     font-size: 30px;
-  }
+  } */
 
   .our-work-process__item p {
     font-size: 12px;
