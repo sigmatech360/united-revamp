@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-mobileAppDev-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-mobileAppDev-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-mobileAppDev-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-mobileAppDev-about-img.png";
+import servicesbannerimg from "../../assets/images/services-mobileAppDev-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-mobileAppDev-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-mobileAppDevPage-img.png";
-import photoshopicon from "../../assets/images/mobile-app-dev-icon.png";
+import webdesignimg from "../../assets/images/services-mobileAppDevPage-img.webp";
+import photoshopicon from "../../assets/images/mobile-app-dev-icon.webp";
 
-import oneStopWebImg from "../../assets/images/services-mobileAppDev-oneStopImg.png";
+import oneStopWebImg from "../../assets/images/services-mobileAppDev-oneStopImg.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -29,10 +29,10 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
-import NativeApp from "../../assets/images/icons/mobile-app-development/Native-App.png";
-import Hybridapp from "../../assets/images/icons/mobile-app-development/Hybrid-app.png";
-import WebApp from "../../assets/images/icons/mobile-app-development/Web-App.png";
-import ProgressiveWebApp from "../../assets/images/icons/mobile-app-development/Progressive-Web-App.png";
+import NativeApp from "../../assets/images/icons/mobile-app-development/Native-App.webp";
+import Hybridapp from "../../assets/images/icons/mobile-app-development/Hybrid-app.webp";
+import WebApp from "../../assets/images/icons/mobile-app-development/Web-App.webp";
+import ProgressiveWebApp from "../../assets/images/icons/mobile-app-development/Progressive-Web-App.webp";
 
 const gfxServices = [
   { title: "Native Apps", img: NativeApp },
@@ -55,6 +55,7 @@ import {
   servicesMobileDevPortfolioData,
   webDesignGuidelinesData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -87,6 +88,13 @@ const stepsData = [
 
 const MobileDevelopment = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/mobile-app-development"
+      />
     <DefaultLayout footerTitle="Let Your <span class='colorYellow'>Mobile Ap</span><br/> Speak For Your Brand’s Brilliance">
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -188,6 +196,7 @@ const MobileDevelopment = () => {
         categorySlug="mobile-app-development"
       />
     </DefaultLayout>
+    </>
   );
 };
 

@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-digitalMarketing-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-digitalMarketing-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-digitalMarketing-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-digitalMarketing-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-digitalMarketingPage-img.png";
-import photoshopicon from "../../assets/images/digital-marketing-icon.png";
+import webdesignimg from "../../assets/images/services-digitalMarketingPage-img.webp";
+import photoshopicon from "../../assets/images/digital-marketing-icon.webp";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/one-stop-website-img.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -30,14 +30,14 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 // Services icons
-import SEO from "../../assets/images/icons/digital-marketing/SEO.png";
-import PaidAds from "../../assets/images/icons/digital-marketing/Paid-Ads.png";
-import CampaignManagment from "../../assets/images/icons/digital-marketing/Campaign-Managment.png";
-import ContentMangment_1 from "../../assets/images/icons/digital-marketing/Content-Mangment_1.png";
-import AdAnalyticReporting from "../../assets/images/icons/digital-marketing/Ad-Analytic-Reporting.png";
-import EmailMarketing from "../../assets/images/icons/digital-marketing/Email-Marketing.png";
-import SocialMediaAdvertisment from "../../assets/images/icons/digital-marketing/Social-Media-Advertisment.png";
-import keywordoptimization from "../../assets/images/icons/digital-marketing/keyword-optimization.png";
+import SEO from "../../assets/images/icons/digital-marketing/SEO.webp";
+import PaidAds from "../../assets/images/icons/digital-marketing/Paid-Ads.webp";
+import CampaignManagment from "../../assets/images/icons/digital-marketing/Campaign-Managment.webp";
+import ContentMangment_1 from "../../assets/images/icons/digital-marketing/Content-Mangment_1.webp";
+import AdAnalyticReporting from "../../assets/images/icons/digital-marketing/Ad-Analytic-Reporting.webp";
+import EmailMarketing from "../../assets/images/icons/digital-marketing/Email-Marketing.webp";
+import SocialMediaAdvertisment from "../../assets/images/icons/digital-marketing/Social-Media-Advertisment.webp";
+import keywordoptimization from "../../assets/images/icons/digital-marketing/keyword-optimization.webp";
 
 const gfxServices = [
   { title: "SEO", img: SEO },
@@ -59,6 +59,7 @@ import {
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -95,6 +96,13 @@ const stepsData = [
 
 const DigitalMarketing = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/digital-marketing"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -204,6 +212,7 @@ We make social media work for you by offering solutions at every stage of your m
         categorySlug="digital-marketing"
       />
     </DefaultLayout>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import loaderGif from "../../assets/images/loader.gif";
 const Loader = () => {
   return (
     <div className="loader-div">
-      <img src={loaderGif} alt="" />
+      <img src={loaderGif} alt="loader" />
     </div>
   );
 };

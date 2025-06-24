@@ -1,6 +1,6 @@
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 import BlogCategoriesCard from "../../components/BlogCategoriesCard";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";

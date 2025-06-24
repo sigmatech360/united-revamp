@@ -19,7 +19,7 @@ const OneStopWebSec = (props) => {
                 <img
                   src={props.image}
                   className="img-fluid"
-                  alt="One Stop Website Image"
+                  alt={props.secTitle}
                   data-aos="fade-right"
                   data-aos-delay={600}
                 />

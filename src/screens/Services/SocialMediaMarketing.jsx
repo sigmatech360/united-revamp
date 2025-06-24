@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-smm-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-smm-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-smm-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-smm-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-smmPage-img.png";
-import photoshopicon from "../../assets/images/smm-icon.png";
+import webdesignimg from "../../assets/images/services-smmPage-img.webp";
+import photoshopicon from "../../assets/images/smm-icon.webp";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/one-stop-website-img.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -29,10 +29,10 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
-import CampaignManagment_1 from "../../assets/images/icons/social-media-marketing/Campaign-Managment_1.png";
-import Performanceanalytics from "../../assets/images/icons/social-media-marketing/Performance-analytics.png";
-import CommunityEnagment from "../../assets/images/icons/social-media-marketing/Community-Enagment.png";
-import ContentMangment from "../../assets/images/icons/social-media-marketing/Content-Mangment.png";
+import CampaignManagment_1 from "../../assets/images/icons/social-media-marketing/Campaign-Managment_1.webp";
+import Performanceanalytics from "../../assets/images/icons/social-media-marketing/Performance-analytics.webp";
+import CommunityEnagment from "../../assets/images/icons/social-media-marketing/Community-Enagment.webp";
+import ContentMangment from "../../assets/images/icons/social-media-marketing/Content-Mangment.webp";
 
 const gfxServices = [
   { title: "Campaign Management", img: CampaignManagment_1 },
@@ -50,6 +50,7 @@ import {
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -86,6 +87,13 @@ const stepsData = [
 
 const SocialMediaMarketing = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/search-engine-optimization"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -193,6 +201,7 @@ const SocialMediaMarketing = () => {
         categorySlug="social-media-marketing"
       />
     </DefaultLayout>
+    </>
   );
 };
 

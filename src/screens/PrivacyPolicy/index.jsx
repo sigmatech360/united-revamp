@@ -2,7 +2,8 @@ import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 
 import InnerBanner from "../../components/InnerBanner";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const privacyPolicySections = [
   {
@@ -103,6 +104,13 @@ export const privacyPolicySections = [
 
 const PrivacyPolicy = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/privacy-policy"
+      />
     <DefaultLayout>
       <InnerBanner bgImage={aboutbannerbg} title="Privacy Policy" />
 
@@ -286,6 +294,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
     </DefaultLayout>
+    </>
   );
 };
 

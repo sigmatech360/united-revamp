@@ -3,7 +3,7 @@ import { Modal, Button, Form } from "react-bootstrap";
 
 import "./style.css";
 
-import modalMobileImg from "../../Assets/images/modal-mobile-img.png";
+import modalMobileImg from "../../Assets/images/modal-mobile-img.webp";
 import toast from "react-hot-toast";
 // import { toast } from "react-toastify";
 
@@ -86,7 +86,7 @@ const FormModal = ({ show, handleClose }) => {
         <div className="formModal-content">
           <div className="formModal-imgDiv">
             <div className="formModalImg">
-              <img src={modalMobileImg} className="img-fluid" alt="" />
+              <img src={modalMobileImg} className="img-fluid" alt="Ready to chat about your project?" />
             </div>
           </div>
           <div className="formModal-formContent">

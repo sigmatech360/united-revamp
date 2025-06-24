@@ -2,19 +2,27 @@
 import DefaultLayout from "../../components/DefaultLayout";
 
 import InnerBanner from "../../components/InnerBanner";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 
-import singlecategoriesblogimg from "../../assets/images/single-categories-blog-img.png";
+import singlecategoriesblogimg from "../../assets/images/single-categories-blog-img.webp";
 
 // import BlogCategoriesCard from "../../components/BlogCategoriesCard";
 // import { blogCategoriesData } from "../../data";
 import { MdDateRange } from "react-icons/md";
 import BlogCategoriesSec from "../../components/BlogCategoriesSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Blogs = () => {
 
 
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/blog"
+      />
     <DefaultLayout>
       <InnerBanner
         bgImage={aboutbannerbg}
@@ -55,50 +63,10 @@ const Blogs = () => {
         </div>
       </section>
 
-      {/* <section className="single-blog-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="single-blog__card">
-                <div
-                  className="single-blog__card-img"
-                  data-aos="flip-left"
-                  data-aos-delay={200}
-                >
-                  <img
-                    src={singlecategoriesblogimg}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div
-                  className="single-blog__card-body"
-                  data-aos="zoom-in"
-                  data-aos-delay={200}
-                >
-                  <p className="single-blog__card-body-category">Logo Design</p>
-                  <p className="single-blog__card-body-title">
-                    Hawkeye Logo: Marvel’s Most Iconic Archery Insignia
-                  </p>
-                  <div className="single-blog__card-footer">
-                    <div className="single-blog__card-footer-date">
-                      <MdDateRange />
-                      <p>Published: March 18, 2025</p>
-                    </div>
-                    <button className="theme-btn theme-btn__yellow">
-                      Read More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <BlogCategoriesSec />
 
     </DefaultLayout>
+    </>
   );
 };
 

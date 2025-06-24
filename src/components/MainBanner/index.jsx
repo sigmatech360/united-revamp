@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import mainbannerimgs from "../../assets/images/main-banner-imgs.png";
+import mainbannerimgs from "../../assets/images/main-banner-imgs.webp";
 
 
 const MainBanner = ({openModal}) => {
@@ -48,7 +48,7 @@ const MainBanner = ({openModal}) => {
                   <img
                     src={mainbannerimgs}
                     className="img-fluid"
-                    alt="main-banner-imgs"
+                    alt="Custom Web Design & Development Solutions!"
                   />
                 </div>
               </div>

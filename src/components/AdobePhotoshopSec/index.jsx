@@ -39,7 +39,7 @@ const AdobePhotoshopSec = (props) => {
                 data-aos="zoom-in"
                 data-aos-delay={index * 200}
               >
-                <img src={item.image} alt="" />
+                <img src={item.image} alt={"Portfolio"} />
               </div>
             </div>
           ))}

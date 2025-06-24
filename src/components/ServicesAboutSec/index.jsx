@@ -18,7 +18,7 @@ const ServicesAboutSec = (props) => {
               <img
                 src={props.image}
                 className="img-fluid"
-                alt="Services About Image"
+                alt={props.title}
               />
             </div>
           </div>

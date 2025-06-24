@@ -1,6 +1,6 @@
 import React from "react";
 
-import quoteicon from "../../assets/images/quote-icon.png";
+import quoteicon from "../../assets/images/quote-icon.webp";
 
 const TestimonialCard = ({ description, userImg, username, userCity }) => {
   return (

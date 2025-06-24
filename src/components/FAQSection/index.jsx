@@ -109,9 +109,9 @@ const FAQSection = (props) => {
               {props.secHeadrag && (
                 <p className="sec-head-tag">{props.secHeadrag}</p>
               )}
-              <h3 data-aos="fade-up" data-aos-delay={100}>
+              <h2 data-aos="fade-up" data-aos-delay={100}>
                 {props.title}
-              </h3>
+              </h2>
               <p data-aos="fade-up" data-aos-delay={300}>
                 {props.description}
               </p>

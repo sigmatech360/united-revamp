@@ -1,166 +1,166 @@
-import blogimg1 from "./assets/images/blog-img-1.png";
-import blogimg2 from "./assets/images/blog-img-2.png";
-import blogimg3 from "./assets/images/blog-img-3.png";
+import blogimg1 from "./assets/images/blog-img-1.webp";
+import blogimg2 from "./assets/images/blog-img-2.webp";
+import blogimg3 from "./assets/images/blog-img-3.webp";
 
-import brandingimg1 from "./assets/images/branding-img-1.png";
-import brandingimg2 from "./assets/images/branding-img-2.png";
-import brandingimg3 from "./assets/images/branding-img-3.png";
+import brandingimg1 from "./assets/images/branding-img-1.webp";
+import brandingimg2 from "./assets/images/branding-img-2.webp";
+import brandingimg3 from "./assets/images/branding-img-3.webp";
 
-import webdesignimg1 from "./assets/images/web-design-img-1.png";
-import webdesignimg2 from "./assets/images/web-design-img-2.png";
-import webdesignimg3 from "./assets/images/web-design-img-3.png";
+import webdesignimg1 from "./assets/images/web-design-img-1.webp";
+import webdesignimg2 from "./assets/images/web-design-img-2.webp";
+import webdesignimg3 from "./assets/images/web-design-img-3.webp";
 
-import bookcoverimg1 from "./assets/images/book-cover-img-1.png";
-import bookcoverimg2 from "./assets/images/book-cover-img-2.png";
-import bookcoverimg3 from "./assets/images/book-cover-img-3.png";
+import bookcoverimg1 from "./assets/images/book-cover-img-1.webp";
+import bookcoverimg2 from "./assets/images/book-cover-img-2.webp";
+import bookcoverimg3 from "./assets/images/book-cover-img-3.webp";
 
-import packagingdesignimg1 from "./assets/images/packaging-design-img-1.png";
-import packagingdesignimg2 from "./assets/images/packaging-design-img-2.png";
-import packagingdesignimg3 from "./assets/images/packaging-design-img-3.png";
+import packagingdesignimg1 from "./assets/images/packaging-design-img-1.webp";
+import packagingdesignimg2 from "./assets/images/packaging-design-img-2.webp";
+import packagingdesignimg3 from "./assets/images/packaging-design-img-3.webp";
 
-import smimg1 from "./assets/images/sm-img-1.png";
-import smimg2 from "./assets/images/sm-img-2.png";
-import smimg3 from "./assets/images/sm-img-3.png";
+import smimg1 from "./assets/images/sm-img-1.webp";
+import smimg2 from "./assets/images/sm-img-2.webp";
+import smimg3 from "./assets/images/sm-img-3.webp";
 
-import graphicdesignimg1 from "./assets/images/graphic-design-img-1.png";
-import graphicdesignimg2 from "./assets/images/graphic-design-img-2.png";
-import graphicdesignimg3 from "./assets/images/graphic-design-img-3.png";
+import graphicdesignimg1 from "./assets/images/graphic-design-img-1.webp";
+import graphicdesignimg2 from "./assets/images/graphic-design-img-2.webp";
+import graphicdesignimg3 from "./assets/images/graphic-design-img-3.webp";
 
-import videoanimationimg1 from "./assets/images/video-animation-img-1.png";
-import videoanimationimg2 from "./assets/images/video-animation-img-2.png";
-import videoanimationimg3 from "./assets/images/video-animation-img-3.png";
+import videoanimationimg1 from "./assets/images/video-animation-img-1.webp";
+import videoanimationimg2 from "./assets/images/video-animation-img-2.webp";
+import videoanimationimg3 from "./assets/images/video-animation-img-3.webp";
 
-import boxheadicon from "./assets/images/box-head-icon.png";
+import boxheadicon from "./assets/images/box-head-icon.webp";
 
-import achievementimg1 from "./assets/images/achievement-img1.png";
-import achievementimg2 from "./assets/images/achievement-img2.png";
-import achievementimg3 from "./assets/images/achievement-img3.png";
-import achievementimg4 from "./assets/images/achievement-img4.png";
-import achievementimg5 from "./assets/images/achievement-img5.png";
-import achievementimg6 from "./assets/images/achievement-img6.png";
+import achievementimg1 from "./assets/images/achievement-img1.webp";
+import achievementimg2 from "./assets/images/achievement-img2.webp";
+import achievementimg3 from "./assets/images/achievement-img3.webp";
+import achievementimg4 from "./assets/images/achievement-img4.webp";
+import achievementimg5 from "./assets/images/achievement-img5.webp";
+import achievementimg6 from "./assets/images/achievement-img6.webp";
 
-// import achievementimg6 from "./assets/images/achievement-img6.png";
+// import achievementimg6 from "./assets/images/achievement-img6.webp";
 
-import logodesignbg1 from "./assets/images/portfolio/logo-design-bg-1.png";
-import logodesignbg2 from "./assets/images/portfolio/logo-design-bg-2.png";
-import logodesignbg3 from "./assets/images/portfolio/logo-design-bg-3.png";
-import logodesignbg4 from "./assets/images/portfolio/logo-design-bg-4.png";
-import logodesignbg5 from "./assets/images/portfolio/logo-design-bg-5.png";
+import logodesignbg1 from "./assets/images/portfolio/logo-design-bg-1.webp";
+import logodesignbg2 from "./assets/images/portfolio/logo-design-bg-2.webp";
+import logodesignbg3 from "./assets/images/portfolio/logo-design-bg-3.webp";
+import logodesignbg4 from "./assets/images/portfolio/logo-design-bg-4.webp";
+import logodesignbg5 from "./assets/images/portfolio/logo-design-bg-5.webp";
 
-import logodesignimg1 from "./assets/images/service-logoDesign-portfolio-img1.png";
-import logodesignimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
-import logodesignimg3 from "./assets/images/service-logoDesign-portfolio-img3.png";
-import logodesignimg4 from "./assets/images/service-logoDesign-portfolio-img4.png";
-import logodesignimg5 from "./assets/images/service-logoDesign-portfolio-img5.png";
+import logodesignimg1 from "./assets/images/service-logoDesign-portfolio-img1.webp";
+import logodesignimg2 from "./assets/images/service-logoDesign-portfolio-img2.webp";
+import logodesignimg3 from "./assets/images/service-logoDesign-portfolio-img3.webp";
+import logodesignimg4 from "./assets/images/service-logoDesign-portfolio-img4.webp";
+import logodesignimg5 from "./assets/images/service-logoDesign-portfolio-img5.webp";
 
-import brandingdesignbg1 from "./assets/images/portfolio/branding-design-bg-1.png";
-import brandingdesignbg2 from "./assets/images/portfolio/branding-design-bg-2.png";
-import brandingdesignbg3 from "./assets/images/portfolio/branding-design-bg-3.png";
-import brandingdesignbg4 from "./assets/images/portfolio/branding-design-bg-4.png";
-import brandingdesignbg5 from "./assets/images/portfolio/branding-design-bg-5.png";
+import brandingdesignbg1 from "./assets/images/portfolio/branding-design-bg-1.webp";
+import brandingdesignbg2 from "./assets/images/portfolio/branding-design-bg-2.webp";
+import brandingdesignbg3 from "./assets/images/portfolio/branding-design-bg-3.webp";
+import brandingdesignbg4 from "./assets/images/portfolio/branding-design-bg-4.webp";
+import brandingdesignbg5 from "./assets/images/portfolio/branding-design-bg-5.webp";
 
-import brandingdesignimg1 from "./assets/images/portfolio/branding-design-img-1.png";
-import brandingdesignimg2 from "./assets/images/portfolio/branding-design-img-2.png";
-import brandingdesignimg3 from "./assets/images/portfolio/branding-design-img-3.png";
-import brandingdesignimg4 from "./assets/images/portfolio/branding-design-img-4.png";
-import brandingdesignimg5 from "./assets/images/portfolio/branding-design-img-5.png";
+import brandingdesignimg1 from "./assets/images/portfolio/branding-design-img-1.webp";
+import brandingdesignimg2 from "./assets/images/portfolio/branding-design-img-2.webp";
+import brandingdesignimg3 from "./assets/images/portfolio/branding-design-img-3.webp";
+import brandingdesignimg4 from "./assets/images/portfolio/branding-design-img-4.webp";
+import brandingdesignimg5 from "./assets/images/portfolio/branding-design-img-5.webp";
 
-import websitedesignbg1 from "./assets/images/portfolio/website-design-bg-1.png";
-import websitedesignbg2 from "./assets/images/portfolio/website-design-bg-2.png";
-import websitedesignbg3 from "./assets/images/portfolio/website-design-bg-3.png";
-import websitedesignbg4 from "./assets/images/portfolio/website-design-bg-4.png";
-import websitedesignbg5 from "./assets/images/portfolio/website-design-bg-5.png";
+import websitedesignbg1 from "./assets/images/portfolio/website-design-bg-1.webp";
+import websitedesignbg2 from "./assets/images/portfolio/website-design-bg-2.webp";
+import websitedesignbg3 from "./assets/images/portfolio/website-design-bg-3.webp";
+import websitedesignbg4 from "./assets/images/portfolio/website-design-bg-4.webp";
+import websitedesignbg5 from "./assets/images/portfolio/website-design-bg-5.webp";
 
-import websitedesignimg1 from "./assets/images/portfolio/website-design-img-1.png";
-import websitedesignimg2 from "./assets/images/portfolio/website-design-img-2.png";
-import websitedesignimg3 from "./assets/images/portfolio/website-design-img-3.png";
-import websitedesignimg4 from "./assets/images/portfolio/website-design-img-4.png";
-import websitedesignimg5 from "./assets/images/portfolio/website-design-img-5.png";
+import websitedesignimg1 from "./assets/images/portfolio/website-design-img-1.webp";
+import websitedesignimg2 from "./assets/images/portfolio/website-design-img-2.webp";
+import websitedesignimg3 from "./assets/images/portfolio/website-design-img-3.webp";
+import websitedesignimg4 from "./assets/images/portfolio/website-design-img-4.webp";
+import websitedesignimg5 from "./assets/images/portfolio/website-design-img-5.webp";
 
-import eBookCoverDesignimg1 from "./assets/images/portfolio/eBookCoverDesign-img-1.png";
-import eBookCoverDesignimg2 from "./assets/images/portfolio/eBookCoverDesign-img-2.png";
-import eBookCoverDesignimg3 from "./assets/images/portfolio/eBookCoverDesign-img-3.png";
-import eBookCoverDesignimg4 from "./assets/images/portfolio/eBookCoverDesign-img-4.png";
-import eBookCoverDesignimg5 from "./assets/images/portfolio/eBookCoverDesign-img-5.png";
+import eBookCoverDesignimg1 from "./assets/images/portfolio/eBookCoverDesign-img-1.webp";
+import eBookCoverDesignimg2 from "./assets/images/portfolio/eBookCoverDesign-img-2.webp";
+import eBookCoverDesignimg3 from "./assets/images/portfolio/eBookCoverDesign-img-3.webp";
+import eBookCoverDesignimg4 from "./assets/images/portfolio/eBookCoverDesign-img-4.webp";
+import eBookCoverDesignimg5 from "./assets/images/portfolio/eBookCoverDesign-img-5.webp";
 
-import websitedevelopmentimg1 from "./assets/images/portfolio/website-development-img-1.png";
-import websitedevelopmentimg2 from "./assets/images/portfolio/website-development-img-2.png";
-import websitedevelopmentimg3 from "./assets/images/portfolio/website-development-img-3.png";
-import websitedevelopmentimg4 from "./assets/images/portfolio/website-development-img-4.png";
-import websitedevelopmentimg5 from "./assets/images/portfolio/website-development-img-5.png";
+import websitedevelopmentimg1 from "./assets/images/portfolio/website-development-img-1.webp";
+import websitedevelopmentimg2 from "./assets/images/portfolio/website-development-img-2.webp";
+import websitedevelopmentimg3 from "./assets/images/portfolio/website-development-img-3.webp";
+import websitedevelopmentimg4 from "./assets/images/portfolio/website-development-img-4.webp";
+import websitedevelopmentimg5 from "./assets/images/portfolio/website-development-img-5.webp";
 
 // Services Web Design Portfolio
-import servicewebDesignportfolioimg1 from "./assets/images/service-webDesign-portfolio-img1.png";
-import servicewebDesignportfolioimg2 from "./assets/images/service-webDesign-portfolio-img2.png";
-import servicewebDesignportfolioimg3 from "./assets/images/service-webDesign-portfolio-img3.png";
-import servicewebDesignportfolioimg4 from "./assets/images/service-webDesign-portfolio-img4.png";
-import servicewebDesignportfolioimg5 from "./assets/images/service-webDesign-portfolio-img5.png";
+import servicewebDesignportfolioimg1 from "./assets/images/service-webDesign-portfolio-img1.webp";
+import servicewebDesignportfolioimg2 from "./assets/images/service-webDesign-portfolio-img2.webp";
+import servicewebDesignportfolioimg3 from "./assets/images/service-webDesign-portfolio-img3.webp";
+import servicewebDesignportfolioimg4 from "./assets/images/service-webDesign-portfolio-img4.webp";
+import servicewebDesignportfolioimg5 from "./assets/images/service-webDesign-portfolio-img5.webp";
 // Services CMS Development Portfolio
-import serviceCMDDevportfolioimg1 from "./assets/images/service-cmsDev-portfolio-img1.png";
-import serviceCMDDevportfolioimg2 from "./assets/images/service-cmsDev-portfolio-img2.png";
-import serviceCMDDevportfolioimg3 from "./assets/images/service-cmsDev-portfolio-img3.png";
-import serviceCMDDevportfolioimg4 from "./assets/images/service-cmsDev-portfolio-img4.png";
-import serviceCMDDevportfolioimg5 from "./assets/images/service-cmsDev-portfolio-img5.png";
+import serviceCMDDevportfolioimg1 from "./assets/images/service-cmsDev-portfolio-img1.webp";
+import serviceCMDDevportfolioimg2 from "./assets/images/service-cmsDev-portfolio-img2.webp";
+import serviceCMDDevportfolioimg3 from "./assets/images/service-cmsDev-portfolio-img3.webp";
+import serviceCMDDevportfolioimg4 from "./assets/images/service-cmsDev-portfolio-img4.webp";
+import serviceCMDDevportfolioimg5 from "./assets/images/service-cmsDev-portfolio-img5.webp";
 // Services Custom Development Portfolio
-import serviceCustomDevportfolioimg1 from "./assets/images/service-customDev-portfolio-img1.png";
-import serviceCustomDevportfolioimg2 from "./assets/images/service-customDev-portfolio-img2.png";
-import serviceCustomDevportfolioimg3 from "./assets/images/service-customDev-portfolio-img3.png";
-import serviceCustomDevportfolioimg4 from "./assets/images/service-customDev-portfolio-img4.png";
-import serviceCustomDevportfolioimg5 from "./assets/images/service-customDev-portfolio-img5.png";
+import serviceCustomDevportfolioimg1 from "./assets/images/service-customDev-portfolio-img1.webp";
+import serviceCustomDevportfolioimg2 from "./assets/images/service-customDev-portfolio-img2.webp";
+import serviceCustomDevportfolioimg3 from "./assets/images/service-customDev-portfolio-img3.webp";
+import serviceCustomDevportfolioimg4 from "./assets/images/service-customDev-portfolio-img4.webp";
+import serviceCustomDevportfolioimg5 from "./assets/images/service-customDev-portfolio-img5.webp";
 // Services Mobile Development Portfolio
-import serviceMobileDevgnportfolioimg1 from "./assets/images/service-mobileDev-portfolio-img1.png";
-import serviceMobileDevgnportfolioimg2 from "./assets/images/service-mobileDev-portfolio-img2.png";
-import serviceMobileDevgnportfolioimg3 from "./assets/images/service-mobileDev-portfolio-img3.png";
-import serviceMobileDevgnportfolioimg4 from "./assets/images/service-mobileDev-portfolio-img4.png";
-import serviceMobileDevgnportfolioimg5 from "./assets/images/service-mobileDev-portfolio-img5.png";
+import serviceMobileDevgnportfolioimg1 from "./assets/images/service-mobileDev-portfolio-img1.webp";
+import serviceMobileDevgnportfolioimg2 from "./assets/images/service-mobileDev-portfolio-img2.webp";
+import serviceMobileDevgnportfolioimg3 from "./assets/images/service-mobileDev-portfolio-img3.webp";
+import serviceMobileDevgnportfolioimg4 from "./assets/images/service-mobileDev-portfolio-img4.webp";
+import serviceMobileDevgnportfolioimg5 from "./assets/images/service-mobileDev-portfolio-img5.webp";
 // Services Logo Design Portfolio
-import serviceLogoDesignportfolioimg1 from "./assets/images/service-logoDesign-portfolio-img1.png";
-import serviceLogoDesignportfolioimg2 from "./assets/images/service-logoDesign-portfolio-img2.png";
-import serviceLogoDesignportfolioimg3 from "./assets/images/service-logoDesign-portfolio-img3.png";
-import serviceLogoDesignportfolioimg4 from "./assets/images/service-logoDesign-portfolio-img4.png";
-import serviceLogoDesignportfolioimg5 from "./assets/images/service-logoDesign-portfolio-img5.png";
+import serviceLogoDesignportfolioimg1 from "./assets/images/service-logoDesign-portfolio-img1.webp";
+import serviceLogoDesignportfolioimg2 from "./assets/images/service-logoDesign-portfolio-img2.webp";
+import serviceLogoDesignportfolioimg3 from "./assets/images/service-logoDesign-portfolio-img3.webp";
+import serviceLogoDesignportfolioimg4 from "./assets/images/service-logoDesign-portfolio-img4.webp";
+import serviceLogoDesignportfolioimg5 from "./assets/images/service-logoDesign-portfolio-img5.webp";
 
-import adobephotoshopcardbg from "./assets/images/portfolio/adobe-photoshop-card-bg.png";
-import adobephotoshopimg3 from "./assets/images/portfolio/adobe-photoshop-img-3.png";
+import adobephotoshopcardbg from "./assets/images/portfolio/adobe-photoshop-card-bg.webp";
+import adobephotoshopimg3 from "./assets/images/portfolio/adobe-photoshop-img-3.webp";
 
-import designlayouticon from "./assets/images/design-layout-icon.png";
-import mulltiplecmsicon from "./assets/images/mulltiple-cms-icon.png";
-import numofpagesicon from "./assets/images/num-of-pages-icon.png";
-import multiiterationicon from "./assets/images/multi-iteration-icon.png";
-import seofriendlyicon from "./assets/images/seo-friendly-icon.png";
+import designlayouticon from "./assets/images/design-layout-icon.webp";
+import mulltiplecmsicon from "./assets/images/mulltiple-cms-icon.webp";
+import numofpagesicon from "./assets/images/num-of-pages-icon.webp";
+import multiiterationicon from "./assets/images/multi-iteration-icon.webp";
+import seofriendlyicon from "./assets/images/seo-friendly-icon.webp";
 
-import webdesignsupportimg1 from "./assets/images/web-design-support-img1.png";
-import webdesignsupportimg2 from "./assets/images/web-design-support-img2.png";
-import webdesignsupportimg3 from "./assets/images/web-design-support-img3.png";
-import webdesignsupportimg4 from "./assets/images/web-design-support-img4.png";
+import webdesignsupportimg1 from "./assets/images/web-design-support-img1.webp";
+import webdesignsupportimg2 from "./assets/images/web-design-support-img2.webp";
+import webdesignsupportimg3 from "./assets/images/web-design-support-img3.webp";
+import webdesignsupportimg4 from "./assets/images/web-design-support-img4.webp";
 
 // Services => Web Design
-import serviceswebdesignsupportimg1 from "./assets/images/services-web-design-support-img1.png";
-import serviceswebdesignsupportimg2 from "./assets/images/services-web-design-support-img2.png";
-import serviceswebdesignsupportimg3 from "./assets/images/services-web-design-support-img3.png";
-import serviceswebdesignsupportimg4 from "./assets/images/services-web-design-support-img4.png";
+import serviceswebdesignsupportimg1 from "./assets/images/services-web-design-support-img1.webp";
+import serviceswebdesignsupportimg2 from "./assets/images/services-web-design-support-img2.webp";
+import serviceswebdesignsupportimg3 from "./assets/images/services-web-design-support-img3.webp";
+import serviceswebdesignsupportimg4 from "./assets/images/services-web-design-support-img4.webp";
 // Services => CMS Development
-import servicescmsDevsupportimg1 from "./assets/images/services-cmsDev-support-img1.png";
-import servicescmsDevsupportimg2 from "./assets/images/services-cmsDev-support-img2.png";
-import servicescmsDevsupportimg3 from "./assets/images/services-cmsDev-support-img3.png";
-import servicescmsDevsupportimg4 from "./assets/images/services-cmsDev-support-img4.png";
+import servicescmsDevsupportimg1 from "./assets/images/services-cmsDev-support-img1.webp";
+import servicescmsDevsupportimg2 from "./assets/images/services-cmsDev-support-img2.webp";
+import servicescmsDevsupportimg3 from "./assets/images/services-cmsDev-support-img3.webp";
+import servicescmsDevsupportimg4 from "./assets/images/services-cmsDev-support-img4.webp";
 // Services => Custom Development
-import servicesCustomDevsupportimg1 from "./assets/images/services-CustomDev-support-img1.png";
-import servicesCustomDevsupportimg2 from "./assets/images/services-CustomDev-support-img2.png";
-import servicesCustomDevsupportimg3 from "./assets/images/services-CustomDev-support-img3.png";
-import servicesCustomDevsupportimg4 from "./assets/images/services-CustomDev-support-img4.png";
+import servicesCustomDevsupportimg1 from "./assets/images/services-CustomDev-support-img1.webp";
+import servicesCustomDevsupportimg2 from "./assets/images/services-CustomDev-support-img2.webp";
+import servicesCustomDevsupportimg3 from "./assets/images/services-CustomDev-support-img3.webp";
+import servicesCustomDevsupportimg4 from "./assets/images/services-CustomDev-support-img4.webp";
 // Services => Mobile App Development
-import servicesMobileAppDevsupportimg1 from "./assets/images/services-mobileAppDev-support-img1.png";
-import servicesMobileAppDevsupportimg2 from "./assets/images/services-mobileAppDev-support-img2.png";
-import servicesMobileAppDevsupportimg3 from "./assets/images/services-mobileAppDev-support-img3.png";
-import servicesMobileAppDevsupportimg4 from "./assets/images/services-mobileAppDev-support-img4.png";
+import servicesMobileAppDevsupportimg1 from "./assets/images/services-mobileAppDev-support-img1.webp";
+import servicesMobileAppDevsupportimg2 from "./assets/images/services-mobileAppDev-support-img2.webp";
+import servicesMobileAppDevsupportimg3 from "./assets/images/services-mobileAppDev-support-img3.webp";
+import servicesMobileAppDevsupportimg4 from "./assets/images/services-mobileAppDev-support-img4.webp";
 
-import webDesignGuideIcon1 from "./assets/images/web-design-guide-i1.png";
-import webDesignGuideIcon2 from "./assets/images/web-design-guide-i2.png";
-import webDesignGuideIcon3 from "./assets/images/web-design-guide-i3.png";
-import webDesignGuideIcon4 from "./assets/images/web-design-guide-i4.png";
-import webDesignGuideIcon5 from "./assets/images/web-design-guide-i5.png";
-import webDesignGuideIcon6 from "./assets/images/web-design-guide-i6.png";
+import webDesignGuideIcon1 from "./assets/images/web-design-guide-i1.webp";
+import webDesignGuideIcon2 from "./assets/images/web-design-guide-i2.webp";
+import webDesignGuideIcon3 from "./assets/images/web-design-guide-i3.webp";
+import webDesignGuideIcon4 from "./assets/images/web-design-guide-i4.webp";
+import webDesignGuideIcon5 from "./assets/images/web-design-guide-i5.webp";
+import webDesignGuideIcon6 from "./assets/images/web-design-guide-i6.webp";
 
 export const faqsData = [
   {

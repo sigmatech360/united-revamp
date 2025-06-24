@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -17,10 +17,18 @@ import {
 } from "../../data";
 import PricingCard from "../../components/PricingCard";
 import FormModal from "../../components/FormModal";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Pricing = () => {
   const [showModal, setShowModal] = useState(false);
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/pricing"
+      />
     <div className="pricing-page">
       <DefaultLayout>
         <InnerBanner
@@ -200,6 +208,7 @@ const Pricing = () => {
         <FormModal show={showModal} handleClose={() => setShowModal(false)} />
       </DefaultLayout>
     </div>
+    </>
   );
 };
 

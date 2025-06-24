@@ -3,19 +3,27 @@ import DefaultLayout from "../../components/DefaultLayout";
 
 import InnerBanner from "../../components/InnerBanner";
 
-import aboutbannerbg from "../../assets/images/about-banner-bg.png";
+import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 
-import servicebrandingdesign from "../../assets/images/service-branding-design.png";
-import servicelogodesign from "../../assets/images/service-logo-design.png";
-import serviceEbookcover from "../../assets/images/service-Ebook-cover.png";
-import servicewebsitedesign from "../../assets/images/service-website-design.png";
-import servicevideoanimation from "../../assets/images/service-video-animation.png";
-import servicewebdevelopment from "../../assets/images/service-web-development.png";
+import servicebrandingdesign from "../../assets/images/service-branding-design.webp";
+import servicelogodesign from "../../assets/images/service-logo-design.webp";
+import serviceEbookcover from "../../assets/images/service-Ebook-cover.webp";
+import servicewebsitedesign from "../../assets/images/service-website-design.webp";
+import servicevideoanimation from "../../assets/images/service-video-animation.webp";
+import servicewebdevelopment from "../../assets/images/service-web-development.webp";
 
 import { portfolioData } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Portfolio = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/portfolio"
+      />
     <DefaultLayout>
       <InnerBanner
         bgImage={aboutbannerbg}
@@ -36,7 +44,7 @@ const Portfolio = () => {
                   <img
                     src={servicebrandingdesign}
                     className="img-fluid"
-                    alt=""
+                    alt="Branding Design"
                   />
                   <div className="services-box-content-text">
                     <h4>Branding Design</h4>
@@ -54,7 +62,7 @@ const Portfolio = () => {
                   data-aos="fade-up"
                   data-aos-delay={400}
                 >
-                  <img src={servicelogodesign} className="img-fluid" alt="" />
+                  <img src={servicelogodesign} className="img-fluid" alt="Logo Design" />
                   <div className="services-box-content-text">
                     <h4>Logo Design</h4>
                     <p>
@@ -67,7 +75,7 @@ const Portfolio = () => {
                   data-aos="fade-up"
                   data-aos-delay={600}
                 >
-                  <img src={serviceEbookcover} className="img-fluid" alt="" />
+                  <img src={serviceEbookcover} className="img-fluid" alt="Ebook Cover Design" />
                   <div className="services-box-content-text">
                     <h4>Ebook Cover Design</h4>
                     <p>
@@ -88,7 +96,7 @@ const Portfolio = () => {
                   <img
                     src={servicewebsitedesign}
                     className="img-fluid"
-                    alt=""
+                    alt="Website Design"
                   />
                   <div className="services-box-content-text">
                     <h4>Website Design</h4>
@@ -110,7 +118,7 @@ const Portfolio = () => {
                   <img
                     src={servicevideoanimation}
                     className="img-fluid"
-                    alt=""
+                    alt="Video Animation"
                   />
                   <div className="services-box-content-text">
                     <h4>Video Animation</h4>
@@ -127,7 +135,7 @@ const Portfolio = () => {
                   <img
                     src={servicewebdevelopment}
                     className="img-fluid"
-                    alt=""
+                    alt="Web Development"
                   />
                   <div className="services-box-content-text">
                     <h4>Web Development</h4>
@@ -179,7 +187,7 @@ const Portfolio = () => {
                     data-aos="zoom-in"
                     data-aos-delay={imageIndex * 300}
                   >
-                    <img src={image.image} alt="" />
+                    <img src={image.image} alt={item.title} />
                   </div>
                 </div>
               ))}
@@ -188,6 +196,7 @@ const Portfolio = () => {
         </div>
       </section>
     </DefaultLayout>
+    </>
   );
 };
 

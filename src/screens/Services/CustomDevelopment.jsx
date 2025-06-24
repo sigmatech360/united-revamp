@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-customDev-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-customDev-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-customDev-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-customDev-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-customDevPage-img.png";
-import photoshopicon from "../../assets/images/custom-dev-icon.png";
+import webdesignimg from "../../assets/images/services-customDevPage-img.webp";
+import photoshopicon from "../../assets/images/custom-dev-icon.webp";
 
-import oneStopWebImg from "../../assets/images/services-customDev-oneStopImg.png";
+import oneStopWebImg from "../../assets/images/services-customDev-oneStopImg.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -29,14 +29,14 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
-import businesswebsite from "../../assets/images/icons/custom-development/business-website.png";
-import personalwebsite from "../../assets/images/icons/custom-development/personal-website.png";
-import ecommercewebsite from "../../assets/images/icons/custom-development/e-commerce-website.png";
-import portfolios from "../../assets/images/icons/custom-development/portfolios.png";
-import blogswebsite from "../../assets/images/icons/custom-development/blogs-website.png";
-import bookingwebsite from "../../assets/images/icons/custom-development/booking-website.png";
-import informationalwebsite from "../../assets/images/icons/custom-development/informational-website.png";
-import Magzineornewswebsite from "../../assets/images/icons/custom-development/Magzine-or-news-website.png";
+import businesswebsite from "../../assets/images/icons/custom-development/business-website.webp";
+import personalwebsite from "../../assets/images/icons/custom-development/personal-website.webp";
+import ecommercewebsite from "../../assets/images/icons/custom-development/e-commerce-website.webp";
+import portfolios from "../../assets/images/icons/custom-development/portfolios.webp";
+import blogswebsite from "../../assets/images/icons/custom-development/blogs-website.webp";
+import bookingwebsite from "../../assets/images/icons/custom-development/booking-website.webp";
+import informationalwebsite from "../../assets/images/icons/custom-development/informational-website.webp";
+import Magzineornewswebsite from "../../assets/images/icons/custom-development/Magzine-or-news-website.webp";
 
 const gfxServices = [
   { title: "Business Websites", img: businesswebsite },
@@ -59,6 +59,7 @@ import {
   webDesignGuidelinesData,
   // webDesignSupportData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -91,6 +92,13 @@ const stepsData = [
 
 const CustomDevelopment = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/custom-development"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -195,6 +203,7 @@ const CustomDevelopment = () => {
         categorySlug="custom-website-development"
       />
     </DefaultLayout>
+    </>
   );
 };
 

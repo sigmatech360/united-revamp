@@ -29,7 +29,7 @@ const ServicePowerfullTool = (props) => {
                 data-aos="fade-right"
                 data-aos-delay={200}
               >
-                <img src={props.toolIcon} alt="Photoshop Icon" />
+                <img src={props.toolIcon} alt={props.toolName} />
               </div>
               <h3 data-aos="fade-right" data-aos-delay={400}>
                 {props.toolName}

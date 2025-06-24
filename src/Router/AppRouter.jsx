@@ -20,6 +20,8 @@ import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
 import LogoDesign from "../screens/Services/LogoDesign";
 import CategoryBlogs from "../screens/CategoryBlogs";
 import BlogDetail from "../screens/BlogDetail";
+import ScrollToTop from "../components/ScrollToTop";
+import NotFound from "../screens/NotFound";
 
 // Import your components/pages
 
@@ -27,32 +29,33 @@ const AppRouter = () => {
   return (
     // <Router basename="/united-revamp">
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
 
         {/* Services Pages Start */}
-        <Route path="/services/web-design" element={<WebDesign />} />
-        <Route path="/services/cms-development" element={<CMSDevelopment />} />
+        <Route path="/web-design" element={<WebDesign />} />
+        <Route path="/cms-development" element={<CMSDevelopment />} />
         <Route
-          path="/services/digital-marketing"
+          path="/digital-marketing"
           element={<DigitalMarketing />}
         />
         <Route
-          path="/services/social-media-marketing"
+          path="/social-media-marketing"
           element={<SocialMediaMarketing />}
         />
-        <Route path="/services/search-engine-optimization" element={<SEO />} />
+        <Route path="/search-engine-optimization" element={<SEO />} />
         <Route
-          path="/services/custom-development"
+          path="/custom-development"
           element={<CustomDevelopment />}
         />
         <Route
-          path="/services/mobile-app-development"
+          path="/mobile-app-development"
           element={<MobileAppDevelopment />}
         />
-        <Route path="/services/logo-design" element={<LogoDesign />} />
+        <Route path="/logo-design" element={<LogoDesign />} />
         {/* Services Pages End */}
 
         <Route path="/pricing" element={<Pricing />} />
@@ -70,6 +73,7 @@ const AppRouter = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

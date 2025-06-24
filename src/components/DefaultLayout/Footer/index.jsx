@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
-import footerlogocontentimgs from "../../../assets/images/footer-logo-content-imgs.png";
+import logo from "../../../assets/images/logo.webp";
+import footerlogocontentimgs from "../../../assets/images/footer-logo-content-imgs.webp";
 
 import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
@@ -21,14 +21,14 @@ const companyLinks = [
 ];
 
 const servicesLinks = [
-  { name: "Web Design", path: "/services/web-design" },
-  { name: "CMS Development", path: "/services/cms-development" },
-  { name: "Digital Marketing", path: "/services/digital-marketing" },
-  { name: "Social Media Marketing", path: "/services/social-media-marketing" },
-  { name: "SEO", path: "/services/search-engine-optimization" },
-  { name: "Custom Development", path: "/services/custom-development" },
-  { name: "Mobile App Development", path: "/services/mobile-app-development" },
-  { name: "LogoDesign", path: "/services/logo-design" },
+  { name: "Web Design", path: "/web-design" },
+  { name: "CMS Development", path: "/cms-development" },
+  { name: "Digital Marketing", path: "/digital-marketing" },
+  { name: "Social Media Marketing", path: "/social-media-marketing" },
+  { name: "SEO", path: "/search-engine-optimization" },
+  { name: "Custom Development", path: "/custom-development" },
+  { name: "Mobile App Development", path: "/mobile-app-development" },
+  { name: "LogoDesign", path: "/logo-design" },
 ];
 
 const Footer = ({ footerTitle }) => {
@@ -38,16 +38,16 @@ const Footer = ({ footerTitle }) => {
         <div className="row">
           <div className="col-md-12">
             {footerTitle ? (
-              <h5
+              <h2
                 className="footer-main__title text-center"
                 dangerouslySetInnerHTML={{ __html: footerTitle }}
-              ></h5>
+              ></h2>
             ) : (
-              <h5 className="footer-main__title text-center">
+              <h2 className="footer-main__title text-center">
                 Providing <span className="colorYellow">Smart Digital</span>{" "}
                 <br /> Solutions Designed to Grow Your{" "}
                 <span className="colorYellow">Business Online</span>
-              </h5>
+              </h2>
             )}
           </div>
           <div className="col-md-12">
@@ -90,7 +90,7 @@ const Footer = ({ footerTitle }) => {
                   <div className="footer-logo__content-imgs">
                     <img
                       src={footerlogocontentimgs}
-                      alt="footer logo content imgs"
+                      alt="United revamp developers logo"
                     />
                   </div>
                 </div>

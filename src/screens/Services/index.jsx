@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/mainServices-banner-bg.png";
+import aboutbannerbg from "../../assets/images/mainServices-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/mainServices-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/mainServices-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/mainServicesweb-design-img.png";
-import photoshopicon from "../../assets/images/photoshop-icon.png";
+import webdesignimg from "../../assets/images/mainServicesweb-design-img.webp";
+import photoshopicon from "../../assets/images/photoshop-icon.webp";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/one-stop-website-img.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -30,13 +30,13 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 
-import adobephotoshopcardbg from "../../assets/images/portfolio/adobe-photoshop-card-bg.png";
+import adobephotoshopcardbg from "../../assets/images/portfolio/adobe-photoshop-card-bg.webp";
 
-import websitedesignimg1 from "../../assets/images/services-adobePhotosop-portflio-img-1.png";
-import websitedesignimg2 from "../../assets/images/services-adobePhotosop-portflio-img-2.png";
-import websitedesignimg3 from "../../assets/images/services-adobePhotosop-portflio-img-3.png";
-import websitedesignimg4 from "../../assets/images/services-adobePhotosop-portflio-img-4.png";
-import websitedesignimg5 from "../../assets/images/services-adobePhotosop-portflio-img-5.png";
+import websitedesignimg1 from "../../assets/images/services-adobePhotosop-portflio-img-1.webp";
+import websitedesignimg2 from "../../assets/images/services-adobePhotosop-portflio-img-2.webp";
+import websitedesignimg3 from "../../assets/images/services-adobePhotosop-portflio-img-3.webp";
+import websitedesignimg4 from "../../assets/images/services-adobePhotosop-portflio-img-4.webp";
+import websitedesignimg5 from "../../assets/images/services-adobePhotosop-portflio-img-5.webp";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -111,9 +111,17 @@ import {
   webDesignSupportData,
   webDesignTestimoialData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Services = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers | Services"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -224,6 +232,7 @@ const Services = () => {
 
       <BlogsSec blogsData={blogsData} />
     </DefaultLayout>
+    </>
   );
 };
 

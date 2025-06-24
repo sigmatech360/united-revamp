@@ -1,22 +1,22 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-logoDesign-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-logoDesign-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-logoDesign-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-logoDesign-about-img.png";
+import servicesbannerimg from "../../assets/images/services-logoDesign-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-logoDesign-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
 
 
-import webdesignimg from "../../assets/images/services-logoDesignPage-img.png";
-import photoshopicon from "../../assets/images/logo-design-icon.png";
+import webdesignimg from "../../assets/images/services-logoDesignPage-img.webp";
+import photoshopicon from "../../assets/images/logo-design-icon.webp";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/one-stop-website-img.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -32,14 +32,14 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 
-import AbstractLogo from "../../assets/images/icons/logo-design/Abstract-Logo.png";
-import WordmarkLogo from "../../assets/images/icons/logo-design/Wordmark-Logo.png";
-import PictorialLogo from "../../assets/images/icons/logo-design/Pictorial-Logo.png";
-import MascotLogo from "../../assets/images/icons/logo-design/Mascot-Logo.png";
-import BrandMarkLogo from "../../assets/images/icons/logo-design/Brand-Mark-Logo.png";
-import Emblems from "../../assets/images/icons/logo-design/Emblems.png";
-import monogramLogo from "../../assets/images/icons/logo-design/monogram-Logo.png";
-import Logo3d from "../../assets/images/icons/logo-design/3d-Logo.png";
+import AbstractLogo from "../../assets/images/icons/logo-design/Abstract-Logo.webp";
+import WordmarkLogo from "../../assets/images/icons/logo-design/Wordmark-Logo.webp";
+import PictorialLogo from "../../assets/images/icons/logo-design/Pictorial-Logo.webp";
+import MascotLogo from "../../assets/images/icons/logo-design/Mascot-Logo.webp";
+import BrandMarkLogo from "../../assets/images/icons/logo-design/Brand-Mark-Logo.webp";
+import Emblems from "../../assets/images/icons/logo-design/Emblems.webp";
+import monogramLogo from "../../assets/images/icons/logo-design/monogram-Logo.webp";
+import Logo3d from "../../assets/images/icons/logo-design/3d-Logo.webp";
 
 const gfxServices = [
   { title: "Abstract Logos", img: AbstractLogo },
@@ -63,6 +63,7 @@ import {
   webDesignGuidelinesData,
   webDesignSupportData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -95,6 +96,13 @@ const stepsData = [
 
 const LogoDesign = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers | Logo Design"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/logo-design"
+      />
     <DefaultLayout footerTitle="Be Iconic. Start With a </br><span class='colorYellow'>Custom Logo Design</span> That Stands Out.">
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -195,6 +203,7 @@ const LogoDesign = () => {
         categorySlug="logo-designing"
       />
     </DefaultLayout>
+    </>
   );
 };
 

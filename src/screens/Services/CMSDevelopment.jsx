@@ -1,26 +1,26 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-cmsDev-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-cmsDev-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-cmsDev-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-cmsDev-about-img.webp";
 
 // Services Icons
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import Draganddropedito from "../../assets/images/icons/cms-development/Drag-and-drop-edito.png";
-import responsivetemplates from "../../assets/images/icons/cms-development/responsive-templates.png";
-import SeoTools from "../../assets/images/icons/cms-development/Seo-Tools.png";
-import AppAndPlugin from "../../assets/images/icons/cms-development/App-And-Plugin.png";
+import Draganddropedito from "../../assets/images/icons/cms-development/Drag-and-drop-edito.webp";
+import responsivetemplates from "../../assets/images/icons/cms-development/responsive-templates.webp";
+import SeoTools from "../../assets/images/icons/cms-development/Seo-Tools.webp";
+import AppAndPlugin from "../../assets/images/icons/cms-development/App-And-Plugin.webp";
 
-import webdesignimg from "../../assets/images/services-cmsDevPage-img.png";
-import photoshopicon from "../../assets/images/cms-icon.png";
+import webdesignimg from "../../assets/images/services-cmsDevPage-img.webp";
+import photoshopicon from "../../assets/images/cms-icon.webp";
 
-import oneStopWebImg from "../../assets/images/services-cmsDev-oneStopImg.png";
+import oneStopWebImg from "../../assets/images/services-cmsDev-oneStopImg.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -59,6 +59,7 @@ import {
   cmsFaqs,
   blogsData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -95,6 +96,13 @@ const stepsData = [
 
 const CMSDevelopment = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers | CMS Development"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/cms-development"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -201,6 +209,7 @@ const CMSDevelopment = () => {
         categorySlug="wordpress-development"
       />
     </DefaultLayout>
+    </>
   );
 };
 

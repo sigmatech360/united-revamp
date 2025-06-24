@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import gfxlastimg1 from "../../assets/images/gfx-last-img-1.png";
-import gfxlastimg2 from "../../assets/images/gfx-last-img-2.png";
+import gfxlastimg1 from "../../assets/images/gfx-last-img-1.webp";
+import gfxlastimg2 from "../../assets/images/gfx-last-img-2.webp";
 
 const GraphicDesignAgency = (props) => {
   return (
@@ -91,12 +91,12 @@ const GraphicDesignAgency = (props) => {
                 <img
                   src={gfxlastimg1}
                   className="gfx-last-img-1"
-                  alt="graphic design agency"
+                  alt={props.gfxLastTitle}
                 />
                 <img
                   src={gfxlastimg2}
                   className="gfx-last-img-2"
-                  alt="graphic design agency"
+                  alt={props.gfxLastTitle}
                 />
               </div>
             )}
@@ -111,7 +111,7 @@ const GraphicDesignAgency = (props) => {
                 <img
                   src={props.gfxLastImage}
                   className="img-fluid"
-                  alt="services about image"
+                  alt={props.gfxLastTitle}
                 />
               </div>
             )}

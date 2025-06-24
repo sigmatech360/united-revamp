@@ -8,23 +8,23 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import homeAboutImg from "../../assets/images/home-about-img.png";
+// import homeAboutImg from "../../assets/images/home-about-img.webp";
 import homeAboutImg from "../../assets/images/home-about-img1.jpg";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import portfolioimg1 from "../../assets/images/portfolio-img-1.png";
-import portfolioimg2 from "../../assets/images/portfolio-img-2.png";
-import portfolioimg3 from "../../assets/images/portfolio-img-3.png";
-import portfolioimg4 from "../../assets/images/portfolio-img-4.png";
-import portfolioimg5 from "../../assets/images/portfolio-img-5.png";
-import portfolioimg6 from "../../assets/images/portfolio-img-6.png";
+import portfolioimg1 from "../../assets/images/portfolio-img-1.webp";
+import portfolioimg2 from "../../assets/images/portfolio-img-2.webp";
+import portfolioimg3 from "../../assets/images/portfolio-img-3.webp";
+import portfolioimg4 from "../../assets/images/portfolio-img-4.webp";
+import portfolioimg5 from "../../assets/images/portfolio-img-5.webp";
+import portfolioimg6 from "../../assets/images/portfolio-img-6.webp";
 
-import gfxglobalimg1 from "../../assets/images/gfx-global-img1.png";
-import gfxglobalimg2 from "../../assets/images/gfx-global-img2.png";
+import gfxglobalimg1 from "../../assets/images/gfx-global-img1.webp";
+import gfxglobalimg2 from "../../assets/images/gfx-global-img2.webp";
 
 import TestimonialCard from "../../components/TestimonialCard/TestimonialCard";
 import {
@@ -40,14 +40,15 @@ import HomeBlogsSec from "../../components/HomeBlogsSec";
 import FormModal from "../../components/FormModal";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
 
-import testimonialimg from "../../assets/images/testimonial-img.png";
-import testimonialimg1 from "../../assets/images/testimonial-img1.png";
-import testimonialimg2 from "../../assets/images/testimonial-img2.png";
-import testimonialimg3 from "../../assets/images/testimonial-img3.png";
-import testimonialimg4 from "../../assets/images/testimonial-img4.png";
-import testimonialimg5 from "../../assets/images/testimonial-img5.png";
-import testimonialimg6 from "../../assets/images/testimonial-img6.png";
-import testimonialimg8 from "../../assets/images/testimonial-img8.png";
+import testimonialimg from "../../assets/images/testimonial-img.webp";
+import testimonialimg1 from "../../assets/images/testimonial-img1.webp";
+import testimonialimg2 from "../../assets/images/testimonial-img2.webp";
+import testimonialimg3 from "../../assets/images/testimonial-img3.webp";
+import testimonialimg4 from "../../assets/images/testimonial-img4.webp";
+import testimonialimg5 from "../../assets/images/testimonial-img5.webp";
+import testimonialimg6 from "../../assets/images/testimonial-img6.webp";
+import testimonialimg8 from "../../assets/images/testimonial-img8.webp";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -219,6 +220,13 @@ export const homeClientTestimonialData = [
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
   return (
+    <>
+    <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/"
+      />
     <DefaultLayout
       footerTitle='Providing <span class="colorYellow">Smart Digital</span>
               <br /> Solutions Designed to Grow Your
@@ -238,7 +246,7 @@ const Home = () => {
                 <img
                   src={homeAboutImg}
                   className="img-fluid"
-                  alt="About Image"
+                  alt="United Web Developers"
                 />
               </div>
             </div>
@@ -437,9 +445,9 @@ const Home = () => {
                 <p className="sec-head-tag label-yellow-bg">
                   Bespoke Solutions For You
                 </p>
-                <h3 data-aos="fade-right" data-aos-delay={100}>
+                <h2 data-aos="fade-right" data-aos-delay={100}>
                   A Digital Company To Take You Ahead
-                </h3>
+                </h2>
                 <p data-aos="fade-right" data-aos-delay={300}>
                   We grow when our clients grow. Our success is rooted in the
                   real, measurable progress our customers achieve through the
@@ -491,6 +499,7 @@ const Home = () => {
 
       <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </DefaultLayout>
+    </>
   );
 };
 

@@ -6,7 +6,7 @@ const BlogCategoriesCard = (props) => {
     <div className="blog-categories__card">
       <div className="blog-categories__card-head">
         <Link to={`/blog/${props.slug}`}>
-          <img src={props.image} className="img-fluid" alt="" />
+          <img src={props.image} className="img-fluid" alt={props.title} />
         </Link>
       </div>
       <div className="blog-categories__card-body">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import mainbannerimgs from "../../assets/images/main-banner-imgs.png";
+import mainbannerimgs from "../../assets/images/main-banner-imgs.webp";
 import FormModal from "../FormModal";
 
 const ServicesBanner = (props) => {
@@ -71,7 +71,7 @@ const ServicesBanner = (props) => {
                   <img
                     src={mainbannerimgs}
                     className="img-fluid"
-                    alt="main-banner-imgs"
+                    alt={props.title}
                   />
                 </div>
               </div>
@@ -86,7 +86,7 @@ const ServicesBanner = (props) => {
                   <img
                     src={props.servicesbannerimg}
                     className="img-fluid"
-                    alt="Services Banner Image"
+                    alt={props.title}
                   />
                 </div>
               )}

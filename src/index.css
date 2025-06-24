@@ -203,7 +203,7 @@ p {
 }
 
 .main-banner {
-  background-image: url(assets/images/main-banner-bg.png);
+  background-image: url(assets/images/main-banner-bg.webp);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -262,7 +262,7 @@ p {
 }
 
 .graphic-design-agency {
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -306,7 +306,7 @@ p {
 }
 
 .gfx-card__content {
-  background-image: url(assets/images/gfx-card-bg.png);
+  background-image: url(assets/images/gfx-card-bg.webp);
   background-size: cover;
   background-position: bottom center;
   border-radius: 16px;
@@ -416,7 +416,7 @@ p {
 
 .our-work-process {
   padding: 120px 0 60px;
-  background-image: url(assets/images/our-work-process-bg.png);
+  background-image: url(assets/images/our-work-process-bg.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -448,7 +448,7 @@ p {
   gap: 16px;
   color: #fff;
   text-align: center;
-  /* background-image: url(assets/images/our-process-steps-bg.png); */
+  /* background-image: url(assets/images/our-process-steps-bg.webp); */
   /* background-repeat: no-repeat;
   background-position: 45% 44%;
   background-size: 84%; */
@@ -472,7 +472,7 @@ p {
   display: inline-block;
   width: 80%;
   height: 10px;
-  background-image: url(assets/images/our-process-steps-after.png);
+  background-image: url(assets/images/our-process-steps-after.webp);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -579,7 +579,7 @@ p {
   opacity: 1 !important;
 }
 
-.gfx-global__content h3 {
+.gfx-global__content h2 {
   font-size: 61px;
   font-weight: 600;
   line-height: 1.1;
@@ -606,7 +606,7 @@ p {
 .faqs-sec {
   color: #fff;
   padding: 120px 0 60px;
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -623,7 +623,7 @@ p {
   margin: 0 auto 20px !important;
 }
 
-.faqs-sec .sec-head h3 {
+.faqs-sec .sec-head h2 {
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 15px !important;
@@ -675,7 +675,7 @@ p {
 
 .faqs-items .accordion-button::after {
   content: "" !important;
-  background-image: url("Assets/images/plus-icon.png") !important;
+  background-image: url("Assets/images/plus-icon.webp") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -685,7 +685,7 @@ p {
 }
 
 .faqs-items .accordion-button:not(.collapsed)::after {
-  background-image: url("Assets/images/minus-icon.png") !important;
+  background-image: url("Assets/images/minus-icon.webp") !important;
   transform: rotate(0deg);
   filter: unset;
 }
@@ -801,7 +801,7 @@ p {
   margin: 0 auto 40px;
 }
 
-.blog-sec .sec-head h3 {
+.blog-sec .sec-head h2 {
   font-size: 50px;
   line-height: 1.2;
   font-weight: 600;
@@ -888,7 +888,7 @@ p {
 }
 
 .different-industries-client {
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -981,7 +981,7 @@ p {
 }
 
 .our-achievements {
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1018,7 +1018,7 @@ p {
 }
 
 .client-testimonial__bgDark {
-  background-image: url(assets/images/client-testimonial-bg.png);
+  background-image: url(assets/images/client-testimonial-bg.webp);
   background-size: cover;
   background-position: top center;
   color: #fff;
@@ -1254,7 +1254,7 @@ p {
 
 .pricing-card__body ul li::before {
   content: "";
-  background-image: url("assets/images/li-before.png");
+  background-image: url("assets/images/li-before.webp");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -1396,7 +1396,7 @@ p {
   transform: translateY(0) scale(1);
   width: 100px;
   height: 60px;
-  background: url(assets/images/portfolio-content-title-after.png) no-repeat
+  background: url(assets/images/portfolio-content-title-after.webp) no-repeat
     center center;
   background-size: contain;
   transition: transform 0.4s ease;
@@ -1880,7 +1880,7 @@ p {
 }
 
 .web-design__company {
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   background-size: cover;
   background-position: top center;
   padding: 120px 0 60px;
@@ -1992,7 +1992,7 @@ p {
 
 .adobe-photoshop__sec {
   padding: 120px 0 60px;
-  background-image: url(assets/images/adobe-photo-sec-bg.png);
+  background-image: url(assets/images/adobe-photo-sec-bg.webp);
   background-size: cover;
   background-position: top center;
   overflow: hidden;
@@ -2062,7 +2062,7 @@ p {
 
 .one-stop-web {
   padding: 150px 0 60px;
-  background-image: url(assets/images/one-stop-website-bg.png);
+  background-image: url(assets/images/one-stop-website-bg.webp);
   background-size: cover;
   background-position: top center;
   overflow: hidden;
@@ -2190,7 +2190,7 @@ p {
 }
 
 .web-design__guidelines {
-  background-image: url(assets/images/one-stop-website-bg.png);
+  background-image: url(assets/images/one-stop-website-bg.webp);
   background-size: cover;
   background-position: top center;
   padding: 120px 0 60px;
@@ -2382,7 +2382,7 @@ p {
 /* Main Footer */
 .main-footer {
   /* background-color: #191919; */
-  background-image: url(assets/images/footer-bg-img.png);
+  background-image: url(assets/images/footer-bg-img.webp);
   color: #fff;
   padding: 120px 0 20px;
   background-size: 100%;
@@ -2531,7 +2531,7 @@ p {
     font-size: 41px;
   }
 
-  .gfx-global__content h3 {
+  .gfx-global__content h2 {
     font-size: 52px;
   }
 
@@ -2651,7 +2651,7 @@ p {
     font-size: 44px;
   }
 
-  .blog-sec .sec-head h3 {
+  .blog-sec .sec-head h2 {
     font-size: 45px;
   }
 
@@ -2671,7 +2671,7 @@ p {
     font-size: 15px;
   }
 
-  .gfx-global__content h3 {
+  .gfx-global__content h2 {
     font-size: 43px;
   }
 
@@ -2932,7 +2932,7 @@ p {
     margin: 0 auto;
   }
 
-  .faqs-sec .sec-head h3 {
+  .faqs-sec .sec-head h2 {
     font-size: 39px;
   }
 
@@ -3127,11 +3127,11 @@ p {
     background-color: #191919;
   }
 
-  .blog-sec .sec-head h3 {
+  .blog-sec .sec-head h2 {
     font-size: 40px;
   }
 
-  .gfx-global__content h3 {
+  .gfx-global__content h2 {
     font-size: 35px;
   }
 
@@ -3459,7 +3459,7 @@ p {
     font-size: 12px;
   }
 
-  .blog-sec .sec-head h3 {
+  .blog-sec .sec-head h2 {
     font-size: 29px;
   }
 
@@ -3544,7 +3544,7 @@ p {
     font-size: 30px;
   }
 
-  .faqs-sec .sec-head h3 {
+  .faqs-sec .sec-head h2 {
     font-size: 29px;
   }
 
@@ -3649,11 +3649,11 @@ p {
     font-size: 30px;
   }
 
-  .gfx-global__content h3 {
+  .gfx-global__content h2 {
     font-size: 30px;
   }
 
-  .blog-sec .sec-head h3 {
+  .blog-sec .sec-head h2 {
     font-size: 26px;
   }
 

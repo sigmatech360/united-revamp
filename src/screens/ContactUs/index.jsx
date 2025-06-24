@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
-import contactusbannerbg from "../../assets/images/contactus-banner-bg.png";
-import phoneicon from "../../assets/images/phone-icon.png";
-import emailicon from "../../assets/images/email-icon.png";
-import addressicon from "../../assets/images/address-icon.png";
+import contactusbannerbg from "../../assets/images/contactus-banner-bg.webp";
+import phoneicon from "../../assets/images/phone-icon.webp";
+import emailicon from "../../assets/images/email-icon.webp";
+import addressicon from "../../assets/images/address-icon.webp";
 import toast from "react-hot-toast";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
@@ -90,6 +91,13 @@ const ContactUs = () => {
   };
 
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/contact-us"
+      />
     <DefaultLayout>
       <InnerBanner
         className="contactUS-banner"
@@ -239,7 +247,7 @@ const ContactUs = () => {
                 <div className="contactForm-details">
                   <div className="contactForm-icons-text">
                     <div className="contactForm-icon">
-                      <img src={phoneicon} alt="" />
+                      <img src={phoneicon} alt="phone icon" />
                     </div>
                     <a
                       href="tel:(619)3266066"
@@ -250,7 +258,7 @@ const ContactUs = () => {
                   </div>
                   <div className="contactForm-icons-text">
                     <div className="contactForm-icon">
-                      <img src={emailicon} alt="" />
+                      <img src={emailicon} alt="email icon" />
                     </div>
                     <a
                       href="mailto:support@unitedwebdevelopers.com"
@@ -261,7 +269,7 @@ const ContactUs = () => {
                   </div>
                   <div className="contactForm-icons-text">
                     <div className="contactForm-icon">
-                      <img src={addressicon} alt="" />
+                      <img src={addressicon} alt="address icon" />
                     </div>
                     <p className="contactForm-icons-textContent">
                       2114 N, Flamingo Road, Pembroke Pines, FL, 33028
@@ -276,6 +284,7 @@ const ContactUs = () => {
         </div>
       </section>
     </DefaultLayout>
+    </>
   );
 };
 

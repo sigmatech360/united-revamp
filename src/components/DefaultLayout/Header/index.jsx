@@ -3,7 +3,7 @@ import "./style.css"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.webp";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 
 // const navLinks = [
@@ -21,7 +21,7 @@ const Header = () => {
     <Navbar expand="lg" className="main-navbar" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="My Virtual PI" />
+          <img src={logo} alt="United revemp developers logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -44,7 +44,7 @@ const Header = () => {
             <NavDropdown title="SERVICES" id="services-dropdown">
               <NavDropdown.Item
                 as={Link}
-                to="/services/logo-design"
+                to="/logo-design"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -52,7 +52,7 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/web-design"
+                to="/web-design"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -60,7 +60,7 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/cms-development"
+                to="/cms-development"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -79,7 +79,7 @@ const Header = () => {
 
               <NavDropdown.Item
                 as={Link}
-                to="/services/digital-marketing"
+                to="/digital-marketing"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -94,7 +94,7 @@ const Header = () => {
               <div className="nav-subdropdown">
               <NavDropdown.Item
                 as={Link}
-                to="/services/social-media-marketing"
+                to="/social-media-marketing"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -102,7 +102,7 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/search-engine-optimization"
+                to="/search-engine-optimization"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -129,7 +129,7 @@ const Header = () => {
 
               <NavDropdown.Item
                 as={Link}
-                to="/services/custom-development"
+                to="/custom-development"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >
@@ -137,7 +137,7 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/mobile-app-development"
+                to="/mobile-app-development"
                 onClick={(e) => e.stopPropagation()}
                 target="_blank"
               >

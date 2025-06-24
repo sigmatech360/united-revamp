@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/services-seo-banner-bg.png";
+import aboutbannerbg from "../../assets/images/services-seo-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-seo-about-img.png";
+import servicesbannerimg from "../../assets/images/services-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-seo-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-seoPage-img.png";
-import photoshopicon from "../../assets/images/seo-icon.png";
+import webdesignimg from "../../assets/images/services-seoPage-img.webp";
+import photoshopicon from "../../assets/images/seo-icon.webp";
 
-import oneStopWebImg from "../../assets/images/one-stop-website-img.png";
+import oneStopWebImg from "../../assets/images/one-stop-website-img.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -30,10 +30,10 @@ import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
 
-import responsivenss from "../../assets/images/icons/search-engine-optimization/on-page-Seo.png";
-import offpageseo from "../../assets/images/icons/search-engine-optimization/off-page-seo.png";
-import localseo from "../../assets/images/icons/search-engine-optimization/local-seo.png";
-import StratgeyResearch from "../../assets/images/icons/search-engine-optimization/Stratgey-Research.png";
+import responsivenss from "../../assets/images/icons/search-engine-optimization/on-page-Seo.webp";
+import offpageseo from "../../assets/images/icons/search-engine-optimization/off-page-seo.webp";
+import localseo from "../../assets/images/icons/search-engine-optimization/local-seo.webp";
+import StratgeyResearch from "../../assets/images/icons/search-engine-optimization/Stratgey-Research.webp";
 
 const gfxServices = [
   { title: "On-Page SEO", img: responsivenss },

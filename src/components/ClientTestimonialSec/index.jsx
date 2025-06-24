@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import ratingstartimg from "../../assets/images/rating-start-img.png";
+import ratingstartimg from "../../assets/images/rating-start-img.webp";
 
 const ClientTestimonialSec = (props) => {
   return (
@@ -18,13 +18,13 @@ const ClientTestimonialSec = (props) => {
               <p className="sec-head-tag label-yellow-bg">
                 CLIENT TESTIMONIALS
               </p>
-              <p
+              <h2
                 className="para-title"
                 data-aos="fade-right"
                 data-aos-delay={100}
               >
                 {props.title}
-              </p>
+              </h2>
               <p data-aos="fade-right" data-aos-delay={300}>
                 {props.description}
               </p>
@@ -60,7 +60,7 @@ const ClientTestimonialSec = (props) => {
                             {testimonial.designation}
                           </p> */}
                         </div>
-                        <img src={ratingstartimg} alt="" />
+                        <img src={ratingstartimg} alt="Rating" />
                       </div>
                     </div>
                   </SwiperSlide>

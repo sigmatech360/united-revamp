@@ -1,20 +1,20 @@
 import React from "react";
 
 import DefaultLayout from "../../components/DefaultLayout";
-import aboutbannerbg from "../../assets/images/servicesWebDesign-banner-bg.png";
+import aboutbannerbg from "../../assets/images/servicesWebDesign-banner-bg.webp";
 
-import servicesbannerimg from "../../assets/images/services-webDesign-banner-img.png";
-import servicesaboutimg from "../../assets/images/services-webDesign-about-img.png";
+import servicesbannerimg from "../../assets/images/services-webDesign-banner-img.webp";
+import servicesaboutimg from "../../assets/images/services-webDesign-about-img.webp";
 
-import gfxlogo from "../../assets/images/gfx-logo.png";
-import gfxwedev from "../../assets/images/gfx-we-dev.png";
-import gfcvideoanimation from "../../assets/images/gfc-video-animation.png";
-import gfxcontentwriting from "../../assets/images/gfx-content-writing.png";
+import gfxlogo from "../../assets/images/gfx-logo.webp";
+import gfxwedev from "../../assets/images/gfx-we-dev.webp";
+import gfcvideoanimation from "../../assets/images/gfc-video-animation.webp";
+import gfxcontentwriting from "../../assets/images/gfx-content-writing.webp";
 
-import webdesignimg from "../../assets/images/services-webDesignPage-img.png";
-import photoshopicon from "../../assets/images/web-design-icon.png";
+import webdesignimg from "../../assets/images/services-webDesignPage-img.webp";
+import photoshopicon from "../../assets/images/web-design-icon.webp";
 
-import oneStopWebImg from "../../assets/images/services-webDesign-oneStopImg.png";
+import oneStopWebImg from "../../assets/images/services-webDesign-oneStopImg.webp";
 
 import OurWorkProcessSec from "../../components/OurWorkProcessSec";
 import ClientTestimonialSec from "../../components/ClientTestimonialSec";
@@ -29,10 +29,10 @@ import WebDesignSupportSec from "../../components/WebDesignSupportSec";
 import OneStopWebSec from "../../components/OneStopWebSec";
 import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 
-import modernlayoutthatenage from "../../assets/images/icons/web-design/modern-layout-that-enage.png";
-import brandcentric from "../../assets/images/icons/web-design/brand-centric.png";
-import typography from "../../assets/images/icons/web-design/typography.png";
-import responsivenss from "../../assets/images/icons/web-design/responsivenss.png";
+import modernlayoutthatenage from "../../assets/images/icons/web-design/modern-layout-that-enage.webp";
+import brandcentric from "../../assets/images/icons/web-design/brand-centric.webp";
+import typography from "../../assets/images/icons/web-design/typography.webp";
+import responsivenss from "../../assets/images/icons/web-design/responsivenss.webp";
 
 const gfxServices = [
   { title: "Modern Layouts That Engage", img: modernlayoutthatenage },
@@ -51,6 +51,7 @@ import {
   webDesignFaqs,
   blogsData,
 } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
   {
@@ -87,6 +88,13 @@ const stepsData = [
 
 const WebDesign = () => {
   return (
+    <>
+      <ReactHelmet
+        title="United Web Developers | Web Design"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://unitedwebdevelopers.com/web-design"
+      />
     <DefaultLayout>
       <ServicesBanner
         bgImage={aboutbannerbg}
@@ -188,6 +196,7 @@ const WebDesign = () => {
         categorySlug="custom-website-development"
       />
     </DefaultLayout>
+    </>
   );
 };
 
