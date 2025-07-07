@@ -1,5 +1,134 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+/* ===== POPPINS ===== */
+/* @font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 html {
   scroll-behavior: smooth;
@@ -33,6 +162,13 @@ h6 {
 p {
   font-family: "Poppins", sans-serif;
   margin-bottom: 0 !important;
+}
+
+.at::before {
+  content: "@";
+}
+.dot::before {
+  content: ".";
 }
 
 .colorYellow {
@@ -149,6 +285,11 @@ p {
   max-width: 140px;
 }
 
+.main-navbar .navbar-toggler {
+  min-height: 40px;
+  min-width: 56px;
+}
+
 .main-navbar .navbar-brand img {
   width: 100%;
 }
@@ -160,6 +301,7 @@ p {
   text-transform: uppercase;
   transition: all 0.3s ease;
   width: fit-content;
+  cursor: pointer;
 }
 
 .main-navbar .navbar-nav .nav-link::before {
@@ -173,13 +315,26 @@ p {
   background-color: #d7ff00;
   transition: width 0.3s ease;
 }
+.main-navbar .navbar-nav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -2px;
+  width: 70%;
+  height: 2px;
+  background-color: #d7ff00;
+  transition: width 0.3s ease;
+}
 
-.main-navbar .navbar-nav .nav-link:hover {
+.main-navbar .navbar-nav .nav-link:hover,
+.main-navbar .navbar-nav .nav-link.active {
   color: #d7ff00;
   font-weight: bold;
 }
 
-.main-navbar .navbar-nav .nav-link:hover::before {
+.main-navbar .navbar-nav .nav-link:hover::before,
+.main-navbar .navbar-nav .nav-link.active:hover::before {
   width: 70%;
 }
 
@@ -203,13 +358,18 @@ p {
 }
 
 .main-banner {
-  background-image: url(assets/images/main-banner-bg.webp);
+  /* background-image: url(assets/images/main-banner-bg.webp);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   color: #fff;
   text-align: center;
   padding: 160px 0 80px;
   overflow: hidden;
+  position: relative;
+}
+.main-banner .container {
+  position: relative;
+  z-index: 2;
 }
 
 .main-banner__content h1 {
@@ -454,20 +614,21 @@ p {
   background-size: 84%; */
 }
 
-.our-work-process__item h2 {
+.our-work-process__item .our-work-process-title {
   /* font-size: 100px; */
   font-size: 70px;
   font-weight: 700;
   line-height: 1;
   position: relative;
+  font-family: "Raleway", sans-serif;
 }
 
 .our-work-process__item-name {
   font-size: 20px !important;
 }
 
-/* .our-work-process__item h2::after { */
-.our-work-process__item:not(:last-child) h2::after {
+/* .our-work-process__item .our-work-process-title::after { */
+.our-work-process__item:not(:last-child) .our-work-process-title::after {
   content: "";
   display: inline-block;
   width: 80%;
@@ -553,7 +714,7 @@ p {
   overflow: hidden;
 }
 
-.testimonial-user__content h4 {
+.testimonial-user__content h3 {
   color: #d7ff00;
   font-size: 20px;
 }
@@ -857,6 +1018,12 @@ p {
   color: #fff;
   background-size: cover;
   background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.inner-banner .container {
+  position: relative;
+  z-index: 2;
 }
 
 .inner-banner-content h1 {
@@ -1472,6 +1639,8 @@ p {
 /* Portfolio */
 .services-sec {
   margin-top: -100px;
+  position: relative;
+  z-index: 2;
 }
 
 .services-box-content {
@@ -1552,7 +1721,7 @@ p {
   display: flex;
 }
 
-.services-box-content h4 {
+.services-box-content h2 {
   font-size: 19px;
   font-weight: 500;
   margin-bottom: 7px !important;
@@ -1581,6 +1750,8 @@ p {
   padding: 30px 30px;
   border-radius: 10px;
   color: #fff;
+  position: relative;
+  z-index: 3;
 }
 
 .search-blogs-box .form-control {
@@ -1711,7 +1882,7 @@ p {
   margin-bottom: 20px;
 }
 
-.blog-categories__head h3 {
+.blog-categories__head h2 {
   font-size: 40px;
   font-weight: 600;
 }
@@ -1833,6 +2004,23 @@ p {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  position: relative;
+  background-color: #120f10;
+}
+.services-banner-sec-bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 651px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+.services-banner-sec .container {
+  position: relative;
+  z-index: 2;
 }
 
 .services-banner__content {
@@ -1840,6 +2028,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-height: 315px;
 }
 
 .services-banner__content .main-banner__content-btns {
@@ -1848,6 +2037,10 @@ p {
 
 .services-banner__content h1 {
   font-size: 50px;
+}
+.services-banner__img img {
+  width: 100%;
+  height: auto;
 }
 
 .main-banner__content-imgs {
@@ -1985,9 +2178,13 @@ p {
   line-height: 1.3;
 }
 
-.powerfull-tool__box h1 {
-  font-size: 76px;
-  font-weight: 700;
+.powerfull-tool__box-title {
+  font-size: 76px !important;
+  font-weight: 700 !important;
+  font-family: "Raleway", sans-serif !important;
+  max-width: unset;
+  min-height: unset;
+  line-height: unset;
 }
 
 .adobe-photoshop__sec {
@@ -2054,7 +2251,7 @@ p {
 }
 
 .our-work-process__bgWhite .sec-head,
-.our-work-process__bgWhite .our-work-process__item h2,
+.our-work-process__bgWhite .our-work-process__item .our-work-process-title,
 .our-work-process__bgWhite .our-work-process__item p,
 .our-work-process__bgWhite .our-work-process-last-p {
   color: #000;
@@ -2111,7 +2308,7 @@ p {
   line-height: 1.4;
 }
 
-.one-stop-web__leftContent .sec-head h2 {
+.one-stop-web__leftContent .sec-head .one-stop-web-leftTitle {
   font-size: 50px;
   margin-bottom: 16px !important;
   line-height: 1.2;
@@ -2200,7 +2397,7 @@ p {
 .web-design__guidelines .sec-head {
   text-align: center;
   color: #fff;
-  max-width: 800px;
+  max-width: 830px;
   margin: 0 auto 40px;
 }
 
@@ -2208,7 +2405,7 @@ p {
   margin: 0 auto;
 }
 
-.web-design__guidelines .sec-head h2 {
+.web-design__guidelines .sec-head .web-design__guidelines-title {
   font-size: 50px;
   line-height: 1.2;
   font-weight: 600;
@@ -2504,10 +2701,31 @@ p {
   text-transform: capitalize;
 }
 
+.gfxLastTitle-h3 {
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+.services-about__img img {
+  width: 100%;
+  height: auto;
+}
+
 /* Media quries */
 
 @media (max-width: 1399px) {
-  .our-work-process__item:not(:last-child) h2::after {
+  .our-work-process__item:not(:last-child) .our-work-process-title::after {
     width: 76%;
     left: 64%;
   }
@@ -2555,7 +2773,7 @@ p {
     font-size: 15px;
   }
 
-  .one-stop-web__leftContent .sec-head h2 {
+  .one-stop-web__leftContent .sec-head .one-stop-web-leftTitle {
     font-size: 40px;
   }
 
@@ -2630,7 +2848,7 @@ p {
     line-height: 1.3;
   }
 
-  /* .our-work-process__item h2 {
+  /* .our-work-process__item .our-work-process-title {
     font-size: 79px;
   } */
 
@@ -2755,7 +2973,7 @@ p {
     margin-bottom: 10px !important;
   }
 
-  .web-design__guidelines .sec-head h2 {
+  .web-design__guidelines .sec-head .web-design__guidelines-title {
     font-size: 40px;
   }
 
@@ -2794,6 +3012,16 @@ p {
 }
 
 @media (max-width: 991px) {
+  .mobileAppDevelopment-service .services-banner-sec-bgImg {
+    display: none;
+  }
+  .services-banner__img {
+    margin-bottom: 30px;
+  }
+  .gfxLastTitle-h3 {
+    font-size: 30px;
+    text-align: center;
+  }
   .swiper-container .swiper {
     padding-bottom: 40px;
   }
@@ -2813,14 +3041,14 @@ p {
     justify-content: center;
   }
 
-  .our-work-process__item:not(:last-child) h2::after {
+  .our-work-process__item:not(:last-child) .our-work-process-title::after {
     width: 100%;
     top: 47%;
     left: 73%;
   }
 
-  .our-work-process__item:nth-of-type(2) h2::after,
-  .our-work-process__item:nth-of-type(4) h2::after {
+  .our-work-process__item:nth-of-type(2) .our-work-process-title::after,
+  .our-work-process__item:nth-of-type(4) .our-work-process-title::after {
     content: unset;
   }
 
@@ -2882,7 +3110,7 @@ p {
     font-size: 14px;
   }
 
-  .blog-categories__head h3 {
+  .blog-categories__head h2 {
     font-size: 35px;
   }
 
@@ -2890,7 +3118,7 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .our-work-process__item h2 {
+  .our-work-process__item .our-work-process-title {
     font-size: 63px;
   }
 
@@ -3004,13 +3232,16 @@ p {
 }
 
 @media (max-width: 767px) {
+  .gfxLastTitle-h3 {
+    font-size: 28px;
+  }
   .client-testimonial__content-quote {
     min-height: 135px;
   }
   .testimonial-quote__text {
     min-height: 96px;
   }
-  .our-work-process__item:not(:last-child) h2::after {
+  .our-work-process__item:not(:last-child) .our-work-process-title::after {
     width: 100%;
     top: 47%;
     left: 62%;
@@ -3083,7 +3314,7 @@ p {
     background-size: 82%;
   }
 
-  .our-work-process__item h2 {
+  .our-work-process__item .our-work-process-title {
     font-size: 51px;
   }
 
@@ -3360,7 +3591,7 @@ p {
     align-items: center;
   }
 
-  .our-work-process__item h2::after {
+  .our-work-process__item .our-work-process-title::after {
     content: unset !important;
   }
   .our-work-process__item {
@@ -3378,12 +3609,13 @@ p {
     margin: 0 auto;
   }
 
-  .blog-categories__head h3 {
+  .blog-categories__head h2 {
     font-size: 30px;
   }
 
   .main-banner__content h1 {
-    font-size: 37px;
+    /* font-size: 37px; */
+    font-size: 27px;
   }
 
   .main-banner__content p {
@@ -3405,12 +3637,30 @@ p {
 }
 
 @media (max-width: 480px) {
+  .graphic-design-agency .sec-head .sec-head-tag {
+    width: unset;
+  }
+  .services-about__content h2 {
+    font-size: 29px;
+  }
   .services-banner__content h1 {
     font-size: 30px;
+  }
+  .services-banner__img img {
+    /* min-height: 277px; */
+    min-height: unset;
+    min-width: 336px;
+    width: unset;
+    max-width: 336px;
+    margin: 0 auto;
+    display: block;
   }
 
   .web-design__p {
     font-size: 15px;
+  }
+  .services-banner-sec-bgImg {
+    min-height: 461px;
   }
 
   .privacy-policy-content ul li,
@@ -3424,7 +3674,7 @@ p {
     font-size: 26px;
   }
 
-  .blog-categories__head h3 {
+  .blog-categories__head h2 {
     font-size: 25px;
   }
 
@@ -3451,7 +3701,7 @@ p {
     font-size: 14px;
   }
 
-  /* .our-work-process__item h2 {
+  /* .our-work-process__item .our-work-process-title {
     font-size: 30px;
   } */
 
@@ -3479,12 +3729,24 @@ p {
     font-size: 15px;
   }
 
-  .web-design__guidelines .sec-head h2 {
+  .web-design__guidelines .sec-head .web-design__guidelines-title {
     font-size: 30px;
   }
 
   .web-design__guidelines .sec-head p {
     font-size: 14px;
+  }
+  .services-banner__content {
+    min-height: 291px;
+  }
+  .services-about__content {
+    min-height: 260px;
+  }
+  .home-about-sec {
+    min-height: 752px;
+  }
+  .about-sec {
+    min-height: 714px;
   }
 }
 
@@ -3602,8 +3864,8 @@ p {
     font-size: 14px;
   }
 
-  .powerfull-tool__box h1 {
-    font-size: 65px;
+  .powerfull-tool__box-title {
+    font-size: 65px !important;
   }
 
   .powerfull-tool__box {
@@ -3623,7 +3885,7 @@ p {
     font-size: 15px;
   }
 
-  .one-stop-web__leftContent .sec-head h2 {
+  .one-stop-web__leftContent .sec-head .one-stop-web-leftTitle {
     font-size: 30px;
   }
 
@@ -3641,6 +3903,15 @@ p {
 
   .client-testimonial .sec-head .para-title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 410px) {
+  .different-industries-client {
+    min-height: 2080px;
+  }
+  .main-footer {
+    min-height: 1302px;
   }
 }
 
@@ -3663,5 +3934,11 @@ p {
   .client-testimonial__content-quote {
     /* min-height: 180px; */
     font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-banner {
+    min-height: 615px;
   }
 }

@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa";
 const companyLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
-  { name: "Blog", path: "/blogs" },
+  { name: "Blog", path: "/blog" },
   { name: "Contact Us", path: "/contact-us" },
   { name: "Portfolio", path: "/portfolio" },
   { name: "Pricing", path: "/pricing" },
@@ -28,7 +28,7 @@ const servicesLinks = [
   { name: "SEO", path: "/search-engine-optimization" },
   { name: "Custom Development", path: "/custom-development" },
   { name: "Mobile App Development", path: "/mobile-app-development" },
-  { name: "LogoDesign", path: "/logo-design" },
+  { name: "Logo Design", path: "/logo-design" },
 ];
 
 const Footer = ({ footerTitle }) => {
@@ -70,19 +70,28 @@ const Footer = ({ footerTitle }) => {
                   <div className="footer-social__links">
                     <a
                       href="https://www.facebook.com/profile.php?id=61561044334641"
-                      className=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Follow us on Facebook"
+                      aria-label="Facebook"
                     >
                       <RiFacebookLine />
                     </a>
                     <a
                       href="https://www.instagram.com/unit.edwebdevelopers/"
-                      className=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Follow us on Instagram"
+                      aria-label="Instagram"
                     >
                       <FaInstagram />
                     </a>
                     <a
                       href="https://www.linkedin.com/company/united-webdevelopers/"
-                      className=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Connect with us on LinkedIn"
+                      aria-label="LinkedIn"
                     >
                       <RiLinkedinLine />
                     </a>
@@ -126,14 +135,14 @@ const Footer = ({ footerTitle }) => {
               <div className="col-xl-3 col-lg-4 col-md-4">
                 <h6 className="main-footer__links-title">Contact Us</h6>
                 <div className="main-footer__links">
-                  <a href="tel:6193266066" className="main-footer-link">
-                    (619) 326-6066
+                  <a href="tel:+18324769672" className="main-footer-link">
+                    +1 (832) 476-9672
                   </a>
                   <a
                     href="mailto:support@unitedwebdevelopers.com"
                     className="main-footer-link"
                   >
-                    support@unitedwebdevelopers.com
+                    support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
                   </a>
                   <p>2114 N, Flamingo Road, Pembroke Pines, FL, 33028</p>
                 </div>

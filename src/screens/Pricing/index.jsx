@@ -24,10 +24,10 @@ const Pricing = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+        title="United Web Developers Pricing for Custom Web Solutions"
+        description={`Explore United Web Developers pricing for web design, development, and marketing. Get transparent rates, flexible packages, and expert solutions. View now!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/pricing"
+        // url="https://unitedwebdevelopers.com/pricing"
       />
     <div className="pricing-page">
       <DefaultLayout>

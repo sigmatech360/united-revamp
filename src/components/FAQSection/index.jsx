@@ -127,10 +127,10 @@ const FAQSection = (props) => {
                     data-aos="slide-right"
                     data-aos-delay={index * 200}
                   >
-                    {/* <Accordion.Header>{item.titla}</Accordion.Header> */}
-                    <CustomToggle eventKey={index.toString()}>
+                    <Accordion.Header as="h4">{item.titla}</Accordion.Header>
+                    {/* <CustomToggle eventKey={index.toString()}>
                       {item.titla}
-                    </CustomToggle>
+                    </CustomToggle> */}
 
                     <Accordion.Body>{item.description}</Accordion.Body>
                   </Accordion.Item>
@@ -157,6 +157,7 @@ const FAQSection = (props) => {
                     name="username"
                     value={formData.username}
                     onChange={(e) => handleChange(e)}
+                    required
                   />
                   <input
                     type="email"
@@ -165,6 +166,7 @@ const FAQSection = (props) => {
                     name="email"
                     value={formData.email}
                     onChange={(e) => handleChange(e)}
+                    required
                   />
                   <input
                     type="text"
@@ -173,32 +175,42 @@ const FAQSection = (props) => {
                     name="phone"
                     value={formData.phone}
                     onChange={(e) => handleChange(e)}
+                    required
                   />
-                  <select
-                    defaultValue="Web Development"
-                    className="form-select form-control"
-                    name="service_1"
-                    value={formData.service_1}
-                    onChange={(e) => handleChange(e)}
-                  >
-                    <option value={""} disabled>
+                  <div>
+                    <label htmlFor="serviceSelect" className="visually-hidden">
                       Select Services
-                    </option>
-                    <option value="web-design">Web Design</option>
-                    <option value="cms-development">CMS Development</option>
-                    <option value="digital-marketing">Digital Marketing</option>
-                    <option value="social-media-marketing">
-                      Social Media Marketing
-                    </option>
-                    <option value="seo">SEO</option>
-                    <option value="custom-development">
-                      Custom Development
-                    </option>
-                    <option value="mobile-app-development">
-                      Mobile App Development
-                    </option>
-                    <option value="logo-design">Logo Design</option>
-                  </select>
+                    </label>
+                    <select
+                    id="serviceSelect"
+                      defaultValue="Web Development"
+                      className="form-select form-control"
+                      name="service_1"
+                      value={formData.service_1}
+                      onChange={(e) => handleChange(e)}
+                      required
+                    >
+                      <option value={""} disabled>
+                        Select Services
+                      </option>
+                      <option value="web-design">Web Design</option>
+                      <option value="cms-development">CMS Development</option>
+                      <option value="digital-marketing">
+                        Digital Marketing
+                      </option>
+                      <option value="social-media-marketing">
+                        Social Media Marketing
+                      </option>
+                      <option value="seo">SEO</option>
+                      <option value="custom-development">
+                        Custom Development
+                      </option>
+                      <option value="mobile-app-development">
+                        Mobile App Development
+                      </option>
+                      <option value="logo-design">Logo Design</option>
+                    </select>
+                  </div>
                   <textarea
                     className="form-control"
                     placeholder="Discuss your project"
@@ -207,11 +219,12 @@ const FAQSection = (props) => {
                     name="data_message"
                     value={formData.data_message}
                     onChange={(e) => handleChange(e)}
+                    required
                   ></textarea>
                   <div className="faqs-form-btn__div">
                     <div className="faqs-form-btn__div-content">
                       <p>Interested? Call Us Now</p>
-                      <a href="tel:6193266066">(619) 326-6066</a>
+                      <a href="tel:+18324769672">+1 (832) 476-9672</a>
                     </div>
                     <button
                       // onSubmit={(e)=>handleSubmit(e)}

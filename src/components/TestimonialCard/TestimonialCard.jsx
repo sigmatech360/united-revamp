@@ -16,7 +16,7 @@ const TestimonialCard = ({ description, userImg, username, userCity }) => {
           <img src={userImg} className="img-fluid" alt="Testimonial User" />
         </div>
         <div className="testimonial-user__content">
-          <h4>{username}</h4>
+          <h3>{username}</h3>
           <p>{userCity}</p>
         </div>
       </div>

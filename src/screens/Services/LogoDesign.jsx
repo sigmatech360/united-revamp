@@ -92,16 +92,16 @@ const stepsData = [
     stepName: "Finalization",
     stepDescription: "",
   },
-];
+]; 
 
 const LogoDesign = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers | Logo Design"
-        description={`description`}
+        title="Creative Logo Design That Defines Your Brand Identity"
+        description={`Stand out with professional Creative Logo Design that reflects your brand's essence. Get custom logos crafted to inspire trust and boost recognition today`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/logo-design"
+        // url="https://unitedwebdevelopers.com/logo-design"
       />
     <DefaultLayout footerTitle="Be Iconic. Start With a </br><span class='colorYellow'>Custom Logo Design</span> That Stands Out.">
       <ServicesBanner

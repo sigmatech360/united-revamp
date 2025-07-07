@@ -51,6 +51,8 @@ import {
   webDesignFaqs,
   blogsData,
 } from "../../data";
+
+
 import ReactHelmet from "../../components/ReactHelmet";
 
 const stepsData = [
@@ -90,10 +92,10 @@ const WebDesign = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers | Web Design"
-        description={`description`}
+        title="Affordable Web Design Services | United Web Developers"
+        description={`Discover Professional Web Design Services | United Web Developers. Enhance your online presence with custom web designs. Get started with us today!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/web-design"
+        // url="https://unitedwebdevelopers.com/web-design"
       />
     <DefaultLayout>
       <ServicesBanner

@@ -116,10 +116,10 @@ const About = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers | About US"
-        description={`description`}
+        title="Top Website Design & Development Company | Trusted Experts"
+        description={`Learn why United Web Developers is the Top Website Design & Development Company. Get innovative, scalable solutions tailored to grow you business today.`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/about"
+        // url="https://unitedwebdevelopers.com/about"
       />
       <DefaultLayout footerTitle='At <span class="colorYellow">United Web Developers</span>,</br> We Create A Digital Presence That Attract <br/> Leads, Clicks, And <span class="colorYellow">Cash.</span>'>
         <InnerBanner
@@ -127,6 +127,8 @@ const About = () => {
           title={
             "USA Top <span class='colorYellow'>Website Design & Development</span> Company At Your Service."
           }
+          width="300"
+          height="385"
         />
 
         <section className="about-sec">

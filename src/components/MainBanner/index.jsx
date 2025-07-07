@@ -2,12 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import mainbannerimgs from "../../assets/images/main-banner-imgs.webp";
+import mainbannerbg from "../../assets/images/main-banner-bg.webp";
 
 
 const MainBanner = ({openModal}) => {
   return (
     <>
       <section className="main-banner">
+        <img
+            src={mainbannerbg}
+            alt="United Web Developer Banner Background"
+            className="services-banner-sec-bgImg"
+            fetchpriority="high"
+            width="1920"
+            height="1080"
+          />
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xxl-7 col-xl-8 col-lg-9">
@@ -47,6 +56,9 @@ const MainBanner = ({openModal}) => {
                 >
                   <img
                     src={mainbannerimgs}
+                    fetchpriority="high"
+                    width="360"
+                    height="61"
                     className="img-fluid"
                     alt="Custom Web Design & Development Solutions!"
                   />

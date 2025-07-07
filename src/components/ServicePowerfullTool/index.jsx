@@ -56,11 +56,11 @@ const ServicePowerfullTool = (props) => {
           <div className="col-lg-6">
             <div className="powerfull-tool__boxes">
               <div className="powerfull-tool__box" data-aos="flip-right" data-aos-delay={500}>
-                <h1>{props.usagePercent}</h1>
+                <p className="powerfull-tool__box-title">{props.usagePercent}</p>
                 <p>{props.usage}</p>
               </div>
               <div className="powerfull-tool__box" data-aos="flip-left" data-aos-delay={500}>
-                <h1>{props.rank}</h1>
+                <p className="powerfull-tool__box-title">{props.rank}</p>
                 <p>{props.highlightText}</p>
               </div>
             </div>

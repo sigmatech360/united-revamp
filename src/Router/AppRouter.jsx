@@ -29,7 +29,7 @@ const AppRouter = () => {
   return (
     // <Router basename="/united-revamp">
     <Router>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

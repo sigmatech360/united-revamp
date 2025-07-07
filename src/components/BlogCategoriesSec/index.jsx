@@ -60,7 +60,7 @@ const BlogCategoriesSec = () => {
                 <Loader />
               </div>
             ) : (
-              categories.map((category) => {
+              categories.map((category) => { 
                 const blogs = categoryBlogs[category.slug] || [];
 
                 if (blogs.length === 0) return null;
@@ -69,9 +69,9 @@ const BlogCategoriesSec = () => {
                   <div className="row blog-categories-row" key={category.id}>
                     <div className="col-md-12">
                       <div className="blog-categories__head">
-                        <h3 data-aos="fade-right" data-aos-delay={200}>
+                        <h2 data-aos="fade-right" data-aos-delay={200}>
                           {category.name}
-                        </h3>
+                        </h2>
                         <Link
                           to={`/blog/category/${category.slug}`}
                           className="theme-btn theme-btn__yellow"

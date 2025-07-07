@@ -53,12 +53,15 @@ const GraphicDesignAgency = (props) => {
             </div>
           </div>
           <div className="col-lg-6">
-            {props.gfxLastTitle && 
-            <h2 className="fw-bold text-light mb-3" data-aos="fade-right"
-            data-aos-delay={100}>
-              {props.gfxLastTitle}
-            </h2>
-            }
+            {props.gfxLastTitle && (
+              <h2
+                className="gfxLastTitle-h3 fw-bold text-light mb-3"
+                data-aos="fade-right"
+                data-aos-delay={100}
+              >
+                {props.gfxLastTitle}
+              </h2>
+            )}
             {Array.isArray(props.gfxLastDescription) ? (
               props.gfxLastDescription.map((para, idx) => (
                 <p
@@ -91,12 +94,12 @@ const GraphicDesignAgency = (props) => {
                 <img
                   src={gfxlastimg1}
                   className="gfx-last-img-1"
-                  alt={props.gfxLastTitle}
+                  alt={"Leading Design & Development Agency"}
                 />
                 <img
                   src={gfxlastimg2}
                   className="gfx-last-img-2"
-                  alt={props.gfxLastTitle}
+                  alt={"Leading Design & Development Agency"}
                 />
               </div>
             )}
@@ -111,7 +114,7 @@ const GraphicDesignAgency = (props) => {
                 <img
                   src={props.gfxLastImage}
                   className="img-fluid"
-                  alt={props.gfxLastTitle}
+                  alt={"Leading Design & Development Agency"}
                 />
               </div>
             )}

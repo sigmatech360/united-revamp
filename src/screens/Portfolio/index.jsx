@@ -19,10 +19,10 @@ const Portfolio = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+        title="United Web Developers Portfolio | See Our Best Work"
+        description={`Explore the United Web Developers portfolio to see custom websites, eCommerce, and brand designs we've built. Discover how we can bring your vision to life!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/portfolio"
+        // url="https://unitedwebdevelopers.com/portfolio"
       />
     <DefaultLayout>
       <InnerBanner
@@ -47,7 +47,7 @@ const Portfolio = () => {
                     alt="Branding Design"
                   />
                   <div className="services-box-content-text">
-                    <h4>Branding Design</h4>
+                    <h2>Branding Design</h2>
                     <p>
                       Crafting strong brand visuals that tell your unique story.
                     </p>
@@ -64,7 +64,7 @@ const Portfolio = () => {
                 >
                   <img src={servicelogodesign} className="img-fluid" alt="Logo Design" />
                   <div className="services-box-content-text">
-                    <h4>Logo Design</h4>
+                    <h2>Logo Design</h2>
                     <p>
                       Creating memorable logos that define your brand identity.
                     </p>
@@ -77,7 +77,7 @@ const Portfolio = () => {
                 >
                   <img src={serviceEbookcover} className="img-fluid" alt="Ebook Cover Design" />
                   <div className="services-box-content-text">
-                    <h4>Ebook Cover Design</h4>
+                    <h2>Ebook Cover Design</h2>
                     <p>
                       Designing compelling covers that attract and engage
                       readers.
@@ -99,7 +99,7 @@ const Portfolio = () => {
                     alt="Website Design"
                   />
                   <div className="services-box-content-text">
-                    <h4>Website Design</h4>
+                    <h2>Website Design</h2>
                     <p>
                       Building sleek, modern layouts for seamless user
                       experience.
@@ -121,7 +121,7 @@ const Portfolio = () => {
                     alt="Video Animation"
                   />
                   <div className="services-box-content-text">
-                    <h4>Video Animation</h4>
+                    <h2>Video Animation</h2>
                     <p>
                       Bringing ideas to life with engaging animated visuals.
                     </p>
@@ -138,7 +138,7 @@ const Portfolio = () => {
                     alt="Web Development"
                   />
                   <div className="services-box-content-text">
-                    <h4>Web Development</h4>
+                    <h2>Web Development</h2>
                     <p>
                       Developing fast, responsive websites tailored to your
                       needs.

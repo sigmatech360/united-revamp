@@ -8,9 +8,9 @@ const OneStopWebSec = (props) => {
           <div className="col-lg-6">
             <div className="one-stop-web__leftContent">
               <div className="sec-head">
-                <h2 data-aos="fade-right" data-aos-delay={200}>
+                <h3 className="one-stop-web-leftTitle" data-aos="fade-right" data-aos-delay={200}>
                   {props.secTitle}
-                </h2>
+                </h3>
                 <p data-aos="fade-right" data-aos-delay={400}>
                   {props.secDescription}
                 </p>

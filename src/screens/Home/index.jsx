@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import homeAboutImg from "../../assets/images/home-about-img.webp";
-import homeAboutImg from "../../assets/images/home-about-img1.jpg";
+import homeAboutImg from "../../assets/images/home-about-img1.webp";
 
 import gfxlogo from "../../assets/images/gfx-logo.webp";
 import gfxwedev from "../../assets/images/gfx-we-dev.webp";
@@ -221,284 +221,287 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-    <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+      <ReactHelmet
+        title="Custom Web Design and Development for Stunning Sites"
+        description={`Custom Web Design and Development that drives results. Get a stunning, fast, and user-friendly website tailored to your brand. Let’s build success!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/"
+        // url="https://unitedwebdevelopers.com/"
       />
-    <DefaultLayout
-      footerTitle='Providing <span class="colorYellow">Smart Digital</span>
+      <DefaultLayout
+        footerTitle='Providing <span class="colorYellow">Smart Digital</span>
               <br /> Solutions Designed to Grow Your
               <span class="colorYellow">Business Online</span>'
-    >
-      <MainBanner openModal={() => setShowModal(true)} />
+      >
+        <MainBanner openModal={() => setShowModal(true)} />
 
-      <section className="home-about-sec">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 mb-lg-0 mb-4">
-              <div
-                className="home-about-img"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <img
-                  src={homeAboutImg}
-                  className="img-fluid"
-                  alt="United Web Developers"
-                />
+        <section className="home-about-sec">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 mb-lg-0 mb-4">
+                <div
+                  className="home-about-img"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <img
+                    src={homeAboutImg}
+                    className="img-fluid"
+                    alt="United Web Developers"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="home-about-content">
-                <div className="sec-head">
-                  <h2 data-aos="fade-left" data-aos-delay="100">
-                    What Sets Us Apart In The Digital World?
-                  </h2>
-                  <p data-aos="fade-left" data-aos-delay="300">
-                    United Web Developers was founded with the idea of elevating
-                    brands through custom web design and digital solutions such
-                    as SEO, SMM, Mobile apps, Logo design, basically everything
-                    that can make a business a running and known BRAND. We blend
-                    functionality and creativity to tell your unique story.
-                  </p>
-                  <p data-aos="fade-left" data-aos-delay="300">
-                    Our secret? A mix of creativity, out-of-the-box strategies,
-                    and good old-fashioned internet wizardry. We make sure your
-                    brand becomes the star of the limelight through stunning
-                    graphics, engaging content, and flawless functionality. With
-                    our digital expertise, we ensure you’re not just another URL
-                    lost in the vast online universe, but a powerful presence
-                    that stands out, attracts, and drives revenue.
-                  </p>
-                  <div
-                    className="d-flex gap-2"
-                    data-aos="fade-left"
-                    data-aos-delay="500"
-                  >
-                    <button
-                      onClick={() => setShowModal(true)}
-                      className="theme-btn theme-btn__black"
+              <div className="col-lg-6">
+                <div className="home-about-content">
+                  <div className="sec-head">
+                    <h2 data-aos="fade-left" data-aos-delay="100">
+                      What Sets Us Apart In The Digital World?
+                    </h2>
+                    <p data-aos="fade-left" data-aos-delay="300">
+                      United Web Developers was founded with the idea of
+                      elevating brands through custom web design and digital
+                      solutions such as SEO, SMM, Mobile apps, Logo design,
+                      basically everything that can make a business a running
+                      and known BRAND. We blend functionality and creativity to
+                      tell your unique story.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="300">
+                      Our secret? A mix of creativity, out-of-the-box
+                      strategies, and good old-fashioned internet wizardry. We
+                      make sure your brand becomes the star of the limelight
+                      through stunning graphics, engaging content, and flawless
+                      functionality. With our digital expertise, we ensure
+                      you’re not just another URL lost in the vast online
+                      universe, but a powerful presence that stands out,
+                      attracts, and drives revenue.
+                    </p>
+                    <div
+                      className="d-flex gap-2"
+                      data-aos="fade-left"
+                      data-aos-delay="500"
                     >
-                      Get Started
-                    </button>
-                    <a
-                      href="tel:tel:(619)3266066"
-                      className="theme-btn theme-btn__yellow"
-                    >
-                      Call Us Now
-                    </a>
+                      <button
+                        onClick={() => setShowModal(true)}
+                        className="theme-btn theme-btn__black"
+                      >
+                        Get Started
+                      </button>
+                      <a
+                        href="tel:+18324769672"
+                        className="theme-btn theme-btn__yellow"
+                      >
+                        Call Us Now
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <GraphicDesignAgency
-        secTag="Leading Design & Development Agency"
-        secTitle="Unlock A World of Digital Possibilities"
-        secHeadDescription="Our digital experts are on a mission to deliver stellar digital solutions to brands across the globe, combining visionary creativity with smart development strategies that truly make an impact."
-        // viewAllServices
-        gfxServices={gfxServices}
-        gfxLastDescription={gfxLastDescription}
-        gfxLastImgs
-      />
+        <GraphicDesignAgency
+          secTag="Leading Design & Development Agency"
+          secTitle="Unlock A World of Digital Possibilities"
+          secHeadDescription="Our digital experts are on a mission to deliver stellar digital solutions to brands across the globe, combining visionary creativity with smart development strategies that truly make an impact."
+          // viewAllServices
+          gfxServices={gfxServices}
+          gfxLastDescription={gfxLastDescription}
+          gfxLastImgs
+        />
 
-      <section className="home-portfolio-sec">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <p className="sec-head-tag label-yellow-bg">PORTFOLIO</p>
-                <h2 data-aos="fade-up" data-aos-delay={100}>
-                  Your Partner In All Things Digital
-                </h2>
-                <p data-aos="fade-up" data-aos-delay={300}>
-                  Our portfolio is filled with the bold, custom digital
-                  solutions we’ve created to help brands grow, connect, and lead
-                  in their space. See for yourself why our clients trust us.
-                </p>
+        <section className="home-portfolio-sec">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12">
+                <div className="sec-head">
+                  <p className="sec-head-tag label-yellow-bg">PORTFOLIO</p>
+                  <h2 data-aos="fade-up" data-aos-delay={100}>
+                    Your Partner In All Things Digital
+                  </h2>
+                  <p data-aos="fade-up" data-aos-delay={300}>
+                    Our portfolio is filled with the bold, custom digital
+                    solutions we’ve created to help brands grow, connect, and
+                    lead in their space. See for yourself why our clients trust
+                    us.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="portfolio-imgs__container">
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-right"
+                    data-aos-delay={100}
+                  >
+                    <img src={portfolioimg1} alt="Portfolio Image 1" />
+                  </div>
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-down"
+                    data-aos-delay={300}
+                  >
+                    <img src={portfolioimg2} alt="Portfolio Image 2" />
+                  </div>
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-left"
+                    data-aos-delay={500}
+                  >
+                    <img src={portfolioimg3} alt="Portfolio Image 3" />
+                  </div>
+                </div>
+                <div className="portfolio-imgs__container">
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-left"
+                    data-aos-delay={100}
+                  >
+                    <img src={portfolioimg4} alt="Portfolio Image 3" />
+                  </div>
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-up"
+                    data-aos-delay={200}
+                  >
+                    <img src={portfolioimg5} alt="Portfolio Image 4" />
+                  </div>
+                  <div
+                    className="portfolio-img"
+                    data-aos="flip-left"
+                    data-aos-delay={500}
+                  >
+                    <img src={portfolioimg6} alt="Portfolio Image 5" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-md-12">
-              <div className="portfolio-imgs__container">
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-right"
-                  data-aos-delay={100}
-                >
-                  <img src={portfolioimg1} alt="Portfolio Image 1" />
-                </div>
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-down"
-                  data-aos-delay={300}
-                >
-                  <img src={portfolioimg2} alt="Portfolio Image 2" />
-                </div>
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-left"
-                  data-aos-delay={500}
-                >
-                  <img src={portfolioimg3} alt="Portfolio Image 3" />
+          </div>
+        </section>
+
+        <OurWorkProcessSec
+          secTag="How We Create Magic"
+          secTitle="Transform Your Brand With Tailored Digital Solutions"
+          secDescription="We turn rough ideas into digital brilliance with a process that’s equally parts strategy, creativity, and clean execution."
+          secLastText="We turn concepts into wireframes and visual drafts, mapping out your digital presence before we bring it to life."
+          secStepsData={stepsData}
+        />
+
+        <section className="home-testimonial-sec">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="sec-head">
+                  <p className="sec-head-tag label-yellow-bg">
+                    CLIENT TESTIMONIALS
+                  </p>
+                  <h2 data-aos="fade-up" data-aos-delay={100}>
+                    Words From Our Satisfied Clients
+                  </h2>
+                  <p data-aos="fade-up" data-aos-delay={300}>
+                    Our team ensures that every prospect that comes across us
+                    either leaves with a sale or a booking call to get a quick
+                    consultation. Here’s what our clients say about us:
+                  </p>
                 </div>
               </div>
-              <div className="portfolio-imgs__container">
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-left"
-                  data-aos-delay={100}
-                >
-                  <img src={portfolioimg4} alt="Portfolio Image 3" />
-                </div>
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-up"
-                  data-aos-delay={200}
-                >
-                  <img src={portfolioimg5} alt="Portfolio Image 4" />
-                </div>
-                <div
-                  className="portfolio-img"
-                  data-aos="flip-left"
-                  data-aos-delay={500}
-                >
-                  <img src={portfolioimg6} alt="Portfolio Image 5" />
+              <div className="col-lg-12">
+                <div className="swiper-container">
+                  <Swiper
+                    modules={[Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    speed={1000}
+                    breakpoints={{
+                      768: { slidesPerView: 2 },
+                    }}
+                    pagination={{ clickable: true }}
+                  >
+                    {homeClientTestimonialData.map((testimonial, index) => (
+                      <SwiperSlide key={index}>
+                        <TestimonialCard
+                          description={testimonial.quote}
+                          userImg={testimonial.image}
+                          username={testimonial.name}
+                          userCity={testimonial.address}
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <OurWorkProcessSec
-        secTag="How We Create Magic"
-        secTitle="Transform Your Brand With Tailored Digital Solutions"
-        secDescription="We turn rough ideas into digital brilliance with a process that’s equally parts strategy, creativity, and clean execution."
-        secLastText="We turn concepts into wireframes and visual drafts, mapping out your digital presence before we bring it to life."
-        secStepsData={stepsData}
-      />
-
-      <section className="home-testimonial-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <p className="sec-head-tag label-yellow-bg">
-                  CLIENT TESTIMONIALS
-                </p>
-                <h2 data-aos="fade-up" data-aos-delay={100}>
-                  Words From Our Satisfied Clients
-                </h2>
-                <p data-aos="fade-up" data-aos-delay={300}>
-                  Our team ensures that every prospect that comes across us
-                  either leaves with a sale or a booking call to get a quick
-                  consultation. Here’s what our clients say about us:
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-12">
-              <div className="swiper-container">
-                <Swiper
-                  modules={[Pagination]}
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  loop={true}
-                  speed={1000}
-                  breakpoints={{
-                    768: { slidesPerView: 2 },
-                  }}
-                  pagination={{ clickable: true }}
-                >
-                  {homeClientTestimonialData.map((testimonial, index) => (
-                    <SwiperSlide key={index}>
-                      <TestimonialCard
-                        description={testimonial.quote}
-                        userImg={testimonial.image}
-                        username={testimonial.name}
-                        userCity={testimonial.address}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* <ClientTestimonialSec
+        {/* <ClientTestimonialSec
         title="Words From Our Satisfied Clients"
         description="Our team ensures that every prospect that comes across us either leaves with a sale or a booking call to get a quick consultation. Here’s what our clients say about us:"
         testimonialData={clientTestimonialData}
       /> */}
 
-      <section className="gfx-global-sec">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="gfx-global__content">
-                <p className="sec-head-tag label-yellow-bg">
-                  Bespoke Solutions For You
-                </p>
-                <h2 data-aos="fade-right" data-aos-delay={100}>
-                  A Digital Company To Take You Ahead
-                </h2>
-                <p data-aos="fade-right" data-aos-delay={300}>
-                  We grow when our clients grow. Our success is rooted in the
-                  real, measurable progress our customers achieve through the
-                  strategies we build together. At United Web Developers, we
-                  have one mission: To help our clients succeed in the best way
-                  possible. And we do that through attractive design, advanced
-                  development, and smart marketing strategies. Why we say people
-                  love working with us is because we genuinely care about their
-                  brand, their goals, and their growth rather than just monetary
-                  benefits.
-                </p>
+        <section className="gfx-global-sec">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="gfx-global__content">
+                  <p className="sec-head-tag label-yellow-bg">
+                    Bespoke Solutions For You
+                  </p>
+                  <h2 data-aos="fade-right" data-aos-delay={100}>
+                    A Digital Company To Take You Ahead
+                  </h2>
+                  <p data-aos="fade-right" data-aos-delay={300}>
+                    We grow when our clients grow. Our success is rooted in the
+                    real, measurable progress our customers achieve through the
+                    strategies we build together. At United Web Developers, we
+                    have one mission: To help our clients succeed in the best
+                    way possible. And we do that through attractive design,
+                    advanced development, and smart marketing strategies. Why we
+                    say people love working with us is because we genuinely care
+                    about their brand, their goals, and their growth rather than
+                    just monetary benefits.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="gfx-global__img">
-                <img
-                  src={gfxglobalimg1}
-                  className="gfx-global__img-1 img-fluid"
-                  alt="graphic design agency"
-                  data-aos="fade-left"
-                  data-aos-delay={100}
-                />
-                <img
-                  src={gfxglobalimg2}
-                  className="gfx-global__img-2 img-fluid"
-                  alt="graphic design agency"
-                  data-aos="fade-left"
-                  data-aos-delay={300}
-                />
+              <div className="col-lg-6">
+                <div className="gfx-global__img">
+                  <img
+                    src={gfxglobalimg1}
+                    className="gfx-global__img-1 img-fluid"
+                    alt="graphic design agency"
+                    data-aos="fade-left"
+                    data-aos-delay={100}
+                  />
+                  <img
+                    src={gfxglobalimg2}
+                    className="gfx-global__img-2 img-fluid"
+                    alt="graphic design agency"
+                    data-aos="fade-left"
+                    data-aos-delay={300}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <FAQSection
-        secHeadrag="FREQUENTLY ASKED QUESTIONS"
-        title="We’ve Got All The Answers To Your Questions"
-        description="From how we build custom websites to what makes our design process different, here are the answers to the questions we hear the most."
-        faqsQA={faqsData}
-      />
+        <FAQSection
+          secHeadrag="FREQUENTLY ASKED QUESTIONS"
+          title="We’ve Got All The Answers To Your Questions"
+          description="From how we build custom websites to what makes our design process different, here are the answers to the questions we hear the most."
+          faqsQA={faqsData}
+        />
 
-      <HomeBlogsSec
-        blogSecTitle="Hot Takes, Fresh Trends, and Digital Know-How"
-        blogSubtext="Stay ahead of the digital world with our latest blogs, packed with expert tips, top trends, development insights, and digital news that actually matter."
-        // blogsData={blogsData}
-        // categorySlug="custom-website-development"
-      />
+        <HomeBlogsSec
+          blogSecTitle="Hot Takes, Fresh Trends, and Digital Know-How"
+          blogSubtext="Stay ahead of the digital world with our latest blogs, packed with expert tips, top trends, development insights, and digital news that actually matter."
+          // blogsData={blogsData}
+          // categorySlug="custom-website-development"
+        />
 
-      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
-    </DefaultLayout>
+        <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+      </DefaultLayout>
     </>
   );
 };

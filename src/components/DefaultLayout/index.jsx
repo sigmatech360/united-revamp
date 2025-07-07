@@ -5,13 +5,13 @@ import Footer from "./Footer";
 const DefaultLayout = (props) => {
   return (
     <>
-      <div className="d-flex flex-column" style={{minHeight: '100vh'}}>
+      {/* <div className="d-flex flex-column" style={{minHeight: '100vh'}}> */}
         <Header />
-          <div className="flex-grow-1">
+          {/* <div className="flex-grow-1"> */}
               {props.children}
-          </div>
+          {/* </div> */}
         <Footer footerTitle={props?.footerTitle} />
-      </div>
+      {/* </div> */}
     </>
   );
 };

@@ -8,9 +8,9 @@ const WebDesignGuidelines = (props) => {
           <div className="col-md-12">
             <div className="sec-head">
               <p className="sec-head-tag">{props.secTag}</p>
-              <h2 data-aos="fade-up" data-aos-delay={200} dangerouslySetInnerHTML={{ __html: props.secTitle }}>
+              <h3 className="web-design__guidelines-title" data-aos="fade-up" data-aos-delay={200} dangerouslySetInnerHTML={{ __html: props.secTitle }}>
                 
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-delay={400}>
                 {props.secDescription}
               </p>

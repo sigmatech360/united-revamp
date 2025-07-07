@@ -1,0 +1,21 @@
+.btn-notFound,
+.btn-notFound:hover,
+.btn-notFound:focus {
+  background-color: #191919;
+  color: #fff;
+}
+.btn-notFound {
+  max-width: 200px;
+}
+
+.notFOun-page {
+  /* background-color: #242424; */
+  background-color: #191919;
+}
+
+.notFOun-page .main-banner {
+  min-height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

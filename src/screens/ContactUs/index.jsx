@@ -98,192 +98,201 @@ const ContactUs = () => {
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://unitedwebdevelopers.com/contact-us"
       />
-    <DefaultLayout>
-      <InnerBanner
-        className="contactUS-banner"
-        bgImage={contactusbannerbg}
-        title="Contact Us"
-        description="Websites empowered with futuristic and creative design."
-      />
+      <DefaultLayout>
+        <InnerBanner
+          className="contactUS-banner"
+          bgImage={contactusbannerbg}
+          title="Contact Us"
+          description="Websites empowered with futuristic and creative design."
+        />
 
-      <section className="contactUS-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="sec-head">
-                <h2 data-aos="fade-up" data-aos-delay={200}>
-                  Contact With US
-                </h2>
-                <p data-aos="fade-up" data-aos-delay={400}>
-                  Write us a few words about your project and we’ll prepare a
-                  proposal for you within 24 hours.
-                </p>
+        <section className="contactUS-sec">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="sec-head">
+                  <h2 data-aos="fade-up" data-aos-delay={200}>
+                    Contact With US
+                  </h2>
+                  <p data-aos="fade-up" data-aos-delay={400}>
+                    Write us a few words about your project and we’ll prepare a
+                    proposal for you within 24 hours.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-6 mb-lg-2 mb-md-5 mb-4">
-              <div
-                className="contact-form"
-                data-aos="fade-right"
-                data-aos-delay={200}
-              >
-                <form onSubmit={handleSubmit}>
-                  <div className="row">
-                    <div className="col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="First name"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={(e) => handleChange(e)}
-                      />
+              <div className="col-lg-6 mb-lg-2 mb-md-5 mb-4">
+                <div
+                  className="contact-form"
+                  data-aos="fade-right"
+                  data-aos-delay={200}
+                >
+                  <form onSubmit={handleSubmit}>
+                    <div className="row">
+                      <div className="col-md-6 mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="First name"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Last name"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Enter email"
+                          name="email"
+                          value={formData.email}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Phone number"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 mb-3">
+                        <select
+                          className="form-select form-control"
+                          name="service_1"
+                          value={formData.service_1}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        >
+                          <option value={""} disabled>
+                            Select Services
+                          </option>
+                          <option value="web-design">Web Design</option>
+                          <option value="cms-development">
+                            CMS Development
+                          </option>
+                          <option value="digital-marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="social-media-marketing">
+                            Social Media Marketing
+                          </option>
+                          <option value="seo">SEO</option>
+                          <option value="custom-development">
+                            Custom Development
+                          </option>
+                          <option value="mobile-app-development">
+                            Mobile App Development
+                          </option>
+                          <option value="logo-design">Logo Design</option>
+                        </select>
+                      </div>
+                      <div className="col-md-6 mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Budget in USD"
+                          name="budget"
+                          value={formData.budget}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-12 mb-5">
+                        <textarea
+                          className="form-control"
+                          placeholder="Talk about your project"
+                          rows={5}
+                          style={{ resize: "none" }}
+                          name="data_message"
+                          value={formData.data_message}
+                          onChange={(e) => handleChange(e)}
+                          required
+                        ></textarea>
+                      </div>
+                      <div className="col-md-12">
+                        <button
+                          type="submit"
+                          className="theme-btn theme-btn__yellow"
+                          disabled={loading}
+                          style={{
+                            opacity: loading ? 0.3 : 1,
+                          }}
+                        >
+                          {/* Contact Our Team */}
+                          {loading ? "Submitting..." : "Contact Our Team"}
+                        </button>
+                      </div>
                     </div>
-                    <div className="col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Last name"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={(e) => handleChange(e)}
-                      />
-                    </div>
-                    <div className="col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Enter email"
-                        name="email"
-                        value={formData.email}
-                        onChange={(e) => handleChange(e)}
-                      />
-                    </div>
-                    <div className="col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Phone number"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={(e) => handleChange(e)}
-                      />
-                    </div>
-                    <div className="col-md-6 mb-3">
-                      <select
-                        class="form-select form-control"
-                        name="service_1"
-                        value={formData.service_1}
-                        onChange={(e) => handleChange(e)}
-                      >
-                        <option value={""} disabled>
-                          Select Services
-                        </option>
-                        <option value="web-design">Web Design</option>
-                        <option value="cms-development">CMS Development</option>
-                        <option value="digital-marketing">
-                          Digital Marketing
-                        </option>
-                        <option value="social-media-marketing">
-                          Social Media Marketing
-                        </option>
-                        <option value="seo">SEO</option>
-                        <option value="custom-development">
-                          Custom Development
-                        </option>
-                        <option value="mobile-app-development">
-                          Mobile App Development
-                        </option>
-                        <option value="logo-design">Logo Design</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Budget in USD"
-                        name="budget"
-                        value={formData.budget}
-                        onChange={(e) => handleChange(e)}
-                      />
-                    </div>
-                    <div className="col-md-12 mb-5">
-                      <textarea
-                        class="form-control"
-                        placeholder="Talk about your project"
-                        rows={5}
-                        style={{ resize: "none" }}
-                        name="data_message"
-                        value={formData.data_message}
-                        onChange={(e) => handleChange(e)}
-                      ></textarea>
-                    </div>
-                    <div className="col-md-12">
-                      <button
-                        type="submit"
-                        className="theme-btn theme-btn__yellow"
-                        disabled={loading}
-                        style={{
-                          opacity: loading ? 0.3 : 1,
-                        }}
-                      >
-                        {/* Contact Our Team */}
-                        {loading ? "Submitting..." : "Contact Our Team"}
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-6 mb-2">
-              <div
-                className="contact-form-information"
-                data-aos="fade-left"
-                data-aos-delay={200}
-              >
-                <h3>Contact Information</h3>
-                {/* <p>
+              <div className="col-lg-6 mb-2">
+                <div
+                  className="contact-form-information"
+                  data-aos="fade-left"
+                  data-aos-delay={200}
+                >
+                  <h3>Contact Information</h3>
+                  {/* <p>
                   2114 N, Flamingo Road, <br /> Pembroke Pines, FL, 33028
                 </p> */}
-                <div className="contactForm-details">
-                  <div className="contactForm-icons-text">
-                    <div className="contactForm-icon">
-                      <img src={phoneicon} alt="phone icon" />
+                  <div className="contactForm-details">
+                    <div className="contactForm-icons-text">
+                      <div className="contactForm-icon">
+                        <img src={phoneicon} alt="phone icon" />
+                      </div>
+                      <a
+                        href="tel:+18324769672"
+                        className="contactForm-icons-textContent"
+                      >
+                        +1 (832) 476-9672
+                      </a>
                     </div>
-                    <a
-                      href="tel:(619)3266066"
-                      className="contactForm-icons-textContent"
-                    >
-                      (619) 326-6066
-                    </a>
-                  </div>
-                  <div className="contactForm-icons-text">
-                    <div className="contactForm-icon">
-                      <img src={emailicon} alt="email icon" />
+                    <div className="contactForm-icons-text">
+                      <div className="contactForm-icon">
+                        <img src={emailicon} alt="email icon" />
+                      </div>
+                      <a
+                        href="mailto:support@unitedwebdevelopers.com"
+                        className="contactForm-icons-textContent"
+                      >
+                        support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
+                      </a>
                     </div>
-                    <a
-                      href="mailto:support@unitedwebdevelopers.com"
-                      className="contactForm-icons-textContent"
-                    >
-                      support@unitedwebdevelopers.com
-                    </a>
-                  </div>
-                  <div className="contactForm-icons-text">
-                    <div className="contactForm-icon">
-                      <img src={addressicon} alt="address icon" />
+                    <div className="contactForm-icons-text">
+                      <div className="contactForm-icon">
+                        <img src={addressicon} alt="address icon" />
+                      </div>
+                      <p className="contactForm-icons-textContent">
+                        2114 N, Flamingo Road, Pembroke Pines, FL, 33028
+                      </p>
                     </div>
-                    <p className="contactForm-icons-textContent">
-                      2114 N, Flamingo Road, Pembroke Pines, FL, 33028
-                    </p>
                   </div>
-                </div>
 
-                <hr />
+                  <hr />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </DefaultLayout>
+        </section>
+      </DefaultLayout>
     </>
   );
 };

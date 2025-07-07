@@ -19,6 +19,8 @@ const ServicesAboutSec = (props) => {
                 src={props.image}
                 className="img-fluid"
                 alt={props.title}
+                width="336"
+                height={205}
               />
             </div>
           </div>
@@ -44,7 +46,7 @@ const ServicesAboutSec = (props) => {
                     <Link to={props.cta1Link || "/pricing"} className="theme-btn theme-btn__black">
                       {props.cta1}
                     </Link>
-                    <a  href="tel:(619)3266066" className="theme-btn theme-btn__yellow">
+                    <a  href="tel:+18324769672" className="theme-btn theme-btn__yellow">
                       {props.cta2}
                     </a>
                   </>
@@ -53,7 +55,7 @@ const ServicesAboutSec = (props) => {
                     <button onClick={() => setShowModal(true)} className="theme-btn theme-btn__black">
                       Get Started
                     </button>
-                    <a href="tel:(619)3266066" className="theme-btn theme-btn__yellow">
+                    <a href="tel:+18324769672" className="theme-btn theme-btn__yellow">
                       Call Us Now
                     </a>
                   </>

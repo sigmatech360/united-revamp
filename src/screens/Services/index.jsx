@@ -120,7 +120,7 @@ const Services = () => {
         title="United Web Developers | Services"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/"
+        // url="https://unitedwebdevelopers.com/"
       />
     <DefaultLayout>
       <ServicesBanner

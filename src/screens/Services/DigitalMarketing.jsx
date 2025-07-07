@@ -98,10 +98,10 @@ const DigitalMarketing = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+        title="Digital Marketing Services to Grow Your Business Fast"
+        description={`Boost your brand with top Digital Marketing Services Near Me. Get local SEO, PPC, social media & more from experts who drive real results. Contact us today!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/digital-marketing"
+        // url="https://unitedwebdevelopers.com/digital-marketing"
       />
     <DefaultLayout>
       <ServicesBanner

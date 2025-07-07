@@ -27,7 +27,7 @@ const OurWorkProcessSec = (props) => {
                   data-aos-delay={100}
                   key={index}
                 >
-                  <h2>{item.stepNum}</h2>
+                  <p className="our-work-process-title">{item.stepNum}</p>
                   <p className="our-work-process__item-name">{item.stepName}</p>
                   {/* <p
                       className="our-work-process-last-p"

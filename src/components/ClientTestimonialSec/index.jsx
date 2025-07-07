@@ -49,20 +49,20 @@ const ClientTestimonialSec = (props) => {
               >
                 {props.testimonialData.map((testimonial, index) => (
                   <SwiperSlide key={index}>
-                    <div className="client-testimonial__content">
+                    <blockquote className="client-testimonial__content">
                       <p className="client-testimonial__content-quote">
                         {testimonial.quote}
                       </p>
-                      <div className="client-testimonial__content-footer">
+                      <footer className="client-testimonial__content-footer">
                         <div className="client-testimonial__content-footer-meta">
                           <h3>{testimonial.name}</h3>
                           {/* <p className="client-testimonial__content-footer-meta-desc">
                             {testimonial.designation}
                           </p> */}
                         </div>
-                        <img src={ratingstartimg} alt="Rating" />
-                      </div>
-                    </div>
+                        <img src={ratingstartimg} alt="Rating" loading="lazy" />
+                      </footer>
+                    </blockquote>
                   </SwiperSlide>
                 ))}
               </Swiper>

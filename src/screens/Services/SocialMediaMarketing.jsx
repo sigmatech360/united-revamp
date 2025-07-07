@@ -89,10 +89,10 @@ const SocialMediaMarketing = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+        title="Social Media Marketing That Grows Your Brand Online"
+        description={`Boost engagement, leads, and sales with expert Social Media Marketing. Get custom strategies for real growth across all platforms. Let’s grow your brand!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/search-engine-optimization"
+        // url="https://unitedwebdevelopers.com/search-engine-optimization"
       />
     <DefaultLayout>
       <ServicesBanner

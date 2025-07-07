@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css"
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import "./style.css";
+import { Container, Navbar, Nav, NavDropdown, Dropdown } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.webp";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa";
@@ -17,6 +17,7 @@ import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 // ];
 
 const Header = () => {
+  const location = useLocation();
   return (
     <Navbar expand="lg" className="main-navbar" variant="dark">
       <Container>
@@ -34,125 +35,138 @@ const Header = () => {
               </Nav.Link>
             ))} */}
 
-            <Nav.Link as={Link} to="/">
+            <Nav.Link
+              as={Link}
+              to="/"
+              className={location.pathname === "/" ? "active" : ""}
+            >
               HOME
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
+            <Nav.Link
+              as={Link}
+              to="/about"
+              className={location.pathname === "/about" ? "active" : ""}
+            >
               ABOUT
             </Nav.Link>
 
-            <NavDropdown title="SERVICES" id="services-dropdown">
-              <NavDropdown.Item
-                as={Link}
-                to="/logo-design"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
+            <Dropdown id="services-dropdown">
+              <Dropdown.Toggle
+                as="button"
+                className={`custom-toggle nav-link ${
+                  location.pathname.startsWith("/logo-design") ||
+                  location.pathname.startsWith("/web-design") ||
+                  location.pathname.startsWith("/cms-development") ||
+                  location.pathname.startsWith("/digital-marketing") ||
+                  location.pathname.startsWith("/social-media-marketing") ||
+                  location.pathname.startsWith("/search-engine-optimization") ||
+                  location.pathname.startsWith("/custom-development") ||
+                  location.pathname.startsWith("/mobile-app-development")
+                    ? "active"
+                    : ""
+                }`}
+                aria-expanded="false"
               >
-                LogoDesign
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/web-design"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                Web Design
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/cms-development"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                CMS Development
-              </NavDropdown.Item>
+                Services
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/logo-design"
+                  onClick={(e) => e.stopPropagation()}
+                  target="_blank"
+                >
+                  LogoDesign
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/web-design"
+                  onClick={(e) => e.stopPropagation()}
+                  target="_blank"
+                >
+                  Web Design
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/cms-development"
+                  onClick={(e) => e.stopPropagation()}
+                  target="_blank"
+                >
+                  CMS Development
+                </NavDropdown.Item>
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/digital-marketing"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    Digital Marketing{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/social-media-marketing"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Social Media Marketing
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/search-engine-optimization"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      SEO
+                    </NavDropdown.Item>
+                  </div>
+                </div>
 
+                <NavDropdown.Item
+                  as={Link}
+                  to="/custom-development"
+                  onClick={(e) => e.stopPropagation()}
+                  target="_blank"
+                >
+                  Custom Development
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/mobile-app-development"
+                  onClick={(e) => e.stopPropagation()}
+                  target="_blank"
+                >
+                  Mobile App Development
+                </NavDropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
 
-
-
-
-
-
-
-
-               <div className="nav-subdropdown-wrapper">
-
-              <NavDropdown.Item
-                as={Link}
-                to="/digital-marketing"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                Digital Marketing{" "}
-                <span className="submenu-icon d-none d-lg-inline">
-                        <FaCaretRight />
-                      </span>
-                      <span className="submenu-icon d-inline d-lg-none">
-                        <FaCaretDown />
-                      </span>
-              </NavDropdown.Item>
-              <div className="nav-subdropdown">
-              <NavDropdown.Item
-                as={Link}
-                to="/social-media-marketing"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                Social Media Marketing
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/search-engine-optimization"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                SEO
-              </NavDropdown.Item>
-              </div>
-
-
-               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <NavDropdown.Item
-                as={Link}
-                to="/custom-development"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                Custom Development
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/mobile-app-development"
-                onClick={(e) => e.stopPropagation()}
-                target="_blank"
-              >
-                Mobile App Development
-              </NavDropdown.Item>
-              
-            </NavDropdown>
-
-            <Nav.Link as={Link} to="/pricing">
+            <Nav.Link
+              as={Link}
+              to="/pricing"
+              className={location.pathname === "/pricing" ? "active" : ""}
+            >
               PRICING
             </Nav.Link>
-            <Nav.Link as={Link} to="/portfolio">
+            <Nav.Link
+              as={Link}
+              to="/portfolio"
+              className={location.pathname === "/portfolio" ? "active" : ""}
+            >
               PORTFOLIO
             </Nav.Link>
-            <Nav.Link as={Link} to="/blog">
+            <Nav.Link
+              as={Link}
+              to="/blog"
+              className={location.pathname === "/blog" ? "active" : ""}
+            >
               BLOGS
             </Nav.Link>
             {/* <Nav.Link as={Link} to="/contact-us">

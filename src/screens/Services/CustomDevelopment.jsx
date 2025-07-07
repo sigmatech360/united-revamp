@@ -94,10 +94,10 @@ const CustomDevelopment = () => {
   return (
     <>
       <ReactHelmet
-        title="United Web Developers"
-        description={`description`}
+        title="Custom Web Development Services | United Web Developers"
+        description={`Unlock growth with expert Custom Web Development Services tailored to your brand. Get scalable, secure, and high-performing websites. Start your project now! `}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/custom-development"
+        // url="https://unitedwebdevelopers.com/custom-development"
       />
     <DefaultLayout>
       <ServicesBanner

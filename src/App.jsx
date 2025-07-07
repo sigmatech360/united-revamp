@@ -29,7 +29,7 @@ function App() {
           <button onClick={() => setShowModal(true)} className="theme-sideBtn">
           Get Free Consultations
           </button>
-          <a href="tel:6193266066" className="pageSide__iconBtn">
+          <a href="tel:+18324769672" className="pageSide__iconBtn" aria-label="Get Free Consultations">
             <BsTelephone />
           </a>
         </div>
