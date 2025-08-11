@@ -582,57 +582,57 @@ export const blogsData = [
 export const clientIndustries = [
   {
     image: boxheadicon,
-    title: "Website Design",
-    highlight: "Website",
+    title: "Conversion-Driven Website",
+    highlight: "Conversion-Driven",
     description:
       "A startup needed a sleek and professional website. We designed a modern, responsive UI that boosted engagement by 60%, with faster load times and an intuitive UX that kept visitors clicking.",
   },
   {
     image: boxheadicon,
-    title: "CMS Development",
-    highlight: "CMS",
+    title: "Smart CMS Development",
+    highlight: "Smart CMS",
     description:
       "A retail brand struggled to manage content. We built a custom WordPress CMS, giving their team full control over updates, reducing support tickets and improving publishing speed by 3x.",
   },
   {
     image: boxheadicon,
-    title: "Digital Marketing",
-    highlight: "Digital",
+    title: "Lead-Focused Marketing",
+    highlight: "Lead-Focused",
     description:
       "One client wanted more qualified leads. We built a full-funnel strategy using paid ads, content, and retargeting, resulting in a 4x increase in conversions within 90 days",
   },
   {
     image: boxheadicon,
-    title: "Social Media Marketing",
-    highlight: "Social Media",
+    title: "Targeted Social Campaigns",
+    highlight: "Targeted Social",
     description:
       "An eCommerce brand had great products but no visibility. We developed a social strategy with custom creatives and influencer partnerships, growing their audience by 15K followers in three months.",
   },
   {
     image: boxheadicon,
-    title: "Custom Web Development",
-    highlight: "Custom Web",
+    title: "Scalable Web App",
+    highlight: "Scalable",
     description:
       "A logistics firm needed a web app to track operations. We engineered a secure, scalable solution from scratch, reducing manual work and improving data access for their team.",
   },
   {
     image: boxheadicon,
-    title: "Search Engine Optimization (SEO)",
-    highlight: "Search",
+    title: "Growth with SEO",
+    highlight: "Growth",
     description:
       "A client wanted to rank their website on search engines. We helped them gain visibility using keyword research, technical fixes, and backlink building, resulting in a 150% jump in organic traffic.",
   },
   {
     image: boxheadicon,
-    title: "Logo Design",
-    highlight: "Logo",
+    title: "Bold Logo Design",
+    highlight: "Bold",
     description:
       "A new business wanted a bold brand identity. We created a custom logo and brand kit that reflected their mission, setting them apart and gaining instant recognition in a crowded market.",
   },
   {
     image: boxheadicon,
-    title: "Mobile App Development",
-    highlight: "Mobile App",
+    title: "Intuitive App Experience",
+    highlight: "Intuitive",
     description:
       "A service-based business needed a mobile app to reach users on the go. We built an intuitive, cross-platform app that improved customer engagement and boosted bookings by 40%",
   },
@@ -1655,7 +1655,7 @@ export const servicesCMSDevSupportData = [
     image: servicescmsDevsupportimg1,
     title: "Fully Responsive",
     shortDescription:
-      "Mobile optimization 50% of SEO. We ensure your websites are fully optimized for all screens so your visitors can have the best experience possible",
+      "Mobile Optimization is 50% of SEO. We ensure your websites are fully optimized for all screens so your visitors can have the best experience possible.",
   },
   {
     id: 2,
@@ -1669,7 +1669,7 @@ export const servicesCMSDevSupportData = [
     image: servicescmsDevsupportimg3,
     title: "Pre-built Templates",
     shortDescription:
-      "There are thousands of templates to choose from that are already optimized for mobile responsiveness. Our team ensure your website is developed fast and launched fast",
+      "There are thousands of templates to choose from that are already optimized for mobile responsiveness. Our team ensure your website is developed fast and launched fast.",
   },
   {
     id: 4,
@@ -1833,7 +1833,7 @@ export const webDesignGuidelinesData = [
     icon: webDesignGuideIcon5,
     name: "Responsive Layout",
     description:
-      "We build mobile-first, fully responsive websites that function perfectly across all devices",
+      "We build mobile-first, fully responsive websites that function perfectly across all devices.",
   },
   {
     id: 6,
@@ -1885,7 +1885,7 @@ export const mobileAppGuidelinesData = [
     icon: webDesignGuideIcon6,
     name: "Appealing Color Tone",
     description:
-      "We use a strategic color palette to reflect your brand identity and evoke the right emotional response in every user interaction",
+      "We use a strategic color palette to reflect your brand identity and evoke the right emotional response in every user interaction.",
   },
 ];
 

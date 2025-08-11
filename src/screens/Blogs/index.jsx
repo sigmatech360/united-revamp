@@ -21,7 +21,7 @@ const Blogs = () => {
         title="United Web Developers Blog | Insights, Tips & Trends"
         description={`Explore the United Web Developers Blog for expert web tips, digital trends, and design insights. Stay informed and grow your brand with actionable content.`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/blog"
+        baseUrl="https://unitedwebdevelopers.com/blog"
       />
     <DefaultLayout>
       <InnerBanner

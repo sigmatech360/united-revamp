@@ -55,7 +55,7 @@ import ReactHelmet from "../../components/ReactHelmet";
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We start by understanding your business goals, target audience, and brand tone. This helps us shape a social media marketing strategy that’s specific to your business.",
   },
@@ -92,7 +92,7 @@ const SocialMediaMarketing = () => {
         title="Social Media Marketing That Grows Your Brand Online"
         description={`Boost engagement, leads, and sales with expert Social Media Marketing. Get custom strategies for real growth across all platforms. Let’s grow your brand!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/search-engine-optimization"
+        baseUrl="https://unitedwebdevelopers.com/search-engine-optimization"
       />
     <DefaultLayout>
       <ServicesBanner

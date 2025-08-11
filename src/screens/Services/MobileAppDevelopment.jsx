@@ -93,7 +93,7 @@ const MobileDevelopment = () => {
         title="Mobile App Development for Scalable Business Growth"
         description={`Transform your idea into reality with expert Mobile App Development. We build custom apps that perform. Launch faster-partner with United Web Developers now!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/mobile-app-development"
+        baseUrl="https://unitedwebdevelopers.com/mobile-app-development"
       />
       <DefaultLayout footerTitle="Let Your <span class='colorYellow'>Mobile Ap</span><br/> Speak For Your Brand’s Brilliance">
         <ServicesBanner

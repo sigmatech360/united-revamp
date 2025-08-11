@@ -6,6 +6,8 @@ import footerlogocontentimgs from "../../../assets/images/footer-logo-content-im
 
 import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
+import ObfuscatedEmail from "../../ObfuscatedEmail";
+import PhoneLink from "../../PhoneLink";
 
 const companyLinks = [
   { name: "Home", path: "/" },
@@ -135,15 +137,21 @@ const Footer = ({ footerTitle }) => {
               <div className="col-xl-3 col-lg-4 col-md-4">
                 <h6 className="main-footer__links-title">Contact Us</h6>
                 <div className="main-footer__links">
-                  <a href="tel:+18324769672" className="main-footer-link">
-                    +1 (832) 476-9672
-                  </a>
-                  <a
+                  {/* <a href="tel:+13214142155" className="main-footer-link">
+                    +1 (321) 414-2155
+                  </a> */}
+                  <PhoneLink
+                    phoneNumber="+13214142155"
+                    className="main-footer-link"
+                    label="+1 (321) 414-2155"
+                  />
+                  {/* <a
                     href="mailto:support@unitedwebdevelopers.com"
                     className="main-footer-link"
                   >
                     support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
-                  </a>
+                  </a> */}
+                  <ObfuscatedEmail className="main-footer-link" />
                   <p>2114 N, Flamingo Road, Pembroke Pines, FL, 33028</p>
                 </div>
               </div>

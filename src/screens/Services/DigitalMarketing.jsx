@@ -64,7 +64,7 @@ import ReactHelmet from "../../components/ReactHelmet";
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We begin by understanding your business, goals, audience, and competitors to craft a data-backed digital marketing roadmap",
   },
@@ -101,7 +101,7 @@ const DigitalMarketing = () => {
         title="Digital Marketing Services to Grow Your Business Fast"
         description={`Boost your brand with top Digital Marketing Services Near Me. Get local SEO, PPC, social media & more from experts who drive real results. Contact us today!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/digital-marketing"
+        baseUrl="https://unitedwebdevelopers.com/digital-marketing"
       />
     <DefaultLayout>
       <ServicesBanner

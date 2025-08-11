@@ -4,8 +4,8 @@ import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 import ReactHelmet from "../../components/ReactHelmet";
-
-
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
+import PhoneLink from "../../components/PhoneLink";
 
 const PrivacyPolicy = () => {
   return (
@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
         title="United Web Developers"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/privacy-policy"
+        baseUrl="https://unitedwebdevelopers.com/privacy-policy"
       />
       <DefaultLayout>
         <InnerBanner bgImage={aboutbannerbg} title="Privacy Policy" />
@@ -23,7 +23,6 @@ const PrivacyPolicy = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-
                 <div className="privacy-policy-content">
                   <p>{`At United Web Developers, we hold the privacy of our clients in the highest regard on United Web Developers. We treat their information with the same care as our own. While we do gather information from our clients, its purpose is solely to enhance our customer services. We acknowledge our responsibility to maintain and utilize our clients’ information appropriately. We want to assure you that we never rent or sell the information provided by our clients online.`}</p>
                   <p>
@@ -71,9 +70,9 @@ const PrivacyPolicy = () => {
                     If you no longer wish to receive our newsletters and
                     promotional communications, you can opt out by following the
                     instructions provided in each communication. Alternatively,
-                    you can contact us via email at:
-                    support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com or call us at
-                    +1 (832) 476-9672.
+                    you can contact us via email at: support
+                    <span className="at"></span>unitedwebdevelopers
+                    <span className="dot"></span>com or call us at +1 (321) 414-2155
                   </p>
 
                   <h3>Social Media and Widgets</h3>
@@ -149,8 +148,7 @@ const PrivacyPolicy = () => {
 
                   <h3>Questions</h3>
                   <p>
-                    For privacy policy inquiries, contact us at +1 (832) 476-9672
-                    or support@unitedwebdevelopers.com
+                    For privacy policy inquiries, contact us at +1 (321) 414-2155 or support@unitedwebdevelopers.com
                   </p>
 
                   <div className="privacyPolicyLastDiv">
@@ -158,13 +156,19 @@ const PrivacyPolicy = () => {
                     <p>United Web Developers</p>
                     <p>
                       <span className="fw-bold">Email:</span>{" "}
-                      <a href="mailto:support@unitedwebdevelopers.com">
+                      <ObfuscatedEmail className="terms-condition-email" />
+                      {/* <a href="mailto:support@unitedwebdevelopers.com">
                         support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
-                      </a>
+                      </a> */}
                     </p>
                     <p>
                       <span className="fw-bold">Phone:</span>{" "}
-                      <a href="tel:+18324769672">+1 (832) 476-9672</a>
+                      {/* <a href="tel:+13214142155">+1 (321) 414-2155</a> */}
+                      <PhoneLink
+                        phoneNumber="+13214142155"
+                        // className="contactForm-icons-textContent"
+                        label={"+1 (321) 414-2155"}
+                      />
                     </p>
                     <p>
                       <span className="fw-bold">Website:</span>{" "}

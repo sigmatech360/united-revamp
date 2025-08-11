@@ -101,7 +101,7 @@ const LogoDesign = () => {
         title="Creative Logo Design That Defines Your Brand Identity"
         description={`Stand out with professional Creative Logo Design that reflects your brand's essence. Get custom logos crafted to inspire trust and boost recognition today`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/logo-design"
+        baseUrl="https://unitedwebdevelopers.com/logo-design"
       />
     <DefaultLayout footerTitle="Be Iconic. Start With a </br><span class='colorYellow'>Custom Logo Design</span> That Stands Out.">
       <ServicesBanner
@@ -132,12 +132,12 @@ const LogoDesign = () => {
       />
 
       <ServicePowerfullTool
-        secTitle="A Great Logo Design Creates A Legacy Of Results"
+        secTitle="A Great Logo Design Creates a Legacy of Results"
         secDescription="Logos are the face of your business; if it's right, your brand stays unforgettable. Our professional logo design team understands the psychology behind design and branding."
         toolIcon={photoshopicon}
         toolName="Logo Design"
         toolNameDesc="Whether you need a fresh identity or a logo design for a website, our approach guarantees clarity, creativity, and commercial success with every design. The numbers speak for themselves. "
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="40%"
         usage="increase in Visibility"
         rank="500+"

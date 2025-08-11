@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import AppRouter from "./Router/AppRouter";
 import { BsTelephone } from "react-icons/bs";
 import FormModal from "./components/FormModal";
+import PhoneLink from "./components/PhoneLink";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -22,20 +23,27 @@ function App() {
 
   return (
     <>
-        <AppRouter />
+      <AppRouter />
 
-
-        <div className="page-side-buttons">
-          <button onClick={() => setShowModal(true)} className="theme-sideBtn">
+      <div className="page-side-buttons">
+        <button onClick={() => setShowModal(true)} className="theme-sideBtn">
           Get Free Consultations
-          </button>
-          <a href="tel:+18324769672" className="pageSide__iconBtn" aria-label="Get Free Consultations">
+        </button>
+        {/* <a href="tel:+13214142155" className="pageSide__iconBtn">
             <BsTelephone />
-          </a>
-        </div>
+          </a> */}
+        <PhoneLink
+          phoneNumber="+13214142155"
+          className="pageSide__iconBtn"
+          label={
+            <>
+              <BsTelephone />
+            </>
+          }
+        />
+      </div>
 
-<FormModal show={showModal} handleClose={() => setShowModal(false)} />
-      
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </>
   );
 }

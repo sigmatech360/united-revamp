@@ -54,13 +54,13 @@ const GraphicDesignAgency = (props) => {
           </div>
           <div className="col-lg-6">
             {props.gfxLastTitle && (
-              <h2
+              <h3
                 className="gfxLastTitle-h3 fw-bold text-light mb-3"
                 data-aos="fade-right"
                 data-aos-delay={100}
               >
                 {props.gfxLastTitle}
-              </h2>
+              </h3>
             )}
             {Array.isArray(props.gfxLastDescription) ? (
               props.gfxLastDescription.map((para, idx) => (

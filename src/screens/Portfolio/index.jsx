@@ -22,7 +22,7 @@ const Portfolio = () => {
         title="United Web Developers Portfolio | See Our Best Work"
         description={`Explore the United Web Developers portfolio to see custom websites, eCommerce, and brand designs we've built. Discover how we can bring your vision to life!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/portfolio"
+        baseUrl="https://unitedwebdevelopers.com/portfolio"
       />
     <DefaultLayout>
       <InnerBanner
@@ -183,7 +183,7 @@ const Portfolio = () => {
                 <div className="col-lg-4 col-md-6 mb-4" key={imageIndex}>
                   <div
                     className="portfolio-content-image"
-                    style={{ backgroundImage: `url(${image.cardBG})` }}
+                    // style={{ backgroundImage: `url(${image.cardBG})` }}
                     data-aos="zoom-in"
                     data-aos-delay={imageIndex * 300}
                   >

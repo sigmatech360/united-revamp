@@ -117,15 +117,15 @@ const About = () => {
     <>
       <ReactHelmet
         title="Top Website Design & Development Company | Trusted Experts"
-        description={`Learn why United Web Developers is the Top Website Design & Development Company. Get innovative, scalable solutions tailored to grow you business today.`}
+        description="Learn why United Web Developers is the Top Website Design & Development Company. Get innovative, scalable solutions tailored to grow you business today."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/about"
+        baseUrl="https://unitedwebdevelopers.com/about"
       />
-      <DefaultLayout footerTitle='At <span class="colorYellow">United Web Developers</span>,</br> We Create A Digital Presence That Attract <br/> Leads, Clicks, And <span class="colorYellow">Cash.</span>'>
+      <DefaultLayout footerTitle='At <span class="colorYellow">United Web Developers</span>,</br> We Create a Digital Presence That Attracts, <br/> Leads, Clicks, and <span class="colorYellow">Cash.</span>'>
         <InnerBanner
           bgImage={aboutbannerbg}
           title={
-            "USA Top <span class='colorYellow'>Website Design & Development</span> Company At Your Service."
+            "USA’s Top <span class='colorYellow'>Website Design & Development</span> Company at Your Service"
           }
           width="300"
           height="385"
@@ -228,7 +228,7 @@ const About = () => {
               <div className="col-md-12">
                 <div className="sec-head">
                   <h2 data-aos="fade-up" data-aos-delay={100}>
-                    Trusted By The Industry Rulers
+                    Trusted by the Industry Rulers
                   </h2>
                   <p data-aos="fade-up" data-aos-delay={300}>
                     Don’t trust our words? Trust the beasts of digital media!
@@ -287,7 +287,7 @@ const About = () => {
                   {achievementsData.map((item, index) => (
                     <img
                       src={item.img}
-                      alt=""
+                      alt="Our achievement"
                       key={index}
                       data-aos="flip-right"
                       data-aos-delay={index * 200}

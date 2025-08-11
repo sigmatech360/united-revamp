@@ -8,6 +8,7 @@ import {
 } from "react-bootstrap";
 import { faqsData } from "../../data";
 import toast from "react-hot-toast";
+import PhoneLink from "../PhoneLink";
 
 function CustomToggle({ children, eventKey }) {
   const { activeEventKey } = useContext(AccordionContext);
@@ -182,7 +183,7 @@ const FAQSection = (props) => {
                       Select Services
                     </label>
                     <select
-                    id="serviceSelect"
+                      id="serviceSelect"
                       defaultValue="Web Development"
                       className="form-select form-control"
                       name="service_1"
@@ -224,7 +225,12 @@ const FAQSection = (props) => {
                   <div className="faqs-form-btn__div">
                     <div className="faqs-form-btn__div-content">
                       <p>Interested? Call Us Now</p>
-                      <a href="tel:+18324769672">+1 (832) 476-9672</a>
+                      {/* <a href="tel:+13214142155">+1 (321) 414-2155</a> */}
+                      <PhoneLink
+                        phoneNumber="+13214142155"
+                        // className="main-footer-link"
+                        label="+1 (321) 414-2155"
+                      />
                     </div>
                     <button
                       // onSubmit={(e)=>handleSubmit(e)}

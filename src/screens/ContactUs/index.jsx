@@ -8,6 +8,8 @@ import emailicon from "../../assets/images/email-icon.webp";
 import addressicon from "../../assets/images/address-icon.webp";
 import toast from "react-hot-toast";
 import ReactHelmet from "../../components/ReactHelmet";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
+import PhoneLink from "../../components/PhoneLink";
 
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
@@ -96,7 +98,7 @@ const ContactUs = () => {
         title="United Web Developers"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://unitedwebdevelopers.com/contact-us"
+        baseUrl="https://unitedwebdevelopers.com/contact-us"
       />
       <DefaultLayout>
         <InnerBanner
@@ -258,23 +260,29 @@ const ContactUs = () => {
                       <div className="contactForm-icon">
                         <img src={phoneicon} alt="phone icon" />
                       </div>
-                      <a
-                        href="tel:+18324769672"
+                      {/* <a
+                        href="tel:+13214142155"
                         className="contactForm-icons-textContent"
                       >
-                        +1 (832) 476-9672
-                      </a>
+                        +1 (321) 414-2155
+                      </a> */}
+                      <PhoneLink
+                        phoneNumber="+13214142155"
+                        className="contactForm-icons-textContent"
+                        label={"+1 (321) 414-2155"}
+                      />
                     </div>
                     <div className="contactForm-icons-text">
                       <div className="contactForm-icon">
                         <img src={emailicon} alt="email icon" />
                       </div>
-                      <a
+                      {/* <a
                         href="mailto:support@unitedwebdevelopers.com"
                         className="contactForm-icons-textContent"
                       >
                         support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
-                      </a>
+                      </a> */}
+                      <ObfuscatedEmail className="contactForm-icons-textContent" />
                     </div>
                     <div className="contactForm-icons-text">
                       <div className="contactForm-icon">

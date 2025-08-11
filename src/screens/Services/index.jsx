@@ -48,7 +48,7 @@ const gfxServices = [
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We begin by understanding your business goals, audience, and vision to form the foundation of your custom website design.",
   },
@@ -120,7 +120,7 @@ const Services = () => {
         title="United Web Developers | Services"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/"
+        baseUrl="https://unitedwebdevelopers.com/services"
       />
     <DefaultLayout>
       <ServicesBanner

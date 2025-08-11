@@ -95,9 +95,9 @@ const CustomDevelopment = () => {
     <>
       <ReactHelmet
         title="Custom Web Development Services | United Web Developers"
-        description={`Unlock growth with expert Custom Web Development Services tailored to your brand. Get scalable, secure, and high-performing websites. Start your project now! `}
+        description="Unlock growth with expert Custom Web Development Services tailored to your brand. Get scalable, secure, and high-performing websites. Start your project now!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/custom-development"
+        baseUrl="https://unitedwebdevelopers.com/custom-development"
       />
     <DefaultLayout>
       <ServicesBanner
@@ -146,7 +146,7 @@ const CustomDevelopment = () => {
       />
 
       <AdobePhotoshopSec
-        secTitle="Get A Glimpse of Our Custom Websites"
+        secTitle="Get a Glimpse of Our Custom Website"
         secTitleDescription="Trust isn’t built with words only. Visit our portfolio and see how we have helped businesses get a unique brand presence with custom websites that are made to meet unique requirements."
         secSubTitle="Custom Web Development"
         secSubTitleDescription="This portfolio showcases the best of our <span class='colorYellow'>Custom Web Development</span> services and shows how we add different features and details for personalization."
@@ -197,7 +197,7 @@ const CustomDevelopment = () => {
       />
 
       <BlogsSec
-        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSecTitle="Discover the Recent Trends and Insights in our Blogs!"
         blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
         // blogsData={blogsData}
         categorySlug="custom-website-development"

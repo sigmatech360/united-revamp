@@ -23,7 +23,7 @@ const ServicesBanner = (props) => {
             src={props.bgImage}
             alt="Services Banner Img"
             className="services-banner-sec-bgImg"
-            fetchpriority="high"
+            fetchPriority="high"
             width="1920"
             height="1080"
           />
@@ -103,7 +103,7 @@ const ServicesBanner = (props) => {
                     src={props.servicesbannerimg}
                     className="img-fluid"
                     alt={props.title}
-                    fetchpriority="high"
+                    fetchPriority="high"
                     width={"336"}
                     height={"277"}
                   />

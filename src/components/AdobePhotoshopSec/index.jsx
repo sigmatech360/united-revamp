@@ -35,7 +35,7 @@ const AdobePhotoshopSec = (props) => {
             <div className="col-lg-4 col-md-6 mb-4" key={index}>
               <div
                 className="portfolio-content-image"
-                style={{ backgroundImage: `url(${item.cardBG})` }}
+                // style={{ backgroundImage: `url(${item.cardBG})` }}
                 data-aos="zoom-in"
                 data-aos-delay={index * 200}
               >

@@ -13,7 +13,7 @@ const MainBanner = ({openModal}) => {
             src={mainbannerbg}
             alt="United Web Developer Banner Background"
             className="services-banner-sec-bgImg"
-            fetchpriority="high"
+            fetchPriority="high"
             width="1920"
             height="1080"
           />
@@ -22,8 +22,7 @@ const MainBanner = ({openModal}) => {
             <div className="col-xxl-7 col-xl-8 col-lg-9">
               <div className="main-banner__content">
                 <h1 data-aos="fade-up" data-aos-delay="100">
-                  Empowering Growth With Custom Web Design & Development
-                  Solutions!
+                  Empowering Growth with Custom Web Design & Development Solutions!
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="300">
                   We are a modern digital agency that blends creativity with
@@ -56,7 +55,7 @@ const MainBanner = ({openModal}) => {
                 >
                   <img
                     src={mainbannerimgs}
-                    fetchpriority="high"
+                    fetchPriority="high"
                     width="360"
                     height="61"
                     className="img-fluid"

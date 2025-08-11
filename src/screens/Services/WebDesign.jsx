@@ -58,7 +58,7 @@ import ReactHelmet from "../../components/ReactHelmet";
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We begin by understanding your business goals, audience, and vision to form the foundation of your custom website design.",
   },
@@ -95,7 +95,7 @@ const WebDesign = () => {
         title="Affordable Web Design Services | United Web Developers"
         description={`Discover Professional Web Design Services | United Web Developers. Enhance your online presence with custom web designs. Get started with us today!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/web-design"
+        baseUrl="https://unitedwebdevelopers.com/web-design"
       />
     <DefaultLayout>
       <ServicesBanner
@@ -133,7 +133,7 @@ const WebDesign = () => {
         toolIcon={photoshopicon}
         toolName="Website Design"
         toolNameDesc="From banner layouts and UI components to responsive website designs, our skilled team leverages Photoshop to meet complex website design needs with pixel-perfect accuracy."
-        toolDesignerAvailable="2 Photoshop designers are available for hiring"
+        // toolDesignerAvailable="2 Photoshop designers are available for hiring"
         usagePercent="98%"
         usage="Success Rate"
         rank="500+"
@@ -164,7 +164,7 @@ const WebDesign = () => {
       />
 
       <WebDesignSupportSec
-        secTitle="Your Full-Service Web Design Agency For Attractive Illustrations"
+        secTitle="Your Full-Service Web Design Agency for Attractive Illustrations"
         secTitleDescription="From custom designs to dedicated support, we are an experienced website design company that takes care of all your project requirements, with ease."
         webDesignSupport={servicesWebDesignSupportData}
       />

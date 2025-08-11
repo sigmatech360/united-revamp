@@ -3,8 +3,8 @@ import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 import aboutbannerbg from "../../assets/images/about-banner-bg.webp";
 import ReactHelmet from "../../components/ReactHelmet";
-
-
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
+import PhoneLink from "../../components/PhoneLink";
 
 const TermsAndConditions = () => {
   return (
@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
         title="United Web Developers"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/terms-and-conditions"
+        baseUrl="https://unitedwebdevelopers.com/terms-and-conditions"
       />
       <DefaultLayout>
         <InnerBanner bgImage={aboutbannerbg} title="Terms & Conditions" />
@@ -22,7 +22,6 @@ const TermsAndConditions = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-
                 <div className="privacy-policy-content">
                   <p>
                     Before placing an order, United Web Developers urge all
@@ -304,7 +303,7 @@ const TermsAndConditions = () => {
 
                   <ul>
                     {[
-                      "Contacting our Toll-Free Number: +1 (832) 476-9672",
+                      "Contacting our Toll-Free Number: +1 (321) 414-2155",
                       "Engaging in a Live Chat session. Click here to initiate the chat or send us an email.",
                       "We will promptly respond and begin the necessary analysis upon receiving your refund request. Once completed, the refund process will be initiated.",
                       "Please be aware that after the refund is issued, you will no longer retain any rights to the designs or materials submitted by United Web Developers. The relevant information will be submitted to the Government Copyright Agencies to ensure compliance with legal requirements.",
@@ -404,8 +403,9 @@ const TermsAndConditions = () => {
 
                   <p>
                     For effective communication, we urge you to exclusively use
-                    the following contact details:
-                    support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com and the official numbers
+                    the following contact details: support
+                    <span className="at"></span>unitedwebdevelopers
+                    <span className="dot"></span>com and the official numbers
                     provided on our website. We take no responsibility for any
                     communication via other platforms or unauthorized contact
                     details not provided. We highly recommend utilizing our
@@ -509,15 +509,25 @@ const TermsAndConditions = () => {
                     {[
                       "Chat – Engage in real-time conversation with our support team.",
                       "support@unitedwebdevelopers.com – Contact us via email for prompt assistance.",
-                      "+1 (832) 476-9672 – Call our Toll-Free number to speak directly with our representatives.",
+                      "+1 (321) 414-2155 – Call our Toll-Free number to speak directly with our representatives.",
                     ].map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul> */}
                   <ul>
-                    <li>Chat – Engage in real-time conversation with our support team.</li>
-                    <li>support<span className="at"></span>unitedwebdevelopers<span className="at"></span>com – Contact us via email for prompt assistance.</li>
-                    <li>+1 (832) 476-9672 – Call our Toll-Free number to speak directly with our representatives.</li>
+                    <li>
+                      Chat – Engage in real-time conversation with our support
+                      team.
+                    </li>
+                    <li>
+                      support<span className="at"></span>unitedwebdevelopers
+                      <span className="at"></span>com – Contact us via email for
+                      prompt assistance.
+                    </li>
+                    <li>
+                      +1 (321) 414-2155 – Call our Toll-Free number to speak
+                      directly with our representatives.
+                    </li>
                   </ul>
 
                   <p>
@@ -573,13 +583,19 @@ const TermsAndConditions = () => {
                     <p>United Web Developers</p>
                     <p>
                       <span className="fw-bold">Email:</span>{" "}
-                      <a href="mailto:support@unitedwebdevelopers.com">
+                      <ObfuscatedEmail className="terms-condition-email" />
+                      {/* <a href="mailto:support@unitedwebdevelopers.com">
                         support<span className="at"></span>unitedwebdevelopers<span className="dot"></span>com
-                      </a>
+                      </a> */}
                     </p>
                     <p>
                       <span className="fw-bold">Phone:</span>{" "}
-                      <a href="tel:+18324769672">+1 (832) 476-9672</a>
+                      {/* <a href="tel:+13214142155">+1 (321) 414-2155</a> */}
+                      <PhoneLink
+                        phoneNumber="+13214142155"
+                        // className="contactForm-icons-textContent"
+                        label={"+1 (321) 414-2155"}
+                      />
                     </p>
                     <p>
                       <span className="fw-bold">Website:</span>{" "}

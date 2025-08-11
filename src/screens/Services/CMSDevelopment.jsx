@@ -42,7 +42,7 @@ import WebDesignGuidelines from "../../components/WebDesignGuidelines";
 //   { title: "App & Plugin Integration", img: gfxcontentwriting },
 // ];
 const gfxServices = [
-  { title: "Drag-and-Drop Edito", img: Draganddropedito },
+  { title: "Drag-and-Drop Edits", img: Draganddropedito },
   { title: "Responsive Templates", img: responsivetemplates },
   { title: "Built-in SEO Tools", img: SeoTools },
   { title: "App & Plugin Integration", img: AppAndPlugin },
@@ -64,7 +64,7 @@ import ReactHelmet from "../../components/ReactHelmet";
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We gather your goals, website needs, and plugin integrations to define the right CMS development approach for your brand",
   },
@@ -101,7 +101,7 @@ const CMSDevelopment = () => {
         title="Best CMS Website Development Company | United Web Developers"
         description={`Partner with the Best CMS Website Development Company to build scalable, user-friendly websites. Get tailored solutions that drive results. Let’s get started!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/cms-development"
+        baseUrl="https://unitedwebdevelopers.com/cms-development"
       />
     <DefaultLayout>
       <ServicesBanner
@@ -117,7 +117,7 @@ const CMSDevelopment = () => {
 
       <ServicesAboutSec
         image={servicesaboutimg}
-        title="Custom Website Development For Growth And Performance"
+        title="CMS Website Development for Growth and Performance"
         description="A flexible and scalable website development service empowers businesses to manage digital content with efficiency, effectiveness, and speed. We develop and deploy full-cycle CMS website development services, including Shopify development, Magento Development, Wix Development, WooCommerce Development, Big Commerce Development, and WordPress Development."
         cta1="Click to Know More"
         cta1Link="/pricing"
@@ -137,7 +137,7 @@ const CMSDevelopment = () => {
       />
 
       <ServicePowerfullTool
-        secTitle="Modern Tech For Powerful CMS "
+        secTitle="Modern Tech for Powerful CMS "
         secDescription="We employ modern technologies to build efficient websites that allow greater content control and improved digital strategy. Our websites are fast, easy to navigate, user-friendly, and, most importantly, mobile-optimized."
         toolIcon={photoshopicon}
         toolName="CMS Development"
@@ -151,7 +151,7 @@ const CMSDevelopment = () => {
       />
 
       <AdobePhotoshopSec
-        secTitle="Our Experience In CMS Builders Is Unmatched"
+        secTitle="Our Experience in CMS Builders is Unmatched"
         secTitleDescription="We love to create websites that are optimized for today's digital world: Fast, Responsive, and Optimized"
         secSubTitle="CMS Development At Its Finest"
         secSubTitleDescription="Choose United Web Developers for website development that gives your business an edge over your competitors. Our experienced team delivers scalable, secure CMS websites that are optimized for performance."
@@ -183,7 +183,7 @@ const CMSDevelopment = () => {
       <ClientTestimonialSec
         className="bgDark"
         title="Real Feedback, With Results"
-        description="Our clients’ satisfaction is the ultimate measure of success for us. We take immense pride in delivering exceptional website development services in multiple platforms. Here's what our valued customers have to say about working with one of the top-rated website development companies US"
+        description="Our clients’ satisfaction is the ultimate measure of success for us. We take immense pride in delivering exceptional website development services in multiple platforms. Here's what our valued customers have to say about working with one of the top-rated website development companies US:"
         testimonialData={cmsTestimoialData}
       />
 
@@ -203,7 +203,7 @@ const CMSDevelopment = () => {
       />
 
       <BlogsSec
-        blogSecTitle="Discover The Recent Trends And Insights In Our Blogs!"
+        blogSecTitle="Discover the Recent Trends and Insights in Our Blogs!"
         blogSubtext="Stay in touch with what the world’s doing, learn new skills and facts, and engage with our experts on our blogs"
         // blogsData={blogsData}
         categorySlug="wordpress-development"

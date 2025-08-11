@@ -463,6 +463,7 @@ p {
 .graphic-design-agency .sec-head p {
   font-size: 16px;
   max-width: 880px;
+  margin: 0 auto;
 }
 
 .gfx-card__content {
@@ -1495,6 +1496,10 @@ p {
   border-radius: 16px;
 }
 
+.contactForm-details span.contactForm-icons-textContent {
+  cursor: pointer;
+}
+
 .contact-form-information {
   height: 100%;
   background-color: #191919;
@@ -1582,27 +1587,30 @@ p {
 }
 
 .portfolio-content-image {
+  /* background-image: unset !important;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   border-radius: 16px;
-  padding: 60px 10px;
+  /* padding: 60px 10px; */
   max-width: 360px;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
+  /* background-color: hsl(68.71deg 100% 50%); */
 }
 
 .portfolio-content-image img {
-  width: 340px;
+  /* width: 340px;
   object-fit: contain;
   object-position: center;
-  height: 290px;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  height: 290px; */
+  max-width: 100%;
+  transition: transform 0.4s ease;
 }
 
 .portfolio-content-image:hover img {
   transform: scale(1.3) rotate(1deg);
-  filter: brightness(1.1) contrast(1.05);
+  /* filter: brightness(1.1) contrast(1.05); */
 }
 
 .portfolio-content-row {
@@ -1966,10 +1974,12 @@ p {
   margin-bottom: 10px !important;
 }
 
-.privacy-policy-content p a {
+.privacy-policy-content p a,
+.privacy-policy-content p .terms-condition-email {
   color: #031243;
   text-decoration: none;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .privacy-policy-content p {
@@ -2188,7 +2198,8 @@ p {
 }
 
 .adobe-photoshop__sec {
-  padding: 120px 0 60px;
+  /* padding: 120px 0 60px; */
+  padding: 160px 0 60px;
   background-image: url(assets/images/adobe-photo-sec-bg.webp);
   background-size: cover;
   background-position: top center;
@@ -2211,9 +2222,9 @@ p {
   margin: 0 auto;
 }
 
-.adobe-photoshop__sec {
+/* .adobe-photoshop__sec {
   padding: 120px 0 60px;
-}
+} */
 
 .adobe-photoshop__sec .sec-head {
   text-align: center;
@@ -2608,6 +2619,7 @@ p {
   transition: all 0.3s ease;
   width: fit-content;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .main-footer-link::after {
@@ -2722,8 +2734,17 @@ p {
   height: auto;
 }
 
+.pricing-banner-sec {
+  min-height: 393px;
+}
+
 /* Media quries */
 
+@media (max-width: 1600px) {
+  .adobe-photoshop__sec {
+    padding: 140px 0 60px;
+  }
+}
 @media (max-width: 1399px) {
   .our-work-process__item:not(:last-child) .our-work-process-title::after {
     width: 76%;
@@ -2789,6 +2810,9 @@ p {
 }
 
 @media (max-width: 1199px) {
+   .adobe-photoshop__sec {
+    padding: 120px 0 60px;
+  }
   .client-testimonial__content-quote {
     min-height: 180px;
     font-size: 15px;
@@ -2951,10 +2975,10 @@ p {
     font-size: 14px;
   }
 
-  .portfolio-content-image img {
+  /* .portfolio-content-image img {
     width: 270px;
     height: 270px;
-  }
+  } */
 
   .one-stop-web__box {
     padding: 16px 16px;
@@ -2983,10 +3007,6 @@ p {
 
   .web-design__guidelines-box h4 {
     font-size: 24px;
-  }
-
-  .portfolio-content-image {
-    padding: 40px 10px;
   }
 
   .web-designing__support-box-content {
@@ -3438,16 +3458,10 @@ p {
     content: unset;
   }
 
-  .portfolio-content-image img {
-    /* width: 340px;
-    height: 270px; */
+  /* .portfolio-content-image img {
     width: 480px;
     height: 400px;
-  }
-
-  .portfolio-content-image {
-    max-width: 100%;
-  }
+  } */
 
   .portfolio-content-title {
     text-align: center;
@@ -3626,17 +3640,16 @@ p {
     background: unset;
   }
 
-  .portfolio-content-image {
-    max-width: 360px;
-  }
-
-  .portfolio-content-image img {
+  /* .portfolio-content-image img {
     width: 270px;
     height: 270px;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
+  .pricing-banner-sec {
+    min-height: 356px;
+  }
   .graphic-design-agency .sec-head .sec-head-tag {
     width: unset;
   }
@@ -3912,6 +3925,9 @@ p {
   }
   .main-footer {
     min-height: 1302px;
+  }
+  .pricing-banner-sec {
+    min-height: 393px;
   }
 }
 

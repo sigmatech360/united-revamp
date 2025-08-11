@@ -91,7 +91,7 @@ const SEO = () => {
         title="Search Engine Optimization That Grows Your Business Fast"
         description={`Boost visibility and traffic with expert Search Engine Optimization. Get custom SEO strategies that deliver real results. Rank higher-start growing today!`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/search-engine-optimization"
+        baseUrl="https://unitedwebdevelopers.com/search-engine-optimization"
       />
     <DefaultLayout footerTitle="Higher Visibility, Higher Traffic, & Higher Rankings. </br>We Make It <span class='colorYellow'>Easy For You.</span>">
       <ServicesBanner
@@ -129,7 +129,7 @@ const SEO = () => {
         toolName="Search Engine Optimization"
         toolNameDesc="Our Search Engine Optimization Marketing isn't only a promise; we bring results that you can count on! Our clients experience increased visibility, better traffic, and ultimately a higher ROI. We work with you to boost your digital presence effectively"
         // toolDesignerAvailable="2 Photoshop designers are available for hiring"
-        usagePercent="95%%"
+        usagePercent="95%"
         usage="Retention rate"
         rank="200+"
         highlightText="Successful SEO campaigns"

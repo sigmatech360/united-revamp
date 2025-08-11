@@ -48,7 +48,9 @@ import testimonialimg4 from "../../assets/images/testimonial-img4.webp";
 import testimonialimg5 from "../../assets/images/testimonial-img5.webp";
 import testimonialimg6 from "../../assets/images/testimonial-img6.webp";
 import testimonialimg8 from "../../assets/images/testimonial-img8.webp";
+import testimonialimg9 from "../../assets/images/testimonial-img9.webp";
 import ReactHelmet from "../../components/ReactHelmet";
+import PhoneLink from "../../components/PhoneLink";
 
 const gfxServices = [
   { title: "Logo Design", img: gfxlogo },
@@ -66,7 +68,7 @@ const gfxLastDescription = [
 const stepsData = [
   {
     stepNum: "01",
-    stepName: "Breaf",
+    stepName: "Brief",
     stepDescription:
       "We start by understanding your vision, goals, and audience. No assumptions, just clear communication with the client.",
   },
@@ -191,7 +193,7 @@ export const homeClientTestimonialData = [
   {
     id: 6,
     name: "Cassondra",
-    image: testimonialimg,
+    image: testimonialimg9,
     address: "United States",
     // designation: "Businessman",
     quote:
@@ -223,9 +225,9 @@ const Home = () => {
     <>
       <ReactHelmet
         title="Custom Web Design and Development for Stunning Sites"
-        description={`Custom Web Design and Development that drives results. Get a stunning, fast, and user-friendly website tailored to your brand. Let’s build success!`}
+        description="Custom Web Design and Development that drives results. Get a stunning, fast, and user-friendly website tailored to your brand. Let’s build success!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://unitedwebdevelopers.com/"
+        baseUrl="https://unitedwebdevelopers.com/"
       />
       <DefaultLayout
         footerTitle='Providing <span class="colorYellow">Smart Digital</span>
@@ -285,12 +287,17 @@ const Home = () => {
                       >
                         Get Started
                       </button>
-                      <a
-                        href="tel:+18324769672"
+                      {/* <a
+                        href="tel:+13214142155"
                         className="theme-btn theme-btn__yellow"
                       >
                         Call Us Now
-                      </a>
+                      </a> */}
+                      <PhoneLink
+                        phoneNumber="+13214142155"
+                        className="theme-btn theme-btn__yellow"
+                        label="Call Us Now"
+                      />
                     </div>
                   </div>
                 </div>
@@ -301,7 +308,7 @@ const Home = () => {
 
         <GraphicDesignAgency
           secTag="Leading Design & Development Agency"
-          secTitle="Unlock A World of Digital Possibilities"
+          secTitle="Unlock a World Full of Digital Possibilities"
           secHeadDescription="Our digital experts are on a mission to deliver stellar digital solutions to brands across the globe, combining visionary creativity with smart development strategies that truly make an impact."
           // viewAllServices
           gfxServices={gfxServices}
@@ -316,7 +323,7 @@ const Home = () => {
                 <div className="sec-head">
                   <p className="sec-head-tag label-yellow-bg">PORTFOLIO</p>
                   <h2 data-aos="fade-up" data-aos-delay={100}>
-                    Your Partner In All Things Digital
+                    Your Partner in All Things Digital
                   </h2>
                   <p data-aos="fade-up" data-aos-delay={300}>
                     Our portfolio is filled with the bold, custom digital
@@ -449,7 +456,7 @@ const Home = () => {
                     Bespoke Solutions For You
                   </p>
                   <h2 data-aos="fade-right" data-aos-delay={100}>
-                    A Digital Company To Take You Ahead
+                    A Digital Company to Take You Ahead
                   </h2>
                   <p data-aos="fade-right" data-aos-delay={300}>
                     We grow when our clients grow. Our success is rooted in the
@@ -488,7 +495,7 @@ const Home = () => {
 
         <FAQSection
           secHeadrag="FREQUENTLY ASKED QUESTIONS"
-          title="We’ve Got All The Answers To Your Questions"
+          title="We’ve Got All the Answers to Your Questions"
           description="From how we build custom websites to what makes our design process different, here are the answers to the questions we hear the most."
           faqsQA={faqsData}
         />

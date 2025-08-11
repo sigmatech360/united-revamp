@@ -13,7 +13,7 @@ const InnerBanner = (props) => {
             src={props.bgImage}
             alt="Inner Banner Img"
             className="services-banner-sec-bgImg"
-            fetchpriority="high"
+            fetchPriority="high"
             width="1920"
             height="1080"
           />
