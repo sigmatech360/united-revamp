@@ -37,7 +37,6 @@ const FormModal = ({ show, handleClose }) => {
       });
 
       const result = await response.json();
-      console.log(result);
       // alert("Form Submitted Successfully");
 
       if (result.status) {
@@ -59,7 +58,7 @@ const FormModal = ({ show, handleClose }) => {
         });
       }
     } catch (error) {
-      console.log(`Error submitting form:`, error);
+      // console.log(`Error submitting form:`, error);
       // alert("Submission failed. Please try again.");
       //   toast.error("Submission failed. Please try again.");
       toast.error(error.message);

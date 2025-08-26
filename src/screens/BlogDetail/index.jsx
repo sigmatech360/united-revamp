@@ -16,8 +16,6 @@ const BlogDetail = () => {
   const [relatedPosts, setRelatedPosts] = useState([]);
   const [relatedPostsLoading, setRelatedPostsLoading] = useState(false);
 
-  console.log("relatedPosts", relatedPosts);
-
   const fetchPostBySlug = async () => {
     try {
       const response = await axios.get(
@@ -25,7 +23,7 @@ const BlogDetail = () => {
       );
       const postData = response.data[0];
       if (!postData) {
-        console.log("Post not found");
+        // console.log("Post not found");
         return;
       }
 

@@ -12,9 +12,6 @@ const BlogCategoriesSec = () => {
   const [categories, setCategories] = useState([]);
   const [categoryBlogs, setCategoryBlogs] = useState({});
 
-  console.log("categories", categories);
-  console.log("categoryBlogs", categoryBlogs);
-
   const fetchCategoryBlogs = async () => {
     try {
       setIsLoading(true);
@@ -46,6 +43,7 @@ const BlogCategoriesSec = () => {
     }
   };
 
+
   useEffect(() => {
     fetchCategoryBlogs();
   }, []);
@@ -60,7 +58,7 @@ const BlogCategoriesSec = () => {
                 <Loader />
               </div>
             ) : (
-              categories.map((category) => { 
+              categories.map((category) => {
                 const blogs = categoryBlogs[category.slug] || [];
 
                 if (blogs.length === 0) return null;

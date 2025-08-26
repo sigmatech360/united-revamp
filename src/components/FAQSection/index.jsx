@@ -64,7 +64,6 @@ const FAQSection = (props) => {
       });
 
       const result = await response.json();
-      console.log(result);
       // alert("Form Submitted Successfully");
       // toast.success("Form Submitted Successfully");
       // setFormData({
