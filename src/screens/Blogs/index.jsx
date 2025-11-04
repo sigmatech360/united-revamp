@@ -11,7 +11,7 @@ import singlecategoriesblogimg from "../../assets/images/single-categories-blog-
 import { MdDateRange } from "react-icons/md";
 import BlogCategoriesSec from "../../components/BlogCategoriesSec";
 import ReactHelmet from "../../components/ReactHelmet";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import BlogCategoriesCard from "../../components/BlogCategoriesCard";
 import Loader from "../../components/Loader";
@@ -20,32 +20,57 @@ const Blogs = () => {
   const baseURL = import.meta.env.VITE_WP_BASE_URL;
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [isSearched, setIsSearched] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [searchTrigger, setSearchTrigger] = useState(0);
 
-  const handleSearch = async () => {
+  useEffect(() => {
+    const delayDebounce = setTimeout(() => {
+      if (searchTerm.trim() === "") {
+        setSearchResults([]);
+        setError("");
+        setIsSearched(false);
+        return;
+      }
+      console.log("searching", searchTerm);
+      setIsSearched(true);
+
+      // handleSearch();
+    }, 600); // 600ms debounce
+
+    return () => clearTimeout(delayDebounce);
+  }, [searchTerm]);
+
+  // const handleSearch = async () => {
+  //   if (!searchTerm.trim()) return;
+  //   setLoading(true);
+  //   setError("");
+
+  //   try {
+  //     const res = await axios.get(
+  //       `${baseURL}/posts?search=${encodeURIComponent(searchTerm)}&_embed`
+  //     );
+
+  //     // Filter posts where title includes search term
+  //     const filteredResults = res.data.filter((post) =>
+  //       post.title.rendered.toLowerCase().includes(searchTerm.toLowerCase())
+  //     );
+
+  //     // setSearchResults(res.data);
+  //     setSearchResults(filteredResults);
+  //   } catch (err) {
+  //     console.error(err);
+  //     setError("Failed to fetch blogs.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  const handleSearch = () => {
     if (!searchTerm.trim()) return;
-    setLoading(true);
-    setError("");
-
-    try {
-      const res = await axios.get(
-        `${baseURL}/posts?search=${encodeURIComponent(searchTerm)}&_embed`
-      );
-
-      // Filter posts where title includes search term
-      const filteredResults = res.data.filter((post) =>
-        post.title.rendered.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-
-      // setSearchResults(res.data);
-      setSearchResults(filteredResults);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to fetch blogs.");
-    } finally {
-      setLoading(false);
-    }
+    setIsSearched(true);
+    setSearchTrigger((prev) => prev + 1); // 🔹 har click pe increment hoga
   };
 
   return (
@@ -83,11 +108,11 @@ const Blogs = () => {
                       id="searchBlog"
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter") {
-                          handleSearch();
-                        }
-                      }}
+                      // onKeyDown={(e) => {
+                      //   if (e.key === "Enter") {
+                      //     handleSearch();
+                      //   }
+                      // }}
                     />
                     <button
                       className=" theme-btn__yellow"
@@ -105,6 +130,7 @@ const Blogs = () => {
         </section>
 
         {/* Results */}
+        {/* 
         <section className="search-results mt-4">
           <div className="container">
             {loading && (
@@ -142,12 +168,14 @@ const Blogs = () => {
                       </>
                     );
                   })
-                : !loading}
+                : !loading  }
             </div>
           </div>
         </section>
+        {!loading && searchResults.length === 0 && <BlogCategoriesSec />}
+        */}
 
-        <BlogCategoriesSec />
+        <BlogCategoriesSec searchTerm={searchTerm} isSearched={isSearched} searchTrigger={searchTrigger}  />
       </DefaultLayout>
     </>
   );

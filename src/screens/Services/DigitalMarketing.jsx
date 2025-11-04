@@ -170,7 +170,7 @@ We make social media work for you by offering solutions at every stage of your m
 
       {/* <OneStopWebSec
         secTitle="Your One-Stop Website Design Agency"
-        secDescription="At Logo Poppin, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
+        secDescription="At United Web Developers, we make sure to deliver website services that suit right according to your brand image, making us a dedicated web design agency for you."
         image={oneStopWebImg}
         boxesData={oneStopWebBoxesData}
       /> */}

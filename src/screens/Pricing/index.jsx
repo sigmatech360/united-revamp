@@ -35,7 +35,7 @@ const Pricing = () => {
             className="pricing-banner-sec"
             bgImage={aboutbannerbg}
             title="Unlock Your Brand's Potential With Custom Design Packages"
-            description="Experience tailored graphic design solutions that elevate your brand, with custom packages and transparent pricing from Logo Poppin."
+            description="Experience tailored graphic design solutions that elevate your brand, with custom packages and transparent pricing from United Web Developers."
           />
           <section className="pricing-sec">
             <div className="container">
