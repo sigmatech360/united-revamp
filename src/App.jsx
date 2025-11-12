@@ -10,6 +10,7 @@ import AppRouter from "./Router/AppRouter";
 import { BsTelephone } from "react-icons/bs";
 import FormModal from "./components/FormModal";
 import PhoneLink from "./components/PhoneLink";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
       <AppRouter />
-
+        <ToastContainer />
       <div className="page-side-buttons">
         <button onClick={() => setShowModal(true)} className="theme-sideBtn">
           Get Free Consultations

@@ -148,6 +148,62 @@ const Header = () => {
               </Dropdown.Menu>
             </Dropdown>
 
+
+             <Dropdown id="services-dropdown">
+              <Dropdown.Toggle
+                as="button"
+                className={`custom-toggle nav-link ${
+                  location.pathname.startsWith("/logo-design") ||
+                  location.pathname.startsWith("/web-design") ||
+                  location.pathname.startsWith("/cms-development") ||
+                  location.pathname.startsWith("/digital-marketing") ||
+                  location.pathname.startsWith("/social-media-marketing") ||
+                  location.pathname.startsWith("/search-engine-optimization") ||
+                  location.pathname.startsWith("/custom-development") ||
+                  location.pathname.startsWith("/mobile-app-development")
+                    ? "active"
+                    : ""
+                }`}
+                aria-expanded="false"
+              >
+                Locations
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as={"button"}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Florida{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/app-development-florida"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/wordpress-development-florida"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Wordpress Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <Nav.Link
               as={Link}
               to="/pricing"

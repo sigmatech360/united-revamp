@@ -42,6 +42,7 @@ const ServicesBanner = (props) => {
                   // data-aos-delay={300}
                   dangerouslySetInnerHTML={{ __html: props.description }}
                 ></p>
+                {props.descriptiontwo && <p>{props.descriptiontwo}</p>}
                 <div
                   className="main-banner__content-btns"
                   // data-aos="fade-right"

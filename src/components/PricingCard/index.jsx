@@ -1,31 +1,51 @@
 import React from "react";
 
-const PricingCard = (props) => {
+const PricingCard = ({
+  index = 0,
+  price = "",
+  discountPrice = "",
+  title = "",
+  features = [],
+  onClick = () => {},
+}) => {
   return (
     <div
       className="pricing-card"
       data-aos="fade-up"
-      data-aos-delay={props.index * 300}
+      data-aos-delay={index * 300}
     >
+      {/* Header */}
       <div className="pricing-card__header">
         <div className="pricing-card__header-priceDiv">
-          <h5 className="pricing-card__header-price">${props?.price}</h5>
-          <h5 className="pricing-card__header-price-discount">
-            ${props?.discountPrice}
-          </h5>
+          {price && <h5 className="pricing-card__header-price">${price}</h5>}
+          {discountPrice && (
+            <h5 className="pricing-card__header-price-discount">
+              ${discountPrice}
+            </h5>
+          )}
         </div>
-        <h4 className="pricing-card__header-head">{props?.title}</h4>
+        {title && <h4 className="pricing-card__header-head">{title}</h4>}
         <p className="pricing-card__header-per-project">Per Project</p>
       </div>
+
+      {/* Body */}
       <div className="pricing-card__body">
-        <ul>
-          {props?.features.map((feature, i) => (
-            <li key={i}>{feature}</li>
-          ))}
-        </ul>
+        {Array.isArray(features) && features.length > 0 ? (
+          <ul>
+            {features.map((feature, i) => (
+              <li key={i}>{feature}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="no-features-text">No features listed</p>
+        )}
       </div>
 
-      <button className="pricing-card__footer" onClick={props.onClick}>Choose Plan</button>
+      {/* Footer */}
+      <button className="pricing-card__footer" onClick={onClick}>
+        Choose Plan
+      </button>
+      
     </div>
   );
 };

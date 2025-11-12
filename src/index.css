@@ -2738,6 +2738,472 @@ p {
   min-height: 393px;
 }
 
+
+/************* Location Pages CSS Start *************/
+
+
+.app-florida-herobanner .main-banner__content-imgs img {
+    display: none;
+}
+
+.app-florida-herobanner .services-banner-sec-bgImg {
+  min-height: 100% !important;
+}
+
+.app-florida-herobanner .main-banner__content-imgs img {
+    display: none;
+}
+
+.app-florida-herobanner .services-banner__content p {
+    margin: 20px 0px 20px 0px;
+}
+
+.app-florida-herobanner {
+    padding: 220px 0px 180px 0px;
+    background: transparent;
+}
+
+.app-florida-herobanner .services-banner__content .main-banner__content-btns .theme-btn.theme-btn__yellow {
+    margin: 20px 0px 0px 0px;
+}
+
+.app-florida-herobanner .services-banner__content .main-banner__content-btns .theme-btn-hover {
+    display: none;
+}
+
+
+section.location-choose-sec {
+    padding: 100px 0px 100px 0px;
+}
+
+.location-choose-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+    position: relative;
+    z-index: 999;
+}
+
+.location-choose-head h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+.location-choose-head h2 {
+    font-size: 50px;
+    color: #191919;
+    font-weight: bold;
+}
+
+.location-choose-head p {
+    color: #191919;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-choose-img img {
+    width: 100%;
+}
+
+.pixel-perfect-sec {
+  background: url(./assets/images/locationpages/app-development-florida/portfolio-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 110px 0px 60px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.pixel-perfect-head {
+  color: #fff;
+  margin: 0px 0px 40px 0px !important;
+}
+
+.pixel-perfect-sec .news-card-img img {
+    height: auto;
+}
+
+.pixel-perfect-head h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.pixel-perfect-head h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px !important;
+}
+
+section.tabs-pricing-sec {
+    padding: 70px 0px;
+}
+
+.tabs-pricing-head h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.tabs-pricing-head h2 {
+    color: #191919;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.tabs-pricing-head p {
+    color: #161515;
+}
+
+.tabs-pricing-head {
+    margin: 0px 0px 30px 0px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list{
+    border: none;
+    background: #191919;
+    border-radius: 50px;
+    color: #fff;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0 auto 40px !important;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list  .react-tabs__tab {
+  padding: 10px 25px;
+  font-weight: 500;
+}
+
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+    background: #d7ff00;
+    border: none;
+    border-radius: 20px;
+    top: 0px;
+}
+
+
+.dynamic-pricing-tabs .pricing-card {
+    color: #fff;
+}
+
+
+.dynamic-pricing-tabs .pricing-card__footer {
+    font-weight: 500;
+}
+
+.good-design-banner {
+    background: transparent;
+    padding: 150px 0px 100px 0px;
+}
+
+.wordpress-good-design {
+    padding: 180px 0px 155px 0px;
+}
+
+
+.dynamic-pricing-tabs .pricing-card__footer {
+    font-weight: 500;
+}
+
+.good-design-banner .services-banner__content h1 {
+    font-weight: bold;
+}
+
+
+.good-design-banner .main-banner__content-imgs img {
+    display: none;
+}
+
+.good-design-banner .theme-btn-hover {
+    display: none;
+}
+
+.location-support-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px 0 0;
+    gap: 20px;
+}
+
+.location-support-card {
+    text-align: center;
+}
+
+.location-card-img{
+    background: #242424;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.location-card-img::before {
+    position: absolute;
+    content: "";
+    border: 1px solid #D7FF00;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+
+section.location-support-sec {
+    padding: 70px 0px;
+}
+
+.location-support-head h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-support-head h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-support-head {
+    margin: 0px 0px 30px 0px;
+}
+
+.location-support-card h6 {
+    color: #161515;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.location-contact-sec {
+  background: url(./assets/images/locationpages/app-development-florida/contact-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 190px 0px 80px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.location-contact-txt h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-contact-txt h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-contact-txt p {
+    color: #fff;
+}
+
+.location-contact-txt ul {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+}
+
+.location-contact-txt ul li {
+    list-style: none;
+    padding: 10px 0px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-contact-txt ul li span {
+    background: #d7ff0040;
+    padding: 7px 12px 10px 12px;
+    border: 1px solid #d7ff0040;
+    border-radius: 5px;
+    color: #d7ff00;
+}
+
+.faq-contact-form {
+    background: #8080804d;
+}
+
+.faq-contact-form .faqs-form-items .form-control {
+    box-shadow: 0 3px 6px #00000029;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    margin: 0px 0px 20px 0px;
+}
+
+
+section.location-faqs-sec {
+    padding: 70px 0px;
+}
+
+.location-faqs-txt h6 {
+    background: #D7FF00;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #191919;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px !important;
+}
+
+.location-faqs-txt h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px !important;
+    color: #161515;
+}
+
+.location-faqs-txt p {
+    color: #161515;
+}
+
+
+
+.location-faqs .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: none;
+  background: #191919;
+}
+
+.location-faqs .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #fff;
+  color: #161515;
+  border: none !important;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #D7FF00;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.location-faqs .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-faqs .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/app-development-florida/downarrow.svg);
+  transform: rotate(0deg);
+  width: 50px;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/app-development-florida/uparrow.svg);
+}
+
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
+    outline: none;
+    border: none !important;
+}
+
+
+.location-choose-head a.theme-btn.theme-btn__yellow {
+    margin: 20px 0px 0px 0px;
+    font-weight: 600;
+}
+
+.why-choose-sec {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-choose-sec::before {
+  position: absolute;
+  content: "";
+  background: url(./assets/images/locationpages/app-development-florida/choose-banner-before.webp) no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+}
+
+.location-choose-img {
+    position: relative;
+    z-index: 999;
+}
+
+/************* Location Pages CSS End *************/
+
+
+
+
+
+
 /* Media quries */
 
 @media (max-width: 1600px) {
@@ -3951,6 +4417,79 @@ p {
     /* min-height: 180px; */
     font-size: 14px;
   }
+
+  .app-florida-herobanner .services-banner-sec-bgImg {
+    object-position: left;
+  }
+
+  .location-choose-head h2 {
+    font-size: 40px;
+  }
+
+  .location-choose-sec {
+    padding: 50px 0px 100px 0px;
+}
+
+.pixel-perfect-head h2 {
+    font-size: 40px;
+}
+
+.tabs-pricing-head h2 {
+    font-size: 40px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+    background: #191919;
+     border-radius: 10px;
+     margin: 0px 0px 10px 10px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list {
+    background: transparent;
+   
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+      background: #d7ff00;
+      border-radius: 10px;
+}
+
+.location-support-head h3 {
+    font-size: 40px;
+}
+
+.good-design-banner .services-banner__content h1 {
+    font-size: 40px;
+}
+
+    .good-design-banner {
+        padding: 150px 0 170px;
+    }
+
+    .location-support-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.location-contact-sec {
+    padding: 80px 0px 80px 0px;
+}
+
+.location-contact-txt h2 {
+    font-size: 40px;
+}
+
+.location-contact-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.location-faqs-txt h2 {
+    font-size: 40px;
+}
+
+.good-design-banner .services-banner-sec-bgImg {
+    object-position: left;
+}
+
 }
 
 @media (max-width: 360px) {

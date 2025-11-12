@@ -22,6 +22,8 @@ import CategoryBlogs from "../screens/CategoryBlogs";
 import BlogDetail from "../screens/BlogDetail";
 import ScrollToTop from "../components/ScrollToTop";
 import NotFound from "../screens/NotFound";
+import WordpressDevelopmentFlorida from "../screens/locationpages/WordpressDevelopmentFlorida";
+import AppDevelopmentFlorida from "../screens/locationpages/AppDevelopmentFlorida";
 
 // Import your components/pages
 
@@ -74,6 +76,11 @@ const AppRouter = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="*" element={<NotFound />} />
+
+
+        {/* Location Pages Start */}
+        <Route path="/app-development-florida" element={<AppDevelopmentFlorida />} />
+        <Route path="/wordpress-development-florida" element={<WordpressDevelopmentFlorida />} />
       </Routes>
     </Router>
   );
