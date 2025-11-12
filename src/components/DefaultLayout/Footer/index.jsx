@@ -3,11 +3,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
 import footerlogocontentimgs from "../../../assets/images/footer-logo-content-imgs.webp";
+import footerClutch from "../../../assets/images/icons/footer/clutch-icon.png";
+import trustpilot from "../../../assets/images/icons/footer/trust-pilot.png";
+import dmca from "../../../assets/images/icons/footer/DMCA.webp";
 
 import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
-import { FaInstagram } from "react-icons/fa";
+import { FaBehance, FaInstagram } from "react-icons/fa";
 import ObfuscatedEmail from "../../ObfuscatedEmail";
 import PhoneLink from "../../PhoneLink";
+import { SiCrunchbase, SiYelp } from "react-icons/si";
 
 const companyLinks = [
   { name: "Home", path: "/" },
@@ -97,12 +101,75 @@ const Footer = ({ footerTitle }) => {
                     >
                       <RiLinkedinLine />
                     </a>
+                    <a
+                      href="https://www.crunchbase.com/organization/united-web-developers"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Cruncbase"
+                      aria-label="Cruncbase"
+                    >
+                      cb
+                    </a>
+                    <a
+                      href="https://www.behance.net/unitedwebdevelopers"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Behance"
+                      aria-label="Behance"
+                    >
+                      <FaBehance />
+                    </a>
+                    <a
+                      href="https://www.yelp.com/biz/united-web-developers-pembroke-pines"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Yelp"
+                      aria-label="Yelp"
+                    >
+                      <SiYelp />
+                    </a>
                   </div>
                   <div className="footer-logo__content-imgs">
-                    <img
-                      src={footerlogocontentimgs}
-                      alt="United revamp developers logo"
-                    />
+                      <a
+                        href="https://www.dmca.com/Protection/Status.aspx?id=32995e80-2eff-42b0-8144-80b5ab309ecd&refurl=https%3a%2f%2funitedwebdevelopers.com%2f&rlo=true"
+                        title="DMCA.com Protection Status"
+                        className="footer-logo__content-img p-0 bg-transparent"
+                      >
+                        {" "}
+                        <img
+                          src={dmca}
+                          alt="DMCA.com Protection Status"
+                        />
+                      </a>
+                    {/* <div className="footer-logo__content-img">
+                      
+                      <img
+                        src={footerlogocontentimgs}
+                        alt="United revamp developers logo"
+                      />
+                    </div> */}
+                    <div className="footer-logo__content-img">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Trust Pilot"
+                        aria-label="trustpilot"
+                        href="https://www.trustpilot.com/review/unitedwebdevelopers.com"
+                      >
+                        <img src={trustpilot} alt="Trust Pilot" />
+                      </a>
+                    </div>
+                    <div className="footer-logo__content-img">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Clutch"
+                        aria-label="Clutch"
+                        href="https://clutch.co/profile/united-web-developers"
+                      >
+                        <img src={footerClutch} alt="Clutch" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

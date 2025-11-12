@@ -2672,10 +2672,20 @@ p {
 }
 
 .footer-logo__content-imgs {
-  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-logo__content-imgs img {
+.footer-logo__content-img {
+  max-width: 110px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer-logo__content-img img {
   width: 100%;
 }
 
@@ -2699,6 +2709,7 @@ p {
   height: 35px;
   font-size: 18px;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 .main-footer__logo-content .footer-social__links {
