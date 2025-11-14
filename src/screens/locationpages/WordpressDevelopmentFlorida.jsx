@@ -26,6 +26,7 @@ import LocationFaqs from "../../components/LocationFaqs";
 import ReactHelmet from "../../components/ReactHelmet";
 
 const WordpressDevelopmentFlorida = () => {
+  
   const webDesignPortfolioData = [
     {
       id: 1,
@@ -107,7 +108,7 @@ const WordpressDevelopmentFlorida = () => {
       <ReactHelmet
         title="WordPress Development Florida"
         description="Partner with the leaders in WordPress development in Florida. From startups to enterprises, United Web Developers builds brands that are optimized for performance and growth."
-        keywords="WordPress development Florida, WordPress website design Florida, custom WordPress solutions, WooCommerce development Florida, WordPress speed optimization, WordPress maintenance Florida, responsive WordPress design, United Web Developers"
+        keywords="WordPress development FL, custom WordPress development FL, top wordpress development agencies FL, wordpress website development in Florida, wordpress development agency Florida, wordpress development services FL, wordpress developement company in Florida"
         baseUrl="https://unitedwebdevelopers.com/wordpress-development-florida"
       />
 
@@ -139,12 +140,12 @@ const WordpressDevelopmentFlorida = () => {
           onImageClick={handleImageClick}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing Plans for Smarter Businesses"
           secPara="If your website costs a fortune to run like ours, see our prices and think again! Our WordPress development services in FL are affordable and flexible, allowing any business, whether a startup or a corporation, to achieve the same results."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ServicesBanner
           secClass="good-design-banner wordpress-good-design"

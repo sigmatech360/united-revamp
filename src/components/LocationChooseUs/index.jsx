@@ -12,7 +12,7 @@ const LocationChooseUs = (props) => {
                         <h2 className='mb-2'>{props.mainhead}</h2>
                         <p>{props.secPara}</p>
                         {props.secParatwo &&<p>{props.secParatwo}</p>}
-                        {props.btntxt && <Link to="/contact" className="theme-btn theme-btn__yellow">{props.btntxt}</Link>}
+                        {props.btntxt && <Link to="/contact-us" className="theme-btn theme-btn__yellow">{props.btntxt}</Link>}
                     </div>
                 </div>
             </div>

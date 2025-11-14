@@ -3,6 +3,7 @@ import "./App.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "yet-another-react-lightbox/styles.css";
 
 import { useEffect, useState } from "react";
 

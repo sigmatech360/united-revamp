@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
 import footerlogocontentimgs from "../../../assets/images/footer-logo-content-imgs.webp";
-import footerClutch from "../../../assets/images/icons/footer/clutch-icon.png";
-import trustpilot from "../../../assets/images/icons/footer/trust-pilot.png";
+import footerClutch from "../../../assets/images/icons/footer/clutch-icon.webp";
+import trustpilot from "../../../assets/images/icons/footer/trust-pilot.webp";
 import dmca from "../../../assets/images/icons/footer/DMCA.webp";
 
 import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
@@ -133,7 +133,7 @@ const Footer = ({ footerTitle }) => {
                       <a
                         href="https://www.dmca.com/Protection/Status.aspx?id=32995e80-2eff-42b0-8144-80b5ab309ecd&refurl=https%3a%2f%2funitedwebdevelopers.com%2f&rlo=true"
                         title="DMCA.com Protection Status"
-                        className="footer-logo__content-img p-0 bg-transparent"
+                        className="footer-logo__content-img p-0 bg-transparent dmca-badge"
                       >
                         {" "}
                         <img

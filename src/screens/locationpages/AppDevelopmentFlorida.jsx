@@ -112,7 +112,7 @@ const AppDevelopmentFlorida = () => {
       <ReactHelmet
         title="App Development in Florida"
         description="United Web Developers offers App Development in Florida that turns ideas into powerful, high-performing mobile apps."
-        keywords="app development Florida, mobile app development Florida, iOS app development, Android app development, custom app solutions, Florida app developers, app design and development, United Web Developers"
+        keywords="mobile app development company Florida, custom mobile app development Florida, mobile app development agency Florida, mobile app development cost Florida, custom mobile app development services Florida, iOS app development Florida, Android app development Florida"
         baseUrl="https://unitedwebdevelopers.com/app-development-florida"
       />
 
@@ -144,13 +144,13 @@ const AppDevelopmentFlorida = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-
+{/* 
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Prices That Don’t Compromise on Quality"
           secPara="Quality has a cost, and when it comes to custom mobile app development cost in Florida, it’s worth every tap."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ServicesBanner
           secClass="good-design-banner"

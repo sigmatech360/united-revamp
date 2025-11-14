@@ -3208,6 +3208,12 @@ section.location-faqs-sec {
     z-index: 999;
 }
 
+
+.faq-contact-form .faqs-form-items .form-control option {
+    color: #000;
+}
+
+
 /************* Location Pages CSS End *************/
 
 
@@ -3726,6 +3732,26 @@ section.location-faqs-sec {
   .services-banner-sec {
     padding: 130px 0 40px;
   }
+}
+
+@media (max-width: 768px) {
+  .location-support-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .location-contact-txt {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .app-florida-herobanner .services-banner-sec-bgImg {
+    object-position: left;
+}
+
+
+.good-design-banner .services-banner-sec-bgImg {
+    object-position: left;
+}
+
 }
 
 @media (max-width: 767px) {
