@@ -9,7 +9,7 @@ import Loader from "../Loader";
 
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
 
-const HomeBlogsSec = ({ blogSecTitle, blogSubtext }) => {
+const HomeBlogsSec = ({ blogSecTitle, blogSubtext, blogminihead }) => {
   const [latestBlogs, setLatestBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -35,9 +35,9 @@ const HomeBlogsSec = ({ blogSecTitle, blogSubtext }) => {
           <div className="col-md-12">
             <div className="sec-head">
               <p className="sec-head-tag label-yellow-bg">
-                ADDITIONAL RESOURCES
+                {blogminihead ||"ADDITIONAL RESOURCES"}
               </p>
-              <h3 data-aos="fade-up" data-aos-delay={100}>
+              <h3 data-aos="fade-up" data-aos-delay={100} className="mainhead">
                 {blogSecTitle}
               </h3>
               <p data-aos="fade-up" data-aos-delay={300}>

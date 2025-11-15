@@ -4,10 +4,10 @@ import "react-tabs/style/react-tabs.css";
 import PricingCard from "../PricingCard"; 
 import FormModal from "../FormModal";
 
-const TabsPricing = ({ minihead, mainhead, secPara, tabsData = [] }) => {
+const TabsPricing = ({ minihead, mainhead, secPara, secClass, tabsData = [] }) => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <section className="tabs-pricing-sec">
+    <section className={`tabs-pricing-sec ${secClass}`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-9">

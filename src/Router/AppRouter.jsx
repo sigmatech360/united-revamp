@@ -24,6 +24,8 @@ import ScrollToTop from "../components/ScrollToTop";
 import NotFound from "../screens/NotFound";
 import WordpressDevelopmentFlorida from "../screens/locationpages/WordpressDevelopmentFlorida";
 import AppDevelopmentFlorida from "../screens/locationpages/AppDevelopmentFlorida";
+import WordpressDevelopment from "../screens/Services/WordpressDevelopment";
+import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
 
 // Import your components/pages
 
@@ -39,20 +41,21 @@ const AppRouter = () => {
 
         {/* Services Pages Start */}
         <Route path="/web-design" element={<WebDesign />} />
+
+        {/* CMS Development & Inner Pages */}
         <Route path="/cms-development" element={<CMSDevelopment />} />
-        <Route
-          path="/digital-marketing"
-          element={<DigitalMarketing />}
-        />
+        <Route path="/wordpress-development" element={<WordpressDevelopment />} />
+        <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+
+
+
+        <Route path="/digital-marketing" element={<DigitalMarketing />}/>
         <Route
           path="/social-media-marketing"
           element={<SocialMediaMarketing />}
         />
         <Route path="/search-engine-optimization" element={<SEO />} />
-        <Route
-          path="/custom-development"
-          element={<CustomDevelopment />}
-        />
+        <Route path="/custom-development" element={<CustomDevelopment />}/>
         <Route
           path="/mobile-app-development"
           element={<MobileAppDevelopment />}

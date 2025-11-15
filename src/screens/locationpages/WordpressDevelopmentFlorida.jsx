@@ -175,7 +175,7 @@ const WordpressDevelopmentFlorida = () => {
           minihead="FAQs"
           mainhead="Got Questions? We Have all the Answers!"
           secPara="If you don’t find your answer here, please fill out the form and send us your question; we promise you’ll receive a response"
-          faqs={faqsData}
+          faqsData={faqsData}
         />
 
         {isOpen && images.length > 0 && (

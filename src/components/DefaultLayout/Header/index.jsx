@@ -25,7 +25,7 @@ const Header = () => {
           <img src={logo} alt="United revemp developers logo" />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav"  />
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
@@ -86,6 +86,7 @@ const Header = () => {
                 >
                   Web Design
                 </NavDropdown.Item>
+                 <div className="nav-subdropdown-wrapper">
                 <NavDropdown.Item
                   as={Link}
                   to="/cms-development"
@@ -93,7 +94,32 @@ const Header = () => {
                   target="_blank"
                 >
                   CMS Development
+                   <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
                 </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                     <NavDropdown.Item
+                      as={Link}
+                      to="/wordpress-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Wordpress Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ecommerce-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Ecommerce Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}

@@ -144,13 +144,13 @@ const AppDevelopmentFlorida = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-{/* 
+
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Prices That Don’t Compromise on Quality"
           secPara="Quality has a cost, and when it comes to custom mobile app development cost in Florida, it’s worth every tap."
           tabsData={dynamictabsData}
-        /> */}
+        />
 
         <ServicesBanner
           secClass="good-design-banner"
@@ -181,7 +181,7 @@ const AppDevelopmentFlorida = () => {
           minihead="Frequently Asked Questions"
           mainhead="Get Confusion Out of the Way!"
           secPara="Got questions? Good… the smartest clients always do. Scroll through our FAQs to find your answers, and if you don’t spot them here, fill out our form and send your query. Our team will get back to you with all the information you need."
-          faqs={faqsData}
+          faqsData={faqsData}
         />
 
         {isOpen && images.length > 0 && (

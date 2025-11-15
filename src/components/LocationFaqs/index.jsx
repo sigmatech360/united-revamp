@@ -1,7 +1,8 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import DynamicFaqs from "../dynamicfaqs";
 
-const LocationFaqs = ({ minihead, mainhead, secPara, faqs = [] }) => {
+const LocationFaqs = ({ minihead, mainhead, secPara, faqsData }) => {
   return (
     <section className="location-faqs-sec">
       <div className="container">
@@ -13,18 +14,7 @@ const LocationFaqs = ({ minihead, mainhead, secPara, faqs = [] }) => {
               {mainhead && <h2>{mainhead}</h2>}
               {secPara && <p>{secPara}</p>}
             </div>
-
-            {/* FAQs Accordion */}
-            <div className="location-faqs mt-4">
-              <Accordion defaultActiveKey="0" alwaysOpen>
-                {faqs.map((faq, index) => (
-                  <Accordion.Item eventKey={String(index)} key={index}>
-                    <Accordion.Header as="h3">{faq.header}</Accordion.Header>
-                    <Accordion.Body>{faq.content}</Accordion.Body>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </div>
+            <DynamicFaqs faqs={faqsData}/>
           </div>
         </div>
       </div>
