@@ -145,12 +145,12 @@ const AppDevelopmentFlorida = () => {
           onImageClick={handleImageClick}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Prices That Don’t Compromise on Quality"
           secPara="Quality has a cost, and when it comes to custom mobile app development cost in Florida, it’s worth every tap."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ServicesBanner
           secClass="good-design-banner"

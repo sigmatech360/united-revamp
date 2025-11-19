@@ -110,32 +110,26 @@ const EcommerceDevelopment = () => {
     {
       img: service1,
       title: "Front-End Development",
-      para: "We develop web pages that not only look good but also interact well to generate valuable outcomes.",
     },
     {
       img: service2,
       title: "Back-End Development",
-      para: "The backend of our websites is made to strengthen the interfaces by making the core indestructible.",
     },
     {
       img: service3,
       title: "Website Development",
-      para: "The core of our expertise lies in complete website solutions that work creatively with a conversion strategy.",
     },
      {
       img: service4,
       title: "Content Writing",
-      para: "Persuasive content that connects, informs, and converts visitors into customers.",
     },
      {
       img: service5,
       title: "SEO Services",
-      para: "Proven SEO strategies to boost rankings and organic traffic.",
     },
      {
       img: service3,
       title: "Website Designing",
-      para: "Stunning, brand-focused visuals that make every click count.",
     },
   ];
 
@@ -143,7 +137,7 @@ const EcommerceDevelopment = () => {
     <>
       <ReactHelmet
         title="E-Commerce Website Development USA | United Web Developers"
-        description="United Web Developers builds fast, scalable e-commerce websites across the USA, driving more sales with high-performing online store development."
+        description="At United Web Developers, we build fast and scalable e-commerce websites across the USA, driving more sales with high-performing online store development."
         keywords="e-commerce website development services usa, e commerce website development usa, e-commerce website development company usa, e commerce website developer usa, e-commerce website development agency usa"
         baseUrl="https://unitedwebdevelopers.com/ecommerce-development"
       />
@@ -169,7 +163,7 @@ const EcommerceDevelopment = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="More About United Web Developers"
-          aboutbtnlink="/contact"
+          aboutbtnlink="/contact-us"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 
@@ -203,7 +197,7 @@ const EcommerceDevelopment = () => {
           secTag="How it Works"
           secTitle="The Brain Behind Making Your Sales Flow"
           secDescription="Our e-commerce website development process is built on strategy, creativity, and technical mastery. Every step is designed to help your store perform better, sell faster, and scale effortlessly. "
-          secLastText="A great logo design isn’t the one that looks pretty, it should be specific to your audience, it should speak your message, and compel to discover more."
+          secLastText="We effectively work on each step to build a high-quality E-Commerce store. Once live, our team offers ongoing support to keep your e-commerce platform running smoothly and efficiently in the long run."
           secStepsData={stepsData}
         />
 
@@ -222,13 +216,13 @@ const EcommerceDevelopment = () => {
           faqsData={faqsData}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           secClass="tab-pricing-bg"
           minihead="Pricing Plans"
           mainhead="Discover Our Packages"
           secPara="We offer tailored packages to fit your business needs. From startup-level e-commerce website development USA to enterprise-scale builds, every plan includes consultation, design, and post-launch support."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <HomeBlogsSec
           blogminihead="Blogs & Updates"

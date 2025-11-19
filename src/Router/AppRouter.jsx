@@ -26,6 +26,10 @@ import WordpressDevelopmentFlorida from "../screens/locationpages/WordpressDevel
 import AppDevelopmentFlorida from "../screens/locationpages/AppDevelopmentFlorida";
 import WordpressDevelopment from "../screens/Services/WordpressDevelopment";
 import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
+import Frontenddevelopment from "../screens/Services/Frontenddevelopment";
+import BackendDevelopment from "../screens/Services/BackendDevelopment";
+import DomainRegisteration from "../screens/Services/DomainRegisteration";
+import DomainTransfer from "../screens/Services/DomainTransfer";
 
 // Import your components/pages
 
@@ -55,11 +59,22 @@ const AppRouter = () => {
           element={<SocialMediaMarketing />}
         />
         <Route path="/search-engine-optimization" element={<SEO />} />
+
+
+        {/* Custom Development & Inner Pages */}
         <Route path="/custom-development" element={<CustomDevelopment />}/>
-        <Route
-          path="/mobile-app-development"
-          element={<MobileAppDevelopment />}
-        />
+        <Route path="/frontend-development" element={<Frontenddevelopment />}/>
+        <Route path="/backend-development" element={<BackendDevelopment />}/>
+
+
+        <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
+
+
+        {/* Hosting & Domain Inner Pages */}
+        <Route path="/domain-registeration" element={<DomainRegisteration />} />
+        <Route path="/domain-transfer" element={<DomainTransfer />} />
+
+
         <Route path="/logo-design" element={<LogoDesign />} />
         {/* Services Pages End */}
 

@@ -3459,7 +3459,6 @@ section.tabs-pricing-sec .tabs-pricing-head p {
   color: #fff;
 }
 
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: "" !important;
@@ -3529,6 +3528,866 @@ section.tabs-pricing-sec .tabs-pricing-head p {
 }
 
 /************* Wordpress Development Page CSS End *************/
+
+/************* Frontend Development Page CSS Start *************/
+
+section.whatwedo-sec {
+  padding: 70px 0px;
+}
+
+.whatwedo-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.whatwedo-head p {
+  padding: 10px 0px 10px 0px;
+}
+
+.whatwodo-box {
+  background: #191919;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.whatwodo-box h3 {
+  color: #d7ff00;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px !important;
+}
+
+.whatwodo-box p {
+  color: #fff;
+}
+
+.frontend-services-sec {
+  background: url(./assets/images/services/frontenddevelopment/frontend-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 140px 0px 60px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+section.whatwedo-sec {
+  padding: 70px 0px;
+}
+
+.whatwedo-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.whatwedo-head p {
+  padding: 10px 0px 10px 0px;
+}
+
+.whatwodo-box {
+  background: #191919;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.whatwodo-box h3 {
+  color: #d7ff00;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px !important;
+}
+
+.whatwodo-box p {
+  color: #fff;
+}
+
+section.frontend-services-sec {
+  padding: 140px 0px 60px 0px;
+}
+
+.frontend-service-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.frontend-service-head p {
+  color: #fff;
+}
+
+.frontend-service-head h2 {
+  padding: 0px 0px 10px 0px;
+}
+
+.frontend-service-box {
+  background: #242424;
+  border: 1px solid #d7ff00;
+  border-radius: 20px;
+  padding: 60px 20px;
+  margin: 0px 0px 30px 0px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.frontend-service-box:hover {
+  transform: translate(0px, -10px);
+}
+
+.frontend-service-box h4 {
+  color: #d7ff00;
+  font-size: 18px;
+  padding: 0px 0px 20px 0px;
+}
+
+.frontend-service-box p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.frontend-service-btn {
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+}
+
+.industry-slider-sec {
+  padding: 70px 0px;
+}
+
+.industry-slider-headbtn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 0px 40px 0px;
+}
+
+.industry-slider-head {
+  margin: 0px 0px 40px 0px;
+}
+
+.industry-slider-head {
+  margin: 0px 0px 40px 0px;
+}
+
+.industry-slider-card {
+  background: #242424;
+  border-radius: 10px;
+}
+
+section.industry-slider-sec {
+  padding: 70px 0px;
+}
+
+.industry-slider-cardheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  border-bottom: 1px solid #fff;
+  padding: 25px 0px 15px 0px;
+}
+
+.industry-slider-cardheader h4 {
+  color: #fff;
+  color: #d7ff00;
+  font-size: 20px;
+}
+
+.industry-slider-cardheader a {
+  background: #d7ff00;
+  color: #242424;
+  padding: 0px 8px 7px 8px;
+  border-radius: 100%;
+  font-size: 26px;
+  border: 1px solid #d7ff00;
+  line-height: normal;
+  transition: all 0.6s ease;
+}
+
+.industry-slider-cardheader a:hover {
+  background: transparent;
+  color: #d7ff00;
+}
+
+.industry-slider-card-bottom {
+  padding: 20px 20px 0px 20px;
+}
+
+.industry-slider-card-bottom img {
+  width: 100%;
+}
+
+.industry-slider-card-bottom p {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0px 25px 0px;
+}
+
+.industry-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.industry-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.industry-marquee-card {
+  flex: 0 0 400px;
+  margin-right: 25px;
+}
+
+.frontend-screen-sec {
+  background: url(./assets/images/services/frontenddevelopment/frontend-screen-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 140px 0px 90px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.frontend-screen-head {
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 50px 0px;
+}
+
+.frontend-screen-head p {
+  padding: 10px 0px;
+}
+
+.frontend-screen-img img {
+  width: 100%;
+  max-width: fit-content;
+}
+
+.frontend-screen-img {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  height: 100%;
+}
+
+.screen-row .col-lg-2:nth-child(2) img {
+  width: 200px;
+}
+
+.screen-row .col-lg-2:nth-child(1) img {
+  width: 100px;
+}
+
+.screen-row .col-lg-4:nth-child(3) img {
+  width: 370px;
+}
+
+.screen-row .col-lg-4:nth-child(4) img {
+  width: 370px;
+}
+
+.frontend-project-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0;
+}
+
+.frontend-project-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+.frontend-project-marquee-card {
+  flex: 0 0 380px;
+  margin-right: 30px;
+}
+
+.frontend-project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+section.frontend-projects-sec {
+  padding: 60px 0px;
+}
+
+.frontend-project-head {
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+
+.frontend-portfolio-btn {
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+/************* Frontend Development Page CSS End *************/
+
+/************* Backend Development Page CSS Start *************/
+
+.backend-choose-txt ul {
+  padding: 0px;
+  margin: 20px 0px 20px 0px;
+}
+
+.backend-choose-txt ul li {
+  list-style: none;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.backend-choose-txt ul li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.backend-choose-txt ul li img {
+  width: 30px;
+}
+
+.backend-choose-img img {
+  width: 100%;
+}
+
+.backend-choose-txt p {
+  padding: 0px 0px 10px 0px;
+}
+
+.backend-choose-sec {
+  padding: 70px 0px;
+}
+
+.backend-industry-slider {
+  background: url(./assets/images/services/backenddevelopment/industry-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 140px 0px 90px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backend-industry-slider .frontendindustryhead {
+  display: none;
+}
+
+.backend-industry-slider .backend-industry-show {
+  display: block !important;
+}
+
+.backend-industry-head {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.backend-industry-slider {
+  padding: 100px 0px 80px 0px !important;
+}
+
+.backend-industry-head p {
+  color: #fff;
+}
+
+section.our-technology-sec {
+  padding: 70px 0px;
+}
+
+.our-technology-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.technology-box {
+  padding: 30px 30px 40px 30px;
+  background: #191919;
+  margin: 0px 0px 20px 0px;
+  border-radius: 30px;
+}
+
+.technology-box h4 {
+  color: #d7ff00;
+  padding: 10px 0px 20px 0px;
+}
+
+.technology-box p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.our-technology-btn {
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+.backend-portfolio-img img {
+  width: 100%;
+}
+
+.backend-portfolio-head {
+  margin: 0px 0px 50px 0px;
+}
+
+.backend-portfolio-img img {
+  width: 100%;
+}
+
+.backend-portfolio-sec {
+  background: url(./assets/images/services/backenddevelopment/portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backend-portfolio-sec .slick-track {
+  display: flex;
+  gap: 30px;
+}
+
+section.backend-portfolio-sec
+  .slick-track
+  .slick-initialized
+  .slick-slide:focus {
+  outline: none;
+}
+
+section.backend-portfolio-sec svg.slick-arrow.slick-prev {
+  position: absolute;
+  top: -60px;
+  left: 86%;
+  background: #d7ff00;
+  color: #191919;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 100%;
+}
+
+section.backend-portfolio-sec svg.slick-arrow.slick-next {
+  position: absolute;
+  top: -60px;
+  left: 90%;
+  background: #d7ff00;
+  color: #191919;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 100%;
+}
+
+.four-detail-box {
+  padding: 70px 0px;
+}
+
+.backend-services-sec {
+  background: url(./assets/images/services/backenddevelopment/service-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backend-services-sec .accordion .accordion-item {
+  border-radius: 10px;
+  border: none;
+  background: #191919;
+}
+
+.backend-services-sec .accordion {
+  background: transparent;
+  border: none;
+}
+
+.backend-services-sec .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: transparent;
+  color: #ffffff;
+  border: none !important;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+  border-bottom: 1px solid #fff !important;
+  padding: 30px 0px;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border-bottom: none !important;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #d7ff00;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 30px 0px;
+  border-bottom: 1px solid #fff !important;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.backend-services-sec .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/services/backenddevelopment/downarrow.svg);
+  transform: rotate(0deg);
+  width: 50px;
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/app-development-florida/uparrow.svg);
+}
+
+.backend-services-sec
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+.backend-services-head p {
+  color: #fff;
+}
+
+section.domain-search-buy {
+  padding: 50px 0px;
+}
+
+.domain-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 10px 0px;
+}
+
+.different-domain-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 15px;
+  border-right: 1px solid #707070;
+}
+
+.different-domain-price h6 {
+  margin: 0px;
+  color: #000000;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.different-domain-price:nth-child(6) {
+  border: none;
+}
+
+.domain-search-bar input {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.domain-search-bar span {
+  color: #d7ff00;
+  background: #191919;
+  position: absolute;
+  padding: 9px 15px 15px 15px;
+  font-size: 24px;
+  border-radius: 100%;
+  line-height: normal;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.different-domain-price img {
+  width: 50px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.domain-search-bar {
+  position: relative;
+}
+
+.domain-search-bar input::placeholder {
+  color: #000000;
+}
+
+.domain-search-bar input:focus {
+  outline: none;
+}
+
+.trustpilot-txt {
+  margin: 40px 0px 0px 0px;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 14px 0px;
+}
+
+.trustpilot-txt p {
+  margin: 0px;
+  color: #000000;
+}
+
+.trustpilot-txt span {
+  font-weight: 600;
+  padding: 0px 0px 0px 10px;
+}
+
+.trustpilot-txt img {
+  margin: 0px 15px;
+}
+
+.trustpilot-stars {
+  width: 90px;
+}
+
+.trustpilotstar {
+  width: 20px;
+  margin: 0px 0px 0px 10px !important;
+}
+
+/************* Backend Development Page CSS End *************/
+
+
+/************* Domain Registeration Page CSS Start *************/
+
+
+
+.doomain-registeration-herobanner {
+  padding: 150px 0px 220px 0px;
+}
+
+
+.domain-registeraton-sec {
+  background: url(./assets/images/services/domainregisteration/service-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.doomain-registeration-herobanner {
+    padding: 150px 0px 220px 0px;
+}
+
+.domain-registeration-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.domain-registeration-head p {
+    color: #fff;
+}
+
+.register-service-box {
+    padding: 20px 20px 50px 20px;
+    border-right: 1px solid #fff;
+}
+
+.register-service-box h3 {
+    color: #D7FF35;
+    font-size: 20px;
+    padding: 0px 0px 20px 0px;
+}
+
+.register-service-box p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.register-box-line {
+    position: relative;
+}
+
+.register-box-line::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    top: 46%;
+}
+
+.register-service-btn {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+section.domain-register-process {
+    padding: 70px 0px;
+}
+
+.register-process-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.register-process-box {
+    border-radius: 20px;
+    padding: 30px;
+    background: #191919;
+}
+
+.register-process-box h3 {
+    color: #D7FF35;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+}
+
+.register-process-box h5 {
+    color: #fff;
+    padding: 0px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.register-process-box p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.domain-register-choose {
+  background: url(./assets/images/services/domainregisteration/service-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.register-choose-head p {
+    color: #fff;
+    padding: 10px 0px 0px 0px;
+}
+
+
+section.hosting-boxes-sec {
+    padding: 50px 0px;
+}
+
+.hosting-box {
+    height: 250px;
+    background: #F4F6F9;
+    padding: 30px;
+    border-radius: 30px;
+    transition: all .6s ease;
+    transform: translate(0px, 0px);
+}
+
+.hosting-box:hover {
+    background: #161515;
+    transform: translate(0px, -10px);
+    cursor: pointer;
+}
+
+.hosting-box h3 {
+    font-weight: 700;
+    padding: 0px 0px 10px 0px;
+}
+
+.hosting-box:hover h3 {
+    color: #D7FF35;
+    font-size: 40px;
+}
+
+.hosting-box:hover p {
+    color: #fff;
+}
+
+.hosting-box p {
+    transition: all .6s ease;
+}
+
+.hosting-box:hover p span {
+    display: block;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hosting-box span {
+    transition: all .6s ease;
+}
+
+/************* Domain Registeration Page CSS End *************/
+
+
+
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 /* Media quries */
 
@@ -4095,13 +4954,41 @@ section.tabs-pricing-sec .tabs-pricing-head p {
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
-}
+  }
 
-.abouttxt-data {
+  .abouttxt-data {
     margin: 40px 0px 0px 0px;
-}
+  }
 
+  .whatwodo-box {
+    margin: 0px 0px 20px 0px;
+  }
 
+  .frontend-screen-img {
+    margin: 0px 0px 20px 0px;
+  }
+
+  section.backend-portfolio-sec svg.slick-arrow.slick-prev {
+    top: -40px;
+    left: 80%;
+  }
+
+  section.backend-portfolio-sec svg.slick-arrow.slick-next {
+    top: -40px;
+    left: 87%;
+  }
+
+  .backend-choose-txt p {
+    padding: 30px 0px 30px 0px;
+  }
+
+      .different-domain-price img {
+        width: 40px;
+    }
+
+        .trustpilot-txt img {
+        margin: 0 5px;
+    }
 
 }
 
@@ -4623,28 +5510,72 @@ section.tabs-pricing-sec .tabs-pricing-head p {
   .twoside-service-txt {
     padding: 20px 20px 40px 20px;
     text-align: center;
-}
+  }
 
-.twoside-service-head p {
+  .twoside-service-head p {
     margin: 20px 0px 0px 0px;
-}
+  }
 
-.ecommerce-portfolio-img img {
+  .ecommerce-portfolio-img img {
     padding: 30px;
-}
+  }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 30px !important;
-  height: 30px !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-.web-whychoose-listtxt {
+  .web-whychoose-listtxt {
     text-align: left;
-}
+  }
+
+  .screen-row .col-lg-4:nth-child(4) img {
+    width: 100%;
+  }
+
+  .screen-row .col-lg-4:nth-child(3) img {
+    width: 100%;
+  }
+
+  .industry-slider-head {
+    text-align: center;
+  }
+
+  .backend-service-para {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .backend-services-sec {
+    padding: 100px 0px 70px 0px;
+  }
+
+  .backend-choose-txt p {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .backend-portfolio-sec {
+    padding: 100px 0px 70px 0px;
+  }
+
+  .domain-prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .different-domain-price {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+      .trustpilot-txt {
+        padding: 15px 20px;
+    }
+
 
 }
 

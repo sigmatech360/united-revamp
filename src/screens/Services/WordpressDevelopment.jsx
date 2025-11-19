@@ -158,13 +158,13 @@ const WordpressDevelopment = () => {
           faqsData={faqsData}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           secClass="tab-pricing-bg"
           minihead="Pricing Plans"
           mainhead="Affordable Custom WordPress Development Packages in USA"
           secPara="Swipe through our WordPress development services and find the package that speaks your language, code, creativity, or conversions."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <HomeBlogsSec
           blogminihead="Blogs & More"
