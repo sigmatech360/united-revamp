@@ -16,55 +16,92 @@ import { dynamictabsData } from "../../data";
 import HomeBlogsSec from "../../components/HomeBlogsSec";
 import DomainRegisterationChoose from "../../components/DomainRegisterationChoose";
 import HostingBoxes from "../../components/HostingBoxes";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const DomainRegisteration = () => {
-
-     const faqsData = [
+  const faqsData = [
     {
-      header: "What makes United Web Developers different from other front-end agencies?",
+      header: "What is domain registration?",
       content:
-        "We don’t just code what you imagine; we translate your ideas into fast, functional, and flawlessly responsive interfaces that actually convert visitors into customers.",
+        "Domain registration is the process of reserving a unique website name on the Internet. It identifies your website and allows people to access it easily.",
     },
     {
-      header: "Do you provide front-end development for all devices and screen sizes?",
+      header: "How long does domain registration take?",
       content:
-        "Absolutely, every project is built with responsive architecture to ensure pixel-perfect visuals and optimal performance across mobile devices, tablets, desktops, and ultra-wide screens.",
+        "Most domains are registered instantly after payment. In rare cases, it can take a few hours, depending on the domain extension and verification requirements.",
     },
     {
-      header: "Which technologies do you specialize in for front-end development?",
+      header: "Can I transfer my existing domain to you?",
       content:
-        "We specialize in React, Angular, and Vue.js front-end development in USA, delivering sleek, scalable, and high-performing user interfaces that work flawlessly across browsers and platforms.",
+        "Yes, you can transfer your current domain to United Web Studios easily. Our support team will guide you through every step for a smooth transfer.",
     },
     {
-      header: "Can you optimize my website for SEO, AEO, and GEO performance?",
+      header: "How long does a domain registration last?",
       content:
-        "Yes, we craft code structures and content layouts optimized for Search Engines, Answer Engines (AEO), and Geo-targeted SEO, so your site ranks higher and loads smarter.",
+        "Typically, a domain is registered for one year, but you can choose multi-year options to keep your domain active without yearly renewals.",
     },
     {
-      header: "How long does a typical front-end development project take?",
+      header: "What happens if my domain expires?",
       content:
-        "Project timelines depend on scope and complexity, but most front-end builds are completed within 4-8 weeks, including testing, optimization, and revisions.",
+        "If your domain expires, it enters a grace period where you can renew it. After that, it may become available for public registration again.",
     },
     {
-      header: "What other web development platforms do you work on?",
+      header: "Do you offer domain privacy protection?",
       content:
-        "Whatever you need, we can design, develop, and deploy with precision. From CMS to offering custom solutions, we offer all IT-related services.",
+        "Yes, we offer WHOIS privacy protection to hide your personal information from public databases and protect you from spam or data misuse.",
     },
   ];
 
-
-
+  const processData = {
+    minihead: "Our Process",
+    mainhead: "How We Secure Your Perfect Domain",
+    mainpara:
+      "To get the domain name you want, our team follows an easy and professional process. We work quickly and efficiently without any technical complications or unnecessary delays.",
+    steps: [
+      {
+        number: "01",
+        title: "Consultation & Search",
+        description:
+          "Our strategists suggest relevant and memorable domain names that highlight your business goals and match available domain extensions.",
+      },
+      {
+        number: "02",
+        title: "Domain Availability Check",
+        description:
+          "We verify domain name availability across multiple providers in the USA to secure the best options before competitors take them.",
+      },
+      {
+        number: "03",
+        title: "Registration & Verification",
+        description:
+          "Once approved, we register your domain and complete all verification requirements to ensure that the domain is completely yours.",
+      },
+      {
+        number: "04",
+        title: "Setup & Support",
+        description:
+          "We connect your domain to your hosting and provide ongoing support to make your website live and functional.",
+      },
+    ],
+  };
 
   return (
     <>
+      <ReactHelmet
+        title="Domain Registration Services in USA | United Web Studios"
+        description="Secure your online identity with United Web Studios. Our service includes reliable and affordable domain registration services in the USA for your website or business."
+        keywords="domain name registration usa, domain registration services usa, buy domain name usa, domain providers in usa, register a domain usa"
+        baseUrl="https://unitedwebdevelopers.com/domain-registeration"
+      />
+
       <DefaultLayout>
         <ServicesBanner
           secClass="app-florida-herobanner doomain-registeration-herobanner"
           bgImage={herobanner}
-          title="E-Commerce Websites that Become Your Brand’s Best Salesperson"
-          description="A powerful e-commerce website is made to scale with an impact. We list your products and make sure all of them sell. At United Web Developers, we specialize in e-commerce website development that transforms visitors into loyal customers. From sleek design to simple checkouts, we build online stores that help you start selling today."
+          title="Claim Your Digital Identity With Domain Registration at United Web Developers"
+          description="Want your own domain name in the USA? At United Web Studios, we offer quick and affordable domain registration services. You can choose from the top domain providers in the USA and get your website online in just a few steps."
           servicesbannerimg={herobannerinnerimg}
-          cta1="Start Selling Today"
+          cta1="Register Your Domain"
           cta2="hehe"
         />
 
@@ -74,74 +111,69 @@ const DomainRegisteration = () => {
           reverse
           minihead="About Us"
           miniheadclass="minihead"
-          secTitle1="Known For Our E-Commerce Web Expertise"
+          secTitle1="Your Call to Get Domain Registration Services USA"
           secTitle2="Across the USA"
-          description="We’re an e-commerce website development company in USA that blends creativity with code to deliver measurable business results. Every store we build is fast, functional, and fully optimized for conversions."
+          description="At United Web Studios, our web experts make domain name registration in the USA simple and reliable. We offer domain names for new websites, and also for businesses expanding their online presence. In all cases, our team ensures a quality experience. We provide personalized support and affordable pricing to help you secure the best domain name for your brand."
           image={aboutimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="More About United Web Developers"
+          btntext="Learn More About United Web Studios"
           aboutbtnlink="/contact-us"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 
-        <DomainRegisterationServices/>
+        <DomainRegisterationServices />
 
+        <DomainRegisterProcess {...processData} />
 
-        <DomainRegisterProcess/>
-
-
-         <DomainRegisterationChoose/>
-
+        <DomainRegisterationChoose />
 
         <WordPressPerformanceSection
           minihead="About Us"
           miniheadclass="minihead"
-          secTitle1="Known For Our E-Commerce Web Expertise"
-          secTitle2="Across the USA"
-          description="We’re an e-commerce website development company in USA that blends creativity with code to deliver measurable business results. Every store we build is fast, functional, and fully optimized for conversions."
+          secTitle1="Get the Domain Name Brands"
+          secTitle2="Dream Of"
+          description="A domain is your brand’s identity; it should be the one that reflects your brand’s essence. At United Web Studios, we make it simple to buy a domain name in the USA. We give our best in supporting startups or even working with established businesses. Our experts help you choose, register, and manage your domain effortlessly."
           image={chooseimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="More About United Web Developers"
+          btntext="Search Your Domain"
           aboutbtnlink="/contact-us"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 
-      <HostingBoxes/>
+        <HostingBoxes />
 
-
-         <LocationContact
+        <LocationContact
           secClass="wordpress-contact-sec"
-          minihead="Connect with Us"
-          mainhead="Want to Spike Up your Sales?"
-          secPara="Have a question? Want to show us your project? Or simply curious? Talk to us and we’ll show you the possibilities you can unlock with frontend development."
-          btntxt="Talk to Us"
+          minihead="Contact Us"
+          mainhead="Fill The Form Today"
+          secPara="Have questions or need help choosing a domain? Fill out the form below, and domain experts will get back to you with life-changing solutions."
+          btntxt="Message Us Now"
         />
 
-         <ServiceFaqs
+        <ServiceFaqs
           minihead="Frequently Asked Questions"
-          mainhead="All Your Frontend-Related Questions Answered Here!"
-          mainpara="Swipe through our FAQs section to find all your answers. If you can’t find what you're looking for, please fill out the form and ask away. We’re sure you’ll find your answers and more with us!"
+          mainhead="What People Wanna Know About Domain Registration"
+          mainpara="Answering some of the frequently asked questions about our domain registration services to help you make an informed decision when registering a domain in the USA."
           faqsData={faqsData}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           secClass="tab-pricing-bg"
           minihead="Pricing Plans"
-          mainhead="Select the Right Tech-Stack for Your Brand"
-          secPara="The right design has the power to increase your sales by 10x… literally! If you’re a startup or an enterprise, select the right pricing model and see how your sales can skyrocket just with great designs"
+          mainhead="Domain Registration Pricing Packages"
+          secPara="Choose from our flexible domain registration packages that are made for different business sizes. All our packages are based on competitive pricing, free setup, and secure management tools to make owning your domain registration easy and affordable."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <HomeBlogsSec
-          blogminihead="Blogs & More"
-          blogSecTitle="Frontend Trends, Tools, and Tech - Straight from the Developers"
-          blogSubtext="ead our blogs to stay up-to-date about all the new tech stacks being launched and how they can help you!"
+          blogminihead="Blogs & Updates"
+          blogSecTitle="Read Our Blogs Covering Latest Industry Insights"
+          blogSubtext="Explore expert-written blogs on digital marketing, web development services, platform comparisons, and growth strategies for modern online sellers"
           // blogsData={blogsData}
           // categorySlug="custom-website-development"
         />
-
       </DefaultLayout>
     </>
   );

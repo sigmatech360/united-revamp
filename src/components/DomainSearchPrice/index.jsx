@@ -16,7 +16,7 @@ const DomainSearchPrice = () => {
             <div className="row">
                 <div className="col-lg-4">
                     <div className="domain-search-bar">
-                        <input type="search" name="" id="" placeholder='Find your perfect domain name...'/>
+                        <input type="search" name="" id="" placeholder='Find Your Perfect Domain Name...'/>
                         <span><IoSearch /></span>
                     </div>
                 </div>
