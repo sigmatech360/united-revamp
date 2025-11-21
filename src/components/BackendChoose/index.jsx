@@ -21,7 +21,7 @@ const BackendChoose = () => {
                             <li><img src={doublecheck} alt="double check" />Continuous optimization and performance monitoring</li>
                             <li><img src={doublecheck} alt="double check" /> Transparent communication and project ownership</li>
                         </ul>
-                        <Link to="/contact-us" className='theme-btn theme-btn__yellow'>View Our Case Studies</Link>
+                        {/* <Link to="/contact-us" className='theme-btn theme-btn__yellow'>View Our Case Studies</Link> */}
                     </div>
                 </div>
                 <div className="col-lg-6">

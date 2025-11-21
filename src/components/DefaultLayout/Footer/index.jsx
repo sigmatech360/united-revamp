@@ -123,7 +123,7 @@ const Footer = ({ footerTitle }) => {
                       href="https://www.yelp.com/biz/united-web-developers-pembroke-pines"
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="Yelp"
+                      title="Yelp"  
                       aria-label="Yelp"
                     >
                       <SiYelp />

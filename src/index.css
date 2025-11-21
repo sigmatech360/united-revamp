@@ -4241,6 +4241,7 @@ section.domain-search-buy {
 .register-service-box {
   padding: 20px 20px 50px 20px;
   border-right: 1px solid #fff;
+  height: 250px;
 }
 
 .register-service-box h3 {
@@ -4319,7 +4320,7 @@ section.domain-register-process {
   padding: 10px 0px 0px 0px;
 }
 
-section.hosting-boxes-sec {
+.hosting-boxes-sec {
   padding: 50px 0px;
 }
 
@@ -5788,6 +5789,11 @@ section.hosting-boxes-sec {
   .domain-registeraton-sec {
     padding: 100px 0px 70px 0px;
   }
+
+
+        .different-domain-price:nth-child(2), .different-domain-price:nth-child(4) {
+        border: none;
+    }
 }
 
 @media (max-width: 430px) {

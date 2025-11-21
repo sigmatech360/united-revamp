@@ -3,9 +3,9 @@ import DefaultLayout from "../../components/DefaultLayout";
 import ServicesBanner from "../../components/ServicesBanner";
 import DomainSearchPrice from "../../components/DomainSearchPrice";
 import herobanner from "../../assets/images/services/domainregisteration/herobanner.webp";
-import herobannerinnerimg from "../../assets/images/services/domainregisteration/herobanner-inner.svg";
+import herobannerinnerimg from "../../assets/images/services/domainregisteration/herobanner-inner.webp";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
-import aboutimg from "../../assets/images/services/domainregisteration/aboutimg.svg";
+import aboutimg from "../../assets/images/services/domainregisteration/aboutimg.webp";
 import chooseimg from "../../assets/images/services/domainregisteration/readytransfer.webp";
 import DomainRegisterationServices from "../../components/DomainRegisterationServices";
 import DomainRegisterProcess from "../../components/DomainRegisterProcess";
@@ -118,7 +118,7 @@ const DomainRegisteration = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="Learn More About United Web Studios"
-          aboutbtnlink="/contact-us"
+          aboutbtnlink="/about"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 
@@ -130,14 +130,14 @@ const DomainRegisteration = () => {
 
         <WordPressPerformanceSection
           minihead="About Us"
-          miniheadclass="minihead"
+          miniheadclass="minihead d-none"
           secTitle1="Get the Domain Name Brands"
           secTitle2="Dream Of"
           description="A domain is your brand’s identity; it should be the one that reflects your brand’s essence. At United Web Studios, we make it simple to buy a domain name in the USA. We give our best in supporting startups or even working with established businesses. Our experts help you choose, register, and manage your domain effortlessly."
           image={chooseimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="Search Your Domain"
+          btntext="Get Started Today"
           aboutbtnlink="/contact-us"
           learnmorebtn="theme-btn theme-btn__yellow"
         />

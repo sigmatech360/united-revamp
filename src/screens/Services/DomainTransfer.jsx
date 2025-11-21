@@ -162,7 +162,7 @@ const DomainTransfer = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="Learn More About United Web Studios"
-          aboutbtnlink="/contact-us"
+          aboutbtnlink="/about"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 

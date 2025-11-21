@@ -134,7 +134,7 @@ const BackendDevelopment = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="More About United Web Developers"
-          aboutbtnlink="/contact-us"
+          aboutbtnlink="/about"
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 

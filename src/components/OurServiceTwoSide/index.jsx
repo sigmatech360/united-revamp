@@ -25,14 +25,14 @@
                         <div className="twoside-service-txt">
                             <h4>{props.servicehead1}</h4>
                             <p>{props.servicepara1}</p>
-                            <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button>
+                            {/* <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button> */}
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="twoside-service-txt">
                             <h4>{props.servicehead2}</h4>
                             <p>{props.servicepara2}</p>
-                            <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button>
+                            {/* <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button> */}
                         </div>
                     </div>
                       <div className="col-lg-6">
@@ -49,7 +49,7 @@
                         <div className="twoside-service-txt">
                             <h4>{props.servicehead3}</h4>
                             <p>{props.servicepara3}</p>
-                            <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button>
+                            {/* <button  className="theme-btn theme-btn__yellow" openModal={() => setShowModal(true)} >Explore More</button> */}
                         </div>
                     </div>
                 </div>

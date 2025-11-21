@@ -169,7 +169,7 @@ const Frontenddevelopment = () => {
         <FrontendServices
           minihead="Services"
           mainhead="Our Frontend Development Services"
-          mainpara="At United Web Developers, our front-end development services go beyond code, we create interfaces that move, respond, and convert."
+          mainpara="At United Web Dev elopers, our front-end development services go beyond code, we create interfaces that move, respond, and convert."
           btntxt="See How Service Can Help You"
           services={frontendservices}
         />
