@@ -30,6 +30,7 @@ import Frontenddevelopment from "../screens/Services/Frontenddevelopment";
 import BackendDevelopment from "../screens/Services/BackendDevelopment";
 import DomainRegisteration from "../screens/Services/DomainRegisteration";
 import DomainTransfer from "../screens/Services/DomainTransfer";
+import ReactDevelopmentFlorida from "../screens/locationpages/ReactDevelopmentFlorida";
 
 // Import your components/pages
 
@@ -99,6 +100,7 @@ const AppRouter = () => {
         {/* Location Pages Start */}
         <Route path="/app-development-florida" element={<AppDevelopmentFlorida />} />
         <Route path="/wordpress-development-florida" element={<WordpressDevelopmentFlorida />} />
+        <Route path="/react-development-florida" element={<ReactDevelopmentFlorida />} />
       </Routes>
     </Router>
   );

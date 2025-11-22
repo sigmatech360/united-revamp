@@ -22,7 +22,8 @@ const DomainTransfer = () => {
   const processData = {
     minihead: "Benifits",
     mainhead: "Why and When Domain Transfer is Better",
-    mainpara: "If your website is getting slow, lagging, web pages are taking hours to load, or your provider has ghosted you, we think it's time to outgrow the old and embrace the new, more powerful domain for your brand.",
+    mainpara:
+      "If your website is getting slow, lagging, web pages are taking hours to load, or your provider has ghosted you, we think it's time to outgrow the old and embrace the new, more powerful domain for your brand.",
     steps: [
       {
         number: "01",
@@ -47,7 +48,7 @@ const DomainTransfer = () => {
         title: "Finalize & Confirm",
         description:
           "Once your domain migration completes, we verify uptime, data integrity, and SSL setup to ensure your domain name transfer in the USA is live, fast, and flawless.",
-      },  
+      },
     ],
   };
 
@@ -72,17 +73,20 @@ const DomainTransfer = () => {
 
   const faqsData = [
     {
-      header: "What makes United Web Developers different from other domain transfer providers?",
+      header:
+        "What makes United Web Developers different from other domain transfer providers?",
       content:
         "We don’t just move your domain; we migrate your entire digital identity, data, DNS, and security, with zero downtime and complete transparency.",
     },
     {
-      header: "Do you provide domain transfer services for all types of domains and providers?",
+      header:
+        "Do you provide domain transfer services for all types of domains and providers?",
       content:
         "Absolutely. We handle transfers across all major registrars and extensions, ensuring smooth transitions and verified ownership, no matter where your domain currently resides.",
     },
     {
-      header: "Which platforms and registrars do you specialize in for domain transfers?",
+      header:
+        "Which platforms and registrars do you specialize in for domain transfers?",
       content:
         "We specialize in providing domain transfer in the USA, managing migrations between GoDaddy, Google Domains, Namecheap, and more, safely, swiftly, and with full compliance.",
     },
@@ -123,8 +127,7 @@ const DomainTransfer = () => {
           minihead="Not Just a URL"
           miniheadclass="minihead"
           secTitle1="Your Domain is the Heart of Your Brand"
-          description="You might see your domain as just a URL, but it’s way more than that. It holds and connects every fragment of your web and app: your passkeys, your integrations, your configurations, and even your email pathways. It’s the invisible thread that keeps your business alive and accessible online. At United Web Developers, our domain registration transfer in the USA makes sure that this core stays protected, stable, and seamlessly functional through every transition. Because when your domain stays healthy, your entire digital ecosystem moves with it, and we make sure nothing breaks on the way.
-"
+          description="You might see your domain as just a URL, but it’s way more than that. It holds and connects every fragment of your web and app: your passkeys, your integrations, your configurations, and even your email pathways. It’s the invisible thread that keeps your business alive and accessible online. At United Web Developers, our domain registration transfer in the USA makes sure that this core stays protected, stable, and seamlessly functional through every transition. Because when your domain stays healthy, your entire digital ecosystem moves with it, and we make sure nothing breaks on the way."
           image={aboutimg}
           listClass="d-none"
           TouchBtn="d-none"
@@ -153,34 +156,34 @@ const DomainTransfer = () => {
         />
 
         <section className="line-sec">
-        <WordPressPerformanceSection
-          wordpresssecclass="WordPressPerformanceSection"
-          miniheadclass="minihead d-none"
-          secTitle1="So, What Exactly Happens When You Transfer Your Domain"
-          description="It’s simple, really. Your website or web app gets a boost from the slower provider, ghosting you whenever you complain to a faster, more reliable server."
-          image={domaintransfer}
-          listClass="d-none"
-          TouchBtn="d-none"
-          btntext="Learn More About United Web Studios"
-          aboutbtnlink="/about"
-          learnmorebtn="theme-btn theme-btn__yellow"
-        />
+          <WordPressPerformanceSection
+            wordpresssecclass="WordPressPerformanceSection"
+            miniheadclass="minihead d-none"
+            secTitle1="So, What Exactly Happens When You Transfer Your Domain"
+            description="It’s simple, really. Your website or web app gets a boost from the slower provider, ghosting you whenever you complain to a faster, more reliable server."
+            image={domaintransfer}
+            listClass="d-none"
+            TouchBtn="d-none"
+            btntext="Learn More About United Web Studios"
+            aboutbtnlink="/about"
+            learnmorebtn="theme-btn theme-btn__yellow"
+          />
 
-        <WordPressPerformanceSection
-          reverse
-          wordpresssecclass="WordPressPerformanceSection transfer-choose-sec"
-          minihead="The Best in Business"
-          miniheadclass="minihead"
-          secTitle1="Trusted by Americans. Powered by Results"
-          description="If you think you’re just moving a domain or simply a provider, think again! You’re saving your website data, your backups, emails, and security keys, all to a provider that is fast, secure, and one that can be trusted. Thus, the best way is to help you choose a provider that fits all your needs."
-          whyChooseItems={webwhylist}
-          image={chooseimg}
-          listClass="d-none"
-          TouchBtn="d-none"
-          btntext="Work With the Experts"
-          aboutbtnlink="/contact-us"
-          learnmorebtn="theme-btn theme-btn__yellow"
-        />
+          <WordPressPerformanceSection
+            reverse
+            wordpresssecclass="WordPressPerformanceSection transfer-choose-sec"
+            minihead="The Best in Business"
+            miniheadclass="minihead"
+            secTitle1="Trusted by Americans. Powered by Results"
+            description="If you think you’re just moving a domain or simply a provider, think again! You’re saving your website data, your backups, emails, and security keys, all to a provider that is fast, secure, and one that can be trusted. Thus, the best way is to help you choose a provider that fits all your needs."
+            whyChooseItems={webwhylist}
+            image={chooseimg}
+            listClass="d-none"
+            TouchBtn="d-none"
+            btntext="Work With the Experts"
+            aboutbtnlink="/contact-us"
+            learnmorebtn="theme-btn theme-btn__yellow"
+          />
         </section>
 
         <LocationContact

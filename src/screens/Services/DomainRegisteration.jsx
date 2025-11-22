@@ -105,7 +105,7 @@ const DomainRegisteration = () => {
           cta2="hehe"
         />
 
-        <DomainSearchPrice />
+        {/* <DomainSearchPrice /> */}
 
         <WordPressPerformanceSection
           reverse

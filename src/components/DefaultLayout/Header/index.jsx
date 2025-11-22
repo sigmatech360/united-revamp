@@ -294,6 +294,14 @@ const Header = () => {
                     >
                       Wordpress Development
                     </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/react-development-florida"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Reactjs Development
+                    </NavDropdown.Item>
                   </div>
                 </div>
               </Dropdown.Menu>

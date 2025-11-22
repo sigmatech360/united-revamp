@@ -15,7 +15,7 @@ const DomainTransferServices = () => {
                         <h6 className='minihead'>What We Do</h6>
                         <h2 className='mainhead text-white'>Our Domain-Related Services</h2>
                         <p>As a full-stack IT company, we offer every single domain transfer service in USA be it buying, transferring, maintaining, and securing. Below are our domain-related services.</p>
-                        <Link to="/contact-us" className='theme-btn theme-btn__yellow'>Explore Services</Link>
+                        <Link to="/contact-us" className='theme-btn theme-btn__yellow'>Let’s Start the Process</Link>
                     </div>
                 </div>
                 <div className="col-lg-7">  
