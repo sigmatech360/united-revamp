@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FormModal from "../FormModal";
 
-const FrontendServices = ({ minihead, mainhead, mainpara, services, btntxt }) => {
-    const [showModal, setShowModal] = useState(false);
+const FrontendServices = ({
+  minihead,
+  mainhead,
+  mainpara,
+  services,
+  btntxt,
+}) => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="frontend-services-sec">
       <div className="container">
@@ -18,23 +24,43 @@ const FrontendServices = ({ minihead, mainhead, mainpara, services, btntxt }) =>
         </div>
 
         <div className="row">
-          {services?.map((item, idx) => (
-            <div className="col-lg-4 col-md-6" key={idx}>
-              <div className="frontend-service-box">
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
+          {services?.map((item, idx) => {
+            let Icon = item.icon;
+            console.log("icon", Icon);
+
+            return (
+              <div className="col-lg-4 col-md-6" key={idx}>
+                <div className="frontend-service-box">
+                  {item.icon && (
+                    <img src={item.icon} className="frontend-service-icon" />
+                  )}
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                  <ul>
+                    {item.list &&
+                      item.list.map((listItem, listIdx) => (
+                        <li key={listIdx}>{listItem}</li>
+                      ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        {btntxt && (
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="frontend-service-btn">
+                <button
+                  className="theme-btn theme-btn__yellow"
+                  onClick={() => setShowModal(true)}
+                >
+                  {btntxt}
+                </button>
               </div>
             </div>
-          ))}
-        </div>
-
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="frontend-service-btn">
-              <button className="theme-btn theme-btn__yellow"  onClick={() => setShowModal(true)}>{btntxt}</button>
-            </div>
           </div>
-        </div>
+        )}
       </div>
       <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </section>

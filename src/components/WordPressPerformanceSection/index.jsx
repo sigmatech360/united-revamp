@@ -182,7 +182,7 @@ const WordPressPerformanceSection = (props) => {
                 <img
                   src={props.image}
                   alt="Service About"
-                  className="img-fluid"
+                  className={`img-fluid ${props.imgClass || ""} `}
                   data-aos={imageAos}
                   data-aos-duration="1000"
                   data-aos-offset="50"
@@ -236,6 +236,7 @@ const WordPressPerformanceSection = (props) => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

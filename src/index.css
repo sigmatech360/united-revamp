@@ -3571,6 +3571,10 @@ section.whatwedo-sec {
   height: 100%;
 }
 
+.frontend-services-sec.brandStategy-process-sec .title {
+  font-family: "Raleway", sans-serif;
+}
+
 section.whatwedo-sec {
   padding: 70px 0px;
 }
@@ -3638,10 +3642,34 @@ section.frontend-services-sec {
   font-size: 18px;
   padding: 0px 0px 20px 0px;
 }
+.brandStategy-process-sec h4 {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 0px 0px 20px 0px;
+}
 
 .frontend-service-box p {
   color: #fff;
   font-size: 14px;
+}
+.frontend-service-box img {
+  margin-bottom: 1rem;
+  width: 60px;
+}
+
+.frontend-service-box ul {
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+}
+.frontend-service-box ul li {
+  list-style: disc;
+  padding: 0;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.frontend-service-box ul li::marker {
+  color: #d7ff00;
 }
 
 .frontend-service-btn {
@@ -4390,6 +4418,30 @@ section.domain-register-process {
   width: 40px;
   margin: 0px 0px 10px 0px;
 }
+/* --------- performance-box------- */
+
+.performance-box {
+  background: #2a2a2a;
+  padding: 30px;
+  margin: 0px 0px 20px 0px;
+  border-radius: 20px;
+}
+
+.performance-box h3 {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+.performance-box p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.performance-box img {
+  width: 70px;
+  margin: 0px 0px 10px 0px;
+}
 
 /************* Domain Registeration Page CSS End *************/
 
@@ -4472,8 +4524,6 @@ section.domain-register-process {
   padding: 10px 0px;
 }
 
-
-
 .line-sec {
   position: relative;
 }
@@ -4483,19 +4533,196 @@ section.domain-register-process {
   content: "";
   background: url(./assets/images/services/domaintransfer/line.webp) no-repeat
     top center;
-    width: 410px;
-    height: 180px;
-    right: 240px;
-    top: 44%;
+  width: 410px;
+  height: 180px;
+  right: 240px;
+  top: 44%;
 }
 
 .reactjs-location-goodbanner {
-    padding: 220px 0px 120px 0px;
+  padding: 220px 0px 120px 0px;
 }
 
 /************* Domain Transfer Page CSS End *************/
 
+.serve-item:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
 
+.brand-services .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: none;
+  background: #242424;
+}
+
+.brand-services .accordion {
+  background: transparent;
+  border: none;
+}
+
+.brand-services .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #242424;
+  color: #ffffff;
+  border: 1px solid #d7ff00 !important;
+  border-radius: 9px;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.brand-services
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #d7ff00;
+  font-weight: 700;
+  border-radius: 9px 9px 0 0;
+}
+
+.brand-services .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.brand-services .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/icons/general/arrowRightLight.webp);
+  transform: rotate(0deg);
+  /* width: 50px; */
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/icons/general/arrowRightDark.webp);
+  transform: rotate(-90deg);
+}
+
+.brand-services
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+.startnow-sec-content {
+  padding: 5rem 4rem;
+  background: #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+
+.brand-service-box .service-box-head {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.brand-service-box {
+  padding: 20px 16px;
+  border: 1px solid #ffffff79;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 19px;
+  background-color: #242424;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.brand-service-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translatey(-50%);
+  width: 70px;
+  height: 14px;
+  background-image: url(./assets/images/icons/general/arrowRightLight.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.brand-service-box:hover {
+  background-color: #d7ff00;
+  cursor: pointer;
+  color: #191919;
+}
+
+.brand-service-box:hover::after {
+  background-image: url(./assets/images/icons/general/arrowRightDark.webp);
+}
+
+.brand-voice-service-box .right-icon {
+  background: #d7ff00;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.brand-voice-service-box {
+  color: white;
+  padding: 2rem;
+  background: #242424;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.brand-voice-service-box.impact-box {
+  background-color: #d7ff00;
+}
+.brand-voice-service-box.impact-box * {
+  color: #000 !important;
+}
 
 @keyframes marqueeScroll {
   from {
@@ -4505,8 +4732,6 @@ section.domain-register-process {
     transform: translateX(-50%);
   }
 }
-
-
 
 /* Media quries */
 
@@ -4576,7 +4801,7 @@ section.domain-register-process {
   .line-sec::before {
     height: 100px;
     background-size: contain;
-}
+  }
 }
 
 @media (max-width: 1280px) {
@@ -4587,8 +4812,7 @@ section.domain-register-process {
   .line-sec::before {
     background-size: contain;
     height: 100px;
-}
-
+  }
 }
 
 @media (max-width: 1199px) {
@@ -4812,7 +5036,7 @@ section.domain-register-process {
     font-size: 15px;
   }
 
-    .line-sec::before {
+  .line-sec::before {
     display: none;
   }
 }
@@ -5036,7 +5260,7 @@ section.domain-register-process {
     padding: 130px 0 40px;
   }
 
-    .line-sec::before {
+  .line-sec::before {
     display: none;
   }
 }
@@ -5794,10 +6018,10 @@ section.domain-register-process {
     padding: 100px 0px 70px 0px;
   }
 
-
-        .different-domain-price:nth-child(2), .different-domain-price:nth-child(4) {
-        border: none;
-    }
+  .different-domain-price:nth-child(2),
+  .different-domain-price:nth-child(4) {
+    border: none;
+  }
 }
 
 @media (max-width: 430px) {

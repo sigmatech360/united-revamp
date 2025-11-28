@@ -25,7 +25,7 @@ const Header = () => {
           <img src={logo} alt="United revemp developers logo" />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav"  />
+        <Navbar.Toggle aria-controls="navbar-nav" />
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
@@ -89,22 +89,22 @@ const Header = () => {
 
                 {/* CMS Development & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
-                <NavDropdown.Item
-                  as={Link}
-                  to="/cms-development"
-                  onClick={(e) => e.stopPropagation()}
-                  target="_blank"
-                >
-                  CMS Development
-                   <span className="submenu-icon d-none d-lg-inline">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/cms-development"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    CMS Development
+                    <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
                     <span className="submenu-icon d-inline d-lg-none">
                       <FaCaretDown />
                     </span>
-                </NavDropdown.Item>
+                  </NavDropdown.Item>
                   <div className="nav-subdropdown">
-                     <NavDropdown.Item
+                    <NavDropdown.Item
                       as={Link}
                       to="/wordpress-development"
                       onClick={(e) => e.stopPropagation()}
@@ -159,24 +159,23 @@ const Header = () => {
                   </div>
                 </div>
 
-
-                 {/* Custom Development & Inner Pages */}
-                 <div className="nav-subdropdown-wrapper">
-                <NavDropdown.Item
-                  as={Link}
-                  to="/custom-development"
-                  onClick={(e) => e.stopPropagation()}
-                  target="_blank"
-                >
-                  Custom Development
-                  <span className="submenu-icon d-none d-lg-inline">
+                {/* Custom Development & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/custom-development"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    Custom Development
+                    <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
                     <span className="submenu-icon d-inline d-lg-none">
                       <FaCaretDown />
                     </span>
-                </NavDropdown.Item>
-                 <div className="nav-subdropdown">
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
                     <NavDropdown.Item
                       as={Link}
                       to="/frontend-development"
@@ -196,17 +195,51 @@ const Header = () => {
                   </div>
                 </div>
 
-              
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   as={Link}
                   to="/mobile-app-development"
                   onClick={(e) => e.stopPropagation()}
                   target="_blank"
                 >
                   Mobile App Development
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
-                  {/* Hosting Domain & Inner Pages */}
+                {/* App Domain & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    App Development{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/web-app-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                     Web App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/mobile-app-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+
+                {/* Hosting Domain & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as="button"
@@ -240,11 +273,44 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+                {/* Branding & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    Branding Identity{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/brand-strategy"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Brand Strategy
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/brand-voice"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Brand Voice
+                    </NavDropdown.Item>
+                  </div>
+                </div>
               </Dropdown.Menu>
             </Dropdown>
 
-
-             <Dropdown id="services-dropdown">
+            <Dropdown id="services-dropdown">
               <Dropdown.Toggle
                 as="button"
                 className={`custom-toggle nav-link ${

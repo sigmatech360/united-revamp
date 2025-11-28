@@ -85,6 +85,39 @@ const DomainRegisteration = () => {
     ],
   };
 
+  const items = [
+    {
+      title: "Web Hosting",
+      description:
+        "Our web hosting services deliver secure servers to keep your website online around the clock. With fast loading speeds and guaranteed uptime, we provide reliable hosting solutions to ensure your visitors enjoy a smooth and uninterrupted experience.",
+    },
+    {
+      title: "Website Design",
+      description:
+        "Our website design team creates modern, user-friendly, and visually engaging sites that connect with your audience. We focus on responsive layouts and professional designs that reflect your brand’s identity and convert visitors into loyal customers.",
+    },
+    {
+      title: "Custom Development",
+      description:
+        "We build powerful, custom-coded websites and applications that deliver performance and flexibility. From complex backend systems to sleek frontends, our development team ensures your website runs smoothly and meets your unique business requirements.",
+    },
+    {
+      title: "Server Management",
+      description:
+        "Our server management services ensure your hosting environment is secure, updated, and optimized for speed. We monitor performance, apply updates, and handle configurations so your servers stay reliable and efficient at all times.",
+    },
+    {
+      title: "Search Engine Optimization",
+      description:
+        "Our SEO experts improve your website's visibility across major search engines. With data-driven strategies, keyword research, and on-page optimization, we help your site rank higher and attract organic traffic.",
+    },
+    {
+      title: "Website Maintenance",
+      description:
+        "We provide regular website updates, backups, and security checks to keep your site running smoothly. We help you in fixing glitches, offer content updates, and even web design because we ensure your website stays functional, secure, and optimized for performance.",
+    },
+  ]
+
   return (
     <>
       <ReactHelmet
@@ -122,7 +155,12 @@ const DomainRegisteration = () => {
           learnmorebtn="theme-btn theme-btn__yellow"
         />
 
-        <DomainRegisterationServices />
+        <DomainRegisterationServices
+          minihead="Complete Web Experience"
+          headTitle="Explore More Of Our Services"
+          headText="From domain registration to full-scale website management, United Web Studios provides complete web solutions designed to help businesses build, host, and grow their digital presence."
+          items={items}
+        />
 
         <DomainRegisterProcess {...processData} />
 

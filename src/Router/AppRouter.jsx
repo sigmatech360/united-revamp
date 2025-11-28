@@ -31,6 +31,9 @@ import BackendDevelopment from "../screens/Services/BackendDevelopment";
 import DomainRegisteration from "../screens/Services/DomainRegisteration";
 import DomainTransfer from "../screens/Services/DomainTransfer";
 import ReactDevelopmentFlorida from "../screens/locationpages/ReactDevelopmentFlorida";
+import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
+import BrandStrategy from "../screens/Services/BrandStrategy";
+import BrandVoice from "../screens/Services/BrandVoice";
 
 // Import your components/pages
 
@@ -69,11 +72,17 @@ const AppRouter = () => {
 
 
         <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
+        <Route path="/web-app-development" element={<WebAppDevelopment />}/>
 
 
         {/* Hosting & Domain Inner Pages */}
         <Route path="/domain-registeration" element={<DomainRegisteration />} />
         <Route path="/domain-transfer" element={<DomainTransfer />} />
+
+
+        {/* Branding Inner Pages */}
+        <Route path="/brand-strategy" element={<BrandStrategy />} />
+        <Route path="/brand-voice" element={<BrandVoice />} />
 
 
         <Route path="/logo-design" element={<LogoDesign />} />

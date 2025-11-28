@@ -5,7 +5,7 @@ const ServiceFaqs = ({ minihead, mainhead, mainpara, faqsData}) => {
   return (
     <section className='service-faqs-sec'>
         <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
                 <div className="col-lg-6">
                     <div className="service-faqs-head">
                         <h6 className='minihead'>{minihead}</h6>
