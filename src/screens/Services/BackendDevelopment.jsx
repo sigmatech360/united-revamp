@@ -20,6 +20,9 @@ import TabsPricing from "../../components/TabsPricing";
 import { dynamictabsData } from "../../data";
 import HomeBlogsSec from "../../components/HomeBlogsSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import doublecheck from "../../assets/images/services/backenddevelopment/doublcheck.svg"
+import chooseimg from "../../assets/images/services/backenddevelopment/chooseimg.webp";
+
 
 const BackendDevelopment = () => {
   const industries = [
@@ -140,7 +143,25 @@ const BackendDevelopment = () => {
 
         <BackendServices/>
 
-        <BackendChoose />
+        <BackendChoose
+            minihead="Why Choose Us"
+            mainhead="Our Technical Edge in Backend Development"
+            points={[
+              "Expertise in complex backend architecture",
+              "Custom API and database integration capabilities",
+              "Scalable frameworks for future growth",
+              "Security-first development approach",
+              "Continuous optimization and performance monitoring",
+              "Transparent communication and project ownership",
+            ]}
+            doublecheck={doublecheck}
+            chooseimg={chooseimg}
+            description="At United Web Developers, we don’t just build backends, we engineer dependable infrastructures that drive digital success. Our team ensures every line of code contributes to performance, scalability, and innovation."
+            showButton={false}
+            buttonText="View Our Case Studies"
+            buttonLink="/contact-us"
+          />
+
 
         <Industryslider
           secClass="backend-industry-slider"

@@ -3386,13 +3386,13 @@ section.slider-portfolio-sec {
   margin: 0px 0px 30px 0px;
 }
 
-section.tabs-pricing-sec .tabs-pricing-head h2 {
+/* section.tabs-pricing-sec .tabs-pricing-head h2 {
   color: #fff;
 }
 
 section.tabs-pricing-sec .tabs-pricing-head p {
   color: #fff;
-}
+} */
 
 .tab-pricing-bg {
   padding: 170px 0px 70px 0px !important;
@@ -3704,7 +3704,7 @@ section.frontend-services-sec {
 }
 
 section.industry-slider-sec {
-  padding: 70px 0px;
+  padding: 130px 0px 90px 0px;
 }
 
 .industry-slider-cardheader {
@@ -3863,7 +3863,7 @@ section.frontend-projects-sec {
 
 .backend-choose-txt ul {
   padding: 0px;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .backend-choose-txt ul li {
@@ -4545,6 +4545,9 @@ section.domain-register-process {
 
 /************* Domain Transfer Page CSS End *************/
 
+
+/************* Brand Voice Page CSS Start *************/
+
 .serve-item:hover {
   transform: scale(1.1) !important;
   cursor: pointer;
@@ -4723,6 +4726,423 @@ section.domain-register-process {
 .brand-voice-service-box.impact-box * {
   color: #000 !important;
 }
+
+
+/************* Brand Voice Page CSS End *************/
+
+
+
+/************* Domain Registeration Florida Page CSS Start *************/
+
+.domain-registeration-florida .services-banner__img img {
+    height: 500px;
+    object-fit: contain;
+}
+
+
+
+.location-expertise-sec {
+  background: url(./assets/images/locationpages/domain-registeration-florida/expertise-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.location-expertise-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.location-expertise-head p {
+    color: #fff;
+}
+
+.location-expertise-box {
+    background: #b3b3b329;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px;
+}
+
+.location-expertise-box img {
+    width: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+.location-expertise-box h4 {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 0px 15px 0px;
+}
+
+.location-expertise-box p {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.local-specialist-sec {
+  background: url(./assets/images/locationpages/domain-registeration-florida/texasdomain-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.location-expertises .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: 1px solid #ffffff7a !important;
+  background: transparent;
+}
+
+.location-expertises .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-expertises .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #d7ff3552;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #191919;
+  background-color: #D7FF35;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.location-expertises .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-expertises .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #191919;
+  background: #D7FF35;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/domain-registeration-florida/downarrow.webp);
+  transform: rotate(0deg);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/domain-registeration-florida/uparrow.webp);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+
+.local-specialist-txt {
+    margin: 50px 0px 50px 0px;
+}
+
+.local-specialist-txt p {
+    color: #fff;
+}
+
+
+/************* Domain Registeration Florida Page CSS End *************/
+
+
+
+/************* Logo Design New Page CSS Start *************/
+
+
+.logo-design-services {
+  background: url(./assets/images/services/logodesign/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.logodesign-service-card img {
+    width: 100%;
+    margin: 0px 0px 19px 0px;
+}
+
+.logodesign-service-card h4 {
+    color: #D7FF00;
+    padding: 0px 0px 15px 0px;
+    font-size: 22px;
+}
+
+.logodesign-service-card p {
+    color: #fff;
+    padding: 0px 0px 20px 0px;
+}
+
+.logodesign-service-card {
+    margin: 0px 0px 50px 0px;
+}
+
+.logodesign-service-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.logodesign-service-head p {
+    color: #fff;
+}
+
+.tab-pricing-bg .tabs-pricing-head h2,
+.tab-pricing-bg .tabs-pricing-head p {
+  color: #fff;
+}
+
+.logodesign-portfolio-sec {
+    background: url(./assets/images/services/logodesign/portfolio-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.logodesign-portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+}
+
+.logodesign-portfolio-images img {
+    width: 250px;
+}
+
+.logodesign-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.logodesign-industry-slider {
+  padding: 60px 0px;
+}
+
+
+
+.logodesign-industry-slider .frontendindustryhead {
+    justify-content: center;
+    text-align: center;
+}
+
+.logodesign-industry-slider .industry-slider-head {
+    margin: 0px;
+}
+
+
+/************* Logo Design New Page CSS End *************/
+
+
+
+/************* Web Design New Page CSS Start *************/
+
+
+.webdesign-industry-slider {
+  background: url(./assets/images/services/webdesign/industry-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.webdesign-industry-slider .frontendindustryhead {
+    justify-content: center;
+}
+
+.webdesign-industry-slider .frontendindustryhead .industry-slider-head {
+    text-align: center;
+        margin: 0px;
+}
+
+.webdesign-industry-slider .frontendindustryhead .industry-slider-head h2,
+.webdesign-industry-slider .frontendindustryhead .industry-slider-head p {
+    color: #fff;
+}
+
+
+.webdesign-service-sec {
+   background: url(./assets/images/services/webdesign/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.webdesign-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.webdesign-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.webdesign-service-card h4 {
+    color: #D7FF00;
+    padding: 0px 0px 15px 0px;
+    font-size: 22px;
+}
+
+.webdesign-service-card img {
+    width: 100%;
+    margin: 0px 0px 19px 0px;
+}
+
+.webdesign-service-card p {
+    color: #fff;
+}
+
+.webdesign-service-btn {
+    text-align: center;
+    margin: 70px 0px  0px 0px;
+}
+
+.webdesign-choose-new {
+  background: url(./assets/images/services/webdesign/chooseimg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.webdesign-choose-new .abouttxt-data h2,
+.webdesign-choose-new .abouttxt-data p {
+    color: #fff;
+}
+
+.webdesign-choose-new .web-whychoose-listtxt h5 {
+  color: #fff;
+}
+
+.webdesign-choose-new .services__about-img {
+  display: none;
+}
+
+.marquee-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-track img {
+  width: 320px;     
+  height: auto;
+  margin: 0 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Smooth infinite scroll */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .marquee-track img {
+    width: 240px;
+    margin: 0 15px;
+  }
+}
+
+.webdesign-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+
+section.webdesign-portfolio-sec {
+    padding: 70px 0px;
+}
+
+.logodesign-portfolio-btn {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+.webdesign-portfolio-btn {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.overflow-class {
+    overflow-x: hidden;
+}
+
+/************* Web Design New Page CSS End *************/
+
+
 
 @keyframes marqueeScroll {
   from {
@@ -5263,6 +5683,10 @@ section.domain-register-process {
   .line-sec::before {
     display: none;
   }
+
+  .logodesign-portfolio-images {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 
 @media (max-width: 768px) {
@@ -5424,6 +5848,25 @@ section.domain-register-process {
   .line-sec::before {
     display: none;
   }
+
+  .logodesign-portfolio-images img {
+    width: 200px;
+  }
+
+  .logodesign-portfolio-images {
+    row-gap: 30px;
+  }
+
+  .webdesign-service-card {
+    margin: 0px 0px 40px 0px;
+}
+
+.wordpress-choose-listsec .web-whychoose-list {
+    text-align: left;
+}
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -6022,6 +6465,36 @@ section.domain-register-process {
   .different-domain-price:nth-child(4) {
     border: none;
   }
+
+  .logodesign-portfolio-images {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+
+    .logodesign-portfolio-images img {
+        width: 160px;
+    }
+
+    .logodesign-service-card {
+    text-align: center;
+}
+
+
+.logo-design-services {
+    padding: 120px 0px 50px 0px;
+}
+
+.webdesign-service-card {
+    text-align: center;
+}
+
+.webdesign-service-btn {
+    margin: 30px 0px 0px 0px;
+}
+
+
+
+
 }
 
 @media (max-width: 430px) {

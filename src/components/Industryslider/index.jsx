@@ -9,6 +9,8 @@ const Industryslider = ({
   mainhead,
   mainpara,
   btntxt,
+  description,
+  headCol,
   industries,
 }) => {
 
@@ -18,10 +20,11 @@ const Industryslider = ({
       <div className="container">
         {/* ======== HEAD ROW ======== */}
         <div className="row frontendindustryhead">
-          <div className="col-lg-5">
+          <div className={headCol || "col-lg-5"}>
             <div className="industry-slider-head">
               <h6 className="minihead">{minihead}</h6>
               <h2 className="mainhead">{mainhead}</h2>
+              {description && <p>{description}</p>}
             </div>
           </div>
 
@@ -33,7 +36,7 @@ const Industryslider = ({
 
           <div className="col-lg-3">
             <div className="industry-slider-headbtn">
-              <Link to="/contact-us" className="theme-btn theme-btn__yellow" >{btntxt}</Link>
+            {btntxt && <Link to="/contact-us" className="theme-btn theme-btn__yellow" >{btntxt}</Link>}
             </div>
           </div>
         </div>

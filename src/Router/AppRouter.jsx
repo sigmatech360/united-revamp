@@ -34,6 +34,10 @@ import ReactDevelopmentFlorida from "../screens/locationpages/ReactDevelopmentFl
 import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
 import BrandStrategy from "../screens/Services/BrandStrategy";
 import BrandVoice from "../screens/Services/BrandVoice";
+import EcommerceDevelopmentFlorida from "../screens/locationpages/EcommerceDevelopmentFlorida";
+import DomainRegisterationFlorida from "../screens/locationpages/DomainRegisterationFlorida";
+import LogoDesignNew from "../screens/Services/LogoDesignNew";
+import WebDesignNew from "../screens/Services/WebDesignNew";
 
 // Import your components/pages
 
@@ -48,7 +52,7 @@ const AppRouter = () => {
         <Route path="/services" element={<Services />} />
 
         {/* Services Pages Start */}
-        <Route path="/web-design" element={<WebDesign />} />
+
 
         {/* CMS Development & Inner Pages */}
         <Route path="/cms-development" element={<CMSDevelopment />} />
@@ -85,20 +89,24 @@ const AppRouter = () => {
         <Route path="/brand-voice" element={<BrandVoice />} />
 
 
-        <Route path="/logo-design" element={<LogoDesign />} />
-        {/* Services Pages End */}
+
+        {/* <Route path="/logo-design" element={<LogoDesign />} /> */}
+        {/* <Route path="/web-design" element={<WebDesign />} /> */}
+        <Route path="/logo-design" element={<LogoDesignNew />} />
+        <Route path="/web-design" element={<WebDesignNew />} />
+
 
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
 
-        {/* Blogs Start */}
+
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route
           path="/blog/category/:categorySlug"
           element={<CategoryBlogs />}
         />
-        {/* Blogs Start */}
+
 
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -110,6 +118,8 @@ const AppRouter = () => {
         <Route path="/app-development-florida" element={<AppDevelopmentFlorida />} />
         <Route path="/wordpress-development-florida" element={<WordpressDevelopmentFlorida />} />
         <Route path="/react-development-florida" element={<ReactDevelopmentFlorida />} />
+        <Route path="/ecommerce-development-florida" element={<EcommerceDevelopmentFlorida />} />
+        <Route path="/domain-registeration-florida" element={<DomainRegisterationFlorida />} />
       </Routes>
     </Router>
   );
