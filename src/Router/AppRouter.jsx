@@ -38,6 +38,10 @@ import EcommerceDevelopmentFlorida from "../screens/locationpages/EcommerceDevel
 import DomainRegisterationFlorida from "../screens/locationpages/DomainRegisterationFlorida";
 import LogoDesignNew from "../screens/Services/LogoDesignNew";
 import WebDesignNew from "../screens/Services/WebDesignNew";
+import DomainTransferFlorida from "../screens/locationpages/DomainTransferFlorida";
+import AngularDevelopmentFlorida from "../screens/locationpages/AngularDevelopmentFlorida";
+import WebsiteContent from "../screens/Services/WebsiteContent";
+import BlogWriting from "../screens/Services/BlogWriting";
 
 // Import your components/pages
 
@@ -50,8 +54,25 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="/blog/category/:categorySlug" element={<CategoryBlogs />}/>
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="*" element={<NotFound />} />
+
+
 
         {/* Services Pages Start */}
+
+        
+        {/* <Route path="/logo-design" element={<LogoDesign />} /> */}
+        {/* <Route path="/web-design" element={<WebDesign />} /> */}
+        <Route path="/logo-design" element={<LogoDesignNew />} />
+        <Route path="/web-design" element={<WebDesignNew />} />
 
 
         {/* CMS Development & Inner Pages */}
@@ -60,13 +81,12 @@ const AppRouter = () => {
         <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
 
 
-
+        {/* Digital Marketing & Inner Pages */}
         <Route path="/digital-marketing" element={<DigitalMarketing />}/>
-        <Route
-          path="/social-media-marketing"
-          element={<SocialMediaMarketing />}
-        />
+        <Route path="/social-media-marketing" element={<SocialMediaMarketing />}/>
         <Route path="/search-engine-optimization" element={<SEO />} />
+      
+
 
 
         {/* Custom Development & Inner Pages */}
@@ -75,6 +95,7 @@ const AppRouter = () => {
         <Route path="/backend-development" element={<BackendDevelopment />}/>
 
 
+        {/* App Development Inner Pages */}
         <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
         <Route path="/web-app-development" element={<WebAppDevelopment />}/>
 
@@ -84,42 +105,25 @@ const AppRouter = () => {
         <Route path="/domain-transfer" element={<DomainTransfer />} />
 
 
+
         {/* Branding Inner Pages */}
         <Route path="/brand-strategy" element={<BrandStrategy />} />
         <Route path="/brand-voice" element={<BrandVoice />} />
 
 
+        {/* Content Writing & Inner Pages */}        
+        <Route path="/website-content" element={<WebsiteContent />} />
+        <Route path="/blog-writing" element={<BlogWriting />} />
 
-        {/* <Route path="/logo-design" element={<LogoDesign />} /> */}
-        {/* <Route path="/web-design" element={<WebDesign />} /> */}
-        <Route path="/logo-design" element={<LogoDesignNew />} />
-        <Route path="/web-design" element={<WebDesignNew />} />
-
-
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-
-
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blog/:slug" element={<BlogDetail />} />
-        <Route
-          path="/blog/category/:categorySlug"
-          element={<CategoryBlogs />}
-        />
-
-
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route path="*" element={<NotFound />} />
-
-
+    
         {/* Location Pages Start */}
         <Route path="/app-development-florida" element={<AppDevelopmentFlorida />} />
         <Route path="/wordpress-development-florida" element={<WordpressDevelopmentFlorida />} />
         <Route path="/react-development-florida" element={<ReactDevelopmentFlorida />} />
         <Route path="/ecommerce-development-florida" element={<EcommerceDevelopmentFlorida />} />
         <Route path="/domain-registeration-florida" element={<DomainRegisterationFlorida />} />
+        <Route path="/domain-transfer-florida" element={<DomainTransferFlorida />} />
+        <Route path="/angular-development-florida" element={<AngularDevelopmentFlorida />} />
       </Routes>
     </Router>
   );

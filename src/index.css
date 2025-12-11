@@ -2592,7 +2592,7 @@ p {
   /* background-color: #191919; */
   background-image: url(assets/images/footer-bg-img.webp);
   color: #fff;
-  padding: 120px 0 20px;
+  padding: 100px 0 10px;
   background-size: 100%;
   background-position: top center;
   overflow: hidden;
@@ -3339,7 +3339,15 @@ section.location-faqs-sec {
   width: 384px;
 }
 .sliderportfolio-img img {
-  width: 100%;
+  width: 90%;
+}
+.legendary-list li {
+    list-style: none;
+    padding: 3px 0px;
+}
+
+.legendary-list {
+    padding: 0px 0px;
 }
 
 section.slider-portfolio-sec {
@@ -4964,11 +4972,11 @@ section.domain-register-process {
 .logodesign-portfolio-images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    row-gap: 10px;
+    row-gap: 30px;
 }
 
 .logodesign-portfolio-images img {
-    width: 250px;
+    width: 200px;
 }
 
 .logodesign-portfolio-head {
@@ -5141,6 +5149,425 @@ section.webdesign-portfolio-sec {
 }
 
 /************* Web Design New Page CSS End *************/
+
+
+.angular-location-herobanner .services-banner__content h1 {
+      font-weight: bold;
+       color: #191919;
+}
+.angular-location-herobanner .services-banner__content p {
+    color: #191919;
+}
+
+
+.angular-location-mainpg .header-lightlogo {
+    display: none;
+}
+
+.angular-location-mainpg .header-darklogo {
+  display: block !important;
+}
+
+.angular-location-mainpg .nav-link {
+  color: #191919 !important;
+}
+
+
+/************* Website Content Page CSS Start *************/
+
+
+.websitecontent-services-sec {
+  background: url(./assets/images/services/websitecontent/serivce-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.websitecontent-serivces-head h2,
+.websitecontent-serivces-head p {
+    color: #fff;
+}
+
+.websitecontent-serivces-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.websitecontent-service-card {
+    background: #242424;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.webcontent-service-txt h4 {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+.webcontent-service-txt p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.webcontent-service-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.webcontent-service-btn {
+    text-align: end;
+}
+
+.webcontent-service-btn a {
+    background: #D7FF00;
+    color: #191919;
+    padding: 5px 12px 12px 12px;
+    line-height: normal;
+    border-radius: 100%;
+    font-size: 20px;
+} 
+
+
+.websitecontent-exceptional-sec .abouttxt-data h4 {
+    display: block !important;
+    background: #191919;
+    color: #D7FF35;
+    font-size: 20px;
+    padding: 7px 7px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px 0px !important;
+}
+
+.websitecontent-perfomance-sec .performance-box img {
+    display: none;
+}
+
+.websitecontent-perfomance-sec .performance-box h3 {
+    color: #D7FF35;
+}
+
+.websitecontent-process-sec {
+  background: url(./assets/images/services/websitecontent/process-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.webcontent-process-head h2,
+.webcontent-process-head p {
+  color: #fff;
+}
+
+
+.webcontent-process-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webcontent-process-card {
+    text-align: center;
+    padding: 50px 30px 30px 30px;
+    background: #242424;
+    position: relative;
+    margin: 0px 0px 60px 0px;
+}
+
+.webcontent-process-card h5 {
+    color: #fff;
+    padding: 0px 0px 20px 0px;
+}
+
+.webcontent-process-card p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.webcontent-process-card h3 {
+    position: absolute;
+    top: -30px;
+    background: #D7FF00;
+    color: #191919;
+    font-size: 26px;
+    padding: 14px;
+    border-radius: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 600;
+}
+
+/************* Website Content Page CSS End *************/
+
+
+/************* Blog Writing Page CSS Start *************/
+
+
+.blogwriting-services-sec {
+  background: url(./assets/images/services/blogwriting/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.blogwriting-services-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.blogwriting-services-head h2 {
+    color: #fff;
+}
+
+.blogwrting-service-card {
+    background: #242424;
+    border-radius: 20px;
+    margin: 0px 0px 30px 0px;
+    padding: 30px;
+}
+
+.blogwritng-service-icon img {
+    width: 70px;
+}
+
+.blogservice-service-txt h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.blogservice-service-txt p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.blogwritng-service-cardflex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blogwritng-service-icon {
+    height: 200px;
+}
+
+.blogservice-card-arrow span {
+    background: #D7FF00;
+    color: #191919;
+    padding: 5px 12px 12px 12px;
+    border-radius: 100%;
+    font-size: 20px;
+        cursor: pointer;
+    border: 1px solid #D7FF00;
+    transition: all .6s 
+ease;
+}
+
+.blogservice-card-arrow span:hover {
+    background: transparent;
+    color: #D7FF00;
+}
+
+.blogwriting-work-sec {
+    padding: 70px 0px;
+}
+
+.blogwriting-work-head {
+    text-align: center;
+    margin: 0px 0px 80px 0px;
+}
+
+.blogwriting-work-card h5 {
+    background: #242424;
+    color: #D7FF35;
+    display: inline-block;
+    padding: 15px 18px 15px 12px;
+    border-radius: 100%;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.blogwriting-work-card h4 {
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blogwriting-work-card p {
+    font-size: 16px;
+}
+
+
+/* .wordcard-blog-one,
+.wordcard-blog-two,
+.wordcard-blog-three {
+  position: relative;
+}
+
+.wordcard-blog-one::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/services/blogwriting/work1.webp);
+      top: -80px;
+    left: 60px;
+    height: 53%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.wordcard-blog-two::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/services/blogwriting/work2.webp);
+      top: -80px;
+    left: 60px;
+    height: 53%;
+    width: 100%;
+    object-fit: fill;
+} */
+
+
+.blogwriting-choose-sec {
+  background: url(./assets/images/services/blogwriting/choose-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.blogwriting-choose-sec .abouttxt-data h2 {
+    color: #fff;
+}
+
+.blogwriting-choose-sec .abouttxt-data {
+    margin: 70px 0px 0px 0px;
+}
+
+.blogwriting-choose-sec .abouttxt-data p {
+    color: #fff;
+}
+
+.blogwriting-choose-sec .abouttxt-data .blogwriting-list li svg {
+  display: none;
+}
+
+.blogwriting-choose-sec .abouttxt-data .blogwriting-list li {
+    color: #fff;
+    padding: 8px 0px;
+}
+
+.blogwriting-choose-sec .abouttxt-data .blogwriting-list li::marker {
+  color: #D7FF00;   
+}
+
+
+.blogwriting-choose-sec .abouttxt-data .blogwriting-list {
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+
+section.happy-client-sec {
+  padding: 80px 0px;
+}
+
+.happy-client-head {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+
+.happy-client-head p {
+  color: #161515;
+}
+
+.happy-clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 0px 50px 0px;
+}
+
+.happy-client-box {
+  text-align: center;
+}
+
+.happy-client-box h3 {
+  color: #161515;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.happy-client-box h5 {
+  color: #161515;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.happy-client-logotxt {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  row-gap: 40px;
+  width: 100%;
+  column-gap: 75px;
+}
+
+
+.blogwriting-order-bg {
+    background: #191919;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.blogwriting-order-img img {
+    width: 100%;
+}
+
+section.blogwriting-order-sec {
+    margin: 0px 0px 60px 0px;
+}
+
+
+.blogwrite-order-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0px 0px 0px;
+}
+
+.blogwrite-order-flextxt h4 {
+    color: #fff;
+    padding: 0px 0px 10px 0px;
+}
+
+.blogwrite-order-flextxt h6 {
+    color: #D7FF35;
+    font-size: 14px;
+}
+
+.blogwriting-order-btn {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+
+
+.overflow-body {
+    overflow-x: hidden;
+}
+
+/************* Blog Writing Page CSS End *************/
+
+
+
+
 
 
 
@@ -5865,7 +6292,27 @@ section.webdesign-portfolio-sec {
     text-align: left;
 }
 
+.blogwriting-about-sec .abouttxt-data .desc-two {
+    padding: 15px 0px 0px 0px;
+}
 
+.blogwriting-about-sec .abouttxt-data  .desc-three {
+      padding: 0px 0px 15px 0px;
+}
+
+.blogwriting-choose-sec .abouttxt-data {
+    text-align: left;
+}
+
+.happy-client-logotxt {
+    grid-template-columns: repeat(4, auto);
+    row-gap: 30px;
+    column-gap: 45px;
+}
+
+    .services-banner-sec {
+        padding: 130px 0 90px;
+    }
 
 }
 
@@ -6492,8 +6939,41 @@ section.webdesign-portfolio-sec {
     margin: 30px 0px 0px 0px;
 }
 
+.blogwrite-order-flex {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
 
+.blogwriting-order-bg {
+    padding: 30px;
+    border-radius: 20px;
+}
 
+.blogwrititing-order-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.happy-clients {
+    flex-direction: column;
+}
+
+.happy-client-box {
+    margin: 0px 0px 10px 0px;
+}
+
+.blogwriting-work-card {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.blogwriting-work-head {
+    margin: 0px 0px 40px 0px;
+}
+
+.happy-client-logotxt {
+    grid-template-columns: repeat(2, auto);
+}
 
 }
 

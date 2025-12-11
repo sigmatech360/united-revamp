@@ -289,6 +289,7 @@ const BrandVoice = () => {
           secTitle2="Brand Legendary"
           description="Our brand voice company in the USA combines creativity, analytics, and experience to craft branding solutions that resonate, engage audiences, and drive measurable business growth."
           landingList="list-unstyled"
+          AngularList="legendary-list "
           AngularChooseListItems={whyChooseItems}
           image={chooseimg2}
           listClass="d-none"

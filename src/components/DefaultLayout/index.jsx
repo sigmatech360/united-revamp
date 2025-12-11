@@ -6,11 +6,13 @@ const DefaultLayout = (props) => {
   return (
     <>
       {/* <div className="d-flex flex-column" style={{minHeight: '100vh'}}> */}
+      <div className="overflow-body">
         <Header />
           {/* <div className="flex-grow-1"> */}
               {props.children}
           {/* </div> */}
         <Footer footerTitle={props?.footerTitle} />
+        </div>
       {/* </div> */}
     </>
   );

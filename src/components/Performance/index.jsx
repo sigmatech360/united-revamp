@@ -1,7 +1,8 @@
 import React from "react";
 
-const Performance = ({ data = [] }) => {
+const Performance = ({ secClass, data = [] }) => {
   return (
+    <section className={`performance-box-sec ${secClass}`}>
     <div className="container py-5">
       <div className="row">
         {data.map((item, index) => (
@@ -20,6 +21,7 @@ const Performance = ({ data = [] }) => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

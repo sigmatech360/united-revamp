@@ -34,7 +34,7 @@ const WordPressPerformanceSection = (props) => {
           <div className={rowClasses}>
             <div className={props.leftCol || "col-lg-6"}>
               <div className={props.textClassbox || "abouttxt-data"}>
-                <h6 className={props.miniheadclass}>{props.minihead}</h6>
+                {props.minihead && <h6 className={props.miniheadclass}>{props.minihead}</h6>}
                 <h2
                   className="mainhead"
                   data-aos={textAos}
@@ -56,6 +56,7 @@ const WordPressPerformanceSection = (props) => {
                   data-aos={textAos}
                   data-aos-duration="1000"
                   data-aos-offset="50"
+                  className="desc-two"
                 >
                   {props.descriptiontwo}
                 </p>
@@ -110,7 +111,7 @@ const WordPressPerformanceSection = (props) => {
                           ))}
                       </ul>
                       <ul
-                        className={props.landingList || ""}
+                        className={props.AngularList || ""}
                         data-aos={textAos}
                         data-aos-duration="1000"
                         data-aos-offset="50"
@@ -128,6 +129,7 @@ const WordPressPerformanceSection = (props) => {
                         data-aos={textAos}
                         data-aos-duration="1000"
                         data-aos-offset="50"
+                        className="desc-three"
                       >
                         {props.description2}
                       </p>

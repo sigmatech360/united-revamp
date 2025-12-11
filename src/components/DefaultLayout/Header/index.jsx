@@ -4,6 +4,7 @@ import { Container, Navbar, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../../assets/images/logo.webp";
+import darklogo from "../../../assets/images/darklogo.webp";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 
 // const navLinks = [
@@ -21,9 +22,13 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="main-navbar" variant="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" className="header-lightlogo">
           <img src={logo} alt="United revemp developers logo" />
         </Navbar.Brand>
+         <Navbar.Brand as={Link} to="/" className="d-none header-darklogo">
+          <img src={darklogo} alt="United revemp developers logo" />
+        </Navbar.Brand>
+
 
         <Navbar.Toggle aria-controls="navbar-nav" />
 
@@ -76,7 +81,7 @@ const Header = () => {
                   onClick={(e) => e.stopPropagation()}
                   target="_blank"
                 >
-                  LogoDesign
+                  Logo Design
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
@@ -273,6 +278,7 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+
                 {/* Branding & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
@@ -304,6 +310,40 @@ const Header = () => {
                       target="_blank"
                     >
                       Brand Voice
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+
+                 {/* CMS Development & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Content Writing
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/website-content"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Website Content
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/blog-writing"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Blog Writing
                     </NavDropdown.Item>
                   </div>
                 </div>
@@ -372,6 +412,22 @@ const Header = () => {
                       target="_blank"
                     >
                       Domain Registeration
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/domain-transfer-florida"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Domain Transfer
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/angular-development-florida"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Angular Development
                     </NavDropdown.Item>
                   </div>
                 </div>
