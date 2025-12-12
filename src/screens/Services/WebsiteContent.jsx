@@ -11,9 +11,9 @@ import herobannerinnerimg from "../../assets/images/services/websitecontent/hero
 import WebsiteContentServices from "../../components/WebsiteContentServices";
 import Performance from "../../components/Performance";
 import WebsiteContentProcess from "../../components/WebsiteContentProcess";
-import performance1 from "../../assets/images/services/brandstrategy/icons/performance1.svg"
-import performance2 from "../../assets/images/services/brandstrategy/icons/performance2.svg"
-import performance3 from "../../assets/images/services/brandstrategy/icons/performance3.svg"
+import performance1 from "../../assets/images/services/websitecontent/performance1.svg"
+import performance2 from "../../assets/images/services/websitecontent/performance2.svg"
+import performance3 from "../../assets/images/services/websitecontent/performance3.svg"
 import HomeBlogsSec from "../../components/HomeBlogsSec";
 import LocationContact from "../../components/LocationContact";
 import ServiceFaqs from "../../components/ServiceFaqs";

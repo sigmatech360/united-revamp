@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const BASE_URL = "https://unitedwebdevelopers.com/";
+const BASE_URL = "https://unitedwebdevelopers.com";
 const ROUTES_FILE = path.join(__dirname, "src/Router/AppRouter.jsx");
 const STATIC_SITEMAP_PATH = path.join(__dirname, "dist", "sitemap-static.xml");
 const MAIN_SITEMAP_PATH = path.join(__dirname, "dist", "sitemap.xml");

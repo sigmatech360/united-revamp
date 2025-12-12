@@ -1,5 +1,10 @@
 import React from 'react'
-import serviceicon1 from "../../assets/images/services/blogwriting/serviceicon1.svg";
+import serviceicon1 from "../../assets/images/services/blogwriting/service1.svg";
+import serviceicon2 from "../../assets/images/services/blogwriting/service2.svg";
+import serviceicon3 from "../../assets/images/services/blogwriting/service3.svg";
+import serviceicon4 from "../../assets/images/services/blogwriting/service4.svg";
+import serviceicon5 from "../../assets/images/services/blogwriting/service5.svg";
+import serviceicon6 from "../../assets/images/services/blogwriting/service6.svg";
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +41,7 @@ const BlogWritingServices = () => {
                 <div className="col-lg-4 col-md-6">
                     <div className="blogwrting-service-card">
                         <div className="blogwritng-service-icon">
-                            <img src={serviceicon1} alt="image" />
+                            <img src={serviceicon2} alt="image" />
                         </div>
                         <div className="blogwritng-service-cardflex">
                             <div className="blogservice-service-txt">
@@ -52,7 +57,7 @@ const BlogWritingServices = () => {
                 <div className="col-lg-4 col-md-6">
                     <div className="blogwrting-service-card">
                         <div className="blogwritng-service-icon">
-                            <img src={serviceicon1} alt="image" />
+                            <img src={serviceicon3} alt="image" />
                         </div>
                         <div className="blogwritng-service-cardflex">
                             <div className="blogservice-service-txt">
@@ -68,7 +73,7 @@ const BlogWritingServices = () => {
                 <div className="col-lg-4 col-md-6">
                     <div className="blogwrting-service-card">
                         <div className="blogwritng-service-icon">
-                            <img src={serviceicon1} alt="image" />
+                            <img src={serviceicon4} alt="image" />
                         </div>
                         <div className="blogwritng-service-cardflex">
                             <div className="blogservice-service-txt">
@@ -84,7 +89,7 @@ const BlogWritingServices = () => {
                 <div className="col-lg-4 col-md-6">
                     <div className="blogwrting-service-card">
                         <div className="blogwritng-service-icon">
-                            <img src={serviceicon1} alt="image" />
+                            <img src={serviceicon5} alt="image" />
                         </div>
                         <div className="blogwritng-service-cardflex">
                             <div className="blogservice-service-txt">
@@ -100,7 +105,7 @@ const BlogWritingServices = () => {
                 <div className="col-lg-4 col-md-6">
                     <div className="blogwrting-service-card">
                         <div className="blogwritng-service-icon">
-                            <img src={serviceicon1} alt="image" />
+                            <img src={serviceicon6} alt="image" />
                         </div>
                         <div className="blogwritng-service-cardflex">
                             <div className="blogservice-service-txt">
