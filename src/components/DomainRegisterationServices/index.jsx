@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const DomainRegisterationServices = ({
+  secClass,
   minihead,
   headTitle,
   headText,
@@ -10,7 +11,7 @@ const DomainRegisterationServices = ({
   isBtn = true,
 }) => {
   return (
-    <section className="domain-registeraton-sec">
+    <section className={secClass || "domain-registeraton-sec"}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-l0">

@@ -3,6 +3,8 @@ import FormModal from "../FormModal";
 import rightIcon from "../../assets/images/icons/general/arrowRightDark.webp"
 
 const BrandVoiceServices = ({
+  secClass,
+  serviceBoxClass,
   minihead,
   mainhead,
   mainpara,
@@ -11,7 +13,7 @@ const BrandVoiceServices = ({
 }) => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <section className="frontend-services-sec brandStategy-process-sec">
+    <section className={secClass || "frontend-services-sec brandStategy-process-sec"}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
@@ -29,7 +31,7 @@ const BrandVoiceServices = ({
             return (
               <div className="col-lg-4 col-sm-6" key={idx}>
                 <div
-                  className="brand-voice-service-box"
+                  className={serviceBoxClass  ||"brand-voice-service-box"}
                   data-aos="fade-up"
                   data-aos-delay={100}
                 >

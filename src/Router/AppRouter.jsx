@@ -42,6 +42,8 @@ import DomainTransferFlorida from "../screens/locationpages/DomainTransferFlorid
 import AngularDevelopmentFlorida from "../screens/locationpages/AngularDevelopmentFlorida";
 import WebsiteContent from "../screens/Services/WebsiteContent";
 import BlogWriting from "../screens/Services/BlogWriting";
+import NewMobileAppDevelopment from "../screens/Services/NewMobileAppDevelopment";
+import NewSocialMediaMarketing from "../screens/Services/NewSocialMediaMarketing";
 
 // Import your components/pages
 
@@ -83,7 +85,8 @@ const AppRouter = () => {
 
         {/* Digital Marketing & Inner Pages */}
         <Route path="/digital-marketing" element={<DigitalMarketing />}/>
-        <Route path="/social-media-marketing" element={<SocialMediaMarketing />}/>
+        {/* <Route path="/social-media-marketing" element={<SocialMediaMarketing />}/> */}
+        <Route path="/social-media-marketing" element={<NewSocialMediaMarketing />}/>
         <Route path="/search-engine-optimization" element={<SEO />} />
       
 
@@ -96,7 +99,8 @@ const AppRouter = () => {
 
 
         {/* App Development Inner Pages */}
-        <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
+        {/* <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/> */}
+        <Route path="/mobile-app-development" element={<NewMobileAppDevelopment />}/>
         <Route path="/web-app-development" element={<WebAppDevelopment />}/>
 
 
