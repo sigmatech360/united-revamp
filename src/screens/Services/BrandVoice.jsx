@@ -24,8 +24,11 @@ import HomeBlogsSec from "../../components/HomeBlogsSec";
 import BrandVoiceServices from "../../components/BrandVoiceServices";
 import BrandVoiceImpact from "../../components/BrandVoiceImpact";
 import BrandVoiceQuote from "../../components/BrandVoiceQuote";
+import rightIcon from "../../assets/images/services/brandvoice/icons/arrow.svg"
+
 
 const BrandVoice = () => {
+  
   const ourServicesData = [
     {
       header: "Brand Purpose Development",
@@ -137,6 +140,7 @@ const BrandVoice = () => {
     "Merchandising and promotional materials that reinforce brand presence.",
     "Positioning strategies that highlight unique competitive advantages clearly.",
   ];
+  
   const frontendservices = [
     {
       title: "01",
@@ -264,6 +268,7 @@ const BrandVoice = () => {
           minihead="More of Our Services"
           mainhead="Every Service Your Brand Needs To Slay Online"
           mainpara="We provide end-to-end brand voice services USA designed to strengthen your identity, voice, and marketing efforts, ensuring your brand stands out and connects with your audience."
+          rightIcon={rightIcon}
           services={brandservices}
         />
 

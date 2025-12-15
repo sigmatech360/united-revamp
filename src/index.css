@@ -133,6 +133,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -167,6 +168,7 @@ p {
 .at::before {
   content: "@";
 }
+
 .dot::before {
   content: ".";
 }
@@ -315,6 +317,7 @@ p {
   background-color: #d7ff00;
   transition: width 0.3s ease;
 }
+
 .main-navbar .navbar-nav .nav-link.active::before {
   content: "";
   position: absolute;
@@ -367,6 +370,7 @@ p {
   overflow: hidden;
   position: relative;
 }
+
 .main-banner .container {
   position: relative;
   z-index: 2;
@@ -804,10 +808,7 @@ p {
   box-shadow: unset;
 }
 
-.faqs-items
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+.faqs-items .accordion-item:first-of-type>.accordion-header .accordion-button {
   border-radius: 12px;
 }
 
@@ -947,8 +948,7 @@ p {
 }
 
 .faqs-sec__bgLight .faqs-items .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) saturate(100%) invert(82%) sepia(84%) saturate(584%)
-    hue-rotate(35deg) brightness(108%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(82%) sepia(84%) saturate(584%) hue-rotate(35deg) brightness(108%) contrast(101%);
 }
 
 .blog-sec {
@@ -985,6 +985,7 @@ p {
   flex-direction: column;
   gap: 10px;
 }
+
 .blog-card__content a {
   text-decoration: none;
   color: #fff;
@@ -1022,6 +1023,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+
 .inner-banner .container {
   position: relative;
   z-index: 2;
@@ -1104,9 +1106,11 @@ p {
   line-height: 1;
   font-weight: 700;
 }
+
 .industries-client__content__img {
   flex: 0 0 60px;
 }
+
 .industries-client__content__img img {
   width: 100%;
 }
@@ -1368,8 +1372,10 @@ p {
 
 /* Targeting the scrollbar */
 ::-webkit-scrollbar {
-  width: 8px; /* For vertical scrollbars */
-  height: 8px; /* For horizontal scrollbars */
+  width: 8px;
+  /* For vertical scrollbars */
+  height: 8px;
+  /* For horizontal scrollbars */
 }
 
 /* Track (background) */
@@ -1568,8 +1574,7 @@ p {
   transform: translateY(0) scale(1);
   width: 100px;
   height: 60px;
-  background: url(assets/images/portfolio-content-title-after.webp) no-repeat
-    center center;
+  background: url(assets/images/portfolio-content-title-after.webp) no-repeat center center;
   background-size: contain;
   transition: transform 0.4s ease;
   /* transition added */
@@ -1837,9 +1842,11 @@ p {
 .blog-categories__card-footer {
   padding: 16px;
 }
+
 .blog-categories__card-body a {
   text-decoration: none;
 }
+
 /* .blog-categories__card-body{
   display: flex;
   flex-direction: column;
@@ -1865,6 +1872,7 @@ p {
   column-gap: 7px;
   row-gap: 5px;
 }
+
 .blog-categories__card-body-category span {
   white-space: nowrap;
 }
@@ -2017,6 +2025,7 @@ p {
   position: relative;
   background-color: #120f10;
 }
+
 .services-banner-sec-bgImg {
   position: absolute;
   top: 0;
@@ -2028,6 +2037,7 @@ p {
   object-position: center;
   z-index: 1;
 }
+
 .services-banner-sec .container {
   position: relative;
   z-index: 2;
@@ -2048,6 +2058,7 @@ p {
 .services-banner__content h1 {
   font-size: 50px;
 }
+
 .services-banner__img img {
   width: 100%;
   height: auto;
@@ -2498,6 +2509,7 @@ p {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .blog-detail-banner-img img {
   width: 100%;
 }
@@ -2506,6 +2518,7 @@ p {
   font-size: 32px;
   margin: 25px 0;
 }
+
 .blogDetail-about-infoItem {
   display: flex;
   align-items: center;
@@ -2513,6 +2526,7 @@ p {
   gap: 6px;
   font-size: 16px;
 }
+
 .blogDetail-about-infoCategories {
   display: flex;
   align-items: center;
@@ -2520,23 +2534,28 @@ p {
   flex-wrap: wrap;
   row-gap: 10px;
 }
+
 .blogDetail-about-info {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   margin: 20px 0;
 }
+
 .blogDetail-about-infoItem a {
   text-decoration: none;
   color: unset;
 }
+
 .blogDetail-about-infoItem span {
   white-space: nowrap;
 }
+
 .blog-detail-content a {
   font-size: 16px;
   color: #000;
 }
+
 .blog-detail-content .post-content img {
   max-width: 100%;
   height: auto;
@@ -2559,6 +2578,7 @@ p {
   border: unset;
   border-radius: unset;
 }
+
 .sideBarBlogCard img {
   flex: 0 0 20px !important;
   height: unset;
@@ -2568,6 +2588,7 @@ p {
   border-radius: unset;
   max-height: 50px;
 }
+
 .sideBarBlogCard .card-title {
   font-size: 14px;
   display: -webkit-box;
@@ -2577,9 +2598,11 @@ p {
   font-weight: 600;
   margin-bottom: 5px !important;
 }
+
 .sideBarBlogCard a {
   text-decoration: none;
 }
+
 .sideBarBlogCard p {
   font-size: 14px;
   color: #555;
@@ -2772,17 +2795,11 @@ p {
   background: transparent;
 }
 
-.app-florida-herobanner
-  .services-banner__content
-  .main-banner__content-btns
-  .theme-btn.theme-btn__yellow {
+.app-florida-herobanner .services-banner__content .main-banner__content-btns .theme-btn.theme-btn__yellow {
   margin: 20px 0px 0px 0px;
 }
 
-.app-florida-herobanner
-  .services-banner__content
-  .main-banner__content-btns
-  .theme-btn-hover {
+.app-florida-herobanner .services-banner__content .main-banner__content-btns .theme-btn-hover {
   display: none;
 }
 
@@ -2823,8 +2840,7 @@ section.location-choose-sec {
 }
 
 .pixel-perfect-sec {
-  background: url(./assets/images/locationpages/app-development-florida/portfolio-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/locationpages/app-development-florida/portfolio-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 110px 0px 60px 0px;
   width: 100%;
@@ -2900,10 +2916,7 @@ section.tabs-pricing-sec {
   font-weight: 500;
 }
 
-.dynamic-pricing-tabs
-  .react-tabs
-  .react-tabs__tab-list
-  .react-tabs__tab--selected {
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
   background: #d7ff00;
   border: none;
   border-radius: 20px;
@@ -3007,8 +3020,7 @@ section.location-support-sec {
 }
 
 .location-contact-sec {
-  background: url(./assets/images/locationpages/app-development-florida/contact-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/locationpages/app-development-florida/contact-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 190px 0px 80px 0px;
   width: 100%;
@@ -3113,11 +3125,7 @@ section.location-faqs-sec {
   border: none !important;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  button.accordion-button.collapsed {
+.location-faqs .accordion .accordion-item .accordion-header button.accordion-button.collapsed {
   background: #fff;
   color: #161515;
   border: none !important;
@@ -3125,30 +3133,18 @@ section.location-faqs-sec {
   box-shadow: 0px 3px 6px #00000029;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   box-shadow: none;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+.location-faqs .accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   background: transparent;
   color: #161515;
   border: none !important;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed) {
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #d7ff00;
   background-color: transparent;
   font-weight: 500;
@@ -3163,29 +3159,17 @@ section.location-faqs-sec {
   color: #fff;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(./assets/images/locationpages/app-development-florida/downarrow.svg);
   transform: rotate(0deg);
   width: 50px;
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed)::after {
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url(./assets/images/locationpages/app-development-florida/uparrow.svg);
 }
 
-.location-faqs
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   border: none !important;
 }
@@ -3203,8 +3187,7 @@ section.location-faqs-sec {
 .why-choose-sec::before {
   position: absolute;
   content: "";
-  background: url(./assets/images/locationpages/app-development-florida/choose-banner-before.webp)
-    no-repeat;
+  background: url(./assets/images/locationpages/app-development-florida/choose-banner-before.webp) no-repeat;
   width: 100%;
   height: 100%;
   top: 50%;
@@ -3294,8 +3277,7 @@ section.location-faqs-sec {
 }
 
 .twoside-service-sec {
-  background: url(./assets/images/services/wordpressdevelopment/choosebg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/wordpressdevelopment/choosebg.webp) no-repeat top center;
   background-size: cover;
   padding: 100px 0px;
   width: 100%;
@@ -3338,16 +3320,18 @@ section.location-faqs-sec {
   margin-right: 20px;
   width: 384px;
 }
+
 .sliderportfolio-img img {
   width: 90%;
 }
+
 .legendary-list li {
-    list-style: none;
-    padding: 3px 0px;
+  list-style: none;
+  padding: 3px 0px;
 }
 
 .legendary-list {
-    padding: 0px 0px;
+  padding: 0px 0px;
 }
 
 section.slider-portfolio-sec {
@@ -3365,8 +3349,7 @@ section.slider-portfolio-sec {
 }
 
 .wordpress-contact-sec {
-  background: url(./assets/images/services/wordpressdevelopment/contactbg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/wordpressdevelopment/contactbg.webp) no-repeat top center;
   background-size: cover;
   padding: 100px 0px 200px 0px;
   width: 100%;
@@ -3382,8 +3365,7 @@ section.slider-portfolio-sec {
 }
 
 .tab-pricing-bg {
-  background: url(./assets/images/services/wordpressdevelopment/faqsbg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/wordpressdevelopment/faqsbg.webp) no-repeat top center;
   background-size: cover;
   padding: 100px 0px 200px 0px;
   width: 100%;
@@ -3450,8 +3432,7 @@ section.tabs-pricing-sec .tabs-pricing-head p {
 }
 
 .ecommerce-portflio-sec {
-  background: url(./assets/images/services/ecommercedevelopment/portfoliobg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/ecommercedevelopment/portfoliobg.webp) no-repeat top center;
   background-size: cover;
   padding: 100px 0px;
   width: 100%;
@@ -3491,8 +3472,7 @@ section.tabs-pricing-sec .tabs-pricing-head p {
 }
 
 .ecommerce-service-sec {
-  background: url(./assets/images/services/ecommercedevelopment/portfoliobg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/ecommercedevelopment/portfoliobg.webp) no-repeat top center;
   background-size: cover;
   padding: 100px 0px;
   width: 100%;
@@ -3571,8 +3551,7 @@ section.whatwedo-sec {
 }
 
 .frontend-services-sec {
-  background: url(./assets/images/services/frontenddevelopment/frontend-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/frontenddevelopment/frontend-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 140px 0px 60px 0px;
   width: 100%;
@@ -3650,6 +3629,7 @@ section.frontend-services-sec {
   font-size: 18px;
   padding: 0px 0px 20px 0px;
 }
+
 .brandStategy-process-sec h4 {
   color: #ffffff;
   font-size: 18px;
@@ -3660,6 +3640,7 @@ section.frontend-services-sec {
   color: #fff;
   font-size: 14px;
 }
+
 .frontend-service-box img {
   margin-bottom: 1rem;
   width: 60px;
@@ -3669,6 +3650,7 @@ section.frontend-services-sec {
   padding: 0px;
   margin: 20px 0px 0px 0px;
 }
+
 .frontend-service-box ul li {
   list-style: disc;
   padding: 0;
@@ -3779,8 +3761,7 @@ section.industry-slider-sec {
 }
 
 .frontend-screen-sec {
-  background: url(./assets/images/services/frontenddevelopment/frontend-screen-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/frontenddevelopment/frontend-screen-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 140px 0px 90px 0px;
   width: 100%;
@@ -3904,8 +3885,7 @@ section.frontend-projects-sec {
 }
 
 .backend-industry-slider {
-  background: url(./assets/images/services/backenddevelopment/industry-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/backenddevelopment/industry-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 140px 0px 90px 0px;
   width: 100%;
@@ -3977,8 +3957,7 @@ section.our-technology-sec {
 }
 
 .backend-portfolio-sec {
-  background: url(./assets/images/services/backenddevelopment/portfolio-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/backenddevelopment/portfolio-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
@@ -3990,10 +3969,7 @@ section.our-technology-sec {
   gap: 30px;
 }
 
-section.backend-portfolio-sec
-  .slick-track
-  .slick-initialized
-  .slick-slide:focus {
+section.backend-portfolio-sec .slick-track .slick-initialized .slick-slide:focus {
   outline: none;
 }
 
@@ -4026,8 +4002,7 @@ section.backend-portfolio-sec svg.slick-arrow.slick-next {
 }
 
 .backend-services-sec {
-  background: url(./assets/images/services/backenddevelopment/service-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/backenddevelopment/service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
@@ -4051,11 +4026,7 @@ section.backend-portfolio-sec svg.slick-arrow.slick-next {
   border: none !important;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  button.accordion-button.collapsed {
+.backend-services-sec .accordion .accordion-item .accordion-header button.accordion-button.collapsed {
   background: transparent;
   color: #ffffff;
   border: none !important;
@@ -4065,30 +4036,18 @@ section.backend-portfolio-sec svg.slick-arrow.slick-next {
   padding: 30px 0px;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.backend-services-sec .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   box-shadow: none;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+.backend-services-sec .accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   background: transparent;
   color: #161515;
   border-bottom: none !important;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed) {
+.backend-services-sec .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #d7ff00;
   background-color: transparent;
   font-weight: 500;
@@ -4096,10 +4055,7 @@ section.backend-portfolio-sec svg.slick-arrow.slick-next {
   border-bottom: 1px solid #fff !important;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-collapse.collapse.show {
+.backend-services-sec .accordion .accordion-item .accordion-collapse.collapse.show {
   border: none !important;
 }
 
@@ -4109,29 +4065,17 @@ section.backend-portfolio-sec svg.slick-arrow.slick-next {
   padding: 30px 0px;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
+.backend-services-sec .accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(./assets/images/services/backenddevelopment/downarrow.svg);
   transform: rotate(0deg);
   width: 50px;
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed)::after {
+.backend-services-sec .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url(./assets/images/locationpages/app-development-florida/uparrow.svg);
 }
 
-.backend-services-sec
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.backend-services-sec .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   border: none !important;
 }
@@ -4253,8 +4197,7 @@ section.domain-search-buy {
 }
 
 .domain-registeraton-sec {
-  background: url(./assets/images/services/domainregisteration/service-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/domainregisteration/service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
@@ -4343,8 +4286,7 @@ section.domain-register-process {
 }
 
 .domain-register-choose {
-  background: url(./assets/images/services/domainregisteration/service-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/domainregisteration/service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
@@ -4426,6 +4368,7 @@ section.domain-register-process {
   width: 40px;
   margin: 0px 0px 10px 0px;
 }
+
 /* --------- performance-box------- */
 
 .performance-box {
@@ -4456,8 +4399,7 @@ section.domain-register-process {
 /************* Domain Transfer Page CSS Start *************/
 
 .transfer-services-sec {
-  background: url(./assets/images/services/domaintransfer/transfer-service-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/domaintransfer/transfer-service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
@@ -4497,8 +4439,7 @@ section.domain-register-process {
 }
 
 .renewal-transfer-sec {
-  background: url(./assets/images/services/domaintransfer/renewal-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/domaintransfer/renewal-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 80px 0px 0px 0px;
   width: 100%;
@@ -4539,8 +4480,7 @@ section.domain-register-process {
 .line-sec::before {
   position: absolute;
   content: "";
-  background: url(./assets/images/services/domaintransfer/line.webp) no-repeat
-    top center;
+  background: url(./assets/images/services/domaintransfer/line.webp) no-repeat top center;
   width: 410px;
   height: 180px;
   right: 240px;
@@ -4552,7 +4492,6 @@ section.domain-register-process {
 }
 
 /************* Domain Transfer Page CSS End *************/
-
 
 /************* Brand Voice Page CSS Start *************/
 
@@ -4579,11 +4518,7 @@ section.domain-register-process {
   border: none !important;
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  button.accordion-button.collapsed {
+.brand-services .accordion .accordion-item .accordion-header button.accordion-button.collapsed {
   background: #242424;
   color: #ffffff;
   border: 1px solid #d7ff00 !important;
@@ -4592,30 +4527,18 @@ section.domain-register-process {
   box-shadow: 0px 3px 6px #00000029;
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.brand-services .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   box-shadow: none;
 }
 
-.brand-services
-  .accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+.brand-services .accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   background: transparent;
   color: #161515;
   border: none !important;
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed) {
+.brand-services .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #000000;
   background-color: #d7ff00;
   font-weight: 700;
@@ -4631,30 +4554,18 @@ section.domain-register-process {
   color: #fff;
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
+.brand-services .accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(./assets/images/icons/general/arrowRightLight.webp);
   transform: rotate(0deg);
   /* width: 50px; */
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed)::after {
+.brand-services .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url(./assets/images/icons/general/arrowRightDark.webp);
   transform: rotate(-90deg);
 }
 
-.brand-services
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.brand-services .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   border: none !important;
 }
@@ -4673,6 +4584,7 @@ section.domain-register-process {
   font-size: 1rem;
   font-weight: bold;
 }
+
 .brand-service-box {
   padding: 20px 16px;
   border: 1px solid #ffffff79;
@@ -4731,23 +4643,19 @@ section.domain-register-process {
 .brand-voice-service-box.impact-box {
   background-color: #d7ff00;
 }
+
 .brand-voice-service-box.impact-box * {
   color: #000 !important;
 }
 
-
 /************* Brand Voice Page CSS End *************/
-
-
 
 /************* Domain Registeration Florida Page CSS Start *************/
 
 .domain-registeration-florida .services-banner__img img {
-    height: 500px;
-    object-fit: contain;
+  height: 500px;
+  object-fit: contain;
 }
-
-
 
 .location-expertise-sec {
   background: url(./assets/images/locationpages/domain-registeration-florida/expertise-bg.webp) no-repeat top center;
@@ -4758,39 +4666,38 @@ section.domain-register-process {
 }
 
 .location-expertise-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .location-expertise-head p {
-    color: #fff;
+  color: #fff;
 }
 
 .location-expertise-box {
-    background: #b3b3b329;
-    border: 1px solid #FFFFFF;
-    border-radius: 16px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 20px;
+  background: #b3b3b329;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 20px;
 }
 
 .location-expertise-box img {
-    width: 50px;
-    margin: 0px 0px 20px 0px;
+  width: 50px;
+  margin: 0px 0px 20px 0px;
 }
 
 .location-expertise-box h4 {
-    color: #fff;
-    font-size: 20px;
-    padding: 0px 0px 15px 0px;
+  color: #fff;
+  font-size: 20px;
+  padding: 0px 0px 15px 0px;
 }
 
 .location-expertise-box p {
-    color: #fff;
-    font-size: 15px;
+  color: #fff;
+  font-size: 15px;
 }
-
 
 .local-specialist-sec {
   background: url(./assets/images/locationpages/domain-registeration-florida/texasdomain-bg.webp) no-repeat top center;
@@ -4799,7 +4706,6 @@ section.domain-register-process {
   width: 100%;
   height: 100%;
 }
-
 
 .location-expertises .accordion .accordion-item {
   margin: 0px 0px 20px 0px;
@@ -4819,11 +4725,7 @@ section.domain-register-process {
   border: none !important;
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  button.accordion-button.collapsed {
+.location-expertises .accordion .accordion-item .accordion-header button.accordion-button.collapsed {
   background: #d7ff3552;
   color: #fff;
   font-weight: 500;
@@ -4831,32 +4733,20 @@ section.domain-register-process {
   border-radius: 10px;
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.location-expertises .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   box-shadow: none;
 }
 
-.location-expertises
-  .accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+.location-expertises .accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   background: transparent;
   color: #161515;
   border: none !important;
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed) {
+.location-expertises .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #191919;
-  background-color: #D7FF35;
+  background-color: #d7ff35;
   font-weight: 600;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -4869,53 +4759,36 @@ section.domain-register-process {
 .location-expertises .accordion .accordion-item .accordion-body {
   border: none !important;
   color: #191919;
-  background: #D7FF35;
+  background: #d7ff35;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
+.location-expertises .accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(./assets/images/locationpages/domain-registeration-florida/downarrow.webp);
   transform: rotate(0deg);
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:not(.collapsed)::after {
+.location-expertises .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: url(./assets/images/locationpages/domain-registeration-florida/uparrow.webp);
 }
 
-.location-expertises
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button:focus {
+.location-expertises .accordion .accordion-item .accordion-header .accordion-button:focus {
   outline: none;
   border: none !important;
 }
 
-
 .local-specialist-txt {
-    margin: 50px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .local-specialist-txt p {
-    color: #fff;
+  color: #fff;
 }
-
 
 /************* Domain Registeration Florida Page CSS End *************/
 
-
-
 /************* Logo Design New Page CSS Start *************/
-
 
 .logo-design-services {
   background: url(./assets/images/services/logodesign/service-bg.webp) no-repeat top center;
@@ -4925,34 +4798,33 @@ section.domain-register-process {
   height: 100%;
 }
 
-
 .logodesign-service-card img {
-    width: 100%;
-    margin: 0px 0px 19px 0px;
+  width: 100%;
+  margin: 0px 0px 19px 0px;
 }
 
 .logodesign-service-card h4 {
-    color: #D7FF00;
-    padding: 0px 0px 15px 0px;
-    font-size: 22px;
+  color: #d7ff00;
+  padding: 0px 0px 15px 0px;
+  font-size: 22px;
 }
 
 .logodesign-service-card p {
-    color: #fff;
-    padding: 0px 0px 20px 0px;
+  color: #fff;
+  padding: 0px 0px 20px 0px;
 }
 
 .logodesign-service-card {
-    margin: 0px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 .logodesign-service-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .logodesign-service-head p {
-    color: #fff;
+  color: #fff;
 }
 
 .tab-pricing-bg .tabs-pricing-head h2,
@@ -4961,51 +4833,44 @@ section.domain-register-process {
 }
 
 .logodesign-portfolio-sec {
-    background: url(./assets/images/services/logodesign/portfolio-bg.webp) no-repeat top center;
+  background: url(./assets/images/services/logodesign/portfolio-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 120px 0px 70px 0px;
   width: 100%;
   height: 100%;
 }
 
-
 .logodesign-portfolio-images {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
 }
 
 .logodesign-portfolio-images img {
-    width: 200px;
+  width: 200px;
 }
 
 .logodesign-portfolio-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .logodesign-industry-slider {
   padding: 60px 0px;
 }
 
-
-
 .logodesign-industry-slider .frontendindustryhead {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .logodesign-industry-slider .industry-slider-head {
-    margin: 0px;
+  margin: 0px;
 }
-
 
 /************* Logo Design New Page CSS End *************/
 
-
-
 /************* Web Design New Page CSS Start *************/
-
 
 .webdesign-industry-slider {
   background: url(./assets/images/services/webdesign/industry-bg.webp) no-repeat top center;
@@ -5016,22 +4881,21 @@ section.domain-register-process {
 }
 
 .webdesign-industry-slider .frontendindustryhead {
-    justify-content: center;
+  justify-content: center;
 }
 
 .webdesign-industry-slider .frontendindustryhead .industry-slider-head {
-    text-align: center;
-        margin: 0px;
+  text-align: center;
+  margin: 0px;
 }
 
 .webdesign-industry-slider .frontendindustryhead .industry-slider-head h2,
 .webdesign-industry-slider .frontendindustryhead .industry-slider-head p {
-    color: #fff;
+  color: #fff;
 }
 
-
 .webdesign-service-sec {
-   background: url(./assets/images/services/webdesign/service-bg.webp) no-repeat top center;
+  background: url(./assets/images/services/webdesign/service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 120px 0px;
   width: 100%;
@@ -5039,33 +4903,33 @@ section.domain-register-process {
 }
 
 .webdesign-head {
-    text-align: center;
-    margin: 0px 0px 40px 0px;
+  text-align: center;
+  margin: 0px 0px 40px 0px;
 }
 
 .webdesign-head {
-    text-align: center;
-    margin: 0px 0px 40px 0px;
+  text-align: center;
+  margin: 0px 0px 40px 0px;
 }
 
 .webdesign-service-card h4 {
-    color: #D7FF00;
-    padding: 0px 0px 15px 0px;
-    font-size: 22px;
+  color: #d7ff00;
+  padding: 0px 0px 15px 0px;
+  font-size: 22px;
 }
 
 .webdesign-service-card img {
-    width: 100%;
-    margin: 0px 0px 19px 0px;
+  width: 100%;
+  margin: 0px 0px 19px 0px;
 }
 
 .webdesign-service-card p {
-    color: #fff;
+  color: #fff;
 }
 
 .webdesign-service-btn {
-    text-align: center;
-    margin: 70px 0px  0px 0px;
+  text-align: center;
+  margin: 70px 0px 0px 0px;
 }
 
 .webdesign-choose-new {
@@ -5078,7 +4942,7 @@ section.domain-register-process {
 
 .webdesign-choose-new .abouttxt-data h2,
 .webdesign-choose-new .abouttxt-data p {
-    color: #fff;
+  color: #fff;
 }
 
 .webdesign-choose-new .web-whychoose-listtxt h5 {
@@ -5103,7 +4967,7 @@ section.domain-register-process {
 }
 
 .marquee-track img {
-  width: 320px;     
+  width: 320px;
   height: auto;
   margin: 0 20px;
   border-radius: 10px;
@@ -5112,8 +4976,13 @@ section.domain-register-process {
 
 /* Smooth infinite scroll */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Make it responsive */
@@ -5125,43 +4994,41 @@ section.domain-register-process {
 }
 
 .webdesign-portfolio-head {
-    text-align: center;
-    margin: 0px 0px 30px 0px;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
 }
 
-
 section.webdesign-portfolio-sec {
-    padding: 70px 0px;
+  padding: 70px 0px;
 }
 
 .logodesign-portfolio-btn {
-    margin: 50px 0px 0px 0px;
-    text-align: center;
+  margin: 50px 0px 0px 0px;
+  text-align: center;
 }
 
 .webdesign-portfolio-btn {
-    text-align: center;
-    margin: 40px 0px 0px 0px;
+  text-align: center;
+  margin: 40px 0px 0px 0px;
 }
 
 .overflow-class {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /************* Web Design New Page CSS End *************/
 
-
 .angular-location-herobanner .services-banner__content h1 {
-      font-weight: bold;
-       color: #191919;
-}
-.angular-location-herobanner .services-banner__content p {
-    color: #191919;
+  font-weight: bold;
+  color: #191919;
 }
 
+.angular-location-herobanner .services-banner__content p {
+  color: #191919;
+}
 
 .angular-location-mainpg .header-lightlogo {
-    display: none;
+  display: none;
 }
 
 .angular-location-mainpg .header-darklogo {
@@ -5172,9 +5039,7 @@ section.webdesign-portfolio-sec {
   color: #191919 !important;
 }
 
-
 /************* Website Content Page CSS Start *************/
-
 
 .websitecontent-services-sec {
   background: url(./assets/images/services/websitecontent/serivce-bg.webp) no-repeat top center;
@@ -5186,67 +5051,66 @@ section.webdesign-portfolio-sec {
 
 .websitecontent-serivces-head h2,
 .websitecontent-serivces-head p {
-    color: #fff;
+  color: #fff;
 }
 
 .websitecontent-serivces-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .websitecontent-service-card {
-    background: #242424;
-    padding: 30px;
-    border-radius: 20px;
-    margin: 0px 0px 20px 0px;
+  background: #242424;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 0px 0px 20px 0px;
 }
 
 .webcontent-service-txt h4 {
-    color: #fff;
-    font-size: 20px;
-    padding: 0px 0px 10px 0px;
+  color: #fff;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
 }
 
 .webcontent-service-txt p {
-    color: #fff;
-    font-size: 14px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .webcontent-service-txt {
-    margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .webcontent-service-btn {
-    text-align: end;
+  text-align: end;
 }
 
 .webcontent-service-btn a {
-    background: #D7FF00;
-    color: #191919;
-    padding: 5px 12px 12px 12px;
-    line-height: normal;
-    border-radius: 100%;
-    font-size: 20px;
-} 
-
+  background: #d7ff00;
+  color: #191919;
+  padding: 5px 12px 12px 12px;
+  line-height: normal;
+  border-radius: 100%;
+  font-size: 20px;
+}
 
 .websitecontent-exceptional-sec .abouttxt-data h4 {
-    display: block !important;
-    background: #191919;
-    color: #D7FF35;
-    font-size: 20px;
-    padding: 7px 7px;
-    border-radius: 20px;
-    text-align: center;
-    margin: 15px 0px !important;
+  display: block !important;
+  background: #191919;
+  color: #d7ff35;
+  font-size: 20px;
+  padding: 7px 7px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 15px 0px !important;
 }
 
 .websitecontent-perfomance-sec .performance-box img {
-    display: none;
+  display: none;
 }
 
 .websitecontent-perfomance-sec .performance-box h3 {
-    color: #D7FF35;
+  color: #d7ff35;
 }
 
 .websitecontent-process-sec {
@@ -5262,48 +5126,45 @@ section.webdesign-portfolio-sec {
   color: #fff;
 }
 
-
 .webcontent-process-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .webcontent-process-card {
-    text-align: center;
-    padding: 50px 30px 30px 30px;
-    background: #242424;
-    position: relative;
-    margin: 0px 0px 60px 0px;
+  text-align: center;
+  padding: 50px 30px 30px 30px;
+  background: #242424;
+  position: relative;
+  margin: 0px 0px 60px 0px;
 }
 
 .webcontent-process-card h5 {
-    color: #fff;
-    padding: 0px 0px 20px 0px;
+  color: #fff;
+  padding: 0px 0px 20px 0px;
 }
 
 .webcontent-process-card p {
-    color: #fff;
-    font-size: 16px;
+  color: #fff;
+  font-size: 16px;
 }
 
 .webcontent-process-card h3 {
-    position: absolute;
-    top: -30px;
-    background: #D7FF00;
-    color: #191919;
-    font-size: 26px;
-    padding: 14px;
-    border-radius: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    font-weight: 600;
+  position: absolute;
+  top: -30px;
+  background: #d7ff00;
+  color: #191919;
+  font-size: 26px;
+  padding: 14px;
+  border-radius: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 600;
 }
 
 /************* Website Content Page CSS End *************/
 
-
 /************* Blog Writing Page CSS Start *************/
-
 
 .blogwriting-services-sec {
   background: url(./assets/images/services/blogwriting/service-bg.webp) no-repeat top center;
@@ -5314,92 +5175,90 @@ section.webdesign-portfolio-sec {
 }
 
 .blogwriting-services-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .blogwriting-services-head h2 {
-    color: #fff;
+  color: #fff;
 }
 
 .blogwrting-service-card {
-    background: #242424;
-    border-radius: 20px;
-    margin: 0px 0px 30px 0px;
-    padding: 30px;
+  background: #242424;
+  border-radius: 20px;
+  margin: 0px 0px 30px 0px;
+  padding: 30px;
 }
 
 .blogwritng-service-icon img {
-    width: 70px;
+  width: 70px;
 }
 
 .blogservice-service-txt h4 {
-    color: #fff;
-    font-size: 18px;
+  color: #fff;
+  font-size: 18px;
 }
 
 .blogservice-service-txt p {
-    color: #fff;
-    font-size: 14px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .blogwritng-service-cardflex {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .blogwritng-service-icon {
-    height: 200px;
+  height: 200px;
 }
 
 .blogservice-card-arrow span {
-    background: #D7FF00;
-    color: #191919;
-    padding: 5px 12px 12px 12px;
-    border-radius: 100%;
-    font-size: 20px;
-        cursor: pointer;
-    border: 1px solid #D7FF00;
-    transition: all .6s 
-ease;
+  background: #d7ff00;
+  color: #191919;
+  padding: 5px 12px 12px 12px;
+  border-radius: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #d7ff00;
+  transition: all 0.6s ease;
 }
 
 .blogservice-card-arrow span:hover {
-    background: transparent;
-    color: #D7FF00;
+  background: transparent;
+  color: #d7ff00;
 }
 
 .blogwriting-work-sec {
-    padding: 70px 0px;
+  padding: 70px 0px;
 }
 
 .blogwriting-work-head {
-    text-align: center;
-    margin: 0px 0px 80px 0px;
+  text-align: center;
+  margin: 0px 0px 80px 0px;
 }
 
 .blogwriting-work-card h5 {
-    background: #242424;
-    color: #D7FF35;
-    display: inline-block;
-    padding: 15px 18px 15px 12px;
-    border-radius: 100%;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 600;
+  background: #242424;
+  color: #d7ff35;
+  display: inline-block;
+  padding: 15px 18px 15px 12px;
+  border-radius: 100%;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .blogwriting-work-card h4 {
-    padding: 20px 0px 10px 0px;
-    font-weight: bold;
-    font-size: 20px;
+  padding: 20px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .blogwriting-work-card p {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 /* .wordcard-blog-one,
 .wordcard-blog-two,
@@ -5429,7 +5288,6 @@ ease;
     object-fit: fill;
 } */
 
-
 .blogwriting-choose-sec {
   background: url(./assets/images/services/blogwriting/choose-bg.webp) no-repeat top center;
   background-size: cover;
@@ -5439,15 +5297,15 @@ ease;
 }
 
 .blogwriting-choose-sec .abouttxt-data h2 {
-    color: #fff;
+  color: #fff;
 }
 
 .blogwriting-choose-sec .abouttxt-data {
-    margin: 70px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
 }
 
 .blogwriting-choose-sec .abouttxt-data p {
-    color: #fff;
+  color: #fff;
 }
 
 .blogwriting-choose-sec .abouttxt-data .blogwriting-list li svg {
@@ -5455,20 +5313,18 @@ ease;
 }
 
 .blogwriting-choose-sec .abouttxt-data .blogwriting-list li {
-    color: #fff;
-    padding: 8px 0px;
+  color: #fff;
+  padding: 8px 0px;
 }
 
 .blogwriting-choose-sec .abouttxt-data .blogwriting-list li::marker {
-  color: #D7FF00;   
+  color: #d7ff00;
 }
-
 
 .blogwriting-choose-sec .abouttxt-data .blogwriting-list {
-    padding: 0px 0px 0px 20px;
-    margin: 0px 0px 30px 0px;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px 30px 0px;
 }
-
 
 section.happy-client-sec {
   padding: 80px 0px;
@@ -5478,7 +5334,6 @@ section.happy-client-sec {
   text-align: center;
   margin: 0px 0px 30px 0px;
 }
-
 
 .happy-client-head p {
   color: #161515;
@@ -5518,59 +5373,51 @@ section.happy-client-sec {
   column-gap: 75px;
 }
 
-
 .blogwriting-order-bg {
-    background: #191919;
-    padding: 40px;
-    border-radius: 20px;
+  background: #191919;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .blogwriting-order-img img {
-    width: 100%;
+  width: 100%;
 }
 
 section.blogwriting-order-sec {
-    margin: 0px 0px 60px 0px;
+  margin: 0px 0px 60px 0px;
 }
 
-
 .blogwrite-order-flex {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0px 0px 0px;
 }
 
 .blogwrite-order-flextxt h4 {
-    color: #fff;
-    padding: 0px 0px 10px 0px;
+  color: #fff;
+  padding: 0px 0px 10px 0px;
 }
 
 .blogwrite-order-flextxt h6 {
-    color: #D7FF35;
-    font-size: 14px;
+  color: #d7ff35;
+  font-size: 14px;
 }
 
 .blogwriting-order-btn {
-    margin: 30px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-} 
-
-
-.overflow-body {
-    overflow-x: hidden;
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-
+.overflow-body {
+  overflow-x: hidden;
+}
 
 /************* Blog Writing Page CSS End *************/
 
-
-
 /************* New Mobile App Developement Page CSS Start *************/
-
 
 .mobiledev-service-sec {
   background: url(./assets/images/services/mobileappdev/service-bg.webp) no-repeat top center;
@@ -5581,51 +5428,703 @@ section.blogwriting-order-sec {
 }
 
 .mobileapp-service-box {
-    background: #191919 0% 0% no-repeat padding-box;
-    border: 1px solid #D7FF35;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0px 0px 30px 0px;
+  background: #191919 0% 0% no-repeat padding-box;
+  border: 1px solid #d7ff35;
+  border-radius: 10px;
+  padding: 30px 20px 20px 20px;
+  margin: 0px 0px 30px 0px;
 }
 
 .mobileapp-service-box h4 {
-    color: #fff;
-    font-size: 20px;
-    padding: 0px 0px 10px 0px;
+  color: #fff;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
 }
 
 .mobileapp-service-box p {
-    color: #fff;
+  color: #fff;
 }
 
+.mobileapp-service-box .right-icon {
+  margin: 10px 0px 0px 0px;
+  display: inline-block;
+}
 
 .mobileapp-service-box .right-icon img {
-    color: #D7FF35;
+  color: #d7ff35;
 }
 
-
 .mobappdev-process-sec {
-  background: url(./assets/images/services/domainregisteration/service-bg.webp)
-    no-repeat top center;
+  background: url(./assets/images/services/domainregisteration/service-bg.webp) no-repeat top center;
   background-size: cover;
   padding: 180px 0px 70px 0px;
   width: 100%;
   height: 100%;
 }
 
-
 .mobappdev-process-sec .register-service-box {
-    border-color: #D7FF00;
+  border-color: #d7ff00;
 }
 
 .mobappdev-process-sec .register-box-line::before {
-    background: #D7FF00;
+  background: #d7ff00;
+}
+
+.mobileappdev-team-sec {
+  padding: 60px 0px;
+}
+
+.mobileappdev-team-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.language-box {
+  background: #f7f7f7;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+}
+
+.language-box img {
+  width: 50px;
+  margin: 0px 0px 15px 0px;
+}
+
+.language-box p {
+  color: #161515;
+}
+
+.mobileapp-services-sec {
+  padding: 60px 0px;
+}
+
+.mobileapp-service-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.mobileapp-services-sec {
+  padding: 60px 0px;
+}
+
+.mobileapp-service-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.mobileapp-service-card img {
+  width: 100%;
+}
+
+.mobileapp-service-cardtxt {
+  padding: 30px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+.mobileapp-service-cardtxt h4 {
+  color: #191919;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+.mobileapp-service-cardtxt p {
+  color: #191919;
+  margin: 0px 0px 30px 0px;
+}
+
+.downcard-mobileservie {
+  margin: 140px 0px 0px 0px;
+}
+
+.upcard-mobiledev {
+  margin: -130px 0px 0px 0px;
+}
+
+/************* New Mobile App Developement Page CSS End *************/
+
+/************* New Social Media Marketing Page CSS Start *************/
+
+.smm-about-sec {
+  padding: 100px 0px 180px 0px;
+}
+
+.smm-about-img {
+  position: relative;
+}
+
+.smm-about-img img {
+  width: 100%;
+}
+
+.smm-about-imgone {
+  padding: 0px 90px 0px 0px;
+}
+
+.smm-about-two {
+  position: absolute;
+  bottom: -110px;
+  width: 290px !important;
+  left: 64%;
+  width: 300px !important;
+}
+
+.smm-about-txt p {
+  padding: 10px 0px 10px 70px;
+}
+
+.smm-about-txt a {
+  margin: 10px 0px 10px 70px;
+}
+
+.smm-about-txt h6,
+.smm-about-txt h2 {
+  margin: 10px 0px 0px -60px;
+}
+
+.smm-about-txt {
+  margin: 60px 0px 0px 0px;
+}
+
+.smm-services-sec {
+  background: url(./assets/images/services/socialmediamarketing/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.smm-services-box {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.smm-services-box img {
+  height: fit-content;
+}
+
+.smm-service-boxtxt h5 {
+  color: #fff;
+  padding: 0px 0px 15px 0px;
+}
+
+.smm-service-boxtxt p {
+  color: #fff;
+}
+
+.smm-services-box {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.smm-services-box img {
+  height: fit-content;
+}
+
+.smm-service-boxtxt h5 {
+  color: #fff;
+  padding: 0px 0px 15px 0px;
+}
+
+.smm-service-boxtxt p {
+  color: #fff;
+}
+
+.smm-services-head {
+  margin: 0px 0px 10px 0px;
+}
+
+.smm-services-head p {
+  color: #fff;
+}
+
+.smm-drive-bg {
+  position: relative;
+}
+
+.smm-drive-bg::before {
+  position: absolute;
+  content: "";
+  background: url(./assets/images/services/socialmediamarketing/smm-drive-bg.webp) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.smm-drive-txt {
+  position: relative;
+  z-index: 9;
+  padding: 21px 30px;
+}
+
+.smm-drive-img {
+  position: relative;
+  z-index: 9;
+}
+
+.smm-drive-img img {
+  position: absolute;
+  top: -120px;
+  width: 100%;
+  right: 40px;
+}
+
+.smm-drive-sec {
+  padding: 220px 0px 80px 0px;
+}
+
+.smm-drive-txt p {
+  padding: 9px 0px;
+}
+
+.smm-process-sec {
+  background: url(./assets/images/services/socialmediamarketing/processbg.svg) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.smm-process-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.smm-process-txt {
+  padding: 55px 90px 55px 110px;
+}
+
+.smm-process-txt h5 {
+  color: #fff;
+  padding: 0px 0px 10px 0px;
+  font-weight: 700;
+}
+
+.smm-process-txt p {
+  color: #fff;
+}
+
+.smm-process-bg {
+  position: relative;
+}
+
+.smm-process-bg::before {
+  position: absolute;
+  content: "";
+  background: url(./assets/images/services/socialmediamarketing/process-line.svg);
+  width: 90%;
+  height: 76.9%;
+  background-size: contain;
+  left: 65px;
+  top: 19%;
+  z-index: 1;
+}
+
+.smm-process-txtone,
+.smm-process-txttwo,
+.smm-process-txtthree,
+.smm-process-txtfour,
+.smm-process-txtfive {
+  position: relative;
+}
+
+.smm-process-txtone::before {
+  position: absolute;
+  content: "01";
+  width: 40px;
+  height: 40px;
+  background: #D7FF35;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  left: 49px;
+}
+
+.smm-process-txttwo::before {
+  position: absolute;
+  content: "02";
+  width: 40px;
+  height: 40px;
+  background: #D7FF35;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  right: 45px;
+  z-index: 9;
+  top: 45px;
+}
+
+
+.smm-process-txtthree::before {
+  position: absolute;
+  content: "03";
+  width: 40px;
+  height: 40px;
+  background: #D7FF35;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  left: 49px;
+  z-index: 9;
+  top: 45px;
+}
+
+
+.smm-process-txtfour::before {
+  position: absolute;
+  content: "04";
+  width: 40px;
+  height: 40px;
+  background: #D7FF35;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  right: 45px;
+  z-index: 9;
+  top: 45px;
 }
 
 
 
-/************* New Mobile App Developement Page CSS End *************/
+.smm-process-txtfive::before {
+  position: absolute;
+  content: "05";
+  width: 40px;
+  height: 40px;
+  background: #D7FF35;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  left: 49px;
+  z-index: 9;
+  top: 45px;
+}
 
+
+.mobileapp-service-card {
+  margin-bottom: 20px;
+}
+
+
+.smm-drive-txt .mainhead {
+  font-size: 46px;
+}
+
+.smm-process-txtfive {
+  padding: 55px 90px 102px 110px;
+}
+
+
+
+/************* New Social Media Marketing Page CSS End *************/
+
+
+/************* New SEO Page CSS Start *************/
+
+
+
+.newseo-services-sec {
+  background: url(./assets/images/services/seo/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 180px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.newseo-service-head {
+    margin: 0px 0px 30px 0px;
+}
+
+.newseo-service-head p {
+    color: #fff;
+    padding: 30px 0px 0px 0px;
+}
+
+.newseo-service-head {
+    margin: 0px 0px 30px 0px;
+}
+
+.newseo-service-head p {
+    color: #fff;
+}
+
+
+.seoservices-accordions .accordion .accordion-item {
+    margin: 0px 0px 20px 0px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+}
+
+.seoservices-accordions .accordion .accordion-item .accordion-header {
+    border: none !important;
+}
+
+.seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button {
+    background: #242424;
+    color: #d7ff35;
+    font-weight: 600;
+    border-radius: 50px !important;
+    box-shadow: none;
+    border: none !important;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    padding: 20px 10px;
+}
+
+.seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button::after {
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    transform: rotate(0deg);
+    margin: 0px;
+    position: absolute;
+    right: 10px;
+}
+
+/* 1st Accordion */
+.seoservices-accordions .accordion-item:nth-child(1) 
+.accordion-button::after {
+  background-image: url(./assets/images/services/seo/accordion1.webp);
+}
+
+/* 2nd Accordion */
+.seoservices-accordions .accordion-item:nth-child(2) 
+.accordion-button::after {
+  background-image: url(./assets/images/services/seo/accordion2.webp);
+}
+
+/* 3rd Accordion */
+.seoservices-accordions .accordion-item:nth-child(3) 
+.accordion-button::after {
+  background-image: url(./assets/images/services/seo/accordion3.webp);
+}
+
+/* 4th Accordion */
+/* .seoservices-accordions .accordion-item:nth-child(4) 
+.accordion-button::after {
+  background-image: url(./assets/images/services/seo/icon4.webp);
+} */
+
+/* 5th Accordion */
+.seoservices-accordions .accordion-item:nth-child(5) 
+.accordion-button::after {
+  background-image: url(./assets/images/services/seo/accordion5.webp);
+}
+
+
+.seoservices-accordions {
+  counter-reset: accCount;
+}
+
+.seoservices-accordions .accordion-item {
+  counter-increment: accCount;
+}
+
+.seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button::before {
+    position: absolute;
+    content: counter(accCount, decimal-leading-zero);
+    left: 10px;
+    padding: 15px 17px;
+    background: #D7FF00;
+    border-radius: 100%;
+    color: #191919;
+}
+
+
+.seoservice-accordion-bodytxt p {
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.seo-accordion-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.seo-accordion-flex ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.seo-accordion-flex ul li {
+    color: #fff;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.newseo-usage-box {
+    background: #D7FF00;
+    border: 4px solid #191919;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newseo-usage-sec {
+    padding: 70px 0px;
+}
+
+.newseo-usage-head {
+    margin: 0px 0px 50px 0px;
+}
+
+.newseo-usage-txt img {
+    width: 100px;
+    margin: 0px 0px 20px 0px;
+}
+
+.newseo-usage-txt h3 {
+    color: #191919;
+    font-weight: bold;
+    padding: 13px 0px;
+}
+
+.newseo-usage-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+
+.usage-choice-box {
+    background: #fff;
+    border: 4px solid #191919;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newseo-usage-box h3 {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+
+.newseo-usage-box h3 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #191919;
+}
+.newseo-usage-box p {
+    font-size: 20px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.usage-choice-box h3 {
+    font-size: 90px;
+    font-weight: bold;
+    color: #191919;
+}
+
+.usage-choice-box p {
+    font-size: 20px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.newseo-choice-box p {
+    font-size: 20px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.newseo-usage-txt p {
+    padding: 0px 0px 10px 0px;
+}
+
+
+
+.seousage-btn-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seousage-btn-flex p {
+    padding: 0px;
+}
+
+.newseo-process-sec {
+    background: url(./assets/images/services/seo/process-bg.webp) no-repeat top center;
+    background-size: cover;
+    padding: 140px 0px 100px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.newseo-process-head {
+    margin: 0px 0px 20px 0px;
+}
+
+.newseo-process-point {
+    padding: 20px 0px;
+    border-right: 2px solid #D7FF00;
+    margin: 0px 0px 20px 0px;
+}
+
+.newseo-process-point h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.newseo-process-point h3 span {
+    margin: 0px 10px 0px 0px;
+    color: #D7FF00;
+}
+
+.newseo-process-txt p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.newseo-process-txt {
+    margin: 0px 0px 10px 0px;
+    padding: 22px 0px;
+}
+
+/************* New SEO Page CSS End *************/
 
 
 
@@ -5634,9 +6133,12 @@ section.blogwriting-order-sec {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
+
+
+
 
 /* Media quries */
 
@@ -5651,13 +6153,16 @@ section.blogwriting-order-sec {
     width: 76%;
     left: 64%;
   }
+
   .blog-card__content-title {
     font-size: 15px;
     min-height: 39px;
   }
+
   .client-testimonial__content-quote {
     min-height: 168px;
   }
+
   .blog-categories__card-footer {
     font-size: 14px;
   }
@@ -5709,6 +6214,40 @@ section.blogwriting-order-sec {
   }
 }
 
+@media (max-width: 1366px) {
+    .smm-process-txt {
+        padding: 2px 120px 57px 110px;
+    }
+
+.smm-process-bg::before {
+    width: 86%;
+    height: 76.9%;
+}
+
+.smm-process-txttwo::before {
+    right: 70px;
+    top: 5px;
+}
+
+.smm-process-txtthree::before {
+    left: 49px;
+    top: 5px;
+}
+
+.smm-process-txtfour::before {
+    right: 70px;
+    top: 5px;
+}
+
+.smm-process-txtfive::before {
+    left: 45px;
+    top: 5px;
+}
+
+
+}
+
+
 @media (max-width: 1280px) {
   .main-footer {
     background-size: 100% 100%;
@@ -5724,13 +6263,16 @@ section.blogwriting-order-sec {
   .adobe-photoshop__sec {
     padding: 120px 0 60px;
   }
+
   .client-testimonial__content-quote {
     min-height: 180px;
     font-size: 15px;
   }
+
   .testimonial-quote__text {
     min-height: 120px;
   }
+
   .services-box-1 .services-box-content img,
   .services-box-3 .services-box-content img {
     max-width: 160px;
@@ -5950,22 +6492,28 @@ section.blogwriting-order-sec {
   .mobileAppDevelopment-service .services-banner-sec-bgImg {
     display: none;
   }
+
   .services-banner__img {
     margin-bottom: 30px;
   }
+
   .gfxLastTitle-h3 {
     font-size: 30px;
     text-align: center;
   }
+
   .swiper-container .swiper {
     padding-bottom: 40px;
   }
+
   .client-testimonial__content-quote {
     min-height: 112px;
   }
+
   .testimonial-quote__text {
     min-height: 168px;
   }
+
   .our-work-process__item {
     flex: 0 0 48% !important;
   }
@@ -6171,7 +6719,7 @@ section.blogwriting-order-sec {
 
   .logodesign-portfolio-images {
     grid-template-columns: repeat(3, 1fr);
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -6344,33 +6892,130 @@ section.blogwriting-order-sec {
 
   .webdesign-service-card {
     margin: 0px 0px 40px 0px;
-}
+  }
 
-.wordpress-choose-listsec .web-whychoose-list {
+  .wordpress-choose-listsec .web-whychoose-list {
     text-align: left;
-}
+  }
 
-.blogwriting-about-sec .abouttxt-data .desc-two {
+  .blogwriting-about-sec .abouttxt-data .desc-two {
     padding: 15px 0px 0px 0px;
-}
+  }
 
-.blogwriting-about-sec .abouttxt-data  .desc-three {
-      padding: 0px 0px 15px 0px;
-}
+  .blogwriting-about-sec .abouttxt-data .desc-three {
+    padding: 0px 0px 15px 0px;
+  }
 
-.blogwriting-choose-sec .abouttxt-data {
+  .blogwriting-choose-sec .abouttxt-data {
     text-align: left;
-}
+  }
 
-.happy-client-logotxt {
+  .happy-client-logotxt {
     grid-template-columns: repeat(4, auto);
     row-gap: 30px;
     column-gap: 45px;
+  }
+
+  .services-banner-sec {
+    padding: 130px 0 90px;
+  }
+
+  .smm-about-two {
+    display: none;
+  }
+
+  .smm-about-imgone {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .smm-about-txt h6,
+  .smm-about-txt h2 {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .smm-about-txt p {
+    padding: 10px 0px 10px 0px;
+  }
+
+
+  .smm-about-txt a {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .smm-about-sec {
+    padding: 100px 0px 70px 0px;
+  }
+
+  .smm-drive-sec {
+    padding: 80px 0px 80px 0px;
+  }
+
+  .smm-drive-img img {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .smm-drive-txt {
+    padding: 40px;
+  }
+
+  .smm-drive-bg::before {
+    border-radius: 30px;
+  }
+
+
+  .smm-process-bg::before {
+    display: none;
+  }
+
+  .smm-process-txt {
+    padding: 55px 60px 55px 60px;
+  }
+
+  .smm-process-txttwo::before {
+    right: 5px;
+    top: 55px;
+  }
+
+  .smm-process-txtone::before {
+    left: 10px;
+  }
+
+  .smm-process-txtthree::before {
+    left: 9px;
+    top: 55px;
+  }
+
+  .smm-process-txtfour::before {
+    right: 15px;
+    top: 55px;
+  }
+
+  .smm-process-txtfive::before {
+    left: 9px;
+    top: 55px;
+  }
+
+  .seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 30px;
 }
 
-    .services-banner-sec {
-        padding: 130px 0 90px;
-    }
+.newseo-usage-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.newseo-usage-box {
+    padding: 100px 0px;
+}
+
+.newseo-process-point {
+    border: none;
+}
+
+
 
 }
 
@@ -6378,17 +7023,21 @@ section.blogwriting-order-sec {
   .gfxLastTitle-h3 {
     font-size: 28px;
   }
+
   .client-testimonial__content-quote {
     min-height: 135px;
   }
+
   .testimonial-quote__text {
     min-height: 96px;
   }
+
   .our-work-process__item:not(:last-child) .our-work-process-title::after {
     width: 100%;
     top: 47%;
     left: 62%;
   }
+
   .services-sec {
     max-width: 480px;
     margin: 40px auto;
@@ -6713,15 +7362,29 @@ section.blogwriting-order-sec {
   .services-banner__content .main-banner__content-btns {
     justify-content: center;
   }
+
+
+
+  .upcard-mobiledev {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .downcard-mobileservie {
+    margin: 0px 0px 20px 0px;
+  }
+
+
 }
 
 @media (max-width: 575px) {
   .client-testimonial__content-quote {
     min-height: 180px;
   }
+
   .testimonial-quote__text {
     min-height: 120px;
   }
+
   .our-work-process__container {
     flex-direction: column;
     justify-content: center;
@@ -6731,10 +7394,12 @@ section.blogwriting-order-sec {
   .our-work-process__item .our-work-process-title::after {
     content: unset !important;
   }
+
   .our-work-process__item {
     flex: unset !important;
     max-width: 300px;
   }
+
   .web-design__guidelines-box {
     max-width: 360px;
     margin: 0 auto;
@@ -6773,15 +7438,19 @@ section.blogwriting-order-sec {
   .pricing-banner-sec {
     min-height: 356px;
   }
+
   .graphic-design-agency .sec-head .sec-head-tag {
     width: unset;
   }
+
   .services-about__content h2 {
     font-size: 29px;
   }
+
   .services-banner__content h1 {
     font-size: 30px;
   }
+
   .services-banner__img img {
     /* min-height: 277px; */
     min-height: unset;
@@ -6795,6 +7464,7 @@ section.blogwriting-order-sec {
   .web-design__p {
     font-size: 15px;
   }
+
   .services-banner-sec-bgImg {
     min-height: 461px;
   }
@@ -6872,15 +7542,19 @@ section.blogwriting-order-sec {
   .web-design__guidelines .sec-head p {
     font-size: 14px;
   }
+
   .services-banner__content {
     min-height: 291px;
   }
+
   .services-about__content {
     min-height: 260px;
   }
+
   .home-about-sec {
     min-height: 752px;
   }
+
   .about-sec {
     min-height: 714px;
   }
@@ -6974,63 +7648,135 @@ section.blogwriting-order-sec {
   .logodesign-portfolio-images {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
-}
+  }
 
-    .logodesign-portfolio-images img {
-        width: 160px;
-    }
+  .logodesign-portfolio-images img {
+    width: 160px;
+  }
 
-    .logodesign-service-card {
+  .logodesign-service-card {
     text-align: center;
-}
+  }
 
-
-.logo-design-services {
+  .logo-design-services {
     padding: 120px 0px 50px 0px;
-}
+  }
 
-.webdesign-service-card {
+  .webdesign-service-card {
     text-align: center;
-}
+  }
 
-.webdesign-service-btn {
+  .webdesign-service-btn {
     margin: 30px 0px 0px 0px;
-}
+  }
 
-.blogwrite-order-flex {
+  .blogwrite-order-flex {
     align-items: flex-start;
     gap: 20px;
     flex-direction: column;
-}
+  }
 
-.blogwriting-order-bg {
+  .blogwriting-order-bg {
     padding: 30px;
     border-radius: 20px;
-}
+  }
 
-.blogwrititing-order-txt {
+  .blogwrititing-order-txt {
     margin: 0px 0px 30px 0px;
+  }
+
+  .happy-clients {
+    flex-direction: column;
+  }
+
+  .happy-client-box {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .blogwriting-work-card {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .blogwriting-work-head {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .happy-client-logotxt {
+    grid-template-columns: repeat(2, auto);
+  }
+
+
+  .smm-drive-txt {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .smm-services-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .smm-services-box img {
+    width: fit-content;
+  }
+
+  .smm-services-head {
+    text-align: center;
+  }
+
+  .smm-services-sec {
+    padding: 120px 0px 70px 0px;
+  }
+
+  .seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button::after {
+    width: 50px;
+    height: 50px;
 }
 
-.happy-clients {
+  .newseo-usage-box h3 {
+    font-size: 50px;
+}
+
+.newseo-usage-box p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.usage-choice-box h3 {
+    font-size: 50px;
+}
+
+.usage-choice-box p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.newseo-usage-flex {
+    gap: 10px;
+}
+
+    .newseo-usage-box {
+        padding: 70px 0px;
+    }
+
+        .seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button {
+        font-size: 16px;
+    }
+
+    .seoservices-accordions .accordion .accordion-item .accordion-header .accordion-button::before {
+    padding: 7px 7px;
+}
+
+.seo-accordion-flex {
     flex-direction: column;
 }
 
-.happy-client-box {
-    margin: 0px 0px 10px 0px;
-}
-
-.blogwriting-work-card {
-    text-align: center;
-    margin: 0px 0px 30px 0px;
-}
-
-.blogwriting-work-head {
-    margin: 0px 0px 40px 0px;
-}
-
-.happy-client-logotxt {
-    grid-template-columns: repeat(2, auto);
+.seoservice-accordion-bodytxt p {
+    padding: 0px 0px 10px 0px;
+    font-size: 14px;
 }
 
 }
@@ -7039,6 +7785,7 @@ section.blogwriting-order-sec {
   .testimonial-quote__text {
     min-height: 168px;
   }
+
   .contactForm-icons-text .contactForm-icon {
     width: 30px;
   }
@@ -7189,15 +7936,22 @@ section.blogwriting-order-sec {
   .client-testimonial .sec-head .para-title {
     font-size: 30px;
   }
+
+
+
+
+
 }
 
 @media (max-width: 410px) {
   .different-industries-client {
     min-height: 2080px;
   }
+
   .main-footer {
     min-height: 1302px;
   }
+
   .pricing-banner-sec {
     min-height: 393px;
   }
@@ -7219,6 +7973,7 @@ section.blogwriting-order-sec {
   .footer-main__title {
     font-size: 25px;
   }
+
   .client-testimonial__content-quote {
     /* min-height: 180px; */
     font-size: 14px;
@@ -7254,10 +8009,7 @@ section.blogwriting-order-sec {
     background: transparent;
   }
 
-  .dynamic-pricing-tabs
-    .react-tabs
-    .react-tabs__tab-list
-    .react-tabs__tab--selected {
+  .dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
     background: #d7ff00;
     border-radius: 10px;
   }

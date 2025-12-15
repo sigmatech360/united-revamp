@@ -44,6 +44,7 @@ import WebsiteContent from "../screens/Services/WebsiteContent";
 import BlogWriting from "../screens/Services/BlogWriting";
 import NewMobileAppDevelopment from "../screens/Services/NewMobileAppDevelopment";
 import NewSocialMediaMarketing from "../screens/Services/NewSocialMediaMarketing";
+import NewSEO from "../screens/Services/NewSEO";
 
 // Import your components/pages
 
@@ -87,7 +88,8 @@ const AppRouter = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />}/>
         {/* <Route path="/social-media-marketing" element={<SocialMediaMarketing />}/> */}
         <Route path="/social-media-marketing" element={<NewSocialMediaMarketing />}/>
-        <Route path="/search-engine-optimization" element={<SEO />} />
+        {/* <Route path="/search-engine-optimization" element={<SEO />} /> */}
+        <Route path="/search-engine-optimization" element={<NewSEO />} />
       
 
 

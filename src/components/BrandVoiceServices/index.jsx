@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import FormModal from "../FormModal";
-import rightIcon from "../../assets/images/icons/general/arrowRightDark.webp"
+import rightIcon from "../../assets/images/services/brandvoice/icons/arrow.svg"
 
 const BrandVoiceServices = ({
   secClass,
   serviceBoxClass,
+  rightIcon,
   minihead,
   mainhead,
   mainpara,
@@ -39,7 +40,7 @@ const BrandVoiceServices = ({
                   {/* <h2 className="colorYellow title">{item.title}</h2> */}
                   <h4>{item.subtitle}</h4>
                   <p>{item.description}</p>
-                  <span className="right-icon"><img src={rightIcon} className="img-fluid" alt="" /> </span>
+                  <span className="right-icon"><img src={rightIcon} className="img-fluid" alt="image" /> </span>
                   <ul>
                     {item.list &&
                       item.list.map((listItem, listIdx) => (
