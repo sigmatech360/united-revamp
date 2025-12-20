@@ -5567,10 +5567,9 @@ section.blogwriting-order-sec {
 
 .smm-about-two {
   position: absolute;
-  bottom: -110px;
-  width: 290px !important;
+  bottom: -100px;
   left: 64%;
-  width: 300px !important;
+  width: 50% !important;
 }
 
 .smm-about-txt p {
@@ -5931,10 +5930,10 @@ section.blogwriting-order-sec {
 }
 
 /* 4th Accordion */
-/* .seoservices-accordions .accordion-item:nth-child(4) 
+.seoservices-accordions .accordion-item:nth-child(4) 
 .accordion-button::after {
-  background-image: url(./assets/images/services/seo/icon4.webp);
-} */
+  background-image: url(./assets/images/services/seo/accordion4.webp);
+}
 
 /* 5th Accordion */
 .seoservices-accordions .accordion-item:nth-child(5) 
@@ -6244,6 +6243,9 @@ section.blogwriting-order-sec {
     top: 5px;
 }
 
+.smm-about-txt .mainhead {
+    font-size: 40px;
+}
 
 }
 
@@ -6253,7 +6255,7 @@ section.blogwriting-order-sec {
     background-size: 100% 100%;
   }
 
-  .line-sec::before {
+  .line-sec::before { 
     background-size: contain;
     height: 100px;
   }
