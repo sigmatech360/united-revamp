@@ -6162,6 +6162,22 @@ section.blogwriting-order-sec {
 /************* New SEO Page CSS End *************/
 
 
+/************* Web App Development Location Page CSS Start *************/
+
+.webapp-perform-sec .goodperform-list {
+    display: block !important;
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+}
+
+.webapp-perform-sec .goodperform-list li {
+    padding: 3px 0px;
+}
+
+
+/************* Web App Development Location Page CSS End *************/
+
+
 
 @keyframes marqueeScroll {
   from {

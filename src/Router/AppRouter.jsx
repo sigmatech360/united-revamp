@@ -45,6 +45,9 @@ import BlogWriting from "../screens/Services/BlogWriting";
 import NewMobileAppDevelopment from "../screens/Services/NewMobileAppDevelopment";
 import NewSocialMediaMarketing from "../screens/Services/NewSocialMediaMarketing";
 import NewSEO from "../screens/Services/NewSEO";
+import LaravelDevelopmentFlorida from "../screens/locationpages/LaravelDevelopmentFlorida";
+import WebAppDevelopmentFlorida from "../screens/locationpages/WebAppDevelopmentFlorida";
+import ShopifyDevelopmentFlorida from "../screens/locationpages/ShopifyDevelopmentFlorida";
 
 // Import your components/pages
 
@@ -130,6 +133,9 @@ const AppRouter = () => {
         <Route path="/domain-registeration-florida" element={<DomainRegisterationFlorida />} />
         <Route path="/domain-transfer-florida" element={<DomainTransferFlorida />} />
         <Route path="/angular-development-florida" element={<AngularDevelopmentFlorida />} />
+        <Route path="/webapp-development-florida" element={<WebAppDevelopmentFlorida />} />
+        <Route path="/shopify-development-florida" element={<ShopifyDevelopmentFlorida />} />
+        <Route path="/laravel-development-florida" element={<LaravelDevelopmentFlorida />} />
       </Routes>
     </Router>
   );

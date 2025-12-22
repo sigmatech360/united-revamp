@@ -43,6 +43,12 @@ const ServicesBanner = (props) => {
                   dangerouslySetInnerHTML={{ __html: props.description }}
                 ></p>
                 {props.descriptiontwo && <p>{props.descriptiontwo}</p>}
+
+                <ul className="goodperform-list d-none">
+                  <li>Boost performance by 40%</li>
+                  <li>Lower IT cost by 30%</li>
+                  <li>80% oof enterprises focus on web apps</li>
+                </ul>
                 <div
                   className="main-banner__content-btns"
                   // data-aos="fade-right"
