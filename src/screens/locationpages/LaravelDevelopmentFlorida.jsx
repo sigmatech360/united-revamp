@@ -108,8 +108,8 @@ const LaravelDevelopmentFlorida = () => {
   return (
     <>
       <ReactHelmet
-        title="Search Engine Optimization Agency in the USA"
-        description="United Web Developers provides search engine optimization services in the USA focused on organic growth, lasting rankings, and long term business partnerships."
+        title="Laravel Development Agency in Florida"
+        description="Get your website, mobile application, or web application made with Laravel Development for a strong backend that keeps your brand secure and growing at United Web Developers."
         keywords="laravel development company Florida, laravel development services Florida, laravel development agency Florida, laravel web development services Florida, laravel web development services Florida, laravel application development company Florida"
         baseUrl="https://unitedwebdevelopers.com/laravel-development-florida"
       />
